@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkAssignment", "HomeworkAssignment\HomeworkAssignment\HomeworkAssignment.csproj", "{D50168B9-281A-40DE-91A6-AB4DA73C963C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkAssignmentContent", "HomeworkAssignment\HomeworkAssignmentContent\HomeworkAssignmentContent.contentproj", "{E27B7D1B-0C9E-463B-B247-E7986F0730C2}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D50168B9-281A-40DE-91A6-AB4DA73C963C}.Debug|x86.ActiveCfg = Debug|x86
+		{D50168B9-281A-40DE-91A6-AB4DA73C963C}.Debug|x86.Build.0 = Debug|x86
+		{D50168B9-281A-40DE-91A6-AB4DA73C963C}.Release|x86.ActiveCfg = Release|x86
+		{D50168B9-281A-40DE-91A6-AB4DA73C963C}.Release|x86.Build.0 = Release|x86
+		{E27B7D1B-0C9E-463B-B247-E7986F0730C2}.Debug|x86.ActiveCfg = Debug|x86
+		{E27B7D1B-0C9E-463B-B247-E7986F0730C2}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

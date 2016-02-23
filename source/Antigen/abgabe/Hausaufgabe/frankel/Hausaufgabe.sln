@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hausaufgabe", "Hausaufgabe\Hausaufgabe\Hausaufgabe.csproj", "{33D6620A-0752-4C98-B963-4FF79D614E4C}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "HausaufgabeContent", "Hausaufgabe\HausaufgabeContent\HausaufgabeContent.contentproj", "{2BE7EB43-66D0-400D-9440-7D7EF9773BD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33D6620A-0752-4C98-B963-4FF79D614E4C}.Debug|x86.ActiveCfg = Debug|x86
+		{33D6620A-0752-4C98-B963-4FF79D614E4C}.Debug|x86.Build.0 = Debug|x86
+		{33D6620A-0752-4C98-B963-4FF79D614E4C}.Release|x86.ActiveCfg = Release|x86
+		{33D6620A-0752-4C98-B963-4FF79D614E4C}.Release|x86.Build.0 = Release|x86
+		{2BE7EB43-66D0-400D-9440-7D7EF9773BD0}.Debug|x86.ActiveCfg = Debug|x86
+		{2BE7EB43-66D0-400D-9440-7D7EF9773BD0}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
