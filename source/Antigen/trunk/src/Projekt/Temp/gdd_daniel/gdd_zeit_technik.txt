@@ -1,0 +1,27 @@
+Montag:
+17:50 Start Tabellen
+19:50 Ende Tabellen
+19:50 Start Bilder
+20:40 Ende Bilder (->2:50)
+
+Dienstag:
+15:45 Start Bilder
+17:25 Ende Bilder
+17:25 Start Tabellen
+17:40 Ende Tabellen (->1:55)
+18:00 Start Tabellen
+18:13 Ende Tabellen
+22:00 Start Tabellen
+22:55 Ende Tabellen (->nochmal 1:08)
+19:30 Anfang Tabellen
+20:30 Ende Tabellen (->nochmal 1:00)
+
+Mittwoch:
+20:00 Start Bilder
+20:18 Ende Bilder
+20:18 Start Tabellen
+21:50 Ende Tabellen
+21:50 Start Bilder
+21:52 Ende Bilder (->nochmal 1:52)
+
+Programme: TeXworks, PhotoFiltre

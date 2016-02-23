@@ -1,0 +1,49 @@
+Package Hierarchy:
+
+GameXY->	Animation
+		Art
+		Camera
+		Commons
+		FrameLauncher
+		GameXYComponent
+		Settings
+		Sheet
+		.Collision->	Hitbox
+				ImageOutline
+				TwoToneImageFilter
+		.Level->	Level
+				LevelRenderer
+				.Editor->	LevelEditor
+						LevelEditView
+						TilePicker
+		.Menu->		Menu
+		.Scenes->	LevelScene
+				Scene
+				TitleScene
+		.Sprites->	Firebeam
+				Player
+				Punch
+				Sprite
+		.PhysicEngine->	...
+		.SoundEngine->	...
+
+-----------------------------------------------
+Vererbung:
+
+.Scenes:	Scene->	LevelScene
+			TitleScene
+.Sprites:	Sprite->Player
+			Fireball
+			Punch
+-----------------------------------------------
+Ablauf:
+
+-Framelauncher erstellt GameXYComponent und startet
+-GameXYComponent erstellt Physik- und Soundengine, erstellt die Startscene: TitleScene (welche später dann LevelScene lädt)
+-Derzeitge Scene z.B. LevelScene hat bei der Erstellung ein Level geladen und z.B. ein Playersprite erstellt
+-Derzeitge Scene fügt Sprites zur Spriteliste der Scene hinzu
+-GameXYComponent enthält Spielloop und ruft jedesmal tick() und render() auf
+-GameXYComponent ruft tick() und render() für die derzeitige Scene und das Menü auf
+-Derzeitge ruft tick() und render() für alle Sprites auf
+
+Im Wesentlichen wird der Ablauf durch tick() bei jedem Objekt, welches die Spiellogik enthält, und render() bei jedem Objekt, welches dieses zeichnet, bestimmt. tick() und render() werden durch die Hierarchie aufgerufen, Der Spielkomponent ruft es für seine Szene auf, diese für seine Sprites etc.

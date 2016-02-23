@@ -1,0 +1,32 @@
+Farbchannel:
+R = X-Koordinate
+G = Y-Koordinate
+B = Mutationsbereiche
+
+Cartesiansystem vector (x,y):
+Length = flow
+Angle = dir [0, 360)
+
+Übersetzung:
+
+RG		Cartesian
+-------------------------------
+0		nicht begehbar
+[1,127]		[-127,-1]
+128		0
+[129,255]	[1,127]
+
+Farbchannel	Neu	Alte Farbe	Bedeutung
+-----------------------------------------------------
+B (mutation):	0	(0, 0, 0)	(nicht begehbar)
+		220-255	(0,0,255)	(Leben)
+		184-219	(0, 204, 255)	(Lifespan)
+		148-183	(255, 0, 0)	(Angriff)
+		112-147	(255, 153, 0)	(Movespeed)
+		76-111	(153, 51, 102)	(Zellteilungsspeed)
+		40-75	(51, 153, 102)	(Virenresistenz)
+		4-39	(153, 51, 0)	(Sichtweite)
+see mutationmapping.png
+wobei Intervall Stärke der Mutation von schwach bis stark angibt
+
+Pixel(0,0) = ROT (255,0,0) zur Kennzeichnung

@@ -1,0 +1,25 @@
+Farbchannel	Neu	Alte Farbe
+-----------------------------------------------------
+R (flow):	0	(0, 0, 0) (nicht begehbar)
+		100	(168,0,0) (schnell)
+		120	(154, 25, 25)
+		140	(139, 51, 51)
+		160	(125, 76, 76)
+		180	(110, 102, 102)
+		200	(95, 127, 127)
+		220	(81, 153, 153)
+		240	(66, 178, 178) (langsam)
+see speedrange.png
+
+G (dir):	0	(0, 0, 0) (nicht begehbar)
+		100	(255, 204, 0) (oben)
+		120	(240, 179, 16) (obenlinks)
+		140	(224, 153, 32) (links)
+		160	(208, 128, 48) (untenlinks)
+		180	(192, 102, 64) (unten)
+		200	(176, 77, 80) (untenrechts)
+		220	(160, 51, 96) (rechts)
+		240	(144, 26, 112) (obenrechts)
+see directions.png
+
+B (ohne):	0

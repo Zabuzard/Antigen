@@ -1,0 +1,198 @@
+***************************************************
+Week 3 & 4
+***************************************************
+22:00 Start RenderMap
+23:00 Ende RenderMap
+23:00 Start FlowMap
+23:45 Pause
+00:44 Weiter
+02:06 Pause
+---------------------------------------------------
+19:20 Weiter
+20:10 Ende FlowMap
+20:10 Start DirectionMap
+20:46 Ende DirectionMap
+20:46 Start JavaTool zum Converten
+22:06 Ende JavaTool zum Converten
+-> 5h 53min
+---------------------------------------------------
+13:30 Anfang Code Map
+17:16 Ende Code Map
+-> 3h 46min
+---------------------------------------------------
+15:05 Start Code Dummy Unit
+19:00 Ende Code Dummy Unit
+-> 3h 55min
+---------------------------------------------------
+15:50 Start Reach Code
+16:50 Ende Reach Code
+-> 1h
+17:20 Start Hook Movement to Mouse Click Code
+18:40 Ende Hook Movement to Mouse Click Code
+-> 1h 20min
+---------------------------------------------------
+22:15 Start Unit Überklasse
+23:25 Ende Unit Überklasse
+23:25 Start Collision Auslagerung
+00:00 Pause
+00:30 Weiter
+00:55 Ende Collision Auslagerung
+-> 1h 10min
+---------------------------------------------------
+14:10 Start Stresstest
+15:00 Ende Stresstest
+15:00 Start RedBloodCell & Bakterium
+16:15 Ende RedBloodCell & Bakterium
+-> 2h 5min
+---------------------------------------------------
+16:00 Start FlowMovement
+21:00 Ende FlowMovement
+-> 5h
+---------------------------------------------------
+***************************************************
+Week 5 & 6
+***************************************************
+14:40 Start Render für DynMaps
+16:00 Ende Render für DynMaps
+16:00 Start DynMaps einbinden
+19:00 Ende DynMaps einbinden
+19:20 Start Movement zu Logical/Behaviour umschreiben
+20:10 Pause
+21:50 Weiter
+22:15 Pause
+01:30 Weiter
+02:30 Ende Movement zu Logical/Behaviour umschreiben
+-> 6h 35min
+---------------------------------------------------
+06:15 Start Properties
+10:30 Ende Properties
+-> 4h 15min
+---------------------------------------------------
+16:30 Start Angriff
+17:30 Ende Angriff
+17:30 Start Zellteilung
+19:00 Ende Zellteilung
+-> 2h 30min
+---------------------------------------------------
+23:45 Start Modes
+02:00 Ende Modes
+02:00 Start Listener anmelden und Position Präzision von int auf float
+03:15 Ende Listener anmelden und Position Präzision von int auf float
+-> 3h 30min
+---------------------------------------------------
+03:30 Start Quadtree Fehlersuche und verbessern
+05:00 Ende Quadtree Fehlersuche und verbessern
+05:00 Start Quadtree DebugDraw
+06:30 Ende Quadtree DebugDraw
+-> 3h
+---------------------------------------------------
+15:30 Start Movement/Angriff/Zellteilung testen und Fehler beheben
+16:50 Ende Movement/Angriff/Zellteilung testen und Fehler beheben
+-> 1h 20min
+---------------------------------------------------
+22:00 Start MaxLifepoints und MaxLifespan
+22:20 Ende MaxLifepoints und MaxLifespan
+-> 20min
+---------------------------------------------------
+06:15 Start CombinedMovement
+07:00 Ende CombinedMovement
+07:00 Start Collidable differentation
+07:20 Ende Collidable differentation
+07:20 Start FlowParticle
+08:00 Ende FlowParticle
+08:00 Start FlowMovementVariance
+08:15 Ende FlowMovementVariance
+-> 2h
+---------------------------------------------------
+***************************************************
+Week 7
+***************************************************
+18:30 Start CombinedDrift -> wechsel auf HoldLine Mode nach Mausbewegung
+19:00 Ende CombinedDrift -> wechsel auf HoldLine Mode nach Mausbewegung
+19:00 Start OffensiveMode
+20:30 Ende OffensiveMode
+-> 2h
+---------------------------------------------------
+16:15 Start FlowParticle nicht als Unit
+16:45 Ende FlowParticle nicht als Unit
+16:45 Start Zellteilung gut machen
+18:15 Ende Zellteilung gut machen
+-> 2h
+---------------------------------------------------
+15:45 Start B-Zelle, T-Zelle, Antikörper, Virus
+17:00 Ende B-Zelle, T-Zelle, Antikörper, Virus
+-> 1h 15min
+---------------------------------------------------
+16:00 Start Improve QuadtreeUnits, add/remove units to it and DebugDraw
+18:00 Ende Improve QuadtreeUnits, add/remove units to it and DebugDraw
+-> 2h
+---------------------------------------------------
+20:30 Start Flow Particle über Map verbreiten
+21:30 Ende Flow Particle über Map verbreiten
+21:30 Start Zellteilung fixen
+22:15 Ende Zellteilung fixen
+22:15 Start Sichtweite Property
+22:30 Ende Sichtweite Property
+-> 2h
+---------------------------------------------------
+23:00 Start Unit2Unit Kollision
+00:00 Ende Unit2Unit Kollision
+-> 1h
+---------------------------------------------------
+***************************************************
+Week 8
+***************************************************
+16:15 Start B-Zelle Werteübergabe beim Spawnen
+16:30 Pause
+17:00 Weiter
+18:00 Ende B-Zelle Werteübergabe beim Spawnen
+18:00 Start Antikörper Debuff Funktion einbauen
+20:00 Ende Antikörper Debuff Funktion einbauen
+20:00 Start FriendlyConstillation und CellDividing auf Behavior umlagern
+20:30 Ende FriendlyConstillation und CellDividing auf Behavior umlagern
+-> 3h 45min
+---------------------------------------------------
+14:00 Start Zellinfektion von Virus
+15:30 Ende Zellinfektion von Virus
+-> 1h 15min
+---------------------------------------------------
+12:50 Start Zellbefreiung T-Zelle
+14:45 Ende Zellbefreiung T-Zelle
+14:45 Start Auslagerung von Code auf Functions (Offensive Aufstellungen)
+15:00 Ende Auslagerung von Code auf Functions (Offensive Aufstellungen)
+15:00 Start Debug Switch für FPS/TPS
+15:10 Ende Debug Switch für FPS/TPS
+-> 2h 20min
+---------------------------------------------------
+12:30 Start StrainGenerator soll suffix extrahieren können und für Family eine Zahl zurückgeben können
+12:40 Ende StrainGenerator soll suffix extrahieren können und für Family eine Zahl zurückgeben können
+12:40 Start Vererbung von Werten bei Teilung (Architektur)
+14:10 Ende Vererbung von Werten bei Teilung (Architektur)
+14:10 Start Vererbung von Werten bei Teilung (Implementierung)
+14:30 Ende Vererbung von Werten bei Teilung (Implementierung)
+14:30 Start Antigenlogik für andere Funktionen wie Kampf
+14:40 Ende Antigenlogik für andere Funktionen wie Kampf
+14:40 Start Antigenübergabe von Riesenfresszelle
+15:50 Ende Antigenübergabe von Riesenfresszelle
+15:50 Start Vorbereitung von MoveBehavior auf Nutzung von Pathfinder
+16:00 Ende Vorbereitung von MoveBehavior auf Nutzung von Pathfinder
+-> 3h 30min
+---------------------------------------------------
+***************************************************
+Week 9
+***************************************************
+16:40 Start DebugDraw Pathfinding
+17:30 Ende DebugDraw Pathfinding
+17:30 Anfang Antikörper dürfen nur Gegner mit gleichem Antigen debuffen
+17:50 Ende Antikörper dürfen nur Gegner mit gleichem Antigen debuffen
+17:50 Start Render/Data Map mit Mutationareas malen
+18:40 Ende Render/Data Map mit Mutationareas malen
+-> 2h
+---------------------------------------------------
+19:30 Start Map Support für Mutationareas in MapData
+20:00 Ende Map Support für Mutationareas in MapData
+20:00 Start Dummy Einbindung einer Attack- und Strainmutation (50% Steigerung um 5, 5% Familienwechsel)
+20:40 Ende Dummy Einbindung einer Attack- und Strainmutation (50% Steigerung um 5, 5% Familienwechsel)
+-> 1h 10min
+---------------------------------------------------
+13:40 Start Map System für 7 versch. Mutationsbereiche mit 35er Stärke Abstufung entwerfen und malen
