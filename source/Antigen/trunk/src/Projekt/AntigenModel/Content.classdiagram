@@ -1,0 +1,1249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="94ee5fc4-38ec-41ba-92d7-dc4ea31c7e9e" name="Content" linkedPackageId="2e4d4463-ca63-4976-9968-cb82b666b9ec" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="5b81a580-336f-41c8-8961-269e9b456c01" name="Content" visibility="Private">
+        <referencesInternal>
+          <reference Id="60dd6b66-13bc-4e86-867f-ca4f5e38e385" handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Content" tag="ViewCode">
+            <elementDefinition Id="0249e5aa-dafa-45db-9ed0-f384d9b25709" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="88e3c389-8d7d-4c91-9e15-96cb69bff93b" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="ffdfa2b3-63d3-49c0-ac1a-62cc4285fd7e" name="ContentLoader" visibility="Package" isAbstract="false" isLeaf="true" isActiveClass="false">
+              <referencesInternal>
+                <reference Id="7d3f6f04-b467-427e-9c7b-3f7ad4c88e4f" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader" tag="ViewCode">
+                  <elementDefinition Id="5bbd07ff-3cef-4ced-aa37-8665c9565729" />
+                </reference>
+              </referencesInternal>
+              <appliedStereotypesInternal>
+                <stereotypeInstance Id="b8e61f92-31be-454d-a1db-c040c205a249" name="class" profile="CSharpProfile">
+                  <elementDefinition Id="217c9064-9154-4ffd-97c5-f34e10d605ad" />
+                  <propertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="f920bbc9-0bcd-4163-b810-705e2f0ee23b">
+                      <propertyInstance Id="1cd4bfba-a08c-43e7-802c-2c4174223bef" name="ClrAttributes">
+                        <elementDefinition Id="22459e9e-e2a7-45e0-a1b7-785e28d2d05f" />
+                      </propertyInstance>
+                      <elementDefinition Id="ba8ce01c-f21d-43f8-bfa6-69bdd77e2a06" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="9580c3cd-e22c-4d41-b3cc-b7900886f939">
+                      <propertyInstance Id="b8a42068-f985-4c5d-938d-899fa642229d" name="IsPartial" value="false">
+                        <elementDefinition Id="877b2a68-2dd8-4325-a997-d7794aacfb1c" />
+                      </propertyInstance>
+                      <elementDefinition Id="abc6d398-3652-4247-9b0f-d944d15adb31" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="a38e725b-58f1-49fc-8cfd-4c91fdaaf7c9">
+                      <propertyInstance Id="025982af-9053-43ef-8a44-91b16199c827" name="IsStatic" value="False">
+                        <elementDefinition Id="b7f4317b-f082-4bc2-bfbc-2ba6831896d7" />
+                      </propertyInstance>
+                      <elementDefinition Id="d233070d-4faa-4b9e-a435-b3f9554649fe" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="06e10de6-1bda-41ff-a588-0195d5b41fe5">
+                      <propertyInstance Id="aedb8931-b1f2-47b4-8130-17f7b29c94c1" name="IsUnsafe" value="false">
+                        <elementDefinition Id="745826c0-eb27-49d6-83fe-04652fd662f0" />
+                      </propertyInstance>
+                      <elementDefinition Id="1e2d59a2-f368-4e7d-85f2-221b56336bd8" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="4170d5cc-1646-4873-945f-016c1d2bd097">
+                      <propertyInstance Id="21420669-9c18-473e-86b4-4246aa9c132b" name="PackageVisibility" value="internal">
+                        <elementDefinition Id="5b0b2693-3cbf-4b64-b458-87cbe0a6a45b" />
+                      </propertyInstance>
+                      <elementDefinition Id="b677710b-35c9-4aa0-a057-f3f8ce4bff48" />
+                    </stereotypeInstanceHasPropertyInstances>
+                  </propertyInstances>
+                </stereotypeInstance>
+              </appliedStereotypesInternal>
+              <elementDefinition Id="3502fc95-bb5e-4661-aa34-cd0e18edfc77" />
+              <targetEnds>
+                <association Id="4b1bd50e-b1a8-46a9-a230-b72fff965796" isDerived="false" sourceEndRoleName="ContentLoader" targetEndRoleName="SoundEngine" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="ed33de41-e552-4dd9-81ac-b3d4d3ea694e" LastKnownName="SoundEngine" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="50655572-1335-41ed-874f-db46fb0b35fb" name="ContentLoader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="186b4e03-5710-4c9a-8978-9f5c6013f1e7" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a22bc762-ae86-490a-b5c9-e2b96a068e83" name="SoundEngine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ae890a92-50a6-4502-9faa-a612c64503d3" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="47763119-51c1-43a1-991f-6f38bec09827" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="259fb902-501d-4f63-a097-8a5955b1b401" name="SoundEffectPrefix" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <referencesInternal>
+                    <reference Id="7b77334b-03e7-433c-9745-c756eb475c48" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3DSoundEffectPrefix" tag="ViewCode">
+                      <elementDefinition Id="d9061a98-e985-4914-b209-f6b415fcaf62" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="4247086a-0970-43f5-90ad-7f917035c3d3" name="field" profile="CSharpProfile">
+                      <elementDefinition Id="2ed686db-ea60-42de-b600-a30b73a9ebd8" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="81b464de-0228-4894-9aac-0338449e6ad0">
+                          <propertyInstance Id="84b25621-8dc6-4cc6-b514-955e1d4ec399" name="ClrAttributes">
+                            <elementDefinition Id="14c303df-ca31-42e1-8163-782fea1e2648" />
+                          </propertyInstance>
+                          <elementDefinition Id="a5f6aef5-d163-4894-8a68-03765c8a4e67" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="ca1a2670-2017-41eb-902f-24be1d9e5a1e">
+                          <propertyInstance Id="c29f4b5f-ee12-4c2b-bac1-53bad1b911e2" name="IsConst" value="false">
+                            <elementDefinition Id="65659cf1-0240-4c62-ae66-524782e89af2" />
+                          </propertyInstance>
+                          <elementDefinition Id="2c533110-e67c-42ba-aa60-e308fdde85f2" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="6b5eca8a-d1e4-4b6e-a469-974d4c766017">
+                          <propertyInstance Id="cc90c0e6-b1e7-42d4-90e9-0ce74a5260c4" name="IsNullable" value="false">
+                            <elementDefinition Id="56554769-c79d-4a59-9f27-55907999d721" />
+                          </propertyInstance>
+                          <elementDefinition Id="ce206729-4867-403b-aa6e-4f46695947dc" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="ee0aad51-eb48-468f-8b5f-2ecaddc514ee">
+                          <propertyInstance Id="02696451-8c12-4dae-9937-64057a9ede07" name="IsVolatile" value="false">
+                            <elementDefinition Id="332d8d7d-8b79-4573-aa6b-4f22fb87ae52" />
+                          </propertyInstance>
+                          <elementDefinition Id="b7eed5fa-8eb4-45bd-b77e-3f7f1e7a6388" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="76348afe-627d-4b85-89d4-39d3259d3543">
+                          <propertyInstance Id="b4b50ef3-b5f5-44a9-82df-7ebb3f87b334" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="d2b5ddff-a1e1-4ea5-b3ae-ea35c46952ff" />
+                          </propertyInstance>
+                          <elementDefinition Id="d2fcb720-7b58-4d6c-b8b9-e5a4cc332f0a" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="968c1819-23b9-4feb-b54b-5c2247cbd530" />
+                </property>
+                <property Id="3b575898-126b-4389-ba2f-98655b502f45" name="TexturePrefix" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <referencesInternal>
+                    <reference Id="8236b7bd-cbf8-457b-b005-a99a1a0d48dc" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3DTexturePrefix" tag="ViewCode">
+                      <elementDefinition Id="41ffabe8-1f0a-4e22-b573-fb5806bd8d3a" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="eb6bcc60-03b0-4b1a-b4fd-7a45cc90a39d" name="field" profile="CSharpProfile">
+                      <elementDefinition Id="55e5856c-b189-45a9-98b3-e52c1d8b660b" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="f6c5c755-2ab7-4dd9-b1fa-63c9ba903262">
+                          <propertyInstance Id="acba9136-41e7-4bb5-a88c-1427f9bb54d5" name="ClrAttributes">
+                            <elementDefinition Id="817dd392-9c88-42ac-a722-379d6c9ffea2" />
+                          </propertyInstance>
+                          <elementDefinition Id="05ebac43-70f2-4141-b36a-66fec10b8c0d" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="6b07b8c5-7224-4ef8-bd13-980162453d93">
+                          <propertyInstance Id="e8143ddc-2671-4e6e-a36b-bd28574661fc" name="IsConst" value="false">
+                            <elementDefinition Id="89636c36-7479-4a8e-85ba-720e4f480435" />
+                          </propertyInstance>
+                          <elementDefinition Id="e150ae21-bf5d-43e2-b991-072edf1b85b2" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="914d53e8-586a-4ac3-8649-299245785925">
+                          <propertyInstance Id="2f1e3b5e-c5f0-422e-a381-295727d6bd49" name="IsNullable" value="false">
+                            <elementDefinition Id="4972035f-7d05-43a6-bd68-83350a48e896" />
+                          </propertyInstance>
+                          <elementDefinition Id="a7fbd4ea-f69a-4a6a-9713-2bf8c5cee354" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="3b7f5b79-64f1-4d56-86c9-a5c7bd9aa28c">
+                          <propertyInstance Id="56c83d66-9c04-404a-ac43-17d0fd40d459" name="IsVolatile" value="false">
+                            <elementDefinition Id="611f61f8-aa24-48b6-8ddf-e39a15adf2f0" />
+                          </propertyInstance>
+                          <elementDefinition Id="b843cf65-8a74-4d3e-b620-88d997d07bb0" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="2145d362-194b-45fd-9394-2fef7ce41c12">
+                          <propertyInstance Id="928c1f39-cd2b-43d9-a8a3-04eaf204a8b8" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="bcab8a4a-2a62-4a80-8258-ade05979cc05" />
+                          </propertyInstance>
+                          <elementDefinition Id="72fcc462-04f4-470c-bdd1-519e581c282b" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="ed5066a3-f3d6-413f-a435-b510aebeec2e" />
+                </property>
+                <property Id="11af81ce-2c86-40f1-8b3b-f0f9d95010d9" name="mContentManager" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <referencesInternal>
+                    <reference Id="f2343eab-fb9e-44dd-ad34-80a57c6f9b0a" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3DmContentManager" tag="ViewCode">
+                      <elementDefinition Id="0562fd82-c26e-4a06-9861-83c27f929636" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="b73c5afa-812d-4968-b116-b5fc29dcfe69" name="field" profile="CSharpProfile">
+                      <elementDefinition Id="28806a53-f6c0-4748-8706-b458be6988e6" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="016115fe-be12-48a7-a591-01c90e9691e1">
+                          <propertyInstance Id="982a66bc-7f7d-44a4-9052-04e5c813c6e7" name="ClrAttributes">
+                            <elementDefinition Id="9bf428a4-2e48-4c35-a6e6-6aec3825e4a2" />
+                          </propertyInstance>
+                          <elementDefinition Id="20bc4aba-5581-440d-91b4-089bbc7f6805" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="edcb39f0-c987-47e5-bc0d-744f700ed0f4">
+                          <propertyInstance Id="e4847c0b-8420-4ce4-8de5-259e7d0d0959" name="IsConst" value="false">
+                            <elementDefinition Id="9e1c4bb6-85a0-4051-a6c6-d5af3f66e683" />
+                          </propertyInstance>
+                          <elementDefinition Id="60375cf4-87b3-4a09-9911-862804bd1921" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="f6d34967-dc0a-4d1e-8c11-9848bda3cc72">
+                          <propertyInstance Id="37843fed-da10-49ec-81a6-c10c840b6437" name="IsNullable" value="false">
+                            <elementDefinition Id="5647db7f-63e5-4c20-9a8a-fd90ec551669" />
+                          </propertyInstance>
+                          <elementDefinition Id="353896b4-ce23-447d-b7da-bd4252f993c4" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="ce8fd577-c990-4649-852d-c5fa2466426f">
+                          <propertyInstance Id="e9e1c84c-6af2-458e-968c-8df6cd43ef5c" name="IsVolatile" value="false">
+                            <elementDefinition Id="4070aaa9-870f-4b7b-9b89-965f8e4cf41a" />
+                          </propertyInstance>
+                          <elementDefinition Id="96a8fd20-7c29-48f7-8210-4e0d41c7e885" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="cc964bcf-c2c3-4fd7-95d5-1c540b7bc0f1">
+                          <propertyInstance Id="10fb4baf-e894-4bf5-86f4-c57100dc949f" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="6f55ba77-7920-4932-b66c-17d7990ad511" />
+                          </propertyInstance>
+                          <elementDefinition Id="d57b8618-3709-4931-8520-6accf29a4440" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="e50d201e-f2a5-4d84-b0bf-8bfea9520300" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="88714070-21f4-4a56-81b2-8e659ccfebd9" LastKnownName="ContentManager" />
+                  </type_NamedElement>
+                </property>
+                <property Id="305405b5-4d2c-4ea9-8c99-7b792fed2b85" name="mSoundEngine" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <referencesInternal>
+                    <reference Id="4392749a-44bb-4113-ae73-e715c1ba49cd" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3DmSoundEngine" tag="ViewCode">
+                      <elementDefinition Id="931a12ac-4e5d-4b70-bff1-4122aaf7467a" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="5d42b8b4-47f0-4b66-84e4-a1e517a9dd0a" name="field" profile="CSharpProfile">
+                      <elementDefinition Id="4596d1e7-d2f1-4e9e-b135-129c503a5725" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="b64c88ad-462b-4047-ba46-8bd56ae2b1d4">
+                          <propertyInstance Id="de065263-65ab-4995-9cf7-d7209794997b" name="ClrAttributes">
+                            <elementDefinition Id="449a4235-eb61-444c-8195-6e67dba1087e" />
+                          </propertyInstance>
+                          <elementDefinition Id="e7042a6f-38e8-40d0-95c3-a7f2bec21ff1" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="6a180709-fa17-4c71-b359-75ad2c28c7da">
+                          <propertyInstance Id="2a36a5a8-276b-4a46-8190-ebfdf4db9102" name="IsConst" value="false">
+                            <elementDefinition Id="76e65a88-66c2-48c1-82b2-c7da59920e7b" />
+                          </propertyInstance>
+                          <elementDefinition Id="8022bd52-bd9f-455b-9768-f8ceacba31aa" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="0029a279-9363-478d-b3b6-f4cdc6d5ff5c">
+                          <propertyInstance Id="5d79bf6c-1410-4ecd-aac8-17ea73725352" name="IsNullable" value="false">
+                            <elementDefinition Id="b136ef9f-700c-4bd6-a445-b1f42f13841f" />
+                          </propertyInstance>
+                          <elementDefinition Id="a0f7c309-38b6-46a9-84b8-c1c9277cb323" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="e2684bbb-4490-4561-8245-fac6e66bb1c3">
+                          <propertyInstance Id="00ed3f0e-7016-441c-bc02-f4503a416a38" name="IsVolatile" value="false">
+                            <elementDefinition Id="acca0e0b-85f2-4c82-9684-b782c79918c7" />
+                          </propertyInstance>
+                          <elementDefinition Id="896baa72-2ce9-478e-9327-19cee4f4d695" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="68662b3b-d524-43d8-9a98-822695baf937">
+                          <propertyInstance Id="ea721452-cdc2-492f-9709-1f3019454027" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="c2f38835-68f7-4395-a523-b94a2b72c650" />
+                          </propertyInstance>
+                          <elementDefinition Id="f96b3c76-754b-4373-89c4-0cebe41c83d8" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="3cac8630-bdcb-49ca-a79b-bb2e6a3ddbb6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bdb84fda-f7f0-49c2-96d4-562505425c6a" LastKnownName="SoundEngine" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="d481016d-2bc3-4af4-9415-32aaa04e5009" name="ContentLoader" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <referencesInternal>
+                    <reference Id="556b8bf0-f0af-4372-825f-2f943ba667ff" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine)])" tag="ViewCode">
+                      <elementDefinition Id="6ca87c97-161e-4ab8-bf11-3f125a462a97" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="72547dcb-136d-47da-9f2e-fa681bcb4650" name="method" profile="CSharpProfile">
+                      <elementDefinition Id="fb08738a-3c59-4c2c-ba6f-1c63375fb494" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="ee19b51a-cfdd-4691-901a-dc4e8520a03f">
+                          <propertyInstance Id="bc19a39d-7e86-45dc-864d-a5319b8540bb" name="ClrAttributes">
+                            <elementDefinition Id="51867beb-3772-4f67-a3e7-c3381edee2b4" />
+                          </propertyInstance>
+                          <elementDefinition Id="a74a23ad-8cfd-4269-a3bd-ed815d7d6c29" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="8f51fde8-2df0-493d-a812-05c025d0e38a">
+                          <propertyInstance Id="e5595a6a-f083-4d0e-b372-0634409d0eae" name="IsPartial" value="false">
+                            <elementDefinition Id="1222fcd2-bdd2-4ccf-b551-ba0ee977573f" />
+                          </propertyInstance>
+                          <elementDefinition Id="9724b7e5-33a3-44c5-adb2-745f78b4960a" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="64933c9a-699f-47b7-bc72-8e6c48e2e6f8">
+                          <propertyInstance Id="d3fca030-be18-4512-92e4-667bd61eec79" name="IsUnsafe" value="false">
+                            <elementDefinition Id="24667dd5-2384-4717-ba95-85ce25df63a1" />
+                          </propertyInstance>
+                          <elementDefinition Id="90bbdf91-a829-4cc8-9c53-ab92d3172a7b" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="c3053981-e42d-4016-bedf-53970fd73261">
+                          <propertyInstance Id="e438f509-4ef9-476e-a93f-82db6dc644ba" name="Inheritance" value="none">
+                            <elementDefinition Id="4044ebcb-38f2-4c3f-8f84-436ef70082b8" />
+                          </propertyInstance>
+                          <elementDefinition Id="f270fc15-0d5c-4a59-bdc6-9ce0bee777f5" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="53cb4d8d-c9b6-4c92-a0d6-9f396bc04ae9">
+                          <propertyInstance Id="8728c912-f964-4bd6-aef7-7895b8c88ccf" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="77aff6f9-0eda-47ee-9464-dfa889f6c8cd" />
+                          </propertyInstance>
+                          <elementDefinition Id="e724e59b-3e58-4138-8464-a62c47c3ad95" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="0a9b9138-21ef-49d9-9431-e187a98b6f52">
+                          <propertyInstance Id="5c724640-199b-490d-af67-1f1bfa75969d" name="params" value="false">
+                            <elementDefinition Id="c467a271-91ae-4cd0-b7f5-440d3e383008" />
+                          </propertyInstance>
+                          <elementDefinition Id="ec5c1002-cff7-4dfc-9103-3f4a1a433278" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="3a3f1cf7-2620-4f02-a392-79f5097ee0f9" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="185c974f-c387-47e0-b589-c9d67972b358" name="contentManager" direction="In">
+                        <referencesInternal>
+                          <reference Id="ca988f36-ebb1-48f9-af60-e1aad43cee24" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine)]) ParameterIdentifier%3DcontentManager" tag="ViewCode">
+                            <elementDefinition Id="47a85bbd-ab17-4052-b4ae-8b23452fdab2" />
+                          </reference>
+                        </referencesInternal>
+                        <elementDefinition Id="c776f577-6f9a-4190-9835-92458ad6ba19" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="88714070-21f4-4a56-81b2-8e659ccfebd9" LastKnownName="ContentManager" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b49907ee-6cb6-4425-a199-6e8d180a1e5b" name="soundEngine" direction="In">
+                        <referencesInternal>
+                          <reference Id="d54d360a-a048-4bf4-a1f2-c6c50f5bce13" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine)]) ParameterIdentifier%3DsoundEngine" tag="ViewCode">
+                            <elementDefinition Id="f2dfee5c-1318-4b37-a3a7-af08c285debf" />
+                          </reference>
+                        </referencesInternal>
+                        <elementDefinition Id="1ab0d14d-f92d-49e1-87b2-bedec6297849" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="bdb84fda-f7f0-49c2-96d4-562505425c6a" LastKnownName="SoundEngine" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="bf8f24b3-1f16-42fa-b7cc-4a95f886af35" name="LoadSoundEffect" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <referencesInternal>
+                    <reference Id="f2e10325-6e76-475b-a73f-e60635c9ae22" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3D(Name%3DLoadSoundEffect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                      <elementDefinition Id="22cd613b-9821-4b88-9ee3-bb0f77015e3e" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="28ab4bb4-daee-46db-8ace-6a3f1b6d3d4a" name="method" profile="CSharpProfile">
+                      <elementDefinition Id="3105c3bd-7e4b-4093-b4bc-4b68a03bd5ce" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="6e8f2aec-31d8-4389-a80e-aaed75858d9b">
+                          <propertyInstance Id="3892c3b1-591a-4c2d-86f3-7e61fac6caee" name="ClrAttributes">
+                            <elementDefinition Id="48ad184d-17f1-4ef6-904f-3d406faa0288" />
+                          </propertyInstance>
+                          <elementDefinition Id="1d430c38-862e-46d7-952e-b140f977fba1" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="72080e56-e798-4310-b8bf-3ff1cd48661d">
+                          <propertyInstance Id="92706313-add1-4ef6-8d2e-0de093f3a182" name="IsPartial" value="false">
+                            <elementDefinition Id="51623ea6-5e50-4527-9430-f9611194c3c8" />
+                          </propertyInstance>
+                          <elementDefinition Id="9264ed0a-2766-436a-bd5d-b9cff846324f" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="e16dee12-9d30-49e1-8483-0285b693bcb4">
+                          <propertyInstance Id="1f20d70e-6b51-439a-8e5b-0fb4f2008306" name="IsUnsafe" value="false">
+                            <elementDefinition Id="8230264c-f423-4f82-ae6f-9e8de4e93384" />
+                          </propertyInstance>
+                          <elementDefinition Id="74e4c647-dbe9-44fb-85b8-193c6a4a531e" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="624cd092-76d6-40b1-9534-95b55434c394">
+                          <propertyInstance Id="d803f109-8cf6-4732-91c0-b3e4726787bb" name="Inheritance" value="none">
+                            <elementDefinition Id="06ab4075-bcb8-480f-8c31-0d87b392e348" />
+                          </propertyInstance>
+                          <elementDefinition Id="cd9eb4de-c546-4007-bb53-687beb6e7720" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="d59dd8af-6f2e-4db2-a6bc-f3b08bf6930d">
+                          <propertyInstance Id="3f9aadf7-65ba-4c6f-8659-d68dcc33463e" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="020546a8-1afb-4bec-b37b-71ae55587d01" />
+                          </propertyInstance>
+                          <elementDefinition Id="1bddc423-122c-49c8-ba12-3d4b2a405ca4" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="6eb7f839-5882-45a4-beec-1af6afb5f290">
+                          <propertyInstance Id="6fe4a15d-e5ed-42c9-8d20-1a37b27b69e5" name="params" value="false">
+                            <elementDefinition Id="14bc0aab-cf22-4449-afd8-8f9b864b5aeb" />
+                          </propertyInstance>
+                          <elementDefinition Id="d6e754b4-c4b1-40b0-8413-5d2ba3f94461" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="a6123f7f-be2e-40c5-ac0c-0fddd9b0e825" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d240ada5-02ab-432e-bb8b-54101f9cf0d5" direction="Return">
+                        <elementDefinition Id="579cb3fd-f4b5-4ddf-830c-94861521ea62" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="3c4be58e-7380-489a-894c-40b5f451012b" LastKnownName="SoundEffect" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="eb5faf65-7e68-46ef-9919-fccfd659bbe5" name="identifier" direction="In">
+                        <referencesInternal>
+                          <reference Id="6abec6a2-2c4f-48be-b640-c333f95fc81d" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3D(Name%3DLoadSoundEffect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Didentifier" tag="ViewCode">
+                            <elementDefinition Id="f23ec0f5-baa9-49a8-b4ab-121d0316d0c5" />
+                          </reference>
+                        </referencesInternal>
+                        <elementDefinition Id="50ca65bd-ab5e-4151-91c1-2f778e8b3f67" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="c4073372-8217-40ec-b627-e49defe66d6e" LastKnownName="String" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="90ba69f3-5b3a-4600-9d5c-590f5599e017" name="LoadTexture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <referencesInternal>
+                    <reference Id="1d6a528a-6b5c-4464-bf8d-a57df64fdffe" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3D(Name%3DLoadTexture OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                      <elementDefinition Id="c2710126-f90e-4f0d-a876-4fcfbaa3e986" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="b587ada2-47da-4741-9e55-c4e71a3b7bc2" name="method" profile="CSharpProfile">
+                      <elementDefinition Id="07bbd83e-b73e-4e29-be18-c56c310ca572" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="11ab7e13-5b4f-4616-9633-92b5e22787ee">
+                          <propertyInstance Id="5252659e-4152-40db-aea6-11b3b908aaaf" name="ClrAttributes">
+                            <elementDefinition Id="7fa01757-76f9-484e-ae1b-a1813a659f1c" />
+                          </propertyInstance>
+                          <elementDefinition Id="ec47666a-3125-4390-8991-5f9c63563466" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="52ad6419-80b7-499f-9c20-9f0aae84015c">
+                          <propertyInstance Id="f198784c-615b-45ee-b128-ce6b9ae4b365" name="IsPartial" value="false">
+                            <elementDefinition Id="08b16822-920f-4499-80df-23034e62a81c" />
+                          </propertyInstance>
+                          <elementDefinition Id="85fda839-2b36-4e44-835a-5d909e4c175c" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="946abba3-416c-4681-951a-4727967eba65">
+                          <propertyInstance Id="2ec7590d-495e-4254-93c2-bab2004e1833" name="IsUnsafe" value="false">
+                            <elementDefinition Id="4da09ab5-9da0-4faa-9f2a-4a5c3ad309bb" />
+                          </propertyInstance>
+                          <elementDefinition Id="0f451a14-ee1b-4e7c-a62d-0629d1bcf4d1" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="ed836cf9-e557-4b8f-b0bb-0d8554eb8154">
+                          <propertyInstance Id="3ca02449-ca03-4e92-a0bf-2dbc650c7a98" name="Inheritance" value="none">
+                            <elementDefinition Id="c2d701e8-bb7a-45f0-8c9c-b3e815224edb" />
+                          </propertyInstance>
+                          <elementDefinition Id="b9c367ca-1963-48aa-8203-9a855a7b535a" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="a64464a0-7129-4964-885e-4977d7f032e0">
+                          <propertyInstance Id="6aca8a68-0c42-433f-a021-6b0b7b983965" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="c04e9417-e32e-498b-baad-36a553e4a7b3" />
+                          </propertyInstance>
+                          <elementDefinition Id="8b60a7bd-48e0-439d-b396-9ddec89c6b98" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="5c484850-0f58-47f2-8ca7-4982e46fa4b0">
+                          <propertyInstance Id="7a8472a3-ddc6-4396-8cb2-492947481cb7" name="params" value="false">
+                            <elementDefinition Id="a03b033d-8a3d-4cd0-be0c-eb33ffd97d89" />
+                          </propertyInstance>
+                          <elementDefinition Id="42b1d655-b498-4741-9f77-182fcd339995" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="4abd0b8a-091a-470e-a6e8-e34f1f5393c0" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8362f642-e155-461b-9bb9-9767ec7ee446" direction="Return">
+                        <elementDefinition Id="e83200d3-d50a-4ebe-b13a-835800038527" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="35d60082-901c-41d3-af08-3ab4fd0d96c9" LastKnownName="Texture2D" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8e6c711b-0af5-4b24-9c5d-377870ffa0a2" name="identifier" direction="In">
+                        <referencesInternal>
+                          <reference Id="863ed3b0-58e9-4bc7-bedd-be9108f85940" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader Member%3D(Name%3DLoadTexture OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Didentifier" tag="ViewCode">
+                            <elementDefinition Id="606a8a95-1dab-45f0-8ff4-7ed0eeb86af7" />
+                          </reference>
+                        </referencesInternal>
+                        <elementDefinition Id="80232f45-4062-4c43-8c1c-ee54e54fa352" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="c4073372-8217-40ec-b627-e49defe66d6e" LastKnownName="String" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="9b51c9e6-3b87-42c1-82b5-ddcda10914a9" name="ILoad" visibility="Package" isAbstract="false" isLeaf="false">
+              <referencesInternal>
+                <reference Id="7dfc56f2-939f-48ad-bd58-46e607398613" handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DILoad" tag="ViewCode">
+                  <elementDefinition Id="f80b0e58-b65e-496b-b5ed-644ebb235d90" />
+                </reference>
+              </referencesInternal>
+              <appliedStereotypesInternal>
+                <stereotypeInstance Id="c55fbbcb-9433-4197-8827-86c707c5bae4" name="interface" profile="CSharpProfile">
+                  <elementDefinition Id="e0e717a4-6351-4bd3-a7b6-015ddc8951c4" />
+                  <propertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="df0c4dcb-dafd-431c-80f4-5e940bedbab5">
+                      <propertyInstance Id="cd07d883-13e3-46a9-b817-dd25d642da94" name="ClrAttributes">
+                        <elementDefinition Id="8edc3540-5880-4586-aca5-5369f21ed2d5" />
+                      </propertyInstance>
+                      <elementDefinition Id="ba252970-a896-4b7e-a34e-df6735c13bcb" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="d94e5971-375f-4790-ad52-7ddb3ad0e494">
+                      <propertyInstance Id="6139e87d-50a9-4cf8-95ff-334f3d1bea8b" name="IsPartial" value="false">
+                        <elementDefinition Id="4d9b6d56-f33c-413d-af25-9a31f9ff4f05" />
+                      </propertyInstance>
+                      <elementDefinition Id="16f81ce7-7fc8-4a00-9a88-da34f31272c7" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="5faadfc1-ba5d-4c25-8626-7157ef27ef63">
+                      <propertyInstance Id="f3df4112-4f81-4ffb-bba4-4ced6abc3ee9" name="IsUnsafe" value="false">
+                        <elementDefinition Id="4aa357d7-3793-4a5d-a11b-26279860ced6" />
+                      </propertyInstance>
+                      <elementDefinition Id="adbfc7c5-64f8-49dc-bdc2-06dc2f2663d8" />
+                    </stereotypeInstanceHasPropertyInstances>
+                    <stereotypeInstanceHasPropertyInstances Id="0ef1dad0-83cd-412d-bb7c-adc7257cc6f5">
+                      <propertyInstance Id="0b963632-897b-49c1-93d7-6af56a6cf36b" name="PackageVisibility" value="internal">
+                        <elementDefinition Id="8cbf469f-b00f-4a31-b284-b7db05abf509" />
+                      </propertyInstance>
+                      <elementDefinition Id="ab29b3e2-e343-408e-be4d-8c1e9ddaed65" />
+                    </stereotypeInstanceHasPropertyInstances>
+                  </propertyInstances>
+                </stereotypeInstance>
+              </appliedStereotypesInternal>
+              <elementDefinition Id="f7b73b87-1baf-4585-b334-56cf1f0daca2" />
+              <suppliersInternal>
+                <dependency Id="5521a9fa-a2cc-4d12-beed-518454ee0dc9">
+                  <classMoniker Id="ffdfa2b3-63d3-49c0-ac1a-62cc4285fd7e" LastKnownName="ContentLoader" />
+                  <elementDefinition Id="22de7da0-d0d3-4b90-9b65-71640b7cca93" />
+                </dependency>
+              </suppliersInternal>
+              <ownedOperations>
+                <operation Id="02cedc95-8204-456f-aa70-c333176e2035" name="LoadContent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <referencesInternal>
+                    <reference Id="522a39a5-d5c5-458c-b169-4c574076d634" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DILoad Member%3D(Name%3DLoadContent OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)])" tag="ViewCode">
+                      <elementDefinition Id="da778eb2-e89a-4f3b-85c5-37822dfc0545" />
+                    </reference>
+                  </referencesInternal>
+                  <appliedStereotypesInternal>
+                    <stereotypeInstance Id="051809bb-c35e-41ba-b446-2e3b4c7e2087" name="method" profile="CSharpProfile">
+                      <elementDefinition Id="2fc42d7a-3763-4f66-958b-530ecd2106aa" />
+                      <propertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="13f15ba7-b29d-4370-9ad2-b8b105c28e6d">
+                          <propertyInstance Id="5f917504-78b9-4e62-908b-242054711f08" name="ClrAttributes">
+                            <elementDefinition Id="b074f593-0c2e-4d3f-b0ba-7152acdb6979" />
+                          </propertyInstance>
+                          <elementDefinition Id="e8b7e343-61d4-4d7e-b48b-d2d7fe0d9da9" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="651bf98e-5466-4e6c-a641-017f8f32d404">
+                          <propertyInstance Id="534ad6ca-7590-4edc-b72b-87cb06a1eab0" name="IsPartial" value="false">
+                            <elementDefinition Id="db1c87e5-1252-46c9-92f3-e8e80ad1737d" />
+                          </propertyInstance>
+                          <elementDefinition Id="3d2a425e-4c86-49e2-8f87-b1f739de431c" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="29b041f0-f1b7-4605-97ca-5865f4c6e889">
+                          <propertyInstance Id="3f78a1f0-d926-4e9b-8315-1fccae3921a5" name="IsUnsafe" value="false">
+                            <elementDefinition Id="1f98fc1f-4aa8-4378-9844-130ddcbac385" />
+                          </propertyInstance>
+                          <elementDefinition Id="2c0eac35-1ae7-441b-ad4f-ebbecd14cf69" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="4638f48e-d690-4931-88de-56ae05782ce7">
+                          <propertyInstance Id="1fd6c8eb-ab3c-412a-b99b-b9193469c369" name="Inheritance" value="none">
+                            <elementDefinition Id="404a769b-ee36-4213-9221-d0192a83a420" />
+                          </propertyInstance>
+                          <elementDefinition Id="3e005f38-2f42-486d-8336-3dec4f9c73dd" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="7940289d-b6ad-463a-8fd7-a248e9f07bb4">
+                          <propertyInstance Id="fb0846ba-9ac5-485b-9a80-f4025f41c2f3" name="PackageVisibility" value="internal">
+                            <elementDefinition Id="5099e8f0-76e1-4330-965d-c6b1e5c1a75a" />
+                          </propertyInstance>
+                          <elementDefinition Id="c466b079-078a-4714-a49a-a6dfee822fe8" />
+                        </stereotypeInstanceHasPropertyInstances>
+                        <stereotypeInstanceHasPropertyInstances Id="83230a30-7fb2-42ea-8daf-1815cf50321a">
+                          <propertyInstance Id="36c683d0-e4e8-4374-80a7-94fc139814e6" name="params" value="false">
+                            <elementDefinition Id="8728f437-a78c-4323-9dd0-6e6edd2f57e4" />
+                          </propertyInstance>
+                          <elementDefinition Id="7773504a-888a-4a88-9a08-2b73e188fa25" />
+                        </stereotypeInstanceHasPropertyInstances>
+                      </propertyInstances>
+                    </stereotypeInstance>
+                  </appliedStereotypesInternal>
+                  <elementDefinition Id="70fbca59-8c07-4a4e-902c-abecd882c1d5" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="922a470c-68c2-4217-871d-f889f93b9934" name="contentLoader" direction="In">
+                        <referencesInternal>
+                          <reference Id="51e1def9-ace5-47fb-926c-2d2c217dc1ce" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DILoad Member%3D(Name%3DLoadContent OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)]) ParameterIdentifier%3DcontentLoader" tag="ViewCode">
+                            <elementDefinition Id="2d589fee-b807-432a-8028-2f4e7f6823c3" />
+                          </reference>
+                        </referencesInternal>
+                        <elementDefinition Id="6ce559b2-7fee-45d8-b30c-151d578a8db6" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="968e55bf-de8d-4f46-883a-0414b91bbcf2" LastKnownName="ContentLoader" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="88714070-21f4-4a56-81b2-8e659ccfebd9" name="ContentManager" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Microsoft::Xna::Framework::Content::ContentManager">
+        <elementDefinition Id="a98454c4-e671-44d3-a0df-a40226201d59" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bdb84fda-f7f0-49c2-96d4-562505425c6a" name="SoundEngine" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Antigen::Sound::SoundEngine">
+        <elementDefinition Id="56dac724-d97e-4bbb-b58f-ee6e709dc2bb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3c4be58e-7380-489a-894c-40b5f451012b" name="SoundEffect" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Microsoft::Xna::Framework::Audio::SoundEffect">
+        <elementDefinition Id="c3bc92ac-fb69-4398-8c47-1c2eca67c4db" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c4073372-8217-40ec-b627-e49defe66d6e" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="35d60082-901c-41d3-af08-3ab4fd0d96c9" name="Texture2D" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Microsoft::Xna::Framework::Graphics::Texture2D">
+        <elementDefinition Id="5ff9c978-2e57-40b0-93a1-e50447a06b81" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="968e55bf-de8d-4f46-883a-0414b91bbcf2" name="ContentLoader" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Antigen::Content::ContentLoader">
+        <elementDefinition Id="3502fc95-bb5e-4661-aa34-cd0e18edfc77" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ed33de41-e552-4dd9-81ac-b3d4d3ea694e" name="SoundEngine" visibility="Package" isAbstract="false" isLeaf="true" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="d59795e8-60b7-4eaf-8f33-4ec59d611ca0" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine" tag="ViewCode">
+            <elementDefinition Id="4beb4702-6337-4e1a-a419-2de891658df4" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="28aa4b4e-50cf-41ed-88c7-237873147bab" name="class" profile="CSharpProfile">
+            <elementDefinition Id="3d449633-745d-4460-81d0-847a2627c784" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9e215449-0101-4853-a8b5-d2b3db794e71">
+                <propertyInstance Id="c9014066-752d-47f8-9937-ec8ef0438e34" name="ClrAttributes">
+                  <elementDefinition Id="7b95f54f-f52b-4582-bd0f-80ec42fdfac0" />
+                </propertyInstance>
+                <elementDefinition Id="103abb1f-6d91-48f7-b729-9d1d037a75ab" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ff90bded-34d4-49f4-92e1-1a32a82efd62">
+                <propertyInstance Id="1057df91-a9b9-4a04-9e04-bec5ff4a2f12" name="IsPartial" value="false">
+                  <elementDefinition Id="7596f95a-a90a-44ff-85de-ffa3df9663f8" />
+                </propertyInstance>
+                <elementDefinition Id="45311a7d-8ce3-4ee9-acb5-7aad3f7b7b84" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ef434ab8-1b5a-471a-9425-28823c87e02e">
+                <propertyInstance Id="62fea4a6-b879-46af-8cf0-008aa0061575" name="IsStatic" value="False">
+                  <elementDefinition Id="b5b275c2-cca0-416d-a4f1-ad5e5fea7e85" />
+                </propertyInstance>
+                <elementDefinition Id="b72f272f-7963-40ab-84e3-1ae03c100268" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="17914598-c337-4c07-9005-0c40cbe3e511">
+                <propertyInstance Id="62c4f57a-bfd1-4b44-bdbd-6c76d9abf107" name="IsUnsafe" value="false">
+                  <elementDefinition Id="94b23005-7f4c-4970-8807-77ff3dda2307" />
+                </propertyInstance>
+                <elementDefinition Id="4a470c5a-2bc9-4d99-bcbd-c27585022066" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1f76b0e7-dc34-4a3c-97c9-952431b401d3">
+                <propertyInstance Id="e885dfb8-00cc-43bd-a019-d2ce030ac0db" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="c420afe2-9c3e-44a0-90ff-8d3aa8daabf1" />
+                </propertyInstance>
+                <elementDefinition Id="cbc5c68f-c569-485a-8264-f354f64027d9" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="56dac724-d97e-4bbb-b58f-ee6e709dc2bb" />
+        <ownedAttributesInternal>
+          <property Id="4fa602f2-0150-4071-aa17-787e91b718e9" name="mContentManager" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="21aad9d4-e694-4080-8377-b1cbc06f826e" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3DmContentManager" tag="ViewCode">
+                <elementDefinition Id="368b8030-84d7-4e50-90e4-86b3badba986" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="ff0d7342-9464-476c-93a9-b03eebb36994" name="field" profile="CSharpProfile">
+                <elementDefinition Id="a45cc10c-1598-46f6-9b63-66bd561a8547" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7fec92f2-de9e-40d0-8569-ca182ae04eab">
+                    <propertyInstance Id="c0d0f3a1-f10c-4bb4-9a68-133ba5e2f6e0" name="ClrAttributes">
+                      <elementDefinition Id="24176060-3723-4176-98eb-eb175e253d53" />
+                    </propertyInstance>
+                    <elementDefinition Id="28482151-31dc-4928-b3f5-6f6f3b41d611" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9ef2ef69-56ee-450d-9e8f-9579c2f14620">
+                    <propertyInstance Id="a48db358-f46d-4eae-9f32-dd66f5796628" name="IsConst" value="false">
+                      <elementDefinition Id="62a083be-1444-49d8-bbd9-6ff32f691e32" />
+                    </propertyInstance>
+                    <elementDefinition Id="3ae0a552-8ae7-42b1-a72d-9917bca2ea26" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4725ed5c-7c0b-4681-925b-75d0cef73898">
+                    <propertyInstance Id="b260fc1b-b63f-4e3c-a2e0-27191fdd181f" name="IsNullable" value="false">
+                      <elementDefinition Id="1cd7319d-5cf2-4463-82ea-9f47bdefbee9" />
+                    </propertyInstance>
+                    <elementDefinition Id="1a929856-fd62-49a9-9998-11c18796731f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0ede2a19-fb44-46b1-9208-0965298dacc2">
+                    <propertyInstance Id="d5b76a08-fe7f-47a7-86ae-bbbc064c19c9" name="IsVolatile" value="false">
+                      <elementDefinition Id="6e9a5a5a-d7f4-4da0-b9e7-b6611521069e" />
+                    </propertyInstance>
+                    <elementDefinition Id="f1bdfc10-c45c-4155-ad97-c32cc58a41db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d5ae077c-090a-4d11-8b3e-c7dcf08e0035">
+                    <propertyInstance Id="d8aadd96-1411-4e49-bac4-d19e7145662c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="eef7bf9c-71f9-40ff-b9c6-2485c713ce68" />
+                    </propertyInstance>
+                    <elementDefinition Id="be519d92-2cd6-46b6-8343-b25ef6659533" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c2078cbb-4033-4c06-a1db-46e8d9bb385b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="88714070-21f4-4a56-81b2-8e659ccfebd9" LastKnownName="ContentManager" />
+            </type_NamedElement>
+          </property>
+          <property Id="6ba3b694-b1de-400e-8ab0-d3a4865a1b38" name="mSettings" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="99c23d8f-64e7-4036-9aa4-2f175a8cff98" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3DmSettings" tag="ViewCode">
+                <elementDefinition Id="78cfd7d4-abcd-4629-8cce-e87eb80e23db" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="3fd458db-35ac-445e-a531-6dc5f7805b2d" name="field" profile="CSharpProfile">
+                <elementDefinition Id="24913ec0-4a81-40f6-ba31-4e57b68ebca3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="92deeb15-0221-4eb6-b79d-d6556aa9992d">
+                    <propertyInstance Id="622161c5-f718-4c19-8d2d-fb9f9b8e4f28" name="ClrAttributes">
+                      <elementDefinition Id="531259f8-c210-4200-9e88-d40dd580992f" />
+                    </propertyInstance>
+                    <elementDefinition Id="5db9022a-7131-4790-93ff-0ece775cca33" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bf088691-a8e8-451e-9ce8-47a043f24d65">
+                    <propertyInstance Id="946b0696-de86-41f3-82a6-c894194a5e20" name="IsConst" value="false">
+                      <elementDefinition Id="95eda7af-c62f-4d3c-a9cb-6bd46c2bd2df" />
+                    </propertyInstance>
+                    <elementDefinition Id="fa6100ed-eeca-4f90-b80b-053e875c7664" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="992ef344-a994-4f7f-8bbc-3e7a7e737ea2">
+                    <propertyInstance Id="1da26c42-1223-4d25-9710-a64b4d1594c9" name="IsNullable" value="false">
+                      <elementDefinition Id="6494ba47-8ae1-4f28-8f40-cdfee5f5362c" />
+                    </propertyInstance>
+                    <elementDefinition Id="60a436f4-83ba-4668-ba06-f0d65a0b85de" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="de321aea-9e36-41f7-82d6-8827db77184b">
+                    <propertyInstance Id="c26ed122-dd4d-47dd-92d9-ffdd28052150" name="IsVolatile" value="false">
+                      <elementDefinition Id="8f15328d-2c03-43ab-a514-06a43999a6d1" />
+                    </propertyInstance>
+                    <elementDefinition Id="617f0b74-1735-4065-99b8-28fbc2557eb6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9407b767-7efd-4442-99d5-98c6c72b0d81">
+                    <propertyInstance Id="a530ec19-9224-4b1c-92d2-7cdab78e6a81" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="be7ca452-ce41-4618-81fc-04de95ab69d1" />
+                    </propertyInstance>
+                    <elementDefinition Id="345f9178-7622-4636-8ae2-01a658ca5275" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="545400a4-f36c-473d-9289-3b4b09a596d5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a84d02ef-28ae-4268-9032-3f81f3a7831b" LastKnownName="SettingsManager" />
+            </type_NamedElement>
+          </property>
+          <property Id="3c49d1b7-12e9-4a6a-a849-0ff8b5dceec3" name="mCurrentMusic" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="90638614-03fd-4a52-a44b-5d3813afbd11" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3DmCurrentMusic" tag="ViewCode">
+                <elementDefinition Id="70da3255-6fc6-4f0f-92b0-87ccb020ff37" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="684f61a8-6c13-4b21-be1f-83d8cef8690f" name="field" profile="CSharpProfile">
+                <elementDefinition Id="e73a6663-f2d7-4c3a-8d00-4f7a7babbaee" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="de6b7036-4aff-4f09-a88d-64f26362200e">
+                    <propertyInstance Id="914ab823-3e37-40b9-84fb-aa38ae3c5556" name="ClrAttributes">
+                      <elementDefinition Id="c6b7ca7e-0f31-4def-9a27-64b46935e5e4" />
+                    </propertyInstance>
+                    <elementDefinition Id="07ce52b8-68c2-469b-8758-2fc92995805f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8b93fbe8-a75f-499d-9cf0-a4eb83347a89">
+                    <propertyInstance Id="7cc9e00c-1b9e-4e79-ba60-784af8c51039" name="IsConst" value="false">
+                      <elementDefinition Id="cfd66618-6a40-4a78-9d70-f89d78865b1e" />
+                    </propertyInstance>
+                    <elementDefinition Id="8ac61ea9-a01a-4622-b336-b35694758e14" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="63fb3537-d96d-4f2b-af0b-452dc6cb6ca3">
+                    <propertyInstance Id="1a304e68-ed6d-436d-94d2-43e15ee41ae3" name="IsNullable" value="false">
+                      <elementDefinition Id="07f1d78a-abcb-4052-83e5-019738b2b73a" />
+                    </propertyInstance>
+                    <elementDefinition Id="383d16ba-d376-41e0-9f70-fd582d6ba3d2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cc693da4-aa11-406b-b86f-ff8bf8a3c8ac">
+                    <propertyInstance Id="cb24f632-4439-4852-a598-8dffc1603c3b" name="IsVolatile" value="false">
+                      <elementDefinition Id="70e15be2-1bd8-4f57-bc2f-db4e1a9008e5" />
+                    </propertyInstance>
+                    <elementDefinition Id="b83a8a5e-87a8-4225-b5e4-f67eaf767391" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b4c9fc6c-0809-44cf-9d87-f32d89e0b974">
+                    <propertyInstance Id="887d2a03-e9ab-4343-95f2-efc3951957e4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="32926861-4800-413e-97b8-2d8b8bf2c98a" />
+                    </propertyInstance>
+                    <elementDefinition Id="b8b7534a-b973-43d8-8ab8-15184d129e5d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8794acd2-cfdc-498d-8f71-d9e1c5ff730b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="832826f4-187e-4942-aae4-171b28fd0d56" LastKnownName="SoundEffectInstance" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="fb9e7b3f-ae24-4fa0-9dec-b4aa12933a58" name="LoadSoundEffect" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="c8e74cdb-0df1-4456-a4b5-665044f8765f" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DLoadSoundEffect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="75787e12-bf5d-421f-9034-32eca605f51e" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="29acc950-eb7b-4e41-abaf-0c52f826e1b7" name="method" profile="CSharpProfile">
+                <elementDefinition Id="7b12c00a-393e-42d1-b899-9cc8ed7ab080" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1decfd21-19e7-4e00-bd4b-d518323a79e6">
+                    <propertyInstance Id="1defc71b-b31e-46d5-a1e7-89ff81a2f02a" name="ClrAttributes">
+                      <elementDefinition Id="7b70055b-e453-4684-a50f-2f61535e241b" />
+                    </propertyInstance>
+                    <elementDefinition Id="bd9d48ca-4e42-4737-bbd3-56cf1c94b4ba" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4165a470-2c5e-4f2a-a354-80aaa07a9d04">
+                    <propertyInstance Id="c790beae-c34d-4301-995f-24146188c06b" name="IsPartial" value="false">
+                      <elementDefinition Id="bce058e2-cabe-40ad-96a5-707d575e4c69" />
+                    </propertyInstance>
+                    <elementDefinition Id="68bde2a8-7887-4939-9914-378b69bd6e9f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6cf04cc2-4bf3-4e8d-840d-164312f4f366">
+                    <propertyInstance Id="7391087c-cc0e-40ec-8b5d-770f46303c5c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="ee6160f5-6180-44c0-a71c-6d7e816d9029" />
+                    </propertyInstance>
+                    <elementDefinition Id="bdb3f497-bf5a-40dc-8b5e-be639454728f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="95fbb3d1-d13d-456f-8a1c-98a02883a625">
+                    <propertyInstance Id="8a53c749-506a-44f3-ada9-fe2b5a349f2a" name="Inheritance" value="none">
+                      <elementDefinition Id="776b06a5-7db3-43cf-a642-e527591ae370" />
+                    </propertyInstance>
+                    <elementDefinition Id="4caf890b-9aff-4000-b7cd-7f9e4cecd909" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8046fd3e-1652-4387-9e88-054fe8406b9f">
+                    <propertyInstance Id="7d002606-e4d4-4ce8-8e7d-388d85717ca3" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="411ed082-591a-4112-a55a-3b35f27b30f3" />
+                    </propertyInstance>
+                    <elementDefinition Id="4bd18bf5-210f-472a-8ecc-b4f1850934a5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5baaad9a-5944-492e-8892-230d225ac63e">
+                    <propertyInstance Id="78fa274c-0e18-4889-b137-da494eacfdd8" name="params" value="false">
+                      <elementDefinition Id="acfda4e2-7181-4065-8d23-e067daa6b779" />
+                    </propertyInstance>
+                    <elementDefinition Id="5d7f6d48-8143-45fc-983a-e8b833c5dbc5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="cb68fd55-2477-4eb6-bc9f-bb31d50515d6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4a996b6d-b4c8-4e0f-b24b-7f60d0f20586" direction="Return">
+                  <elementDefinition Id="0a399e3e-2543-436b-b5b0-37d46500d888" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3c4be58e-7380-489a-894c-40b5f451012b" LastKnownName="SoundEffect" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="336141f1-4006-4490-86cd-20b641e137b5" name="fullyQualifiedIdentifier" direction="In">
+                  <referencesInternal>
+                    <reference Id="0d899388-ea1b-44e9-9c34-726ea45eda55" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DLoadSoundEffect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DfullyQualifiedIdentifier" tag="ViewCode">
+                      <elementDefinition Id="1c9f3e33-e580-4dd9-8bf6-d2c1f2935fce" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="4a22b70f-fd1b-4909-8615-efba6bc1d3f9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c4073372-8217-40ec-b627-e49defe66d6e" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b886801d-391a-437c-9dbc-85cf115c5780" name="SoundEngine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="3a3894ac-f0c5-4614-9939-2b4eab8722da" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)])" tag="ViewCode">
+                <elementDefinition Id="dcec44c9-ad32-42a5-b96a-161f6558d684" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b6622974-b8da-4b0a-8096-5885c25683f9" name="method" profile="CSharpProfile">
+                <elementDefinition Id="9efb13e5-cf8c-4227-993f-db6fac226c3a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b4b87112-4f48-4888-a905-0b58ff134f3a">
+                    <propertyInstance Id="74b5af2c-9ca2-4f1d-b32d-aa65fecb470a" name="ClrAttributes">
+                      <elementDefinition Id="2a5f1631-5926-405b-b4e8-808d81938955" />
+                    </propertyInstance>
+                    <elementDefinition Id="beac66cd-1d3a-47c2-a061-e18dc193941a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="deb24e71-4a60-4100-b2f3-7d64b164d689">
+                    <propertyInstance Id="e9d8e2c7-b58a-45b0-b234-4db9b2e9cf9b" name="IsPartial" value="false">
+                      <elementDefinition Id="b87ff0e4-9caf-416e-959b-2a70ffbc1bbf" />
+                    </propertyInstance>
+                    <elementDefinition Id="67bc6fba-daa4-4a77-83ac-d0f4cbdde0b6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ec5221f0-07e5-4c34-944f-fe15f9a1528d">
+                    <propertyInstance Id="ecf2a966-3e64-42dc-bf99-2c9bf4fd79c2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="8ba76694-e30e-48f3-b327-33eb0d975db5" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e824130-327c-4e4f-bbd1-0f99e91ab9d5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa64d808-d718-4ee0-9948-d2d3d21f588f">
+                    <propertyInstance Id="56814532-0512-4df0-a579-fa8f800121dd" name="Inheritance" value="none">
+                      <elementDefinition Id="47c8d2a1-cd7b-44e1-bc92-1dba1eb10c82" />
+                    </propertyInstance>
+                    <elementDefinition Id="70ba6697-6c34-4437-98da-b3d3b77de5a8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ba063a80-8b2a-41c1-859d-26d52a7dcc1f">
+                    <propertyInstance Id="64f6586a-29fe-4ae8-bbcb-f00f2c5ab18b" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="6718c3e4-c0ce-4fe8-b421-a887597352e7" />
+                    </propertyInstance>
+                    <elementDefinition Id="76538bda-3621-4335-b355-f90e8c90a7e1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="642ab7f5-3bd1-434d-ac66-0ed9f77badc4">
+                    <propertyInstance Id="15413da6-074f-4cd8-893c-3b78df6ca099" name="params" value="false">
+                      <elementDefinition Id="18328710-9194-457f-8fa8-081c6f52a7f8" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e806c84-2333-4013-985b-d1c1f8a697d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="222fd332-b28f-43ea-a3e2-9b1e21ce2360" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7b0138d9-2471-4b75-b346-ccdabc896d47" name="contentManager" direction="In">
+                  <referencesInternal>
+                    <reference Id="ce0b4812-a09b-42e5-9159-ddea938b122a" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)]) ParameterIdentifier%3DcontentManager" tag="ViewCode">
+                      <elementDefinition Id="b1e59be1-1256-4d8d-b8a7-615872c79558" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="18ca3f50-a0e8-4573-9c6b-bb9e66f322ce" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="88714070-21f4-4a56-81b2-8e659ccfebd9" LastKnownName="ContentManager" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e7c8aab1-b558-4a2d-920e-b6e7b280ac47" name="settingsManager" direction="In">
+                  <referencesInternal>
+                    <reference Id="d7f0aa50-231f-4732-8695-5d2c5e597027" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)]) ParameterIdentifier%3DsettingsManager" tag="ViewCode">
+                      <elementDefinition Id="7ca9ffde-e41e-4a85-9ffb-235c6c19a790" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="661a5485-b026-4db2-b62b-3faf70d0de48" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a84d02ef-28ae-4268-9032-3f81f3a7831b" LastKnownName="SettingsManager" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1386fbdd-b2c6-4bce-a14f-e9e649a77246" name="OnVolumeChanged" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="65171654-e81b-4465-b5ec-b3c55ae45f9f" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DOnVolumeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsUpdateEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="e5fe4e7e-0a13-41b2-8386-5cdb80045a65" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c9469374-b37c-4a1b-8a40-cd26c64b564d" name="method" profile="CSharpProfile">
+                <elementDefinition Id="1a115f1c-104d-4025-b8fd-1d3cb899ec12" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c78d45f0-3722-4d2b-aaf5-7fedb912ebbd">
+                    <propertyInstance Id="2cad6307-27fa-4f27-a132-ddf55ca6a852" name="ClrAttributes">
+                      <elementDefinition Id="0f035e77-0e9b-42ce-9354-27b2ead7b6de" />
+                    </propertyInstance>
+                    <elementDefinition Id="6ce01c0a-d4e0-46d6-b42a-5d6915d09549" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a16d6e92-6dc1-4d37-80b6-2b9f8debc25e">
+                    <propertyInstance Id="e15f072f-cdd9-4e6c-8a6d-49b70bf7cb89" name="IsPartial" value="false">
+                      <elementDefinition Id="6564b885-f1fd-475b-b7d0-179611c48ec2" />
+                    </propertyInstance>
+                    <elementDefinition Id="dd2e1879-1f47-46d2-bd7f-0f9c00a354aa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ea8ed661-1502-4739-b068-44a00087a26e">
+                    <propertyInstance Id="61240554-4836-4e34-969d-f0a6d86e007a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="166dabbf-0374-4dc8-8d1d-0150889d19e5" />
+                    </propertyInstance>
+                    <elementDefinition Id="43b957b2-9b80-47dc-b7af-72a1f3f4b4a6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="af5c6726-69f9-4746-a1cd-ec4f24676f62">
+                    <propertyInstance Id="6c5952aa-1fd2-4a05-98bf-69a6c6d39171" name="Inheritance" value="none">
+                      <elementDefinition Id="6ab37ab7-f035-45d2-a7f6-5401760b2df3" />
+                    </propertyInstance>
+                    <elementDefinition Id="26df3a0b-7f53-4365-8f59-f77b781984d2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="132326ea-4331-43fa-a704-c94d6ba9413f">
+                    <propertyInstance Id="df9c9c92-386c-4d05-8112-e3a3e6e6e1b4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2f24107a-636d-43a9-9577-faf292b9500f" />
+                    </propertyInstance>
+                    <elementDefinition Id="8ed11db4-4430-4e49-9d81-e47a4225a123" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="061361a1-f73b-4b55-a695-b2b892db51c7">
+                    <propertyInstance Id="fea0d98e-b8bc-4ae1-bf1f-1d979f015fc8" name="params" value="false">
+                      <elementDefinition Id="a8e38991-a583-45da-b016-c6939da6abc2" />
+                    </propertyInstance>
+                    <elementDefinition Id="aaba7a47-c34c-4360-a34f-eefdbc1b0e2f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="a7a35773-1776-4d5f-b31b-ec4137dd65a0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c1b5e6be-41b7-48ba-a046-e846432cfd18" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="92cacb6a-0646-4505-9797-1b39e7271210" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DOnVolumeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsUpdateEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="df72b17e-fd14-409c-9b8e-aba6428b7965" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="d42f6c90-f69e-4358-a924-da9ba9b407fc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="265f3b7f-5ebb-413f-b71e-57631c1d97ec" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ed86145b-0fbc-480b-88f3-a80c6820b154" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="06a09a0a-f6bd-475f-938b-1648e1453ad3" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DOnVolumeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsUpdateEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="18f7e81b-6d8a-4c46-aac3-71bd131c6eff" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="34db2264-28ae-4bde-a7cc-50b94823bc6c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d6a23ca3-13a2-4059-a5e0-aadda276d0a8" LastKnownName="SettingsUpdateEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ce322e66-d26e-417e-b043-94c1759b5adc" name="Play" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="70de6105-2949-4367-9a35-63856293386d" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DPlay OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Audio Type%3DSoundEffectInstance)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory)])" tag="ViewCode">
+                <elementDefinition Id="ddf79bcf-0804-4b0b-992a-c330d941f69f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="f23a61cf-79e9-4acc-91e6-c891ffa9bc68" name="method" profile="CSharpProfile">
+                <elementDefinition Id="1e55e0db-6901-4585-9c7f-a19a88539bde" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="67eb2d5f-aa0e-4264-b7c8-2f3ddf88e35c">
+                    <propertyInstance Id="2e812bc5-dd26-4f71-82f9-b3ce0d7eb540" name="ClrAttributes">
+                      <elementDefinition Id="77078752-42f9-4fc5-8a6f-67d79054a8cb" />
+                    </propertyInstance>
+                    <elementDefinition Id="cd239c63-2984-412e-9eab-e3047fe44dea" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5fa21b44-7e5c-463c-a0c3-0558ca10b97b">
+                    <propertyInstance Id="941a7ec7-3d18-47fc-9f27-c6e1d99f8741" name="IsPartial" value="false">
+                      <elementDefinition Id="f35e4169-80a5-4a3b-b4ed-c38c04a269ec" />
+                    </propertyInstance>
+                    <elementDefinition Id="37329ea9-5b2e-4e36-842a-2a51b63f91c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fd5e2787-3b3c-421a-9bd2-691f954fec79">
+                    <propertyInstance Id="8674ff18-a238-44d4-905f-ecd55ffe6e4f" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f58f6873-d97f-4a37-9778-7eb8ba1602a2" />
+                    </propertyInstance>
+                    <elementDefinition Id="545e5e70-0247-4fe6-846a-736e76696a19" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="43dc6df6-8a0a-424d-a2a6-84eb8885275c">
+                    <propertyInstance Id="29c955c7-14f3-4690-a76d-5b36eabe8f46" name="Inheritance" value="none">
+                      <elementDefinition Id="82f96caf-d124-4c8f-a853-1521cc7cea6e" />
+                    </propertyInstance>
+                    <elementDefinition Id="29e7df1d-dc78-4454-8428-25008f641173" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a3d62603-3861-49ae-a7b1-565e7b6b6b9e">
+                    <propertyInstance Id="db3ea3ca-5a26-4bd9-8301-9cf349e8b1d9" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a59a5003-8369-4ded-91d1-5e4a8c05d1ad" />
+                    </propertyInstance>
+                    <elementDefinition Id="bfa0028b-0d3d-4225-a1f4-260ad410f22a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c622c536-d914-4c1e-b6c4-8e62fdce7f8e">
+                    <propertyInstance Id="e61df436-aba9-42f0-8532-0af9432dd006" name="params" value="false">
+                      <elementDefinition Id="07c7b29a-6ee1-4c48-9d68-1e3b37bc10c1" />
+                    </propertyInstance>
+                    <elementDefinition Id="3336a76d-ff57-41fc-9bc0-c787d90ec81e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="cad18577-9a55-4d7b-b4b5-37aa3588e7ab" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3228d3ec-3383-4fb1-a7c2-acbf42c1ba31" name="sound" direction="In">
+                  <referencesInternal>
+                    <reference Id="3e62e49d-2a12-466a-9889-b056bee409c3" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DPlay OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Audio Type%3DSoundEffectInstance)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory)]) ParameterIdentifier%3Dsound" tag="ViewCode">
+                      <elementDefinition Id="e5d53a8a-c7f7-4a88-9d1b-c4b25df24dcf" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="53de3960-a963-437e-aad8-76fefc1b3ed2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="832826f4-187e-4942-aae4-171b28fd0d56" LastKnownName="SoundEffectInstance" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="27875b28-5c1e-4f2d-8703-d092b66e98b0" name="category" direction="In">
+                  <referencesInternal>
+                    <reference Id="68dcb2cb-1eaa-43a1-9be9-c52eb85da7c8" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DPlay OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Audio Type%3DSoundEffectInstance)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory)]) ParameterIdentifier%3Dcategory" tag="ViewCode">
+                      <elementDefinition Id="912b858c-6ad0-4e36-9084-8572aeeeb645" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="8496ddf7-75f6-4ff2-93ad-b60affc0450a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1879b84b-5d9b-41cb-8031-4203adf926b3" LastKnownName="SoundCategory" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="55f4e980-63ec-46b0-8704-d340dea3264a" name="Destroy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="a761b854-6bf6-4ccb-bcb2-2a0b22490d6a" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3DDestroy" tag="ViewCode">
+                <elementDefinition Id="7917484a-bf6d-4d32-9d33-68e781b27b64" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e3fa2580-ef95-466f-8028-c82e0ed83b7f" name="method" profile="CSharpProfile">
+                <elementDefinition Id="19862292-0bc8-4fb6-8d1e-ff4bdee34689" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="58f19c86-13fa-48d7-9285-e93b314e744c">
+                    <propertyInstance Id="f1012e59-258f-4852-9f8d-516f0d83e1d8" name="ClrAttributes">
+                      <elementDefinition Id="60e7655e-9a7a-4d63-bfa6-42a8fc897d12" />
+                    </propertyInstance>
+                    <elementDefinition Id="4a9f7993-66b9-4f79-bb4c-c41600381621" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5cd73acd-c1d5-4317-bc8b-18b38c72bc23">
+                    <propertyInstance Id="1b421a2e-5a19-40da-b049-0fbd6e61ba62" name="IsPartial" value="false">
+                      <elementDefinition Id="82fb1b94-1a74-4416-b37f-37927eae0e88" />
+                    </propertyInstance>
+                    <elementDefinition Id="2aa66eee-31f2-427b-94b3-f5279e246d1b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="416d0861-7082-43e6-841b-e328364732e6">
+                    <propertyInstance Id="d0314d57-dc3c-4bc0-ad0c-efcf3bf78e02" name="IsUnsafe" value="false">
+                      <elementDefinition Id="8d99d404-678b-4062-98a3-a364be459831" />
+                    </propertyInstance>
+                    <elementDefinition Id="815028bd-e1e1-44ab-ad0d-c195f2de5a61" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4008a9dd-18d5-495b-8892-6f0ad1f71fde">
+                    <propertyInstance Id="54cb3a45-a3c0-41a0-bf1b-0fdcc98b1cd6" name="Inheritance" value="none">
+                      <elementDefinition Id="9289a679-ef39-40cc-a2cb-5877e9884a03" />
+                    </propertyInstance>
+                    <elementDefinition Id="c1e3b590-95b1-49a1-9be0-3959724376d1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8ef61503-f533-4810-9bbd-0d794bfe2f09">
+                    <propertyInstance Id="fe5796b1-bec5-487d-a4cb-5350a9bd39e2" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="be95e7b2-e86b-499c-a2b5-b809488164cf" />
+                    </propertyInstance>
+                    <elementDefinition Id="05a06818-a317-4c9c-886b-8615103dab9d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7e647e40-169c-4ea4-a8ec-dff95865943c">
+                    <propertyInstance Id="5d7d07a9-1a7c-4909-acb8-66411545c097" name="params" value="false">
+                      <elementDefinition Id="e0a6fbf1-6583-4e75-a21b-7ff9f2b74263" />
+                    </propertyInstance>
+                    <elementDefinition Id="b5505ffd-cb5d-4852-8605-9e530ad62208" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="d331a533-51e2-4966-841a-097b423288e0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a84d02ef-28ae-4268-9032-3f81f3a7831b" name="SettingsManager" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Antigen::Settings::SettingsManager">
+        <elementDefinition Id="0342c8b8-ab96-4e94-bc1f-7ce4407fdfe1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="832826f4-187e-4942-aae4-171b28fd0d56" name="SoundEffectInstance" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Microsoft::Xna::Framework::Audio::SoundEffectInstance">
+        <elementDefinition Id="72be0318-d5e2-479e-9ec4-b3e1f1718dd2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="265f3b7f-5ebb-413f-b71e-57631c1d97ec" name="Object" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::System::Object">
+        <elementDefinition Id="2fe21dfa-6e05-4676-8ed2-acd1101051de" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d6a23ca3-13a2-4059-a5e0-aadda276d0a8" name="SettingsUpdateEventArgs" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Antigen::Settings::SettingsUpdateEventArgs">
+        <elementDefinition Id="f82e84dd-efbb-4903-8853-bcd6756e64c7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1879b84b-5d9b-41cb-8031-4203adf926b3" name="SoundCategory" isAbstract="false" isLeaf="false" cachedFullName="AntigenModel::Antigen::Sound::SoundCategory">
+        <elementDefinition Id="a4332ee6-a212-4044-86be-4cfcea0e408b" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="2e4d4463-ca63-4976-9968-cb82b666b9ec" name="AntigenModel">
+    <elementDefinition Id="0d00589f-b4fd-4dc7-99bc-350db0bd349c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="03c2cfff-d3ea-4305-a4c9-3e414d1e614c">
+        <profileInstance Id="042d772a-9b76-47a1-856f-4b05ef17b154" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="bbf06f22-7a85-4feb-9b43-2891fb3d4cd8">
+        <profileInstance Id="bfc46886-111f-4eef-85a1-61d9c83e326f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3c5c9f03-9e58-4c1f-abb3-166a0d8d6334">
+        <profileInstance Id="9efaf979-7d30-4bf9-9990-79a7e15882ba" name="CSharpProfile">
+          <elementDefinition Id="351455ba-6acb-4f89-9eb9-3837a8ed54d5" />
+        </profileInstance>
+        <elementDefinition Id="8306b4dd-6c7e-42fb-ae46-202de0d4fe31" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

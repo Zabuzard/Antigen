@@ -1,0 +1,2013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6a6a2686-09e1-452f-b947-40b8db53578f"
+  name="Sound"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a8e3619d-7593-4809-a804-cd3ca9f9c08d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Sound"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="56dac724-d97e-4bbb-b58f-ee6e709dc2bb"
+        name="SoundEngine"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4beb4702-6337-4e1a-a419-2de891658df4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3d449633-745d-4460-81d0-847a2627c784"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="103abb1f-6d91-48f7-b729-9d1d037a75ab">
+                <propertyInstance
+                  Id="7b95f54f-f52b-4582-bd0f-80ec42fdfac0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45311a7d-8ce3-4ee9-acb5-7aad3f7b7b84">
+                <propertyInstance
+                  Id="7596f95a-a90a-44ff-85de-ffa3df9663f8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b72f272f-7963-40ab-84e3-1ae03c100268">
+                <propertyInstance
+                  Id="b5b275c2-cca0-416d-a4f1-ad5e5fea7e85"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a470c5a-2bc9-4d99-bcbd-c27585022066">
+                <propertyInstance
+                  Id="94b23005-7f4c-4970-8807-77ff3dda2307"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cbc5c68f-c569-485a-8264-f354f64027d9">
+                <propertyInstance
+                  Id="c420afe2-9c3e-44a0-90ff-8d3aa8daabf1"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="c766d72a-c84d-4343-9947-4c6193f900a6">
+            <enumerationMoniker
+              Id="a4332ee6-a212-4044-86be-4cfcea0e408b"
+              LastKnownName="SoundCategory"
+              LastKnownLocation="Package10_1106.uml" />
+          </dependency>
+          <interfaceRealization
+            Id="78c70439-6624-4013-8d8f-e20f98608d86">
+            <interfaceMoniker
+              Id="ea86b084-5b90-4cff-bc4e-d56d63878c83"
+              LastKnownName="IDestroy"
+              LastKnownLocation="Package3_1107.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="754a0551-073c-4c8b-82cb-c3bf5b67acae"
+            isDerived="false"
+            sourceEndRoleName="SoundEngine"
+            targetEndRoleName="SettingsManager"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0342c8b8-ab96-4e94-bc1f-7ce4407fdfe1"
+              LastKnownName="SettingsManager"
+              LastKnownLocation="Package_0929.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="27cee9eb-bf3a-40ee-b304-076feb1369e7"
+                  name="SoundEngine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f38e38d-6254-4fde-b62a-d9b2c17d75eb"
+                  name="SettingsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c2078cbb-4033-4c06-a1db-46e8d9bb385b"
+            name="mContentManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="368b8030-84d7-4e50-90e4-86b3badba986"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3DmContentManager"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a45cc10c-1598-46f6-9b63-66bd561a8547"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28482151-31dc-4928-b3f5-6f6f3b41d611">
+                    <propertyInstance
+                      Id="24176060-3723-4176-98eb-eb175e253d53"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ae0a552-8ae7-42b1-a72d-9917bca2ea26">
+                    <propertyInstance
+                      Id="62a083be-1444-49d8-bbd9-6ff32f691e32"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a929856-fd62-49a9-9998-11c18796731f">
+                    <propertyInstance
+                      Id="1cd7319d-5cf2-4463-82ea-9f47bdefbee9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1bdfc10-c45c-4155-ad97-c32cc58a41db">
+                    <propertyInstance
+                      Id="6e9a5a5a-d7f4-4da0-b9e7-b6611521069e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be519d92-2cd6-46b6-8343-b25ef6659533">
+                    <propertyInstance
+                      Id="eef7bf9c-71f9-40ff-b9c6-2485c713ce68"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a98454c4-e671-44d3-a0df-a40226201d59"
+                LastKnownName="ContentManager"
+                LastKnownLocation="Package30_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="545400a4-f36c-473d-9289-3b4b09a596d5"
+            name="mSettings"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="78cfd7d4-abcd-4629-8cce-e87eb80e23db"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3DmSettings"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="24913ec0-4a81-40f6-ba31-4e57b68ebca3"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5db9022a-7131-4790-93ff-0ece775cca33">
+                    <propertyInstance
+                      Id="531259f8-c210-4200-9e88-d40dd580992f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa6100ed-eeca-4f90-b80b-053e875c7664">
+                    <propertyInstance
+                      Id="95eda7af-c62f-4d3c-a9cb-6bd46c2bd2df"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60a436f4-83ba-4668-ba06-f0d65a0b85de">
+                    <propertyInstance
+                      Id="6494ba47-8ae1-4f28-8f40-cdfee5f5362c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="617f0b74-1735-4065-99b8-28fbc2557eb6">
+                    <propertyInstance
+                      Id="8f15328d-2c03-43ab-a514-06a43999a6d1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="345f9178-7622-4636-8ae2-01a658ca5275">
+                    <propertyInstance
+                      Id="be7ca452-ce41-4618-81fc-04de95ab69d1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0342c8b8-ab96-4e94-bc1f-7ce4407fdfe1"
+                LastKnownName="SettingsManager"
+                LastKnownLocation="Package_0929.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8794acd2-cfdc-498d-8f71-d9e1c5ff730b"
+            name="mCurrentMusic"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="70da3255-6fc6-4f0f-92b0-87ccb020ff37"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3DmCurrentMusic"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e73a6663-f2d7-4c3a-8d00-4f7a7babbaee"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07ce52b8-68c2-469b-8758-2fc92995805f">
+                    <propertyInstance
+                      Id="c6b7ca7e-0f31-4def-9a27-64b46935e5e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ac61ea9-a01a-4622-b336-b35694758e14">
+                    <propertyInstance
+                      Id="cfd66618-6a40-4a78-9d70-f89d78865b1e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="383d16ba-d376-41e0-9f70-fd582d6ba3d2">
+                    <propertyInstance
+                      Id="07f1d78a-abcb-4052-83e5-019738b2b73a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b83a8a5e-87a8-4225-b5e4-f67eaf767391">
+                    <propertyInstance
+                      Id="70e15be2-1bd8-4f57-bc2f-db4e1a9008e5"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8b7534a-b973-43d8-8ab8-15184d129e5d">
+                    <propertyInstance
+                      Id="32926861-4800-413e-97b8-2d8b8bf2c98a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="72be0318-d5e2-479e-9ec4-b3e1f1718dd2"
+                LastKnownName="SoundEffectInstance"
+                LastKnownLocation="Package31_1107.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cb68fd55-2477-4eb6-bc9f-bb31d50515d6"
+            name="LoadSoundEffect"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="75787e12-bf5d-421f-9034-32eca605f51e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DLoadSoundEffect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7b12c00a-393e-42d1-b899-9cc8ed7ab080"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd9d48ca-4e42-4737-bbd3-56cf1c94b4ba">
+                    <propertyInstance
+                      Id="7b70055b-e453-4684-a50f-2f61535e241b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68bde2a8-7887-4939-9914-378b69bd6e9f">
+                    <propertyInstance
+                      Id="bce058e2-cabe-40ad-96a5-707d575e4c69"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdb3f497-bf5a-40dc-8b5e-be639454728f">
+                    <propertyInstance
+                      Id="ee6160f5-6180-44c0-a71c-6d7e816d9029"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4caf890b-9aff-4000-b7cd-7f9e4cecd909">
+                    <propertyInstance
+                      Id="776b06a5-7db3-43cf-a642-e527591ae370"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bd18bf5-210f-472a-8ecc-b4f1850934a5">
+                    <propertyInstance
+                      Id="411ed082-591a-4112-a55a-3b35f27b30f3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d7f6d48-8143-45fc-983a-e8b833c5dbc5">
+                    <propertyInstance
+                      Id="acfda4e2-7181-4065-8d23-e067daa6b779"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a399e3e-2543-436b-b5b0-37d46500d888"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c3bc92ac-fb69-4398-8c47-1c2eca67c4db"
+                      LastKnownName="SoundEffect"
+                      LastKnownLocation="Package31_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a22b70f-fd1b-4909-8615-efba6bc1d3f9"
+                  name="fullyQualifiedIdentifier"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1c9f3e33-e580-4dd9-8bf6-d2c1f2935fce"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DLoadSoundEffect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DfullyQualifiedIdentifier"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="222fd332-b28f-43ea-a3e2-9b1e21ce2360"
+            name="SoundEngine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dcec44c9-ad32-42a5-b96a-161f6558d684"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9efb13e5-cf8c-4227-993f-db6fac226c3a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="beac66cd-1d3a-47c2-a061-e18dc193941a">
+                    <propertyInstance
+                      Id="2a5f1631-5926-405b-b4e8-808d81938955"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67bc6fba-daa4-4a77-83ac-d0f4cbdde0b6">
+                    <propertyInstance
+                      Id="b87ff0e4-9caf-416e-959b-2a70ffbc1bbf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e824130-327c-4e4f-bbd1-0f99e91ab9d5">
+                    <propertyInstance
+                      Id="8ba76694-e30e-48f3-b327-33eb0d975db5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70ba6697-6c34-4437-98da-b3d3b77de5a8">
+                    <propertyInstance
+                      Id="47c8d2a1-cd7b-44e1-bc92-1dba1eb10c82"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76538bda-3621-4335-b355-f90e8c90a7e1">
+                    <propertyInstance
+                      Id="6718c3e4-c0ce-4fe8-b421-a887597352e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e806c84-2333-4013-985b-d1c1f8a697d9">
+                    <propertyInstance
+                      Id="18328710-9194-457f-8fa8-081c6f52a7f8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18ca3f50-a0e8-4573-9c6b-bb9e66f322ce"
+                  name="contentManager"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b1e59be1-1256-4d8d-b8a7-615872c79558"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)]) ParameterIdentifier%3DcontentManager"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a98454c4-e671-44d3-a0df-a40226201d59"
+                      LastKnownName="ContentManager"
+                      LastKnownLocation="Package30_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="661a5485-b026-4db2-b62b-3faf70d0de48"
+                  name="settingsManager"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7ca9ffde-e41e-4a85-9ffb-235c6c19a790"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Content Type%3DContentManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)]) ParameterIdentifier%3DsettingsManager"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0342c8b8-ab96-4e94-bc1f-7ce4407fdfe1"
+                      LastKnownName="SettingsManager"
+                      LastKnownLocation="Package_0929.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a7a35773-1776-4d5f-b31b-ec4137dd65a0"
+            name="OnVolumeChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e5fe4e7e-0a13-41b2-8386-5cdb80045a65"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DOnVolumeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsUpdateEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1a115f1c-104d-4025-b8fd-1d3cb899ec12"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ce01c0a-d4e0-46d6-b42a-5d6915d09549">
+                    <propertyInstance
+                      Id="0f035e77-0e9b-42ce-9354-27b2ead7b6de"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd2e1879-1f47-46d2-bd7f-0f9c00a354aa">
+                    <propertyInstance
+                      Id="6564b885-f1fd-475b-b7d0-179611c48ec2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43b957b2-9b80-47dc-b7af-72a1f3f4b4a6">
+                    <propertyInstance
+                      Id="166dabbf-0374-4dc8-8d1d-0150889d19e5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26df3a0b-7f53-4365-8f59-f77b781984d2">
+                    <propertyInstance
+                      Id="6ab37ab7-f035-45d2-a7f6-5401760b2df3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ed11db4-4430-4e49-9d81-e47a4225a123">
+                    <propertyInstance
+                      Id="2f24107a-636d-43a9-9577-faf292b9500f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaba7a47-c34c-4360-a34f-eefdbc1b0e2f">
+                    <propertyInstance
+                      Id="a8e38991-a583-45da-b016-c6939da6abc2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d42f6c90-f69e-4358-a924-da9ba9b407fc"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="df72b17e-fd14-409c-9b8e-aba6428b7965"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DOnVolumeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsUpdateEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2fe21dfa-6e05-4676-8ed2-acd1101051de"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package11_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34db2264-28ae-4bde-a7cc-50b94823bc6c"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="18f7e81b-6d8a-4c46-aac3-71bd131c6eff"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DOnVolumeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsUpdateEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f82e84dd-efbb-4903-8853-bcd6756e64c7"
+                      LastKnownName="SettingsUpdateEventArgs"
+                      LastKnownLocation="Package_0929.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cad18577-9a55-4d7b-b4b5-37aa3588e7ab"
+            name="Play"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ddf79bcf-0804-4b0b-992a-c330d941f69f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DPlay OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Audio Type%3DSoundEffectInstance)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1e55e0db-6901-4585-9c7f-a19a88539bde"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd239c63-2984-412e-9eab-e3047fe44dea">
+                    <propertyInstance
+                      Id="77078752-42f9-4fc5-8a6f-67d79054a8cb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37329ea9-5b2e-4e36-842a-2a51b63f91c0">
+                    <propertyInstance
+                      Id="f35e4169-80a5-4a3b-b4ed-c38c04a269ec"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="545e5e70-0247-4fe6-846a-736e76696a19">
+                    <propertyInstance
+                      Id="f58f6873-d97f-4a37-9778-7eb8ba1602a2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29e7df1d-dc78-4454-8428-25008f641173">
+                    <propertyInstance
+                      Id="82f96caf-d124-4c8f-a853-1521cc7cea6e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfa0028b-0d3d-4225-a1f4-260ad410f22a">
+                    <propertyInstance
+                      Id="a59a5003-8369-4ded-91d1-5e4a8c05d1ad"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3336a76d-ff57-41fc-9bc0-c787d90ec81e">
+                    <propertyInstance
+                      Id="07c7b29a-6ee1-4c48-9d68-1e3b37bc10c1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="53de3960-a963-437e-aad8-76fefc1b3ed2"
+                  name="sound"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e5d53a8a-c7f7-4a88-9d1b-c4b25df24dcf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DPlay OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Audio Type%3DSoundEffectInstance)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory)]) ParameterIdentifier%3Dsound"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="72be0318-d5e2-479e-9ec4-b3e1f1718dd2"
+                      LastKnownName="SoundEffectInstance"
+                      LastKnownLocation="Package31_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8496ddf7-75f6-4ff2-93ad-b60affc0450a"
+                  name="category"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="912b858c-6ad0-4e36-9084-8572aeeeb645"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3D(Name%3DPlay OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Audio Type%3DSoundEffectInstance)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory)]) ParameterIdentifier%3Dcategory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="a4332ee6-a212-4044-86be-4cfcea0e408b"
+                      LastKnownName="SoundCategory"
+                      LastKnownLocation="Package10_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d331a533-51e2-4966-841a-097b423288e0"
+            name="Destroy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7917484a-bf6d-4d32-9d33-68e781b27b64"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine Member%3DDestroy"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19862292-0bc8-4fb6-8d1e-ff4bdee34689"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a9f7993-66b9-4f79-bb4c-c41600381621">
+                    <propertyInstance
+                      Id="60e7655e-9a7a-4d63-bfa6-42a8fc897d12"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2aa66eee-31f2-427b-94b3-f5279e246d1b">
+                    <propertyInstance
+                      Id="82fb1b94-1a74-4416-b37f-37927eae0e88"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="815028bd-e1e1-44ab-ad0d-c195f2de5a61">
+                    <propertyInstance
+                      Id="8d99d404-678b-4062-98a3-a364be459831"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1e3b590-95b1-49a1-9be0-3959724376d1">
+                    <propertyInstance
+                      Id="9289a679-ef39-40cc-a2cb-5877e9884a03"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05a06818-a317-4c9c-886b-8615103dab9d">
+                    <propertyInstance
+                      Id="be95e7b2-e86b-499c-a2b5-b809488164cf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5505ffd-cb5d-4852-8605-9e530ad62208">
+                    <propertyInstance
+                      Id="e0a6fbf1-6583-4e75-a21b-7ff9f2b74263"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6ef7413f-77b8-4406-baa6-b789a662ef18"
+        name="SoundWrapper"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5894b69f-c1b8-42bc-9560-c4a9cee95056"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ea231112-3012-4978-b3b1-c49d17b82033"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="155ff77c-9f3b-4b88-8e14-1e4516fe3fb0">
+                <propertyInstance
+                  Id="5594cfc7-4d90-490e-adbe-336675ef2c0e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="95591635-2870-492c-b83c-f6708c338ee5">
+                <propertyInstance
+                  Id="c40738ee-b532-41dc-8c93-20cc3e2fc457"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="892d112c-9acb-476e-92c9-c296b26c15c7">
+                <propertyInstance
+                  Id="1b10ad86-539a-461c-b9b5-6ad6e5023dd9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="643af73b-a324-4d3e-ae34-dd59327cbacf">
+                <propertyInstance
+                  Id="03ebdb6b-2def-4587-9e84-3a128d59c05b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8606d4a8-f59f-409b-ac43-70ca4e1b62ca">
+                <propertyInstance
+                  Id="418f29e2-1187-4527-b5f5-1e3b8f9337b5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="1ad73228-4974-41ef-9a60-c5ff61486117">
+            <interfaceMoniker
+              Id="f7b73b87-1baf-4585-b334-56cf1f0daca2"
+              LastKnownName="ILoad"
+              LastKnownLocation="Package9_1106.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="dcfd77f2-ca30-40b6-9d99-03652cb03330">
+            <enumerationMoniker
+              Id="8e5317de-c983-4423-bb0c-98f411ed6bb0"
+              LastKnownName="Effect"
+              LastKnownLocation="Package10_1106.uml" />
+          </dependency>
+          <dependency
+            Id="7774b677-ff30-4bcc-8ec8-68d4464c43b7">
+            <enumerationMoniker
+              Id="6d186493-3faa-4dd0-b6e1-312d2cd69f73"
+              LastKnownName="Music"
+              LastKnownLocation="Package10_1106.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="f870f3e9-18d4-443d-be64-f13898a1c114"
+            isDerived="false"
+            sourceEndRoleName="SoundWrapper"
+            targetEndRoleName="SoundEngine"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="56dac724-d97e-4bbb-b58f-ee6e709dc2bb"
+              LastKnownName="SoundEngine"
+              LastKnownLocation="Package10_1106.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f64e9740-a884-4c84-a59b-e1d243b729f0"
+                  name="SoundWrapper"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54697faa-ebb7-4f9e-b23d-64a032a95668"
+                  name="SoundEngine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="eb924eaa-54dd-4a80-9b53-1667be880ac2"
+            name="mSoundEngine"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8d8088a7-72fe-48d9-86f3-bed82165e5d3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3DmSoundEngine"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="995cce95-228e-43b6-87c2-1264119ef957"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f88f1e29-7c12-48da-b5ce-864a8d677fb8">
+                    <propertyInstance
+                      Id="59086907-386d-429c-93ec-0ba851b1c83c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d21dc74-b2fd-4d5d-a1a1-bde598681374">
+                    <propertyInstance
+                      Id="3aae3245-d168-491e-afa3-879f6a246d24"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53af7c53-f82c-4007-be2a-89b1f73b9380">
+                    <propertyInstance
+                      Id="053313f0-93f2-463d-b9b6-f2434e67e14d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60d940fb-5822-4868-817a-5f0ad66447e6">
+                    <propertyInstance
+                      Id="f1ba51df-d9ef-4c13-95ce-9c27046bd8c1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95e2ca76-47aa-4199-a06b-1d1d8b11bda1">
+                    <propertyInstance
+                      Id="96c585fd-d937-4843-a78a-2f5ad3b24283"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="56dac724-d97e-4bbb-b58f-ee6e709dc2bb"
+                LastKnownName="SoundEngine"
+                LastKnownLocation="Package10_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1872d638-fe16-4f11-85b6-5e9bd2b418c0"
+            name="mScreens"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="94e7485b-f441-4944-8ef0-c377a413ac59"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3DmScreens"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3b57ba2f-7064-4f70-bb16-efd9662a6ba7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04b27bcf-698b-48a2-9f93-745f069b5eb5">
+                    <propertyInstance
+                      Id="7f28112a-e0c1-45f5-b34c-5511c4ee9332"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="541a4907-8e0d-419a-89c2-170884822aef">
+                    <propertyInstance
+                      Id="ecb74b25-70a6-41f6-aba8-b43ae9332075"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dad1a478-3c21-4426-999f-ec2c84ed096e">
+                    <propertyInstance
+                      Id="766bfa77-9414-4bb1-bde3-b95d90fe0469"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23e4878b-d7ba-4b96-ab59-437943ceb787">
+                    <propertyInstance
+                      Id="42ebe363-9836-4259-8420-6997745f553d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="573a3b9d-2bb3-4b60-990e-d01aff690878">
+                    <propertyInstance
+                      Id="ba2b8446-2d2c-4b77-a099-c863c8f0b93b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b1e398eb-c306-4073-9803-c59dc6f46c2a"
+                LastKnownName="ScreenManager"
+                LastKnownLocation="Package7_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7422dc07-7227-47dd-90cf-589286b367a8"
+            name="mSoundList"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7d741522-1379-4532-af88-4e0b96375417"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3DmSoundList"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ef502d43-0adc-4982-8179-b417420bd41e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b760cfdc-d34d-4d00-af4c-ce83f0b06442">
+                    <propertyInstance
+                      Id="00290c7f-b030-422d-9689-da04adea62ed"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0c81c33-54d5-4a44-a398-149f56c9b576">
+                    <propertyInstance
+                      Id="642f2a60-5c97-4bb7-b91c-da1d089984c0"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1726df93-6313-458d-81ae-b4b9c493c62f">
+                    <propertyInstance
+                      Id="21da6aba-06de-48b3-b67a-092498893662"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c59498a9-c31d-4d1e-9014-c3a273763c71">
+                    <propertyInstance
+                      Id="513830b5-775d-40f4-a655-7fd905114fea"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99c02db0-a07b-4892-8e4f-0c63e754c834">
+                    <propertyInstance
+                      Id="64a16019-eab4-46f9-86be-e022c2d1a0a1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b715376d-21de-4c83-b96d-a94bfdc1c334"
+                LastKnownName="Dictionary&lt;String‎, Enum‎&gt;"
+                LastKnownLocation="Package21_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5e87f997-a92f-4500-9bfc-78eb86453cd8"
+            name="mSound"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a4a51db5-ddba-4dc3-9bf7-3d70eda56a38"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3DmSound"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1d8405ba-593f-4de0-9e86-5a16c45c20db"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37f26821-a9ce-4e82-9fcb-7732aad19167">
+                    <propertyInstance
+                      Id="45a1273b-b6e6-49d3-a5da-63400eac1e94"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="469a0434-49f1-49e5-9286-3ef582eea031">
+                    <propertyInstance
+                      Id="71ba26b8-363d-4948-a54d-5bb514e0951f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bb08a06-cadb-4df5-811f-f2283fb91cc1">
+                    <propertyInstance
+                      Id="4ce1411d-901a-4b54-986c-17b2d616b78d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b732fe7-d3ab-4cc3-9714-e880a7cacb8b">
+                    <propertyInstance
+                      Id="0d0e9c1e-3c47-4a5f-9042-ff39e947dc9b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60b60512-340a-4349-8e68-e2bdb6397066">
+                    <propertyInstance
+                      Id="47df47f6-6dd7-4bef-9019-f39cc9b48ffc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e4390572-8d19-41e8-89d9-5853fc9d965d"
+                LastKnownName="Dictionary&lt;Enum‎, SoundEffectInstance‎&gt;"
+                LastKnownLocation="Package21_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2c6d3910-450b-4b8a-a971-660441b74ed8"
+            name="mWindowSize"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="47856518-2187-40de-9dff-23264bfb6ceb"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3DmWindowSize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3038d712-d148-4784-a05f-32eeb9852c3f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03d1254c-6670-4821-868f-12dc0bfd7324">
+                    <propertyInstance
+                      Id="996d8882-fc20-44e1-9986-b736b067d6a6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af638d6c-052f-4489-a12a-4b671fe0948f">
+                    <propertyInstance
+                      Id="dd5a5371-2a27-41d4-a05b-948a7aab98a1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac454582-144c-4f34-832a-d5e3b17007bb">
+                    <propertyInstance
+                      Id="53926cd2-00fe-4ca1-9cd3-991b1916ac77"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efa143d1-15c1-431d-85c0-ab55c34e56e4">
+                    <propertyInstance
+                      Id="6fc5e8a3-ec4b-465e-a1d6-2f99da1dcafb"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb11d3be-9465-4b65-89c1-21a34f3daac6">
+                    <propertyInstance
+                      Id="086bb4a6-c28d-4820-87fc-1881e3ef48a3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b9b2510d-a10c-43a2-828c-6296f92ec960"
+                LastKnownName="Point"
+                LastKnownLocation="Package3_1106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="84cd3ea8-0645-44e4-aef8-576681b4faf0"
+            name="LoadContent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a5e7c223-f895-4df7-83ee-b98f5f5d5fdf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DLoadContent OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8d91b397-2fa2-4d0c-8a9f-84bdde04851a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2879ab3c-6c71-4534-8751-3b325e4bdcb7">
+                    <propertyInstance
+                      Id="5bdbe9fd-1361-4e02-8ec5-752459f76cda"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fab428b-89ff-4b3d-8b6c-2ca8c4120839">
+                    <propertyInstance
+                      Id="df351057-3f80-4e27-85d1-1044a2a29ca3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e5449b1-90bd-400c-9eb6-b84c82653d10">
+                    <propertyInstance
+                      Id="574fdae1-1faa-4f2c-8930-f0d687685543"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afde888f-f18c-4ab2-be3e-28cc3d99ecc5">
+                    <propertyInstance
+                      Id="cd4706b1-1bc7-4587-ab9a-49bb4c670558"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02fd9fb8-ca15-4c06-8ea2-8d48a701fb64">
+                    <propertyInstance
+                      Id="07653280-783f-4789-bbeb-fa7c55352408"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96257493-50c3-4eb6-8c1d-f3d4dcf20726">
+                    <propertyInstance
+                      Id="eea7c694-34a6-434a-8f07-4b716344266b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9101d8ec-31d1-407e-9e6a-8f873d56cc7d"
+                  name="contentLoader"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="acf37ad0-1de1-4964-b259-f7f9445ca571"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DLoadContent OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)]) ParameterIdentifier%3DcontentLoader"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3502fc95-bb5e-4661-aa34-cd0e18edfc77"
+                      LastKnownName="ContentLoader"
+                      LastKnownLocation="Package9_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c8b5fdf5-4aca-4a3c-a0d2-4c46bed9b1fc"
+            name="SoundWrapper"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="34e0c8b8-d853-492b-8b93-b6a3c8775f1a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="728936b0-04c9-4f09-8a32-4e69746d74fc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a5c66bc-128c-4825-b571-9dd598c68473">
+                    <propertyInstance
+                      Id="da4a867c-bbaa-4297-8f47-de4bc98a969d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="559cfd28-7054-42e2-a09a-cc1bc40483ea">
+                    <propertyInstance
+                      Id="aeec2098-0e84-4680-8b9a-fe3fea9a3dd4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a33cc4f1-4718-44ae-ac53-e98e5ce9dcd9">
+                    <propertyInstance
+                      Id="36f4507d-0ce2-485e-a3ce-353fa00af604"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c81def5a-0855-4e51-9c21-0dba90c6a22b">
+                    <propertyInstance
+                      Id="db3df18f-9bad-4fc4-9584-c65488b74805"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b15345c-b91a-465a-a36a-08b71390d970">
+                    <propertyInstance
+                      Id="e6bca786-6420-4fba-b964-52bb2b119dde"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69bbe641-fdff-4d24-aa5d-d6c19794045c">
+                    <propertyInstance
+                      Id="e6bcd29a-3d5e-4c40-b74a-498897a0ce90"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ad02d1b4-526f-49c9-a89e-4352a6612678"
+                  name="soundEngine"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="71f66ced-51db-499a-8d51-c4e263ad1ebf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)]) ParameterIdentifier%3DsoundEngine"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="56dac724-d97e-4bbb-b58f-ee6e709dc2bb"
+                      LastKnownName="SoundEngine"
+                      LastKnownLocation="Package10_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="22080e18-d247-4a83-ac2b-7d7ac0bf07e8"
+                  name="screenManager"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b915276c-cf44-4e3f-a8c6-a23b5c6394a8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundEngine)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)]) ParameterIdentifier%3DscreenManager"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b1e398eb-c306-4073-9803-c59dc6f46c2a"
+                      LastKnownName="ScreenManager"
+                      LastKnownLocation="Package7_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1fe241aa-4204-4427-87c5-bf18533ae03e"
+            name="OnWindowSizeChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c99775d3-d46a-4c60-bf84-8833837cc3a8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DOnWindowSizeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="71a3ae5d-078b-47a3-8d49-0b2c241b6249"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f780b34d-3397-43c1-bb5f-473b3fbbf435">
+                    <propertyInstance
+                      Id="25734a5f-f89c-4110-82db-244b9d039598"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be0dd168-cfd2-45d9-9fc1-e114e157a90e">
+                    <propertyInstance
+                      Id="53f38950-635a-4835-ac94-9017acd631b3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ed5c3d9-6941-4ec4-b497-8c9a3ea84189">
+                    <propertyInstance
+                      Id="ded468ed-5285-430b-92c8-f1ed27ff413a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54fb8b83-f750-45a1-a5f4-7dd69eebcf44">
+                    <propertyInstance
+                      Id="090701d8-31bb-4eeb-8980-1232369ba52f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10f4b264-0926-4638-bf9e-e0ff0929f62a">
+                    <propertyInstance
+                      Id="cec7a320-5a7e-49de-8b4f-dde7d5497a09"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9389609-c73c-4946-8f0d-a77b539bdbc4">
+                    <propertyInstance
+                      Id="4c8ded06-b4a7-4726-8c73-c671893cf939"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="224824ef-9f9b-48c1-9a29-777b4116dc8d"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f91bef99-a313-4399-a427-e67369859a33"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DOnWindowSizeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2fe21dfa-6e05-4676-8ed2-acd1101051de"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package11_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7818f2e0-3af3-4939-821e-c31bff09aec4"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="31c00926-927f-42ea-8a96-67f69d636553"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DOnWindowSizeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a40850de-b036-4157-8050-acc554aa4ae8"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package11_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="76ec333a-3522-4e6b-bd0e-25f965a63cde"
+            name="PlayEffect"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="93cc3c4d-2a0b-48ec-b648-0c016e639457"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DPlayEffect OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="33d5f7b5-d7e6-48e7-9315-e1b5858c38a2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d46934e-5b3b-47b7-85ab-1c2d18b845f3">
+                    <propertyInstance
+                      Id="ef45e253-4b7d-4320-a9b2-c3285a92b2c9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86d481cc-6fcd-4143-b389-c2d1f8f1c667">
+                    <propertyInstance
+                      Id="ac1cbd8f-b744-422d-8a6a-9ec1c79f7c0a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fc70c72-4a56-4ea6-a531-e07fec7fc588">
+                    <propertyInstance
+                      Id="5a1cbfd5-9987-4a13-b260-5c2e30fa7aea"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea5b2144-245e-40d7-aca7-0f0c8e6c0310">
+                    <propertyInstance
+                      Id="65b1c8ad-eecf-419b-8001-6f40b1d0fab8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3996664f-08df-416c-874f-8267b0f6ec14">
+                    <propertyInstance
+                      Id="a21f3e81-f0c1-4f67-9671-ec5b3e01a151"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37ca6ca3-e82e-493d-80c7-b43c8f0e5ad1">
+                    <propertyInstance
+                      Id="8a78258f-be15-427d-b7dd-2d3736964596"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="904306e0-f5f2-4120-8c21-e10f9086f4b8"
+                  name="effect"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d602da52-51f8-4146-84dc-e40017012cd3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DPlayEffect OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Deffect"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="8e5317de-c983-4423-bb0c-98f411ed6bb0"
+                      LastKnownName="Effect"
+                      LastKnownLocation="Package10_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="849f04b1-2ffe-4334-b775-a012b58d4987"
+                  name="position"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="510585ac-5c28-49e2-89b1-7b4ebe53d388"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DPlayEffect OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Dposition"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3d309699-87e1-4041-9bd1-7436f85cb42d"
+            name="PlayMusic"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6def902c-2fe5-4165-bf65-39b5cb4d55af"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DPlayMusic OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DMusic)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d739201f-d27a-403e-add5-1ac3d3dabc97"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b89704f-0f4c-4efd-9f48-e93e123ed359">
+                    <propertyInstance
+                      Id="758cc4fc-bad2-441a-a30b-1247d43128c9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="999d8dbf-3dfc-4c8d-aee1-602aeda42f6b">
+                    <propertyInstance
+                      Id="667aaa62-9547-4cf4-904e-4792c992d9ba"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4eb0352-956c-492a-9ea3-807d826be2fb">
+                    <propertyInstance
+                      Id="fdc515e5-101e-4879-8363-680e62e13499"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c94ae10-7ede-43d5-a6a3-bf5e4ea38990">
+                    <propertyInstance
+                      Id="504dcccf-5653-4deb-a495-419729c6b419"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16df3e3f-cc1f-4180-a8f8-24aaaf66ae0d">
+                    <propertyInstance
+                      Id="1f390825-aa75-48d0-82e4-835507b6d073"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="677c5af5-e2fd-4466-b4c0-36c67a9e0c4d">
+                    <propertyInstance
+                      Id="915b8ddb-cb26-436d-bfc4-e7a5ebbdcec9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dc16e09c-95ac-4ded-9be3-ab3b470093d2"
+                  name="music"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f4e185cc-d236-4319-831d-f8d0e6202ed0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundWrapper Member%3D(Name%3DPlayMusic OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DMusic)]) ParameterIdentifier%3Dmusic"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="6d186493-3faa-4dd0-b6e1-312d2cd69f73"
+                      LastKnownName="Music"
+                      LastKnownLocation="Package10_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="a4332ee6-a212-4044-86be-4cfcea0e408b"
+        name="SoundCategory"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="78eedc38-efc9-4d39-a038-df858a6674f4"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="911d1b09-c0ac-4d6e-aa0a-af05b56abf8d"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e44f3ca7-b541-4495-a1fc-e4921bff3336">
+                <propertyInstance
+                  Id="5e300224-ae85-42bb-ba59-ba321cc76d28"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="42830a36-e7fb-47f3-a9c7-e44ebd1e8217">
+                <propertyInstance
+                  Id="472072df-bd45-49aa-aeb4-fc078fbe4e6d"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="18be3147-4ea1-4c44-b4c2-89b132f522be">
+                <propertyInstance
+                  Id="cae0af2a-33dc-4b1e-85b7-0a62d3b004bc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="045ae358-5864-4121-8938-373317cf143c"
+            name="Effect">
+            <referencesInternal>
+              <reference
+                Id="eaceb8e6-bc75-4bc1-9c5d-24a79182595b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory Member%3DEffect"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="8fbbf4f3-806d-4125-88c0-f345377e296f"
+            name="Music">
+            <referencesInternal>
+              <reference
+                Id="926ced02-fcaf-443a-983a-98192cff2164"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DSoundCategory Member%3DMusic"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="8e5317de-c983-4423-bb0c-98f411ed6bb0"
+        name="Effect"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6e049bb7-d3fc-40a1-872c-f30670c0e192"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1e5e03f1-7074-4661-a576-7b4d9e083525"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5285beaf-272f-448b-9087-f9a187098765">
+                <propertyInstance
+                  Id="7c532497-16dc-43e7-8e3c-44dbbcbcb5ba"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e737b4b5-9b94-4421-86b8-d04108e70d73">
+                <propertyInstance
+                  Id="8b122cad-21a1-4c50-a7a9-913ab9fde176"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f56e34fd-eb07-4925-af27-41b26d853a4b">
+                <propertyInstance
+                  Id="932747e9-9ef0-4c46-a16a-c11730172139"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="a56ffd95-8e91-4bea-8b79-6d3c82826b05"
+            name="Attack">
+            <referencesInternal>
+              <reference
+                Id="092f4859-3440-40cd-a004-80a69faebf9c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect Member%3DAttack"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="83a36ffb-3867-47f3-9e81-ac525dc576cd"
+            name="Debuff">
+            <referencesInternal>
+              <reference
+                Id="9bb7a445-30fe-4a0c-aa1e-e198216694e2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect Member%3DDebuff"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="64d9313f-803d-4196-8294-c47b4c931c91"
+            name="DeInfection">
+            <referencesInternal>
+              <reference
+                Id="aa4d0864-536b-4174-a42b-bd97f0a5279e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect Member%3DDeInfection"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="ed4848c7-12d1-4ffe-a955-6112fd28edd4"
+            name="Move1">
+            <referencesInternal>
+              <reference
+                Id="3a0d6944-c901-473f-b5da-fa3214a377d8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect Member%3DMove1"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="19c2d5a7-a778-4270-b83a-a65c8a638abc"
+            name="Move2">
+            <referencesInternal>
+              <reference
+                Id="d8cd3425-e352-466b-a281-7067ccddff43"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect Member%3DMove2"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="a9c69a02-25f8-4e34-923c-79a877d6e9ce"
+            name="Division">
+            <referencesInternal>
+              <reference
+                Id="69ed0969-7e56-4a00-bbe9-b366fed759f0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect Member%3DDivision"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="e009633e-c9ed-45b0-80b4-ea41bd7ded41"
+            name="Destruction">
+            <referencesInternal>
+              <reference
+                Id="cd3c2c92-4f7a-4922-bc73-3aa9ab150ab6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DEffect Member%3DDestruction"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="6d186493-3faa-4dd0-b6e1-312d2cd69f73"
+        name="Music"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="56f243d0-2223-4419-b05f-87df5c54da1b"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DMusic"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a9ec4c9a-418e-4002-8465-534c774d921b"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="311921b2-4ee0-42c3-9b2a-21e2d63e2395">
+                <propertyInstance
+                  Id="093c1e7e-65e7-4c67-bb55-7dc36acc23a3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="990ba001-c184-4d4f-9320-bd00165d0dea">
+                <propertyInstance
+                  Id="6f31ae92-b509-4ee1-850b-a25c0c2ac263"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4aa497a4-96d4-44fd-9063-4adbb394bdcf">
+                <propertyInstance
+                  Id="fbd375bc-b041-4279-9951-93a80687feed"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="e1f60b37-5da5-4f8a-89d8-2df10451cf63"
+            name="Game">
+            <referencesInternal>
+              <reference
+                Id="113d6c87-7aae-4734-9361-46daba8ae472"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DMusic Member%3DGame"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="9c0bb063-56c8-476f-b997-bd56e0ca93c9"
+            name="Menu">
+            <referencesInternal>
+              <reference
+                Id="76a6d67c-44cd-4b01-a705-fa44f488a09a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Sound Type%3DMusic Member%3DMenu"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

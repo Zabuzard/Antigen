@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="6bea6a71-9337-48d8-aaee-5763a5cba86b" name="Components" linkedPackageId="c72c1d02-19e9-4a36-8289-d59c2acf2ee0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7534a2e7-27f0-4977-8b3a-3441f327833e">
+      <profileInstance Id="84e6a1c0-3fea-4846-b04d-ac7405a873a7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b6570038-21ee-4b39-9913-3ab510b2d6ea">
+      <profileInstance Id="19429a5b-114f-4ff8-bc00-1f989327c78a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="46f8fe77-1001-4f2b-a2b5-fd18e949173a">
+      <profileInstance Id="208259f5-a41d-4328-ad2d-0f98be27b87f" name="CSharpProfile">
+        <elementDefinition Id="351455ba-6acb-4f89-9eb9-3837a8ed54d5" />
+      </profileInstance>
+      <elementDefinition Id="8306b4dd-6c7e-42fb-ae46-202de0d4fe31" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="b24a6b8e-9423-4088-a97b-021502d5a084" name="Achievements" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb3da8d4-97d3-4144-8f9e-fe9e51e6366e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="5daba3e1-81ce-42be-bc51-500cdf38e0a1" name="AI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e6c49183-b68c-4ec3-bca6-78b212243371" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="444ffdd3-d5f3-4bb9-b02f-8b17d2c8bd47" name="Content Management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5146392b-77a0-43c7-bfd5-2509d1a69ebe" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3cb7a143-905b-49a9-a562-11b99bfc6682" name="Sound" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="032ddc52-8c6f-4f03-ad39-e8a50aaf6820" />
+        <suppliersInternal>
+          <dependency Id="d7582871-c82c-498b-9e2e-694b5c81e371">
+            <componentMoniker Id="444ffdd3-d5f3-4bb9-b02f-8b17d2c8bd47" LastKnownName="Content Management" />
+            <elementDefinition Id="451ad6ce-daec-4a5f-88a2-62fc590d7dfb" />
+          </dependency>
+          <dependency Id="5111dcbc-b803-4ddf-ba84-2c68a9d17fd0">
+            <componentMoniker Id="9642d54b-ca7a-499e-b2bb-ad7053d152c3" LastKnownName="Settings" />
+            <elementDefinition Id="0ce572f6-6db7-47c4-bf66-f04860aa3269" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d917e78f-a521-4eb0-987d-0ec31a7379c3" name="Game Management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cac30cae-23d9-4596-9bf5-083e5c6f206d" />
+        <suppliersInternal>
+          <dependency Id="fbfec57c-b8e1-418b-8d9c-0e126f0c196e">
+            <componentMoniker Id="2286f71e-fce9-4d4c-ab4f-d06b22aa44f3" LastKnownName="Statistics" />
+            <elementDefinition Id="78000fb1-711b-420b-b535-34d9ec0e842a" />
+          </dependency>
+          <dependency Id="f9c292d2-1ae3-4cee-80e6-7bc65969df6c">
+            <componentMoniker Id="b24a6b8e-9423-4088-a97b-021502d5a084" LastKnownName="Achievements" />
+            <elementDefinition Id="830bb2c2-f50c-4db0-ae91-2bd9d5d5f538" />
+          </dependency>
+          <dependency Id="23355c4e-24b0-4ad1-84cc-a93303500325">
+            <componentMoniker Id="ca55937d-b581-4dee-b7ff-9db86ae1c77c" LastKnownName="Logic" />
+            <elementDefinition Id="cff35d0f-31bc-421f-bdc4-623ff1b04a01" />
+          </dependency>
+          <dependency Id="2f6aeb61-de4c-4c84-a9d1-1a8363983c72">
+            <componentMoniker Id="6e937b6d-9e07-4294-a309-567e8a20b902" LastKnownName="Screens" />
+            <elementDefinition Id="b48284fb-9611-4ca1-879c-2983a771bba0" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ecf5e88c-eb0c-46e7-aebd-4bda6bc45251" name="Graphics" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2ef5c4e8-868e-4fde-9573-9cfa2396b403" />
+        <suppliersInternal>
+          <dependency Id="582d67ba-41d0-4bac-9e36-83d84cd87738">
+            <componentMoniker Id="444ffdd3-d5f3-4bb9-b02f-8b17d2c8bd47" LastKnownName="Content Management" />
+            <elementDefinition Id="c061c92e-9dad-473f-8d4d-d82c7d8d1e36" />
+          </dependency>
+          <dependency Id="1196e85d-7064-4267-8495-22716f22305d">
+            <componentMoniker Id="9642d54b-ca7a-499e-b2bb-ad7053d152c3" LastKnownName="Settings" />
+            <elementDefinition Id="f41f2e1e-246c-4cc1-b67d-73e68ea7b7b0" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c50cbc10-1e64-4421-a98f-95475a1dfdae" name="HUD" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5a726f5b-76a9-4f64-b9d5-310597c439f1" />
+        <suppliersInternal>
+          <dependency Id="dca55c85-4f05-42e8-b643-0d51b0134274">
+            <componentMoniker Id="6e937b6d-9e07-4294-a309-567e8a20b902" LastKnownName="Screens" />
+            <elementDefinition Id="daa98c31-0333-4b93-b233-5953d64938f2" />
+          </dependency>
+          <dependency Id="19baec70-7e38-4a62-b4a8-a8778184dee8">
+            <componentMoniker Id="ca55937d-b581-4dee-b7ff-9db86ae1c77c" LastKnownName="Logic" />
+            <elementDefinition Id="064cf822-9916-4202-a6eb-383a421627bd" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="47353ca7-7d42-4af3-9cae-520b986318e3" name="Input" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c383c205-ccc5-453a-9c52-704c1e86789f" />
+        <suppliersInternal>
+          <dependency Id="99480d18-ec0c-4831-a92e-117e9e5b3419">
+            <componentMoniker Id="9642d54b-ca7a-499e-b2bb-ad7053d152c3" LastKnownName="Settings" />
+            <elementDefinition Id="633180c8-8a12-40c4-8df1-b4bb8f19a34c" />
+          </dependency>
+          <dependency Id="3a0f3234-fcb2-4ef3-93c9-88e5c79dbde7">
+            <componentMoniker Id="ccfda9b3-b14b-4c0c-b73b-02f6ae712b7d" LastKnownName="Nuclex Input library" />
+            <elementDefinition Id="9eac059a-1eeb-49c4-92a5-149f2b12d730" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ca55937d-b581-4dee-b7ff-9db86ae1c77c" name="Logic" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="891d569b-8722-4888-aa64-3a2bf85a2573" />
+        <suppliersInternal>
+          <dependency Id="9df981f0-2fe6-4372-9e38-1acf8a92c29f">
+            <componentMoniker Id="9642d54b-ca7a-499e-b2bb-ad7053d152c3" LastKnownName="Settings" />
+            <elementDefinition Id="c95f960a-2091-414c-bb14-050ec7e5d101" />
+          </dependency>
+          <dependency Id="d1f9229f-562c-4aa9-9316-14f25ccd6319">
+            <componentMoniker Id="00910ac7-22a4-4d48-a24c-b65398a43cf2" LastKnownName="Collision" />
+            <elementDefinition Id="ea845aab-fc30-4d93-bcab-60d0c0213634" />
+          </dependency>
+          <dependency Id="e5fc6bb0-1a0a-4179-bb0a-cb50e4348cf5">
+            <componentMoniker Id="8198424c-c0cc-44f9-8ee4-10b8df6dcd69" LastKnownName="Pathfinding" />
+            <elementDefinition Id="dd77f9a5-d24d-4248-82a6-6d52e747ce29" />
+          </dependency>
+          <dependency Id="1a72bff1-8f5f-452b-aa32-3f158fcaade0">
+            <componentMoniker Id="5daba3e1-81ce-42be-bc51-500cdf38e0a1" LastKnownName="AI" />
+            <elementDefinition Id="b5b4afd0-cf51-43d1-b12b-da21aaa64005" />
+          </dependency>
+          <dependency Id="80338e10-aaa4-4f77-9fe3-5c985ab9e767">
+            <componentMoniker Id="51f54a01-bcf2-4ddd-a848-3fb7feafc488" LastKnownName="Object Management" />
+            <elementDefinition Id="fb15cdc7-d3dd-4496-acc4-ee042e19f20f" />
+          </dependency>
+          <dependency Id="f5466915-d8ce-481f-8803-f7bd2e0ec6b1">
+            <componentMoniker Id="47353ca7-7d42-4af3-9cae-520b986318e3" LastKnownName="Input" />
+            <elementDefinition Id="c4165952-bf3e-4755-845a-d0960e0e57e8" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="17c1f868-3dfc-4f04-8ac9-6d8e91e6341f" name="Map" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9d56a60b-3cb4-4d60-940a-f1a6ae623789" />
+        <suppliersInternal>
+          <dependency Id="22a9cc24-a89a-41f0-ba7f-1830f5f4a9e3">
+            <componentMoniker Id="444ffdd3-d5f3-4bb9-b02f-8b17d2c8bd47" LastKnownName="Content Management" />
+            <elementDefinition Id="554a9224-be60-4b51-a8a2-2840d4a1127f" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="6e937b6d-9e07-4294-a309-567e8a20b902" name="Screens" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fd601475-69d3-4aa2-888b-0da10516d5f5" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="9642d54b-ca7a-499e-b2bb-ad7053d152c3" name="Settings" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a4481578-7355-43e2-8987-2b87271d87e1" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2286f71e-fce9-4d4c-ab4f-d06b22aa44f3" name="Statistics" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="de9fef56-4e8d-4de1-ba75-ebe5ba552bfa" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ccfda9b3-b14b-4c0c-b73b-02f6ae712b7d" name="Nuclex Input library" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="14913b1c-cb59-45f2-a600-d89cba6b0cf7" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="00910ac7-22a4-4d48-a24c-b65398a43cf2" name="Collision" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0389f4c4-98cb-4ceb-91d3-278ad49468dd" />
+        <suppliersInternal>
+          <dependency Id="9294301e-4b1a-4115-bd8b-fe9077282b2c">
+            <componentMoniker Id="17c1f868-3dfc-4f04-8ac9-6d8e91e6341f" LastKnownName="Map" />
+            <elementDefinition Id="5961781f-5df5-40c2-842d-a13622a12529" />
+          </dependency>
+          <dependency Id="7b7f048e-448d-44d6-9b70-1a35971b5bb0">
+            <componentMoniker Id="51f54a01-bcf2-4ddd-a848-3fb7feafc488" LastKnownName="Object Management" />
+            <elementDefinition Id="a98c544d-bfd7-4584-8a94-faa3f818a522" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8198424c-c0cc-44f9-8ee4-10b8df6dcd69" name="Pathfinding" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4b8bebac-e6cb-4404-a758-5f5948682bdc" />
+        <suppliersInternal>
+          <dependency Id="d353b7ed-057a-4c6a-9e43-21f0de3430c2">
+            <componentMoniker Id="17c1f868-3dfc-4f04-8ac9-6d8e91e6341f" LastKnownName="Map" />
+            <elementDefinition Id="4f15d5ed-d39a-4dad-9e02-8fe21ce0c96f" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="51f54a01-bcf2-4ddd-a848-3fb7feafc488" name="Object Management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6faf2840-96ed-421c-8366-f02835b1f2dd" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="c72c1d02-19e9-4a36-8289-d59c2acf2ee0" name="AntigenModel">
+    <elementDefinition Id="0d00589f-b4fd-4dc7-99bc-350db0bd349c" />
+  </package>
+</componentModel>

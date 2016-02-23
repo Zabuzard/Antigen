@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E9786EFC-BD33-4967-93C1-41DF438C41B4}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Antigen</RootNamespace>
+    <AssemblyName>Antigen</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>07f2dc1b-8c78-4b1c-8643-4691b5ba562a</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C5, Version=2.3.5280.26713, Culture=neutral, PublicKeyToken=282361b99ded7e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\c5\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Nuclex.Input, Version=4.0.0.0, Culture=neutral, PublicKeyToken=96bb577564343f16, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nuclex\Nuclex.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Nuclex.Support, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96bb577564343f16, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nuclex\Nuclex.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Achievements\AchievementNames.cs" />
+    <Compile Include="Achievements\Achievements.cs" />
+    <Compile Include="Content\ContentLoader.cs" />
+    <Compile Include="Content\ILoad.cs" />
+    <Compile Include="GameManagement\GameState.cs" />
+    <Compile Include="GameManagement\InitializeGame.cs" />
+    <Compile Include="HUD\Bar.cs" />
+    <Compile Include="Graphics\CellDraw.cs" />
+    <Compile Include="Graphics\Coord.cs" />
+    <Compile Include="GameManagement\SaveGameManager.cs" />
+    <Compile Include="Graphics\Camera.cs" />
+    <Compile Include="Graphics\ICoordTranslation.cs" />
+    <Compile Include="Graphics\IDrawable.cs" />
+    <Compile Include="Graphics\Organelle.cs" />
+    <Compile Include="Input\IActionListener.cs" />
+    <Compile Include="Input\IDoubleClickListener.cs" />
+    <Compile Include="Input\IDragListener.cs" />
+    <Compile Include="Input\IEventListener.cs" />
+    <Compile Include="Input\IKeyListener.cs" />
+    <Compile Include="Input\IMouseMoveListener.cs" />
+    <Compile Include="Input\InputDispatcher.cs" />
+    <Compile Include="Logic\AntigenExchange\AntigenExchangeBehavior.cs" />
+    <Compile Include="Logic\AntigenExchange\IAntigenExchangeBehavior.cs" />
+    <Compile Include="Logic\Collision\ICollidable.cs" />
+    <Compile Include="Logic\Collision\ISpatial.cs" />
+    <Compile Include="Logic\Collision\ISpatialCache.cs" />
+    <Compile Include="Logic\Collision\UnitQuadtree.cs" />
+    <Compile Include="Logic\Offensive\Attack\AttackBehavior.cs" />
+    <Compile Include="Logic\Offensive\Attack\IAttackBehavior.cs" />
+    <Compile Include="Logic\CellDivision\DivisionBehavior.cs" />
+    <Compile Include="Logic\CellDivision\IDivisionBehavior.cs" />
+    <Compile Include="Logic\CellDivision\IDivisionContentLoader.cs" />
+    <Compile Include="Logic\Offensive\Debuff\DebuffBehavior.cs" />
+    <Compile Include="Logic\Offensive\Debuff\IDebuffBehavior.cs" />
+    <Compile Include="Logic\Offensive\Infection\DeInfectionBehavior.cs" />
+    <Compile Include="Logic\Offensive\Infection\IDeInfectionBehavior.cs" />
+    <Compile Include="Logic\Offensive\Infection\InfectionBehavior.cs" />
+    <Compile Include="Logic\Offensive\Infection\IInfectionBehavior.cs" />
+    <Compile Include="Logic\Movement\AvoidanceSteeringBehavior.cs" />
+    <Compile Include="Logic\Movement\FollowPathSteeringBehavior.cs" />
+    <Compile Include="Logic\Movement\MoveBehavior.cs" />
+    <Compile Include="Logic\Movement\FlowSteeringBehavior.cs" />
+    <Compile Include="Logic\Movement\ICanMove.cs" />
+    <Compile Include="Logic\Movement\ISteeringBehavior.cs" />
+    <Compile Include="Logic\Movement\SeekSteeringBehavior.cs" />
+    <Compile Include="Logic\Movement\SteeringManager.cs" />
+    <Compile Include="Logic\Offensive\OffensiveBehavior.cs" />
+    <Compile Include="Logic\Collision\CollisionResponse.cs" />
+    <Compile Include="Logic\Collision\IObjectCollisionContainer.cs" />
+    <Compile Include="AI\AiBrain.cs" />
+    <Compile Include="AI\AttackAction.cs" />
+    <Compile Include="AI\BasicAIControl.cs" />
+    <Compile Include="AI\EscapeAction.cs" />
+    <Compile Include="AI\FlowAction.cs" />
+    <Compile Include="AI\VirusDivisionAction.cs" />
+    <Compile Include="AI\DivisionAction.cs" />
+    <Compile Include="AI\IAIAction.cs" />
+    <Compile Include="Logic\AntigenExchange\AntigenExchangeControl.cs" />
+    <Compile Include="AI\InfectAction.cs" />
+    <Compile Include="Logic\Collision\CollisionDetection.cs" />
+    <Compile Include="Logic\Selection\DoubleClickSelector.cs" />
+    <Compile Include="Logic\UnitModes\CellDivisionControl.cs" />
+    <Compile Include="Logic\UnitModes\DriftControl.cs" />
+    <Compile Include="Logic\UnitModes\IModeControl.cs" />
+    <Compile Include="Logic\UnitModes\UnitModeManager.cs" />
+    <Compile Include="Logic\UnitModes\OffensiveControl.cs" />
+    <Compile Include="Logic\UnitModes\DefensiveControl.cs" />
+    <Compile Include="Logic\Mutation\Mutations.cs" />
+    <Compile Include="Logic\Selection\RectangularSelector.cs" />
+    <Compile Include="Logic\Selection\SelectionManager.cs" />
+    <Compile Include="Logic\Mutation\StrainGenerator.cs" />
+    <Compile Include="Logic\LossCondition.cs" />
+    <Compile Include="Logic\WinCondition.cs" />
+    <Compile Include="Objects\IDestroy.cs" />
+    <Compile Include="Util\Graph\OutEdge.cs" />
+    <Compile Include="Util\Graph\GraphBuilder.cs" />
+    <Compile Include="Util\Graph\Node.cs" />
+    <Compile Include="Util\Circle.cs" />
+    <Compile Include="Map\Generation\GeneratedMapData.cs" />
+    <Compile Include="Map\Generation\MapGenerator.cs" />
+    <Compile Include="Map\Generation\PerlinCircle.cs" />
+    <Compile Include="Map\Generation\PerlinLine.cs" />
+    <Compile Include="Util\Range.cs" />
+    <Compile Include="Map\MutationArea.cs" />
+    <Compile Include="Map\MapTree.cs" />
+    <Compile Include="Objects\Units\FlowParticle.cs" />
+    <Compile Include="Logic\Offensive\IOffensiveable.cs" />
+    <Compile Include="Logic\Offensive\Infection\ICanOffensive.cs" />
+    <Compile Include="Objects\Units\Bcell.cs" />
+    <Compile Include="Objects\Units\Antibody.cs" />
+    <Compile Include="Logic\Mutation\IMutable.cs" />
+    <Compile Include="Logic\AntigenExchange\IAntigenProvider.cs" />
+    <Compile Include="Objects\Units\Values\DebuffTable.cs" />
+    <Compile Include="Objects\Units\Values\InvalidValueException.cs" />
+    <Compile Include="Objects\Properties\IHasSight.cs" />
+    <Compile Include="Logic\Offensive\Debuff\ICanDebuff.cs" />
+    <Compile Include="Logic\Offensive\Debuff\IDebuffable.cs" />
+    <Compile Include="Logic\Offensive\Infection\ICanInfect.cs" />
+    <Compile Include="Logic\Offensive\Infection\ICanDeInfect.cs" />
+    <Compile Include="Objects\Units\Virus.cs" />
+    <Compile Include="Objects\Units\Tcell.cs" />
+    <Compile Include="Objects\Units\Macrophage.cs" />
+    <Compile Include="Objects\Units\InvalidUnitModeException.cs" />
+    <Compile Include="Logic\Collision\IMapCollidable.cs" />
+    <Compile Include="Input\ICharListener.cs" />
+    <Compile Include="Input\ILeftClickListener.cs" />
+    <Compile Include="Input\IRightClickListener.cs" />
+    <Compile Include="Logic\Pathfinding\Pathfinder.cs" />
+    <Compile Include="Objects\GameObject.cs" />
+    <Compile Include="Logic\Movement\IMoveBehavior.cs" />
+    <Compile Include="Logic\Collision\IMapCollisionContainer.cs" />
+    <Compile Include="Map\Map.cs" />
+    <Compile Include="Map\MapCorruptException.cs" />
+    <Compile Include="Map\MapData.cs" />
+    <Compile Include="Objects\ObjectCaches.cs" />
+    <Compile Include="Objects\Units\Bacterium.cs" />
+    <Compile Include="Objects\Properties\IHasSpeed.cs" />
+    <Compile Include="Logic\Selection\ISelectable.cs" />
+    <Compile Include="Objects\Properties\ILively.cs" />
+    <Compile Include="Logic\CellDivision\ICanCellDivision.cs" />
+    <Compile Include="Objects\Properties\IHasStrain.cs" />
+    <Compile Include="Objects\Properties\IHasAntigen.cs" />
+    <Compile Include="Logic\Offensive\Infection\IInfectable.cs" />
+    <Compile Include="Logic\Offensive\Attack\IAttackable.cs" />
+    <Compile Include="Logic\Offensive\Attack\ICanAttack.cs" />
+    <Compile Include="Logic\Collision\IObjectCollidable.cs" />
+    <Compile Include="Objects\Units\Values\InheritanceTable.cs" />
+    <Compile Include="Objects\Units\Values\MutationTable.cs" />
+    <Compile Include="Objects\Units\Values\ValueStore.cs" />
+    <Compile Include="Objects\Units\RedBloodcell.cs" />
+    <Compile Include="Objects\Units\Stemcell.cs" />
+    <Compile Include="Objects\Units\Unit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Antigen.cs" />
+    <Compile Include="HUD\CellListPanel.cs" />
+    <Compile Include="Screens\Menu\AchievementScreen.cs" />
+    <Compile Include="Screens\Menu\AudioScreen.cs" />
+    <Compile Include="Screens\Menu\BindingsScreen.cs" />
+    <Compile Include="HUD\Button.cs" />
+    <Compile Include="HUD\CellInfoItem.cs" />
+    <Compile Include="HUD\CellInfoPanel.cs" />
+    <Compile Include="Screens\IEndGame.cs" />
+    <Compile Include="Screens\Menu\GameEndScreen.cs" />
+    <Compile Include="Screens\Menu\NewGameScreen.cs" />
+    <Compile Include="HUD\HUDItem.cs" />
+    <Compile Include="Screens\Menu\LoadGameScreen.cs" />
+    <Compile Include="Screens\Menu\LoadScreen.cs" />
+    <Compile Include="Screens\Menu\MainMenuScreen.cs" />
+    <Compile Include="Screens\Menu\MenuScreen.cs" />
+    <Compile Include="Screens\GameScreen.cs" />
+    <Compile Include="Screens\HUDScreen.cs" />
+    <Compile Include="Screens\IScreen.cs" />
+    <Compile Include="Screens\Menu\OptionsScreen.cs" />
+    <Compile Include="Screens\Menu\PauseScreen.cs" />
+    <Compile Include="Screens\Menu\ResolutionScreen.cs" />
+    <Compile Include="Screens\Menu\SaveGameScreen.cs" />
+    <Compile Include="Screens\Menu\StatScreen.cs" />
+    <Compile Include="HUD\Notification.cs" />
+    <Compile Include="Screens\ScreenManager.cs" />
+    <Compile Include="HUD\SelectableButton.cs" />
+    <Compile Include="Settings\SettingsManager.cs" />
+    <Compile Include="Settings\SettingsStore.cs" />
+    <Compile Include="Sound\Effect.cs" />
+    <Compile Include="Sound\Music.cs" />
+    <Compile Include="Sound\SoundCategory.cs" />
+    <Compile Include="Sound\SoundEngine.cs" />
+    <Compile Include="Sound\SoundWrapper.cs" />
+    <Compile Include="Statistics\IStatisticIncrementer.cs" />
+    <Compile Include="Statistics\StatName.cs" />
+    <Compile Include="Util\Functions.cs" />
+    <Compile Include="Logic\IUpdateable.cs" />
+    <Compile Include="Util\SortedList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AntigenContent\AntigenContent.contentproj">
+      <Project>{6F860B00-EBCD-451F-8C12-1D91360218DE}</Project>
+      <Name>AntigenContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Input\IMouseWheelListener.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

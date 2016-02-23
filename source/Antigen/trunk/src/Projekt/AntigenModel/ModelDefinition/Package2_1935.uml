@@ -1,0 +1,1796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3bd08a77-4d29-4f6b-bbad-c7682ba4c241"
+  name="Collision"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f2770ed7-421c-4f26-a0a2-82c74bea9025"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Logic.Collision"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="91bfb37d-197f-4810-a371-982d30e13b4b"
+        name="IObjectCollidable"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="b971c7fd-4491-497b-b01d-dfdd5ba02a5e"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c1126f9f-68c0-43f3-92f6-c87b21915f7b"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e7f309c-cf23-4323-90e3-2055b7325178">
+                <propertyInstance
+                  Id="e7e47130-efe2-4ef5-9b0f-054291573e0c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17c8cb2b-59fc-4eb1-b6c2-26caa0dce48a">
+                <propertyInstance
+                  Id="2b2a8643-5748-4c91-9358-2895d8d104be"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7da8764a-f44a-45c5-8b0a-062523e345e2">
+                <propertyInstance
+                  Id="213665c0-e157-4109-b46f-f1c4975c7535"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eeb0544b-79d7-4034-8a3e-33229eb74d50">
+                <propertyInstance
+                  Id="fe396b89-f4ab-47f0-bc27-0a3f0e1b13ce"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="f9c59e07-3424-4aee-adad-642af47dc974"
+            name="ObjectCollisionEnabled"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2adb0b3c-619f-40f9-b7a4-15b3eaf32d46"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable Member%3DObjectCollisionEnabled"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="be7d89b6-1076-4339-a6c5-457125c851a2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c00d85f0-0dbe-411f-8633-13f318b22a78">
+                    <propertyInstance
+                      Id="940f7846-d1b4-416e-b497-ce485b75d57b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1518d478-0353-44d9-abc9-f6f9174bbe93">
+                    <propertyInstance
+                      Id="370c8c47-409f-46c6-8c16-719b96d7ec9c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eadf406a-d850-42c8-93bf-7b3ff140c1b8">
+                    <propertyInstance
+                      Id="57a2dc1d-77ea-43ef-b371-1a0c61d2b26f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acbd7082-edb5-47b6-bf16-27b1a817c6c3">
+                    <propertyInstance
+                      Id="2103d671-4e27-4b30-b15c-0f3d19be264e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fed8a6c-cfc6-4a5b-bee0-b60f4d768ce6">
+                    <propertyInstance
+                      Id="512778fb-38c4-4803-b379-eb2dddf2664a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29975c7e-87ac-4704-ba47-8e53e6d7d4f4">
+                    <propertyInstance
+                      Id="6391f70a-efe0-4017-a144-386c981c931c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3847033b-6247-45a1-abf2-8bd6df122e46"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a1123a5f-f6ae-4a5b-8887-e4ad5e0f82d4"
+            name="Hitbox"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="86f24e4d-10ff-425e-9b1f-6c831663b325"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable Member%3DHitbox"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cd53c236-f769-4658-b074-a260f27f8db6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6eb79eea-8514-48a5-8b43-f40d91065dca">
+                    <propertyInstance
+                      Id="75c78ec8-9af3-431a-b6ea-f1607d4eaa4e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1b0f2dc-c250-49c9-80e9-5f81990dfb13">
+                    <propertyInstance
+                      Id="55c7de09-4502-4317-b6a0-9d1e3e221ae5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0024261-7652-4607-8f4e-79dca94abcc1">
+                    <propertyInstance
+                      Id="7767dfd4-8f32-426d-b574-51dbb2ad3c02"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67378027-d4da-4bfa-b4d2-e5b5569d4d6b">
+                    <propertyInstance
+                      Id="961a89db-ced4-4988-bf15-46a1f10dd56e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c478ff5-7090-4f49-9f65-d5547ec8ee0d">
+                    <propertyInstance
+                      Id="e3a7566b-3936-4eec-b318-6e48d966aa84"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03dc596c-fd54-4acc-b7b5-31ed50f6998a">
+                    <propertyInstance
+                      Id="84b02d2d-c7ad-4b99-83fb-37d3f093c9f3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9a56fc0-2e05-41aa-aa53-0f004a70de1d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12d640c5-752a-4b9d-8507-1909ed7bad7a"
+                      LastKnownName="Rectangle"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f565732c-673a-43b7-8c02-94e1ab1f22af"
+        name="IObjectCollisionContainer"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f4e2c9a4-8538-4c6c-b2a0-62a215897bca"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b2c8dd02-25aa-4be7-b387-3bc7ed45c18d"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b6f038b-148e-486a-a5df-b5f701864f7a">
+                <propertyInstance
+                  Id="b3ddab80-46f0-4996-b050-dbf2e7d780df"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d474178b-5546-4f8b-9855-0d0ff67f5a6d">
+                <propertyInstance
+                  Id="a6e999de-ecbc-4811-ae9f-c1b453c4d266"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5cfdf609-2b6c-47a2-ae8f-155c2edd2d0d">
+                <propertyInstance
+                  Id="c3906c64-30b3-41f1-b71e-06476d6e9786"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c96153e8-9509-458a-99fc-dcfa6b9783be">
+                <propertyInstance
+                  Id="53513847-49f1-40dd-87b9-c9021d9517ef"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="c1003b6b-a532-4755-bf3d-985fdaf1a0ec"
+            name="GetObjectsInArea"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e19cb1a9-2d5a-4e2f-bb7d-ec754f09a577"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer Member%3D(Name%3DGetObjectsInArea OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DRectangle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b7e2f6a5-d4f3-482e-8c90-8d7f4d19f20c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="322a0f4e-1030-43da-a21a-a10e3a2a8806">
+                    <propertyInstance
+                      Id="14ff2259-5433-4122-a301-bbde4c75a904"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3d0b16c-6385-449d-8ff7-62e18de85c4f">
+                    <propertyInstance
+                      Id="55f4e816-eaa3-4eb5-8b17-b4faa68a80cb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96bab45a-2b63-4414-b27d-8581170c4591">
+                    <propertyInstance
+                      Id="44dbe023-ec90-4363-b326-d996a5133535"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d1f5585-2ae8-4ecc-a186-e04cd60a1e5e">
+                    <propertyInstance
+                      Id="03cd56eb-caaa-4305-81c1-176f6c32153b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28b9ad72-adbf-4258-82ee-2c2568d490e1">
+                    <propertyInstance
+                      Id="57191efd-dea1-4ef2-a5ad-062bc98f11e7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="539dc166-3d4e-44f5-bf43-522348ac4b99">
+                    <propertyInstance
+                      Id="cf1f7c95-dd95-4f37-9365-4a0c0b06ecfb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39eb73b2-ff3f-47da-9c81-d12c19407d2d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9e7658cc-2628-46a7-9a47-592c0c6c4ac1"
+                      LastKnownName="List&lt;IObjectCollidable‎&gt;"
+                      LastKnownLocation="Package21_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="99106a2b-48bf-43e6-8c7c-f989818b9b39"
+                  name="area"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e170117c-b795-4c04-ac7b-c43158fd8b36"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer Member%3D(Name%3DGetObjectsInArea OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DRectangle)]) ParameterIdentifier%3Darea"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12d640c5-752a-4b9d-8507-1909ed7bad7a"
+                      LastKnownName="Rectangle"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b6aa0851-cdfe-45e1-a3fd-fad0a6f49cc3"
+        name="CollisionDetection"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e1267bd7-e95b-4e86-8e31-c61305f2f5f1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ec6156a7-8027-4dda-8575-63e0da4cf0f2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc82d447-87c1-4af3-9e99-edfa9da04aaf">
+                <propertyInstance
+                  Id="3ac43b9a-6d0b-43a6-8021-b38c67f741b4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c599f97-34c4-4c2b-bce5-ca6b0235f3e8">
+                <propertyInstance
+                  Id="c8e9d8ac-86bd-46ba-b2ec-8a9fccf2b95b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3a41d77-9d4a-412a-900a-85ed0c80c621">
+                <propertyInstance
+                  Id="cd464ebd-93db-4d39-8a56-1ca1b9adc8c8"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0939e492-127a-4e5e-9fd6-bf74d9f21b42">
+                <propertyInstance
+                  Id="330d9e1f-13e6-437b-8dd9-1efe73908d70"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="95a01254-0c81-495b-b125-b2301226515f">
+                <propertyInstance
+                  Id="f66d1fc0-138e-4649-9674-f50ebaded18d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="5732b4da-e1db-4f31-a44f-baab8f785937">
+            <interfaceMoniker
+              Id="a790a73b-25c4-4ed9-a49f-346e293add3a"
+              LastKnownName="IMapCollisionContainer"
+              LastKnownLocation="Package2_1935.uml" />
+          </dependency>
+          <dependency
+            Id="0ca2b38c-b19f-442a-a61d-1fbd73177151">
+            <interfaceMoniker
+              Id="c228cf4d-ab0e-4dda-af21-4c2ed02605ea"
+              LastKnownName="IMapCollidable"
+              LastKnownLocation="Package2_1935.uml" />
+          </dependency>
+          <dependency
+            Id="b76af3c9-0d0f-4078-ba1d-00ec130918ce">
+            <interfaceMoniker
+              Id="f565732c-673a-43b7-8c02-94e1ab1f22af"
+              LastKnownName="IObjectCollisionContainer"
+              LastKnownLocation="Package2_1935.uml" />
+          </dependency>
+          <dependency
+            Id="33818d70-7d3e-4392-9dd2-c3b3d6baa08c">
+            <interfaceMoniker
+              Id="91bfb37d-197f-4810-a371-982d30e13b4b"
+              LastKnownName="IObjectCollidable"
+              LastKnownLocation="Package2_1935.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="01456502-d5bb-470f-afa2-062063f7ab3a"
+            name="SecondsToNextRequest"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a4108841-9948-4de9-b593-a6d96c38074c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3DSecondsToNextRequest"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="482226e2-199a-4092-a832-f40701a8e7bf"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6958de8-ad65-4f65-97a6-33931e348dad">
+                    <propertyInstance
+                      Id="8febfead-2a15-48b3-899c-abea2278367f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afefdd40-7846-4b68-a6f1-662b659dea3f">
+                    <propertyInstance
+                      Id="a8320665-6a89-4c06-ba88-3b62a8210efa"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3aec9f55-f93b-49a8-b1f1-14e269a59e6e">
+                    <propertyInstance
+                      Id="e5da0fda-9021-4cd2-a20f-6494a974a951"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9c3ee2e-7eef-4975-af37-b0cefb30f6ae">
+                    <propertyInstance
+                      Id="306ff2db-a479-49be-bfee-443a97035500"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad74404f-f77a-4686-9ae0-ca52d33b9a43">
+                    <propertyInstance
+                      Id="0aab95be-8460-4705-9180-cf77e68825f7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="ba37d034-53a8-4443-87e4-39a7dccd698e"
+            name="sObjectCollCache"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="164326ca-fb9d-4120-a54d-c7c102693342"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3DsObjectCollCache"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="268e39b6-0811-4318-ad7e-60237a11d3fd"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="075a9de8-ab1d-4134-8de4-266453ad3c01">
+                    <propertyInstance
+                      Id="24a82533-4415-45e1-9fbc-7b567b95a4d2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9960945b-41cb-4dc7-8c3d-090faa4ad107">
+                    <propertyInstance
+                      Id="cce0090d-47c0-4f07-9486-b6ec114b37e8"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fceedfa6-9eb2-4084-b41e-4c4dac61ecd9">
+                    <propertyInstance
+                      Id="589fb4a8-9eca-4bab-a7dc-bfe6f191d1fe"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7c20926-efaf-4046-85e1-2a1b1a407382">
+                    <propertyInstance
+                      Id="f18f862c-cde6-4e3a-96fb-91b7296d6142"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec666dc0-9b21-474c-9812-4efd63756a4d">
+                    <propertyInstance
+                      Id="70b80451-5f77-4e37-8369-0f7059c17749"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5b611a6c-03ba-4ccf-933f-c1343695e89d"
+                LastKnownName="HashDictionary&lt;IObjectCollidable‎, Double‎&gt;"
+                LastKnownLocation="Package_1113.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9f274711-2ff6-473d-8854-267443bd5416"
+            name="sMapCollCache"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7f67d1ab-c2ec-4248-98ff-6945fe80f9a5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3DsMapCollCache"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ad56200b-b8d1-4e07-9d2a-b5b2efb40e35"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6730004-f41c-4212-aeb0-fddde5abceb0">
+                    <propertyInstance
+                      Id="9c372b6b-49db-4ae2-8112-82fa03348a0b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="023719b4-7d02-42d7-b8a2-631ac966d1b3">
+                    <propertyInstance
+                      Id="e27f372a-4f5c-4dbc-bb1e-44aab22c54cf"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7190ddd0-80e2-4c64-9454-9dbf15a02204">
+                    <propertyInstance
+                      Id="2311228c-7dfb-4a54-a4c0-9f6026754434"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13f9352f-5819-449f-a21f-6ba8a0430180">
+                    <propertyInstance
+                      Id="2f5fdbc2-a7a8-454c-a2e1-6fcff60a4778"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7359fe30-eeb0-4e02-b5e8-3197c7ecc92e">
+                    <propertyInstance
+                      Id="ec942281-0982-4b8d-9f7d-ba7942ddf0fe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e767c370-3906-4de7-ad9e-c4a2e13c15f7"
+                LastKnownName="HashDictionary&lt;IMapCollidable‎, Double‎&gt;"
+                LastKnownLocation="Package_1113.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c24a5919-b973-496b-bd29-48bd755a0574"
+            name="CollidesWithObject"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="78640ab7-faff-40fe-9eba-ebcab002ab6a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3D(Name%3DCollidesWithObject OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="775dc255-1299-44d0-b5ab-bf4c6d4edf55"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44a01084-537b-487c-b271-bdcf8be00183">
+                    <propertyInstance
+                      Id="13355e36-33af-4a1b-84eb-528fbcc06b87"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b848af5-5dad-4f8f-86f2-9929bf00aae9">
+                    <propertyInstance
+                      Id="8aeaa7c0-65cd-4282-85eb-b416d44ff796"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1f4c615-3fca-4709-893a-e6837f84e426">
+                    <propertyInstance
+                      Id="58dabc52-ed28-41f1-84e3-273f0a1450c0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f27171e-6b14-4d46-b2d8-04e6dfc0fc13">
+                    <propertyInstance
+                      Id="307405e9-cbea-4127-a861-d234d8d937ef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbc8be1e-4842-457c-bd8e-750de80df55b">
+                    <propertyInstance
+                      Id="ad7d4e5d-16a7-4e79-897d-161f97838a59"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="579d8a5d-ce10-43b7-86d1-78a61d3daeed">
+                    <propertyInstance
+                      Id="cee0554e-da36-4b33-b080-a41df4e2e779"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="05cd9f8e-d16d-490e-9b75-48d47ad72dd3"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90c61ef4-ee42-4018-aebb-312e21e5d95d"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="de72f825-b2f4-4410-a967-114efb6685b4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3D(Name%3DCollidesWithObject OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="8a43ff82-d549-40ed-95b4-fc62c8719d84"
+                      LastKnownName="IObjectCollidable"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="164c01c2-0ad9-4c6a-aa0b-0a66ea85e38d"
+                  name="container"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5ad3a8b9-a9ba-475e-9c5b-ed2a30f332b7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3D(Name%3DCollidesWithObject OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3Dcontainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="b1c27f73-382e-40a2-9f4e-c89468aad5c5"
+                      LastKnownName="IObjectCollisionContainer"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d6f6ae53-22a5-4e8e-8123-7c0f14504263"
+                  name="gameTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9792a814-f207-4442-8ef5-04007ace27ec"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3D(Name%3DCollidesWithObject OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3DgameTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e491d141-6751-49ba-a100-5759d9aeee66"
+                      LastKnownName="GameTime"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="855011d6-72d7-4042-aaf7-a1f1b744b688"
+            name="CollidesWithMap"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ec7985a6-7cdd-4d08-9243-651e7400df61"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3D(Name%3DCollidesWithMap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f9af8780-839b-4b4f-9643-c2f4793d9890"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12dd6d80-8bb1-46e1-81d4-f18cca36c95e">
+                    <propertyInstance
+                      Id="a8a58077-a4b0-4cd2-babc-65b20c79c79e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcf524b3-d9ee-4f46-87a2-641f5cc21936">
+                    <propertyInstance
+                      Id="df17f378-7d44-4033-a582-b698f80027a5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="181cf989-5bee-4c50-a2ae-54d9af82cfcf">
+                    <propertyInstance
+                      Id="15d1c8fb-6879-4f81-a25f-42790fa7edec"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94b394c9-d439-4680-bfed-537f0730150e">
+                    <propertyInstance
+                      Id="a6e78617-3e97-4e3f-af03-54066435c06e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9146609a-3580-4ca0-93ac-a93428805c46">
+                    <propertyInstance
+                      Id="1a321077-40a8-4663-aeca-f5f1cfb990dd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6dd07a0-6c5c-429f-a7d4-915b6624802a">
+                    <propertyInstance
+                      Id="81f7d1de-f0e4-4110-9d2e-3e0dc5eff8b7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="714311c1-6a72-47c8-938b-ba25edfc5314"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a788d895-ce19-472e-b58e-e54ae96dcf43"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="67a0c06d-f486-4a55-a96e-ee9507bedc7c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3D(Name%3DCollidesWithMap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="738e9bf1-99ac-4f7a-9bd6-ddd63f08598d"
+                      LastKnownName="IMapCollidable"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="142205dd-dbdf-475a-bd86-db59113d1a33"
+                  name="cont"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9686324c-c470-4493-9473-f0bba30eb909"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3D(Name%3DCollidesWithMap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3Dcont"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a8264a17-0a4b-44d4-bbd2-a47940df736d"
+                      LastKnownName="IMapCollisionContainer"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2aa8e597-c750-4f82-853e-47d59a45e1d3"
+                  name="gameTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cfc3466c-4a8b-46e2-90e5-1e1c2f273594"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionDetection Member%3D(Name%3DCollidesWithMap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3DgameTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e491d141-6751-49ba-a100-5759d9aeee66"
+                      LastKnownName="GameTime"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="adb0bdac-8da9-46a4-b28c-648b03c58183"
+        name="CollisionReaction"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="35833254-1fc8-4cca-b22c-7535b43a5c83"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b7ac5965-a5ad-4932-aa97-5f5a5d1d6cbb"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b90516cb-aa6c-4554-b813-e668dcb97d22">
+                <propertyInstance
+                  Id="14e09f66-aaa0-472e-a458-9c7ddc603fb3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f9786a72-dd03-45e4-ac51-d2ea97a79491">
+                <propertyInstance
+                  Id="027bb9a8-777c-4311-a2de-77cb3e542ae3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8a7d4676-da0a-4b87-b36c-3422f05b6d9e">
+                <propertyInstance
+                  Id="e8d822de-3166-4677-b0c1-9798c3cac12d"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ce1d028-cc45-469c-9afa-1a4f5c23ff68">
+                <propertyInstance
+                  Id="aeb50159-96ff-4d02-94a1-d9e8ab6fae6b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e6282a4b-912b-4bea-942a-37c882f8260f">
+                <propertyInstance
+                  Id="a5a4e2f8-af2a-4bc2-a729-a1b086c1b24e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="30ead2d7-fe72-467a-a585-4e61a481a04e">
+            <interfaceMoniker
+              Id="91bfb37d-197f-4810-a371-982d30e13b4b"
+              LastKnownName="IObjectCollidable"
+              LastKnownLocation="Package2_1935.uml" />
+          </dependency>
+          <dependency
+            Id="856962f9-4f7f-438f-854b-569a7f18661d">
+            <interfaceMoniker
+              Id="f565732c-673a-43b7-8c02-94e1ab1f22af"
+              LastKnownName="IObjectCollisionContainer"
+              LastKnownLocation="Package2_1935.uml" />
+          </dependency>
+          <dependency
+            Id="5e35426f-7b7e-433d-89f4-bf5dbc2e223a">
+            <interfaceMoniker
+              Id="c228cf4d-ab0e-4dda-af21-4c2ed02605ea"
+              LastKnownName="IMapCollidable"
+              LastKnownLocation="Package2_1935.uml" />
+          </dependency>
+          <dependency
+            Id="705da3a8-7622-4e3f-887d-c9c0aec4bfef">
+            <interfaceMoniker
+              Id="a790a73b-25c4-4ed9-a49f-346e293add3a"
+              LastKnownName="IMapCollisionContainer"
+              LastKnownLocation="Package2_1935.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="decde08b-e34d-4a85-b689-e46db005d2e1"
+            name="CollisionWithMap"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="407f3969-ccc1-4163-af85-eb6925eb3e99"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction Member%3D(Name%3DCollisionWithMap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8c9221cf-5912-41d9-95f3-a53fe6c87fb9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21236301-0975-43f6-980f-10ff446e28fe">
+                    <propertyInstance
+                      Id="1f4185a2-a5fd-433b-af8b-7e319a69edf3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e236387c-60d2-4654-b2f9-ad145ea4dee7">
+                    <propertyInstance
+                      Id="88d9497c-211e-4744-8b01-d7eb0d03155a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="216a9145-fe6a-4982-b2f2-461677b88c08">
+                    <propertyInstance
+                      Id="d146828e-694a-4a12-a69a-a18e49ccc482"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e276026-cb0c-42bd-8f6c-771d34b26ee0">
+                    <propertyInstance
+                      Id="12bcaa98-6c65-41b9-8a10-54822d446d18"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb50cca7-6001-4760-aa5c-fddf1fde299b">
+                    <propertyInstance
+                      Id="392a3453-9813-427f-a045-5c06b2a62442"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8491f15c-c008-49af-ab57-634da3bb59b6">
+                    <propertyInstance
+                      Id="abba7c0b-3463-4423-a27b-3c73b2e4ef15"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="adab390a-804a-4657-9992-9c892d137906"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="88230a49-7775-49c0-83c2-8ffa6d4360bf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction Member%3D(Name%3DCollisionWithMap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="738e9bf1-99ac-4f7a-9bd6-ddd63f08598d"
+                      LastKnownName="IMapCollidable"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20b9dac3-a10f-41a8-9c6e-c70b042105c7"
+                  name="collContainer"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="edf02fbf-0ec0-452f-b183-0951af02ab3c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction Member%3D(Name%3DCollisionWithMap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3DcollContainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a8264a17-0a4b-44d4-bbd2-a47940df736d"
+                      LastKnownName="IMapCollisionContainer"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="780d3a95-2644-4227-a319-c5ea0d1dab92"
+                  name="gameTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="78929c3d-fbd8-48ac-a1da-eb1b545a9e19"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction Member%3D(Name%3DCollisionWithMap OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3DgameTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e491d141-6751-49ba-a100-5759d9aeee66"
+                      LastKnownName="GameTime"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="09b140f6-7a18-4d97-9680-458fbcadb798"
+            name="CollisionWithObject"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ee880d0d-67a5-49b5-ae37-9824ea4ae0fb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction Member%3D(Name%3DCollisionWithObject OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4f913213-5f0b-430f-9e4d-56cc8c0cf1bc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="186cb83f-fbab-4bde-adcb-4e0d38eccf03">
+                    <propertyInstance
+                      Id="4de2d691-0207-44ca-9184-38aeebca4db0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f27f81c-2135-413c-b4f5-0a6b099385e3">
+                    <propertyInstance
+                      Id="3b66ba9d-90db-4b28-ad3d-45369a4ee68c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7e45e6e-6529-4b8c-b40d-c8c62ade6cec">
+                    <propertyInstance
+                      Id="e92d50bc-c84c-4ed7-95f2-c95dda22b478"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a55ffbb3-1d81-41ee-874f-a24ed79fc233">
+                    <propertyInstance
+                      Id="2fd4c808-c19f-4cdb-be7c-dcc718267a6b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a7fce55-06b6-4354-a61a-35e307a25d8f">
+                    <propertyInstance
+                      Id="98a85456-a9df-4968-a9a4-3881a52cbc33"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="157eb38f-f326-4288-9606-277e183fb67f">
+                    <propertyInstance
+                      Id="65fffa6a-530f-41d0-8ca6-2871885899d2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="866abc4e-73cd-4c1d-b063-17d9892acf6e"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="503c4447-2ed9-4a90-834d-6a871f2862e6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction Member%3D(Name%3DCollisionWithObject OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="8a43ff82-d549-40ed-95b4-fc62c8719d84"
+                      LastKnownName="IObjectCollidable"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b279adde-c03a-46c8-b40a-bb80f5860753"
+                  name="container"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1c051b2e-8b42-4bf8-a27e-b49a8d74e70d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction Member%3D(Name%3DCollisionWithObject OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3Dcontainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="b1c27f73-382e-40a2-9f4e-c89468aad5c5"
+                      LastKnownName="IObjectCollisionContainer"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d6001a6-844f-4a29-96be-c249c4885431"
+                  name="gameTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5d42078d-e7a2-4e0d-8f6b-014f56c95ad1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DCollisionReaction Member%3D(Name%3DCollisionWithObject OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollidable)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameTime)]) ParameterIdentifier%3DgameTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e491d141-6751-49ba-a100-5759d9aeee66"
+                      LastKnownName="GameTime"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a790a73b-25c4-4ed9-a49f-346e293add3a"
+        name="IMapCollisionContainer"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="2a98488e-7295-44b4-9d33-fd8816cf2c24"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="71722aef-02ab-462f-acc5-7a1b68213b14"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d9fca325-cffd-4d1b-a231-d9e7e6450a0a">
+                <propertyInstance
+                  Id="125210c8-e024-4602-86a8-522b6ec6a8c2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9fe50185-4ab2-4fbf-ac2e-cd9f92ce8990">
+                <propertyInstance
+                  Id="71e430de-1afd-4c4b-a040-90f1d1c35c7c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7a29b40e-b03b-4433-b472-afac1b967605">
+                <propertyInstance
+                  Id="29bac7e3-cfd1-4f61-ab88-7fcf92bf5a41"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0ecd866-d249-4b9e-9d67-c20534cea274">
+                <propertyInstance
+                  Id="f50c9f10-4d9a-444f-b0ba-0bbb7de4058f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="f88dab22-7df6-4519-bd69-2f5f500317df"
+            name="IsBlocking"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1ab2965c-398a-46d0-8e85-2e94fd56cee9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer Member%3D(Name%3DIsBlocking OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DRectangle)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="498c16a4-a422-4fcf-a54f-8ee42c9ff8c8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34e055c2-b5fa-47ad-95c5-5bc13ecabfdd">
+                    <propertyInstance
+                      Id="6b479181-c0cc-4837-88b0-b96c2501518f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6a40b32-096a-4345-9405-c2d96c9035fc">
+                    <propertyInstance
+                      Id="7b6e39fd-8554-4b8f-aa94-3dfa0bef9e95"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26c76c93-d9bb-4ba2-a4de-0092513e0127">
+                    <propertyInstance
+                      Id="b8e2d68f-ddf4-4ce0-9cbc-bdc004d88ce9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dceaaa6e-b3fa-4d8f-8473-56916b7443e6">
+                    <propertyInstance
+                      Id="38e9859f-b17a-48a9-b89e-9b4421923b94"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="346113fc-9bc1-4596-900f-9d196333b320">
+                    <propertyInstance
+                      Id="ea943ac5-ed89-40f4-97ce-a97fc38724f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0f4e5b2-f9e7-4011-8c44-28a428f080a4">
+                    <propertyInstance
+                      Id="d02d625a-9f75-4340-a7ca-3b51cc97ba86"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="75d33f5f-8119-4f15-b3c8-77529e6cf50c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92574f65-2a2c-4361-90c7-c778d87f6f4a"
+                  name="rect"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="627588d0-bc17-4a28-ae7f-49b7e689e2b3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer Member%3D(Name%3DIsBlocking OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DRectangle)]) ParameterIdentifier%3Drect"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12d640c5-752a-4b9d-8507-1909ed7bad7a"
+                      LastKnownName="Rectangle"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8c364661-88c1-412e-a8e3-5ce1c61caa04"
+            name="GetWidth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="02292774-ccc6-446d-b2e2-d4c335529e82"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer Member%3DGetWidth"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ae6d6927-4f31-4fb7-b696-cb662ffd7ee2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b20ddfa-7ca0-42d9-89c0-cdbebc816a18">
+                    <propertyInstance
+                      Id="72a0e0a8-d286-45a1-8628-29ad79a2e4c4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e42eeb5-509f-4662-80ac-6e97bdb5a449">
+                    <propertyInstance
+                      Id="bdaeaece-7d40-46ca-9293-33fc35eea38d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67d7b155-9b6c-41ae-91c3-aef0d2990b50">
+                    <propertyInstance
+                      Id="b3bf966f-e6f0-4c44-a7bc-38ccb049e92f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80325716-dc9e-47ff-96b0-14f2819b0644">
+                    <propertyInstance
+                      Id="b828ba18-84f0-461e-b4ab-e1411087df01"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d17c4670-989f-48a3-a1da-c9141a0dbbb5">
+                    <propertyInstance
+                      Id="cb71c310-3296-4d0a-b3ef-d2a0cce51823"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9fe3319-ba61-41a0-9b25-a9c43eeb9484">
+                    <propertyInstance
+                      Id="c9cc9180-a066-41f7-b8f1-c955881e982a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ac68221f-2da5-4806-b6db-ce0b8725cb3e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4cf3e5c5-c11e-422a-bc1c-e69b5c0652a7"
+            name="GetHeight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="22951a29-51b7-4d00-98ac-fba20187b15a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer Member%3DGetHeight"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="65026eaf-8af7-4218-8e0a-56a9dff5657e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18eb0a03-df9b-4894-8c57-ff34c2b8b3f7">
+                    <propertyInstance
+                      Id="fbae3e71-7898-42b3-bcae-47efee55eb1f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4889c54-2ffc-42e3-80b2-245f4f508a4f">
+                    <propertyInstance
+                      Id="301f4638-e075-48e6-8fb3-015a5831862b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0f980d5-b981-4284-a100-c7ceeefde9c6">
+                    <propertyInstance
+                      Id="4fc1844a-eb15-419f-9efd-656f558bd4b4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="829673db-e7a4-4d3c-82d2-02c73b545923">
+                    <propertyInstance
+                      Id="15db1757-344e-47f4-8789-88c720f8680a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8a29bb1-d18a-4b9c-9736-f06a5ab0aeca">
+                    <propertyInstance
+                      Id="8f368052-6e7b-4eec-8471-533ec1d260c3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbad21da-2ee9-419b-aa22-5002949ca647">
+                    <propertyInstance
+                      Id="5467b34d-dc52-4e35-9c83-819231c4a622"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ff2c2155-b2ca-4a53-98d5-2d07078cd09b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c228cf4d-ab0e-4dda-af21-4c2ed02605ea"
+        name="IMapCollidable"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="656f8c78-7b5f-47f3-984b-3078ed1e295a"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3e51577e-17ce-45fe-b3f7-d5d08b49c516"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b59716c-2e6e-47b2-84a0-2213c12196ee">
+                <propertyInstance
+                  Id="4648eb28-04a3-4ac9-ad7b-616672238083"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="40453703-6ee7-41cc-9972-cacf11085b53">
+                <propertyInstance
+                  Id="285c744d-aec3-4405-a266-af25508853e7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="01901ea5-52ec-41fb-b98e-5481959903b6">
+                <propertyInstance
+                  Id="add388ba-d7a1-46a8-9da6-36f925c9a6f1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aac7e706-8b31-4cae-9125-f1772536fbd1">
+                <propertyInstance
+                  Id="d1c300a6-5e8b-4693-932c-2b479647ebf1"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="fdb5fd2d-1e6d-4098-9384-354afc068394"
+            name="MapCollisionEnabled"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="01943fe1-28c2-4cac-8ad4-8985f8930cb1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable Member%3DMapCollisionEnabled"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b3fad0b-09ee-446a-ab76-715bc6678f1c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e889e2e-a733-4bd2-ad0f-92dacf84702a">
+                    <propertyInstance
+                      Id="00959454-d9fd-4fe9-a3a8-40dd9f55a4ca"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="371219cc-b6bf-4050-9642-ea120ab4714f">
+                    <propertyInstance
+                      Id="6ae02def-6c5d-4923-bdab-2176393f2086"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89854a97-8284-43ff-b031-a51c0c3558b2">
+                    <propertyInstance
+                      Id="426177b9-6cbd-46a2-948c-b98d649e72a2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7828e087-55fb-4718-a0ba-bb70e28eefed">
+                    <propertyInstance
+                      Id="abf877b4-81a4-4c58-b493-6880c9c811f6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6fe1a7c-bc29-4c82-92cd-5ac57d9c578a">
+                    <propertyInstance
+                      Id="2a95bc55-7776-4949-9eb2-c50ce5b4c7f6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d86fb42c-c916-4d4c-b11e-d201a270ceea">
+                    <propertyInstance
+                      Id="2cd0149e-7112-4cbe-9347-7ce17068a911"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df438e04-df72-4009-882d-7cdf231f2f77"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8bcc4e20-74e5-4b37-9056-99e87fcb1cb3"
+            name="Hitbox"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2036473d-986c-4fcd-b499-0720dde56d37"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollidable Member%3DHitbox"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9d506ec0-4fb3-4ba6-a2f4-cb9fcf4c8aa2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d3dd37b-f91e-481e-8614-d3bcd23ccccb">
+                    <propertyInstance
+                      Id="1ceaedb1-c497-4780-a19c-32e0f6feeb17"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9bd1903-c4ae-4f87-a02e-cd4b432b0c3d">
+                    <propertyInstance
+                      Id="9e3ffe73-d637-48c0-815f-eeb8efd4ced8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1676927-d2b3-4120-b27b-347e0b243fd0">
+                    <propertyInstance
+                      Id="46907ef6-6a3c-467a-ad6a-8b7625989d50"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bec0fe84-f61c-4e07-a73d-b359bfbd7e37">
+                    <propertyInstance
+                      Id="ec6ba539-b1e7-4736-b753-0d04d301747d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7396501a-47d2-4f3c-844b-f4ff186a355e">
+                    <propertyInstance
+                      Id="e41cba6d-236e-481e-a146-6377e7561dc5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58823d57-ba7e-41a6-b520-b5fefd6d2e79">
+                    <propertyInstance
+                      Id="3f56502c-6c60-4367-8033-e69159ed5efe"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c841802-05f4-45b6-a6ad-4460a6c90e1c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12d640c5-752a-4b9d-8507-1909ed7bad7a"
+                      LastKnownName="Rectangle"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

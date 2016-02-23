@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bc166c4f-43ba-46b1-b2c5-994ed34d2b41"
+  name="Settings"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0d5672bb-5978-4457-b339-e03780d2e331"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Settings"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="a724ff5c-9421-44b1-b960-656169414e16"
+        name="Difficulty"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f3f330be-c802-429a-989a-68a772f9f75e"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DDifficulty"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6fb7d0cb-4c5f-4d62-946f-4b74a96ff39a"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36d7333a-7d39-4cac-ba47-11bb08f1d320">
+                <propertyInstance
+                  Id="2eb70b2e-e4e0-4409-b980-05dd7f709977"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0603123-f9b6-44fc-84fd-73d5d0108d0b">
+                <propertyInstance
+                  Id="211a8834-41d8-4af9-abf3-1c1f9b4f89b5"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="adf93a4b-7b67-459b-b168-cccd0ac8b8ec">
+                <propertyInstance
+                  Id="c408786e-11ea-475b-8ece-05c68f3b05f0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0342c8b8-ab96-4e94-bc1f-7ce4407fdfe1"
+        name="SettingsManager"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e12ec657-8f8b-4504-ae1b-941069f31234"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d9490430-0b10-48b3-9818-e9ec74bda2a6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ad1cb902-664b-42aa-a184-0c9cfd1bdfb9">
+                <propertyInstance
+                  Id="36268d19-eafc-498a-aec9-6bf61f3bba45"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a9ec536-ebf5-4ef2-ab52-231632a5ce0e">
+                <propertyInstance
+                  Id="0f3631b5-0524-4bdf-810f-4e4ba8fbcd74"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb1d1417-ef8e-4c9d-bd44-d2f62f6fd0e7">
+                <propertyInstance
+                  Id="4e823969-5934-46c4-b5d4-c74ffee3a7a9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="961233f3-00d9-4801-9bac-0494eed09c68">
+                <propertyInstance
+                  Id="10c5354c-10bb-443a-8599-330b1a5307b5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="992e4ccc-c7bc-4b71-b4b4-e50dbea76662">
+                <propertyInstance
+                  Id="85836b58-75fa-4351-a9c4-9e4acecd1bae"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="d9781263-4a53-4f95-bca8-44c329262d33"
+            isDerived="false"
+            sourceEndRoleName="SettingsManager"
+            targetEndRoleName="CurrentSettings"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d2a85895-23e5-40bc-91b4-f8031217b0a5"
+              LastKnownName="SettingsStore"
+              LastKnownLocation="Package_0929.uml" />
+            <description>Property CurrentSettings references type SettingsStore.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="928394c4-38b3-4131-b726-97d23dde64a1"
+                  name="SettingsManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9d957624-9878-491a-8ffd-9996e7e54ed1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b46aef63-355e-442b-9db6-4bd6dec66f46"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3c4d363-0722-446c-9087-937bd83dae5c"
+                  name="CurrentSettings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8faa4b37-284c-48a0-a071-dbd02a945a78"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d0fa32b2-2a90-4509-b456-73ae20cbc41b"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="6b987083-c544-452e-8bfd-e8f27c6becb0"
+            name="CurrentSettings"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cb0a854e-864d-492c-9ceb-04b6a0d9fac4"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3DCurrentSettings"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="42425046-e3fa-4618-9213-5cea6da42a39"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d907dac9-9b8b-4144-9aa6-bff4b1ceb4f8">
+                    <propertyInstance
+                      Id="14b555e8-b14e-4603-a69b-b3318bf04782"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e8b8808-8631-4df9-ade3-b7f62400f39c">
+                    <propertyInstance
+                      Id="13789b6b-fbfd-4135-8fff-7063ff03571b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3aa0e8a-6547-423b-b9a4-bd32143b3a74">
+                    <propertyInstance
+                      Id="f2d986dc-c6f7-4af4-8b1e-da2a71c05d7b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="646c367f-3ec8-4f51-800a-b62e4b512824">
+                    <propertyInstance
+                      Id="b4db5bcd-90e0-4a23-a268-4edc4b5822f1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76aeabca-4e15-422e-b0e3-a1faa63203de">
+                    <propertyInstance
+                      Id="71a7d16f-ca4d-4c89-8e95-916c4f30b10d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15e7c215-c097-4d00-8ffe-10a174523e7f">
+                    <propertyInstance
+                      Id="4227be2a-545d-493f-a420-df7d4e994f6a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7edd0ee-edaf-4d06-865a-c684c77e85cb">
+                    <propertyInstance
+                      Id="f203b921-e51d-403e-91e0-37a9fb70f97f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d2a85895-23e5-40bc-91b4-f8031217b0a5"
+                LastKnownName="SettingsStore"
+                LastKnownLocation="Package_0929.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c24e0a15-cd13-4062-9acd-d78d0cb56fdb"
+            name="sConfigFile"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1bf06250-15de-46b6-b541-8283318717d9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3DsConfigFile"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e738c72e-5cf0-491e-9a77-11c3efbdbb48"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3aec0dbd-01b4-4308-b33a-c5210d0a854a">
+                    <propertyInstance
+                      Id="3a41159e-cb0f-47bf-848f-64fd7fd311ba"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="385dfe9e-5c99-4fdf-86d4-639ccf640685">
+                    <propertyInstance
+                      Id="8444591b-4e20-4447-aa55-878fc438adc4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c366e0d0-debb-4cae-bf90-9f0f6f969465">
+                    <propertyInstance
+                      Id="97d946a4-97e8-4f88-b092-1bd6293df0e0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="733c45de-abbe-4633-97c2-6d8d77fda06a">
+                    <propertyInstance
+                      Id="785f4c38-d333-4b3a-a4b1-117a9d5fd58b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15098bb0-d04a-4571-b9dc-77d75a229ea4">
+                    <propertyInstance
+                      Id="1988f5b7-f719-47e1-8825-9f87578d1d32"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2833902c-ecaf-4c06-92f0-33ef79419216"
+            name="OnSettingsUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fedab6fd-e243-4711-a4fa-de5a0846c1c4"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3DOnSettingsUpdated"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e63694da-00c1-4fd3-b89d-f5f0c1c59a33"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdfbc256-1f42-49b0-9de2-c5b0501050b9">
+                    <propertyInstance
+                      Id="ffa7ffc2-76e5-44bc-80f1-85aefc45016e"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="345639e4-4d50-4511-96f6-8f890a2562ce">
+                    <propertyInstance
+                      Id="e5e90faf-577d-4212-b2d2-445ad49c3243"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11f8ba9f-f112-441e-a885-ed84b10a6cb4">
+                    <propertyInstance
+                      Id="877e955a-69d4-4866-947a-fbefe557fd45"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33c42fc2-5f3c-4366-91f1-7c645530fdce">
+                    <propertyInstance
+                      Id="5489d43c-e47c-4236-8723-1571ec052285"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abfcb81e-b044-4e97-a46c-dfec7a09b199">
+                    <propertyInstance
+                      Id="cb49bb9e-e231-4753-b3e4-d748ae078d06"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e4951b27-1f7b-43eb-bbb0-6bf18ac85e35"
+                LastKnownName="EventHandler&lt;SettingsUpdateEventArgs‎&gt;"
+                LastKnownLocation="Package11_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="901ca525-5e1c-4644-9cac-7accdf2ee6fa"
+            name="OnResolutionChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="421bb988-70a9-414d-964a-8e6571e073e7"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3DOnResolutionChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2a83e2c0-714d-4e37-a4a9-916153e76cde"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffa48d2e-2a37-4d7a-b3d1-302aa48e23ca">
+                    <propertyInstance
+                      Id="8e677a11-07b4-4e5a-a9fa-b8eb970fbaf3"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f4ba0d6-8a58-4e06-9db9-9ffdd7b448a3">
+                    <propertyInstance
+                      Id="097de303-4efa-437f-beff-4c623db80866"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c59d9907-020d-40d7-8269-9eed220a1ccb">
+                    <propertyInstance
+                      Id="32528ee2-f357-4af6-8048-4d5113986f65"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ea55a4f-005b-44d9-bd3f-c600344d311a">
+                    <propertyInstance
+                      Id="ca58c0d2-b304-4020-aa18-d621b74b58da"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30f6b03e-543d-42f6-ac94-feee8b0421a6">
+                    <propertyInstance
+                      Id="1e3975a6-1a4f-43a3-8e5c-f857a641906e"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fbf779ed-14a1-45a9-88a3-4751ce2e98ee"
+                LastKnownName="EventHandler&lt;ResolutionChangeEventArgs‎&gt;"
+                LastKnownLocation="Package11_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4a5f5ed5-4459-4c2c-acd3-0225864a6f8d"
+            name="mCurrentSettings"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c140a9c9-0d1e-4cba-9dd8-fa31c22622a0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3DmCurrentSettings"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a87a5c74-d37e-41dc-bd75-9cd15c42f45b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb242deb-4b98-4681-bb7b-4e3efdfc786d">
+                    <propertyInstance
+                      Id="99772c1b-0d68-444d-850b-a0a97f1366e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="229450f0-d731-465e-be1a-8f76b06dc1d1">
+                    <propertyInstance
+                      Id="a89b386b-4d4c-4e2a-917f-37f49048ecae"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f73df8a-ce07-47f5-92fd-10427b1378cf">
+                    <propertyInstance
+                      Id="df347f3f-bb01-4cca-beb3-8a7ea8b6dd34"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbdf0d73-b661-4b31-a2bc-04d366d53708">
+                    <propertyInstance
+                      Id="70a52043-37c6-4d43-b3e3-fa9b2d6342ae"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c640fea-d143-4a8c-a615-a0a422345695">
+                    <propertyInstance
+                      Id="6646ce20-9202-4366-9eab-d1bcad67b334"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d2a85895-23e5-40bc-91b4-f8031217b0a5"
+                LastKnownName="SettingsStore"
+                LastKnownLocation="Package_0929.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bb7f96a0-ccc7-40fb-807d-27576e493075"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="368328dc-7e38-4b15-b0d6-558df7f85da7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3DSave"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1280736a-5fc5-4b79-92c0-4bbb7e2ed87e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8833218b-b925-4e2c-bf77-1ad0768ac4e9">
+                    <propertyInstance
+                      Id="214d56f1-dc35-44dd-bd84-f5ad430f3144"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0dbc1cfc-0bad-4d3c-a666-237e99a35a27">
+                    <propertyInstance
+                      Id="1de2180e-bf3e-4db9-afa5-0f3cd36c2bc4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e3ab236-7cd8-4b26-8732-65411f4fff37">
+                    <propertyInstance
+                      Id="58a6d029-2385-4937-930c-0655b084af87"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f123775-e5bf-4ad3-b359-456006abd9a3">
+                    <propertyInstance
+                      Id="0151b0a3-4fba-4067-b91b-c2f7227ab8c1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6ec7e0a-cee7-4b1d-82b0-3910a77dfbec">
+                    <propertyInstance
+                      Id="e6d0f2eb-34cf-4fc5-b65a-acd93715b7a8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a67335b2-7826-40b3-aa51-2be3e044660d">
+                    <propertyInstance
+                      Id="fac81785-61f3-437e-b99f-8348bad67c72"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="4011b329-4385-42c0-ab39-ec573bc36549"
+            name="Load"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4bf1ab50-0e22-4dd2-b2ed-eaf5a3658ede"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3DLoad"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4bec33a5-40b1-4b74-bb4b-752302045b39"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb6f7bc5-d59f-4bde-9213-b8624bce4a80">
+                    <propertyInstance
+                      Id="299c7db6-0b3a-4c2c-9115-86bdaaed514f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a46dc425-3272-4ac6-bdc7-85c1f6424a11">
+                    <propertyInstance
+                      Id="2cedfa09-5c4e-49f1-85d9-2c4cd6b0901d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6bcc946-0b18-4735-afa9-316262c87bbe">
+                    <propertyInstance
+                      Id="2dae04d8-1105-4417-9a71-fe31431785bb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4921ac7e-daac-455e-8192-cd1dcb61aa7a">
+                    <propertyInstance
+                      Id="ae85ac06-09ba-424a-8929-6ab956c6d586"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9dc2bc02-8bde-42fd-a812-18a1e5fed277">
+                    <propertyInstance
+                      Id="4353e44a-11e0-4cec-9475-048b778231a3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8628e04a-b810-4770-a693-5b68e32fa656">
+                    <propertyInstance
+                      Id="365abaa0-7c19-4461-838d-e8c9554a8148"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="54c8eddc-065c-46e4-beb3-53427ab4988e"
+            name="Defaults"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9fe57b3e-628b-4db0-ac75-3ef1a9f21372"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3DDefaults"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="776de8c3-d734-40e3-ad8c-871fe555b86e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf9d12b7-6732-40e6-ab88-1ee99727108e">
+                    <propertyInstance
+                      Id="18ea6d32-cc7e-4996-91e2-e29b82283589"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bbda349-a2fe-4772-b3bf-c2f9cf8b4e3f">
+                    <propertyInstance
+                      Id="f0eaec70-5ad4-4fb9-be21-0ff3bee4d3fc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21b15c65-d6cc-4924-b907-cd5072c50cf6">
+                    <propertyInstance
+                      Id="765da5ea-5f8e-454b-8e84-7e7197c1712b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23d83c3c-6edd-4309-9cdf-9da4438f383b">
+                    <propertyInstance
+                      Id="375df3f3-9091-4899-9004-50e384ee4c00"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="123f6e79-22df-4f1b-beee-2a13c3114894">
+                    <propertyInstance
+                      Id="e3deac68-0984-4e2d-9c1c-51b55c6809b6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc9721b4-0998-4a52-b46d-21e0b59b0429">
+                    <propertyInstance
+                      Id="2a028ee4-5ae4-4afa-8fb7-ee36d7610c66"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="778251db-283b-42a4-a746-d4b06879ef63"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d2a85895-23e5-40bc-91b4-f8031217b0a5"
+                      LastKnownName="SettingsStore"
+                      LastKnownLocation="Package_0929.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="62caf9a4-9825-4bd8-8956-a75fb8a4836a"
+            name="SettingsManager"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5f556325-0ad0-46e7-bc3b-f25730bacdbd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="23795e4e-9fda-4945-b834-181ccd4b0a56"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f0f6a0e-0f4d-4694-9b6b-f780384b7696">
+                    <propertyInstance
+                      Id="233529a4-4246-416c-8ef0-bf7bc49609a8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c69d977b-6481-480c-a9b7-dc8f3a1a366a">
+                    <propertyInstance
+                      Id="59d4fd25-50d6-45b7-a63a-ce94a717649c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e55b2795-c830-41c8-8d13-53361478a92c">
+                    <propertyInstance
+                      Id="0324a499-4a8c-4153-b986-42e4dc21280e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d02a10e-639d-44ca-9239-7aea6b36bbea">
+                    <propertyInstance
+                      Id="6733b484-0ad6-4a97-8e8c-f316ffa0503a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c53fdfb5-a954-4813-970c-1348d30aba17">
+                    <propertyInstance
+                      Id="33caa8d9-65af-4fb3-91c8-6d6948cccc74"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17d4fa70-7c88-4dcb-b3bd-372b21907999">
+                    <propertyInstance
+                      Id="6ef45a2a-3bca-4668-8183-e9fad056540d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9e69861b-afd5-4b68-9821-d700b50d4378"
+        name="Resolution"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c363d7c3-55ba-4fb4-b14a-be1452d14596"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DResolution"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a621d91f-0b94-4106-9289-13e4ce9da3d4"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="64861cf6-01ba-4b8b-bc7b-175abad37f80">
+                <propertyInstance
+                  Id="56af3df5-c3f0-4ef1-9393-c8b6a3947f48"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9dabad15-bfbd-4511-85a2-e9868bcb4f52">
+                <propertyInstance
+                  Id="537d345c-5a2b-4737-98d6-ec99a6ba0b9b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e8b69fa-9997-4355-97f4-e67f76725f18">
+                <propertyInstance
+                  Id="82ce9164-7c56-447b-8dcf-3b8fbf869aec"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e865db5-86ad-4aab-920a-769fdbf3ec3d">
+                <propertyInstance
+                  Id="f84e8b1f-4e81-4814-b6dc-12d7922d345a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f82e84dd-efbb-4903-8853-bcd6756e64c7"
+        name="SettingsUpdateEventArgs"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9c151e02-b975-4952-89e6-2b2d6eeb6edf"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsUpdateEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="378495a3-aa1d-4c58-84d4-b0c512e21fe0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8a41fbf-b801-4c85-a04d-57a0c97f5950">
+                <propertyInstance
+                  Id="0a49ecb5-9eec-4508-832c-a5bd0189daed"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3a618c4-5fbc-479f-83fd-2d6f4cfbe47c">
+                <propertyInstance
+                  Id="bdf47e0b-f9ee-424c-af76-b21efb0f568c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="382422c6-4241-45d9-a47c-3e2283bcf308">
+                <propertyInstance
+                  Id="e0fd92c3-7ab7-4bd3-8f02-87fefc4cbed0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3e346d2-bdb9-41c8-88de-b87fe552be22">
+                <propertyInstance
+                  Id="9534f2d3-44ab-428e-8a73-d0e634c409df"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3108a7b9-3737-4a5d-8037-8643cffdd37d">
+                <propertyInstance
+                  Id="ea8d8b88-641e-4a65-8174-483f299677a7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="4afee4d2-f83e-4e34-a8b8-c430be132c88"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a40850de-b036-4157-8050-acc554aa4ae8"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package11_1106.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d2a85895-23e5-40bc-91b4-f8031217b0a5"
+        name="SettingsStore"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4b5238bb-dad1-46a8-96be-3c54ceaa3065"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsStore"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d6550e95-2da1-47a2-9f8d-7c06d4fdc700"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31dcd14d-3bf1-4d1a-881c-f230ea723788">
+                <propertyInstance
+                  Id="2733e7c2-96e1-4719-8667-1e5eeba30de9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="238b2659-b873-43c0-8c33-5104e9ec1763">
+                <propertyInstance
+                  Id="34c9a9a5-9181-4b10-877c-26893b20667e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ad01a4d7-bf21-4c53-828b-0fa4e7d9686f">
+                <propertyInstance
+                  Id="832b5247-cf55-4c1f-b272-b9df1bf8a6d3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="793845e9-caaf-430f-809e-1e31f9b20aa2">
+                <propertyInstance
+                  Id="42bb065d-41d1-4837-a5f0-a2b07d1c34e9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8b82c6f8-52a2-4c59-82a6-91f510a2d630"
+        name="ResolutionChangeEventArgs"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="979b69ff-2e7c-4fa8-92ea-66fee20e2feb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DResolutionChangeEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8f3fb70f-f9b3-461c-80b3-27e694a0b4f6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c62d76e9-d520-4dfc-9344-e7a437e81568">
+                <propertyInstance
+                  Id="b0d05ab7-208c-47e9-b806-f3c6e12a9b3e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0421e3fb-5ec9-4177-95a0-369778561245">
+                <propertyInstance
+                  Id="c2564579-20a7-4be6-a947-6eca398fdeb0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f1e0a9f7-7f72-40e4-b63d-fff71c5d0fe5">
+                <propertyInstance
+                  Id="5ecffe85-c81e-477d-aeae-a8ab228382e7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="95dcb5fd-a4b6-45e7-b324-2b7bd41c746b">
+                <propertyInstance
+                  Id="446b5e4c-659f-40dd-81e8-e6c8931da2d0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b49ad38f-85f3-49a9-8599-6db5f0d701f2">
+                <propertyInstance
+                  Id="3b603581-cb12-4448-9bc3-ad02e163e60f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="8e110fb2-5e65-4d53-88f6-a3b62199a705"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a40850de-b036-4157-8050-acc554aa4ae8"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package11_1106.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

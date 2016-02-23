@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="36a7f952-f3e5-4498-bda7-dfa7b74633bf"
+  name="Achievements"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="35d51e1e-466c-4762-a31e-87888b73d917"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Achievements"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="eb501215-8d20-4545-b441-d6ebc8458bfa"
+        name="AchievementNames"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6939a1d2-0c9e-4862-98a2-8b82401f6171"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dea54aa7-ac3c-4400-8b5d-b647e0d86766"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="327a4d2b-06a9-45c0-b775-db3294cc08c3">
+                <propertyInstance
+                  Id="eae7c53b-b09c-492e-b8bb-318882f51cdb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d94c49c4-8528-4196-b0aa-52bcd767c190">
+                <propertyInstance
+                  Id="25232ef4-72e6-4233-931d-2d460929bd84"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5dc0429b-921f-48dc-896e-73f86ab47f0b">
+                <propertyInstance
+                  Id="c92071c4-0deb-4546-bf01-995ed0bf8fcd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="67b1ebe3-9941-441b-9a89-55f888a14f9b"
+            name="None">
+            <referencesInternal>
+              <reference
+                Id="6f2e7b03-188a-4956-89c3-d056f4e3ea9b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames Member%3DNone"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="9f7c952d-36d5-4707-b794-ca32021cc4f1"
+            name="Collect_Antigen">
+            <referencesInternal>
+              <reference
+                Id="b167b1c5-2257-4d7f-8e3d-47ee2e9f11b8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames Member%3DCollect_Antigen"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f926a16d-ceff-475b-a827-a71ab193e526"
+            name="Kill_100_Bacteriums">
+            <referencesInternal>
+              <reference
+                Id="ebee81d0-051e-437a-b13e-1733765b3f52"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames Member%3DKill_100_Bacteriums"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f72b1504-b61a-45f0-b7d4-7adb2d38696f"
+            name="Kill_100_Viruses">
+            <referencesInternal>
+              <reference
+                Id="a4225031-7c94-4229-ae5e-0e670bb99c5f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames Member%3DKill_100_Viruses"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="54d4e98e-19cc-4353-9b90-a95c17570a15"
+            name="Perform_100_Cell_Divisions">
+            <referencesInternal>
+              <reference
+                Id="46ea1384-3070-477f-ba7e-3f4b558b31ed"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames Member%3DPerform_100_Cell_Divisions"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="ffd4897f-06a4-4699-8d87-5f5cf0ccba9a"
+            name="Perform_100_Mutations">
+            <referencesInternal>
+              <reference
+                Id="0c43f0d0-03d3-4091-b291-b2512414812d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames Member%3DPerform_100_Mutations"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bdfc0697-5f67-4603-abd6-46c35f4bc5e8"
+        name="Achievements"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2cc36426-25e8-4482-87bf-700b7873257f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievements"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f527f237-5715-430b-8c7a-01e11d5b58c3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4bdaa300-76a1-475d-906e-5a34b83b169e">
+                <propertyInstance
+                  Id="601aca6b-f3e9-4558-b23a-cf65a87a4a30"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb40fc85-3a2e-442b-86ea-402b269b77c8">
+                <propertyInstance
+                  Id="7eb7db3f-3170-4969-a38d-8ec7c8456305"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c553120-2067-433e-9c69-d461fc720ad1">
+                <propertyInstance
+                  Id="5dca5236-f8f9-48d9-9a5d-ba568a5665ae"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="800e30cd-42fd-4945-a513-376ae395aa3e">
+                <propertyInstance
+                  Id="cea3fd00-ce5e-4682-a660-32ecc1279e64"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="01211c0a-db10-4f80-b186-ebed48bd9592">
+                <propertyInstance
+                  Id="73c8bc03-3270-40c8-af8e-01ff6305e690"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="5c262083-0a81-42a5-b7aa-0f32c2f2a768">
+            <enumerationMoniker
+              Id="eb501215-8d20-4545-b441-d6ebc8458bfa"
+              LastKnownName="AchievementNames"
+              LastKnownLocation="Package1_1051.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="612165fc-65c1-46c4-8509-eb4c5c9ae198"
+            name="sAchievements"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c47f3ed8-b801-4a48-bcf3-93818a333a40"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievements Member%3DsAchievements"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8faa27d9-cc9e-4af3-9ab8-9993d8c181a9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2aa0f09d-aabb-49ad-879d-c57f198883d7">
+                    <propertyInstance
+                      Id="a2955ad2-58dd-4e06-bf6c-a8b7c131db27"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14339594-7898-4faf-bcad-d29a1f823c47">
+                    <propertyInstance
+                      Id="638569bc-c305-4b19-bb26-5b0fa70c0cc1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="081c55a7-ad2c-4085-9f37-c10e90647b8f">
+                    <propertyInstance
+                      Id="f8295e21-ac3f-49c7-b762-4469c28fb091"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acdbeac8-595f-4ecd-ba44-35ba8caf6939">
+                    <propertyInstance
+                      Id="ff4fc7f5-270e-46f1-9fd4-e307d146a5cf"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07b522b6-413c-4a04-bab6-3c796ea16d17">
+                    <propertyInstance
+                      Id="6ea64112-164d-4f93-93ca-fae84d5a5685"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="efec2b51-c547-4d0c-b24b-a37c89d6b226"
+                LastKnownName="Dictionary&lt;AchievementNames‎, Boolean‎&gt;"
+                LastKnownLocation="Package21_1107.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2fa66cfe-c9f1-4287-bb36-7cdb1e7a3201"
+            name="GetAchievements"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2e5e59b4-5106-4b3c-9d68-02d9707daf75"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievements Member%3DGetAchievements"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5cf52df3-9444-4105-855e-f14aae587ca3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3c25b9e-d57a-4256-b813-6482f92c17b2">
+                    <propertyInstance
+                      Id="d5bd04c2-2b30-40dc-b5cf-8b337f10f21d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20a8f290-1135-4531-9ab6-259a5fe85f24">
+                    <propertyInstance
+                      Id="cfabe99a-f53d-43a8-a6ae-e3c93c7c890d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cde709cf-614c-4371-8413-b4301a653844">
+                    <propertyInstance
+                      Id="e92abb01-8953-4796-b809-9ec2c14d1200"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb08f077-3a7b-45de-a050-92dfed76a66f">
+                    <propertyInstance
+                      Id="b916baad-7b49-45cb-8dd4-86f928ba8459"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb34d604-915c-4bee-af17-4983475cf4b8">
+                    <propertyInstance
+                      Id="4d5d138c-cc9f-4ed1-9536-fc6800219606"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8236f565-384b-4a70-a3ad-12a0f142ab26">
+                    <propertyInstance
+                      Id="a2ea70ea-89c3-471e-a419-5bc812e61749"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aba52718-53a8-4a56-b741-6f4cf0452c98"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="efec2b51-c547-4d0c-b24b-a37c89d6b226"
+                      LastKnownName="Dictionary&lt;AchievementNames‎, Boolean‎&gt;"
+                      LastKnownLocation="Package21_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="60c14b53-d049-4e73-819b-036663dd11ed"
+            name="UnlockAchievement"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6bb0898f-f155-43f0-ba9c-c30c9221a19d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievements Member%3D(Name%3DUnlockAchievement OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6c17506-0ed6-4aee-a889-4d9aaa1bcf25"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f27892f4-6f57-4865-ba76-0c354e53476b">
+                    <propertyInstance
+                      Id="1a98465e-1200-4e99-9edd-191532254fda"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f720501-2fe7-49f9-8340-7cc4e0470fe5">
+                    <propertyInstance
+                      Id="52a910ac-bba7-4f0e-9c28-29cc6e932c34"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="745fbb3e-4e39-46e2-8b4e-b9e0a076a2bc">
+                    <propertyInstance
+                      Id="b17be537-b022-4587-8953-18eb9b68043f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae156a02-e02a-4ee4-94f2-23471dc66a89">
+                    <propertyInstance
+                      Id="61f948c2-7152-47b9-b238-f607de81c17a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66b682d5-c93a-49c9-b573-814e18c4df22">
+                    <propertyInstance
+                      Id="883e9348-92e6-4806-82fa-2739c44fe6f3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21c6b8d2-b755-4527-8304-807a74c8c4de">
+                    <propertyInstance
+                      Id="33d74039-0963-4288-b25e-6b4deca43eb0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3b342aa1-9794-42ae-ba2f-7d200fbd01d3"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7e816014-d348-46a9-beb8-d38b04c24805"
+                  name="name"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="99f22f8d-3d93-4d06-8850-07bd247f5609"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievements Member%3D(Name%3DUnlockAchievement OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Achievements Type%3DAchievementNames)]) ParameterIdentifier%3Dname"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="eb501215-8d20-4545-b441-d6ebc8458bfa"
+                      LastKnownName="AchievementNames"
+                      LastKnownLocation="Package1_1051.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

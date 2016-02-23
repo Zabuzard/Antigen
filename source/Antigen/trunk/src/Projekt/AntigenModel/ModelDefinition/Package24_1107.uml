@@ -1,0 +1,2254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c00533be-842d-4a40-a5d7-ac40d6d6c274"
+  name="CellDivision"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2642384a-c026-4bb3-9dd8-943ebb808b3d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Logic.Behavior.CellDivision"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="49160952-aa14-4819-8004-08c011640516"
+        name="IDivisionContentLoader"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="3d26d7a6-327f-4cc6-ba10-fa0372029875"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f103d187-48ab-4cf5-b45d-55d0b85ea039"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e126066b-1dde-41f0-a4d6-062d787236ee">
+                <propertyInstance
+                  Id="ce68fff5-b46a-4801-b9d1-79f3cb0e9ede"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06544f43-bbbc-428f-bef3-d6647809897c">
+                <propertyInstance
+                  Id="5a655a38-39b2-4d93-bf6e-1f637463a23d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="42086f94-a3fa-48de-b5c7-2f12fcb4c11b">
+                <propertyInstance
+                  Id="ccd4dd49-8295-4c9c-9773-fbec7cf94f74"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a315f773-235e-471d-8988-31415d59da8b">
+                <propertyInstance
+                  Id="b4e4bff7-a792-4720-992a-f0b97fbbf4a7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="8adfc0cf-f79b-4500-a5c0-13287b91167a"
+            name="LoadDivisionContent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="13bd10a3-2242-4169-9fd6-8c86fa3a4cf4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader Member%3D(Name%3DLoadDivisionContent OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnit)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5793a76c-22e6-4090-9ebd-8e0353ea8b4c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fc85d2b-4ff7-4d55-8196-8faa018dc41c">
+                    <propertyInstance
+                      Id="9bffc506-e1fe-4fac-96e8-3aba2984bd43"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90f22537-5b48-4eeb-8ad1-394cf568abd6">
+                    <propertyInstance
+                      Id="99e5e5f0-afb9-49a6-a6af-17c7fb190183"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d0fd1e7-20e1-41d5-965a-3f885495bec8">
+                    <propertyInstance
+                      Id="2f6fd8ef-d056-45fc-99bb-0d12eb14140e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d07d4cd0-9d56-4e2c-8a2f-31258629d974">
+                    <propertyInstance
+                      Id="dde3ed39-8d44-4990-9c31-593f7358d36d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6aa74449-ba22-4c22-a68f-76423f4a6e61">
+                    <propertyInstance
+                      Id="d3ccabb9-7c37-43e0-9368-7e164eb5def4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb8c47e4-d6f4-4987-b4b4-7585425195da">
+                    <propertyInstance
+                      Id="44eb8cc6-e978-47d7-8100-1c5f358816c4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="686365ca-18ed-49c3-a95c-c99c4e779bb2"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f79235a9-f98e-43e3-9fad-33da07b34c10"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader Member%3D(Name%3DLoadDivisionContent OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnit)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="86af983e-3384-49e2-a8b0-a7598294a5ce"
+                      LastKnownName="Unit"
+                      LastKnownLocation="Package4_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="04c75516-afab-4b8a-bd6f-bdb7e30337d2"
+        name="DivisionBehavior"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="935b203e-b346-449c-a97f-f350d51f2873"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5b9eea33-d837-4a1f-906a-9f969615bc66"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ccbf21c-6d46-4fe8-9b98-b302112c3d6b">
+                <propertyInstance
+                  Id="272849be-dc32-40c9-8c26-91ee373356ab"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="451f43b7-5e00-46d1-888d-8b1c4e271cb7">
+                <propertyInstance
+                  Id="43a46bc2-b337-4939-8223-fe552c880c61"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fcbb5536-e962-4f8b-bb6d-6a8ea575bdad">
+                <propertyInstance
+                  Id="99f0da6c-0ea1-4374-a803-d4f2097de7b9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f0a0eed0-86fb-410a-a586-0801aa9e5106">
+                <propertyInstance
+                  Id="55b3294b-ee44-4319-ac93-73def81e1777"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ac4412f-c76a-4350-906e-809ffb0a71de">
+                <propertyInstance
+                  Id="2012285d-c37a-4ed1-b4a9-17117179af13"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e82e7d94-7928-4ed4-a563-eb01259eec6d">
+            <interfaceMoniker
+              Id="42a8f548-7b1a-4d9c-bcd0-74062fe804cb"
+              LastKnownName="IDivisionBehavior"
+              LastKnownLocation="Package24_1107.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="7e6ed724-e944-4936-a7c0-4a05cf6e45d3"
+            name="IsCellDividing"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="038f2329-358c-480b-8f9a-4216dd08378a"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DIsCellDividing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f3093eaa-f636-45d8-a18d-4866b191b14f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d7bece8-82cd-49bb-afe4-18a97ae68fb6">
+                    <propertyInstance
+                      Id="13698750-835c-4726-b536-ceb2ab8a458b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b64f535-410c-4475-9cc2-85640eb2d40b">
+                    <propertyInstance
+                      Id="3dab4f19-49da-4cb7-9e60-de014b5cea46"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef97c3dc-df70-4c7a-a7da-cb3640f23f6d">
+                    <propertyInstance
+                      Id="cca3a36b-e905-41c3-a061-b1018ec4e870"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad7cdcd8-5c0e-4030-9729-436798552e6f">
+                    <propertyInstance
+                      Id="2a1dd7b1-5492-43e8-a9d9-89d812fa23a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5f86c4d-6e88-4b8b-a47f-dcff08fbf7ac">
+                    <propertyInstance
+                      Id="7d7923c4-3fa7-4dec-8854-a395114399e8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31ef8566-c5a2-4875-8ddd-db3eba446bb5">
+                    <propertyInstance
+                      Id="6027f4b6-ff91-447a-8cc5-275a381f10e3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6da78d5-2ec4-41b9-a266-9791b0991eb9">
+                    <propertyInstance
+                      Id="faf75827-0acf-491e-96dd-f5fc72242e66"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1db542a5-1c7a-485a-92c3-3b4cd682d2a8"
+            name="mInput"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f78ff82e-f755-479e-9566-b7b2e91a9f9a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DmInput"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b1beffc-3f1f-4710-a146-786ed0b9aadb"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f69a008b-c728-4299-818d-b507dcc0a57a">
+                    <propertyInstance
+                      Id="bfce6c7e-f4ed-4bd0-8b7b-78734bda0dfc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8e6d7fe-521a-4395-a769-1e6945446261">
+                    <propertyInstance
+                      Id="1020ba69-9279-4e26-b372-96689b26c477"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88cd9646-f24b-4cb8-98cd-7efc3c510cee">
+                    <propertyInstance
+                      Id="0f057ab1-91a4-4a49-ba2d-9d6d8432f0b4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a77caa7-184a-4d1f-8954-3501af10e7b4">
+                    <propertyInstance
+                      Id="80e9a7bc-5be5-4d3b-aca9-14129109ef83"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c803961a-3c4e-46a3-8510-8fc6d7975160">
+                    <propertyInstance
+                      Id="9be49e85-87a6-4016-807f-36e3571509db"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fd14c0d4-9f8b-4ec6-9f81-fb7581e105ca"
+                LastKnownName="InputDispatcher"
+                LastKnownLocation="Package1_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f6af5ee4-6e25-47dd-bf11-1aafcaedf216"
+            name="mMap"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1518bc97-4881-4905-98dd-9de6b46da6d0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DmMap"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="24c7bee3-eb75-4a84-90fc-ad2fc0369396"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="374fd5e8-71d4-4a09-9be3-90ad09d519e2">
+                    <propertyInstance
+                      Id="e42aba19-c4c4-4266-823d-ab713f81e75b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05ef0584-b650-4ecd-9fd8-1a4feaffea09">
+                    <propertyInstance
+                      Id="9f5ac526-9bfe-432c-b7f0-ade91654eff9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3aa6a0a-c10f-4ab6-9d6f-82a95ff972b1">
+                    <propertyInstance
+                      Id="96ae3925-b4ac-46ad-888d-a3720f990175"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a6047d9-e2e3-4316-8514-5d5eca8cb287">
+                    <propertyInstance
+                      Id="9efaca7b-1abc-4c09-86f2-834834576cdd"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccf1591a-8b46-4e9a-9152-08d37c6492f5">
+                    <propertyInstance
+                      Id="66a7482c-fb9c-4d44-a35e-32870cd4d615"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f44a5218-2e57-40f2-a6f5-50ce7f05967e"
+                LastKnownName="Map"
+                LastKnownLocation="Package8_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e666946f-77c3-4727-87ec-c6340d003d62"
+            name="mObj"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5146e138-ac65-4f1a-9ff6-9e1d4586ed56"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DmObj"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="26cff2ca-f960-47d0-a195-fca53ac49a01"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de2753c9-0d01-434b-88ee-230fce0fc449">
+                    <propertyInstance
+                      Id="bc45a1c0-083f-4f33-abd8-7fd926a4005a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="536291d5-0756-4940-b92d-4e75cf17c312">
+                    <propertyInstance
+                      Id="0082f162-91ba-4fb8-bde3-2cdf2c93c62d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50b093f4-6b34-4853-80e9-2739a99d999c">
+                    <propertyInstance
+                      Id="57e02777-45d0-4199-853e-d4b785961fc0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82c996fb-70d6-46e1-b1b1-229b4fe91eaf">
+                    <propertyInstance
+                      Id="98e92188-06ff-4f31-8e50-3066a041c88d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9725f188-2a19-4e3f-b54c-290f61eb1f09">
+                    <propertyInstance
+                      Id="b78798ba-1846-4211-90e9-ad7a2e1ce86b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="67bcd9f1-2fc6-4982-b26c-8e9eb6a51055"
+                LastKnownName="ICanCellDivision"
+                LastKnownLocation="Package6_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0113635d-8fcf-47b2-bfbd-98e52ff7bc48"
+            name="mSelectionManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3fb0abce-b8d8-4cc1-80d6-7033b5d6c546"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DmSelectionManager"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dab8a6cc-6070-44c5-bac7-c98d90a95113"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50b21acf-3317-4b50-8a2e-4382cbc49f49">
+                    <propertyInstance
+                      Id="5423e381-0b07-4101-8893-a226d35219b0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afa9ffb1-3045-4041-9e55-fa039e138611">
+                    <propertyInstance
+                      Id="3352f97f-b9f3-4763-81f6-c94676797743"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f92bb2a7-997e-43f1-b65c-423ae68f8c70">
+                    <propertyInstance
+                      Id="53f3e810-de4f-439b-95f8-331df02e6059"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c68be9a1-c69b-4113-9c83-93722992587c">
+                    <propertyInstance
+                      Id="743a2a6b-336a-48c9-9f10-efb3f8b72de3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d5e5e2a-1382-49ee-9058-32f8fd2be29a">
+                    <propertyInstance
+                      Id="f0b8542a-14d8-452e-b21a-a32afe7854e1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="4df6b00a-9693-4674-9355-8097902d5af5"
+                LastKnownName="SelectionManager"
+                LastKnownLocation="Package2_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c4817750-0b1f-4c1e-b1d1-7b9c0d908504"
+            name="BeamRadius"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c56a047c-4703-4d48-93bc-d43b97f4f1bf"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DBeamRadius"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3e29ec14-719d-4a88-b1c4-aaa25c1ec8c3"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7550b7e2-c720-42f4-aaff-126a16f7d3f5">
+                    <propertyInstance
+                      Id="c5379521-dc02-48f2-9d61-a085fc336113"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be003004-531c-4234-b4c2-633335082160">
+                    <propertyInstance
+                      Id="724dd227-9320-43ed-868e-5a1bb81f4b7a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fece2297-af96-4577-8558-cfa7ccd9c17d">
+                    <propertyInstance
+                      Id="ac245cb3-5f73-4807-8f1a-4a4d4e1913c9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb430654-0803-46be-b89d-af89aea2395a">
+                    <propertyInstance
+                      Id="3521b474-e409-4b71-9062-36be7adb1817"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e16977e-67db-4cc1-9dc3-94d507837e64">
+                    <propertyInstance
+                      Id="13f1f8b6-a3b7-44ac-9204-f41c2a01bfa0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="fdf19995-f33f-4f01-8cf3-db16ccb52db6"
+            name="MaxBeamTries"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a39e2f4e-5cc7-4a10-ab8a-294e78e8b03f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DMaxBeamTries"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19a271ce-dd8b-4833-8b6f-7a4e0e95cc57"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c18794da-4588-4a05-91d5-ec931b00612b">
+                    <propertyInstance
+                      Id="af62bf16-fdb8-46ac-bd4c-e67b41a8f9df"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="983a555e-4ff3-43a3-b5b7-1269c60d3c07">
+                    <propertyInstance
+                      Id="728be7d2-d0e5-46a8-995f-adfc4d7edf1e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f69834a6-ad73-4f79-a5bf-8e63d9a2c05a">
+                    <propertyInstance
+                      Id="426bda88-4b83-44cb-95be-73de14b8311d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a6729c4-da25-45b2-b5c2-25365456fac7">
+                    <propertyInstance
+                      Id="df14ccdd-11b0-4e3c-aeb7-f660158fbba4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91452821-c401-4dc8-8923-c6d1fc3e05e2">
+                    <propertyInstance
+                      Id="ee141944-6a8e-4f81-98c5-5a9aa66181cf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="cf4dab72-f356-459e-9b15-de7df90e65ed"
+            name="mGrid"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="17393ca9-332c-472a-8df8-0a87ea9259c8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DmGrid"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3133485b-d7b5-4395-981f-47852211d568"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="196daf9d-af1b-473f-a9a8-b3406a1dcaf9">
+                    <propertyInstance
+                      Id="c8c29f54-754a-4aaa-a662-408c4bf9d97d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c37e536f-bb7e-4c17-a912-adee1a15670d">
+                    <propertyInstance
+                      Id="06db8b06-0e16-4d67-9564-6b1c4033cea1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc82b3ae-3336-4104-a099-2c9fbab32a1e">
+                    <propertyInstance
+                      Id="e1e49892-1b0f-4b7e-a538-28a0a9148c87"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2703b9fd-6544-4da3-94dd-8d05e64cdd04">
+                    <propertyInstance
+                      Id="ae9b55ee-21e0-49ee-94db-18a31c7dbf65"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41b707aa-c144-4327-9c2d-5b8938395858">
+                    <propertyInstance
+                      Id="1506061f-66a3-4e26-bc5a-58bdc0b03f6a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e1f3f6e5-f0e5-432a-9c78-8bccc536c86a"
+                LastKnownName="UnitGrid"
+                LastKnownLocation="Package4_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="58c18833-01ec-4b2a-9557-a52a4227cd74"
+            name="mIsCellDividing"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fd4e64a0-4a48-4790-9487-5f8f5f90cac3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DmIsCellDividing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="49d35dd3-54f7-4be3-a952-e8fff9ec4825"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffc7c99b-6e86-4ae2-8355-cd41d97beaa3">
+                    <propertyInstance
+                      Id="d54e38b4-d8c4-4cd7-9f6c-802a4516d5cb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1d16690-dc22-4144-8687-98baccabd172">
+                    <propertyInstance
+                      Id="bc784724-7b28-4a39-8039-7bd3004819b7"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9425d52a-3417-420f-9769-a92185d9cf72">
+                    <propertyInstance
+                      Id="4eb938c2-1ba6-475f-934a-e1c0c98fa4d2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6fc8011-082a-47bf-ae80-a8d6c85e8f73">
+                    <propertyInstance
+                      Id="3372b9a5-6225-45eb-994e-792d73bb6881"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b52843b2-44a7-4cb5-88c7-8f083d8ea518">
+                    <propertyInstance
+                      Id="4606a081-fc97-4194-8a56-3d1b37eaf4cd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fbc3a87f-4688-4a05-9173-94b8b6e21d31"
+            name="mObjectCaches"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="287b394d-f436-4a5d-93a8-b8671b9e1672"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DmObjectCaches"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f5ad60bf-bf84-48f9-af51-7810044ef3f8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cb959d5-9cba-4bc2-ad4f-29db107efad9">
+                    <propertyInstance
+                      Id="98b0fb3f-8fa6-40c1-bf74-c0254ff95519"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a526d1b4-481f-464d-a50f-d49db2080312">
+                    <propertyInstance
+                      Id="6f6f08c7-0ddc-4c60-9783-109bb944df26"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6748ff0-e3bb-467d-8416-8540becba421">
+                    <propertyInstance
+                      Id="8a977bd9-40ee-4580-8c24-4502d8b1bfb2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2c8e6e5-27d1-4357-8dac-31650261fc70">
+                    <propertyInstance
+                      Id="27b97388-90d0-4196-8490-72bdbc6b69e7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3b5e792-2e20-44eb-b243-7938bd6a8168">
+                    <propertyInstance
+                      Id="78a635c1-6888-4aea-b0b8-f0f55c1315dc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="dd3f8333-42d1-4891-9d69-072c40d6f564"
+                LastKnownName="ObjectCaches"
+                LastKnownLocation="Package3_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="31c65c9a-9344-4ba9-b6c4-e75bd9957e5b"
+            name="sRnd"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="24240f08-e6e8-4c58-853f-37bdf2c8fbef"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3DsRnd"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="505dd26c-9b0b-4be7-b837-80601d2f0e1b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="125d7ef2-9b9a-4b0b-8d9b-a17a293967c6">
+                    <propertyInstance
+                      Id="b96b2d70-1522-469d-824c-ebea04187981"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8abac75-2622-4433-82a9-7c80137a1518">
+                    <propertyInstance
+                      Id="1ef3cd96-cddd-46ae-8ae7-21bc9679db10"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e5eca54-3ab5-4666-9106-b10d2e84e6b0">
+                    <propertyInstance
+                      Id="1fff282c-390c-4aaa-8e99-8de28b4f305e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a15d57c4-b96c-4238-8705-0b7b89070a6e">
+                    <propertyInstance
+                      Id="94a4049b-10a1-48c7-8a42-30bff991dde1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2568a05e-cde0-4f90-99a8-3b471eb5a159">
+                    <propertyInstance
+                      Id="cc987583-20ea-41b3-984c-af71ab7a5bd5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0ecb40b6-2d7a-4015-bcf2-9b23abf4ae6d"
+                LastKnownName="Random"
+                LastKnownLocation="Package11_1106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5903da8b-4c22-4176-9fd7-5f89221713cb"
+            name="DivisionBehavior"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="36e3c7ea-a320-425c-83f8-8ba4d84709e2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DBacterium)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9e0a558d-a866-4db0-a315-6de8a89c2265"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4263a455-0d6c-4a3b-8349-b26318bbdd64">
+                    <propertyInstance
+                      Id="09fd3561-0bc6-4e11-baf3-0f4b685330d0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ee1e1eb-3e47-454a-b87a-7984f23c2aeb">
+                    <propertyInstance
+                      Id="5e9e074c-fe84-410a-ac87-b11e3af0941e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfefeeec-6c0f-417a-b787-55aa42e6cb51">
+                    <propertyInstance
+                      Id="d5038ae6-cbdb-4eb1-b9ba-73477167af0a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dac2f85b-9ca7-4b48-9e90-cbc36c3b820d">
+                    <propertyInstance
+                      Id="8acfb7f2-f96f-4c00-9322-2c7287a5eda6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d061a68-f454-4dfc-a933-e5400faa993f">
+                    <propertyInstance
+                      Id="30470538-d354-4246-9758-68f6ffcdd8dc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2546234f-73e6-4f75-a11e-ac53905f260e">
+                    <propertyInstance
+                      Id="f42581e0-4eff-4ce3-90e0-4582aa590e24"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5086559c-c1c4-40f0-a983-eca8a3ce8baf"
+                  name="thatCell"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2fa9c007-bea5-4405-b5fe-0d62ba4cfa87"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DBacterium)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatCell"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa3b7e89-cce0-4a34-8a92-c6bf2306d9e5"
+                      LastKnownName="Bacterium"
+                      LastKnownLocation="Package23_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4fa824d0-8b1f-4b33-92e2-01e6b62b7fd0"
+                  name="thatMap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d6bc10d4-10df-42ae-ac02-6b9cd000118f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DBacterium)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatMap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f44a5218-2e57-40f2-a6f5-50ce7f05967e"
+                      LastKnownName="Map"
+                      LastKnownLocation="Package8_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0e07cca6-46f4-4203-b3f6-24ff0e88de8d"
+                  name="thatObjectCaches"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1afc879c-eaf2-4150-9713-9c95b5aabc7a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DBacterium)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatObjectCaches"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="dd3f8333-42d1-4891-9d69-072c40d6f564"
+                      LastKnownName="ObjectCaches"
+                      LastKnownLocation="Package3_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3f81a01-e9b3-4436-85bf-48a9d0063acb"
+                  name="thatGrid"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="94ef3bbc-d69b-4bbc-8fd2-ab157f90276d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DBacterium)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatGrid"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e1f3f6e5-f0e5-432a-9c78-8bccc536c86a"
+                      LastKnownName="UnitGrid"
+                      LastKnownLocation="Package4_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a782c7d2-1ac0-4955-b199-42e28771e65f"
+            name="DivisionBehavior"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="613a8d41-601a-452b-ae18-cd649b011896"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DBcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="809ceb21-6e2e-4a49-abd0-4a20addcd652"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7a55000-3575-40d0-a55a-45f93f52d5f1">
+                    <propertyInstance
+                      Id="90d793ef-cac2-4671-aa43-617e4479857d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b0d28f5-9c26-4326-8404-02ce1892bf53">
+                    <propertyInstance
+                      Id="3e41f999-4ae8-40a7-bd1c-84100efda47f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67bc17e5-6279-418f-981a-48f5c5a36334">
+                    <propertyInstance
+                      Id="0b2fccf8-648e-47f4-9d1b-8b7066edbad7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36b4de56-426a-49ac-8b23-3b3d3d7b852a">
+                    <propertyInstance
+                      Id="2cc25ee9-6558-44e6-9b62-4ef074065a9c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4fb5350-1281-4f85-ad46-fd4eb4dbc373">
+                    <propertyInstance
+                      Id="5aa335c1-3e2c-47b4-9417-987feb2ef961"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea9466f3-9b96-40d0-879b-cf793f33f47a">
+                    <propertyInstance
+                      Id="ebcf4622-2889-40c2-a868-2ed9bfb38a74"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2388bc82-99c5-4f22-bef9-6a6c9d3ff207"
+                  name="thatCell"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f776b1f2-2757-4667-b22d-6bf5f402911f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DBcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatCell"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9acab4c2-ee71-4789-87dc-5b7f5e6a1a2c"
+                      LastKnownName="Bcell"
+                      LastKnownLocation="Package5_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a5cf31e7-f2f9-4e93-b12a-00c88d6d5fef"
+                  name="thatInput"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d6b4f665-dd57-4b07-992b-7d97dc5307d1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DBcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatInput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fd14c0d4-9f8b-4ec6-9f81-fb7581e105ca"
+                      LastKnownName="InputDispatcher"
+                      LastKnownLocation="Package1_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="445a925f-cd6b-42da-90d2-3b231abb6f8c"
+                  name="thatMap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ff77d9ad-cb36-4565-a2d4-9a28c7af6eee"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DBcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatMap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f44a5218-2e57-40f2-a6f5-50ce7f05967e"
+                      LastKnownName="Map"
+                      LastKnownLocation="Package8_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bcb1c835-8538-4272-aa90-b9ff438c3714"
+                  name="thatSelectionManager"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8f06ea18-8c47-45eb-883c-bf305695f613"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DBcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatSelectionManager"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4df6b00a-9693-4674-9355-8097902d5af5"
+                      LastKnownName="SelectionManager"
+                      LastKnownLocation="Package2_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f7ed238b-c2df-414a-a25a-39d7eb68562b"
+                  name="thatObjectCaches"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="016a1db9-cc8c-477e-a3bc-c6aff07fd27e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DBcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatObjectCaches"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="dd3f8333-42d1-4891-9d69-072c40d6f564"
+                      LastKnownName="ObjectCaches"
+                      LastKnownLocation="Package3_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f6a7506-90c2-4c58-9011-b7fa1e723eff"
+                  name="thatGrid"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b083a6f6-190c-4ce5-8cd8-72aeb7a32951"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DBcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatGrid"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e1f3f6e5-f0e5-432a-9c78-8bccc536c86a"
+                      LastKnownName="UnitGrid"
+                      LastKnownLocation="Package4_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b8e1081b-42ce-498b-94df-ee4e735cb5ae"
+            name="DivisionBehavior"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f17a3723-0136-4c4c-bab7-54ebb101b29f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DStemcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c247a10-d674-477b-bc83-36ddf98a50ae"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="233a09f2-fe14-4ea8-ae0f-f1def76ff72f">
+                    <propertyInstance
+                      Id="0ceb8940-2e93-46c4-aeda-fdd3f0011b68"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09762f79-c60a-40ae-b73c-6f96042c8b28">
+                    <propertyInstance
+                      Id="1026b0bd-e2ed-4691-85b9-7c4690cf7591"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af78cad6-b7e7-478e-b224-9a1d6d3f50dd">
+                    <propertyInstance
+                      Id="cd18419c-f1c3-4bc4-9b4a-dd49e77b6418"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7557ea34-df74-4152-a0a7-95f9d66fa739">
+                    <propertyInstance
+                      Id="f32f7c39-84e4-423a-b56a-7537fbc5db97"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b7e435a-ef86-4fa6-9193-dc6411aad139">
+                    <propertyInstance
+                      Id="9ccaccbd-d5ba-439d-8a3d-f8afada4cdfa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe4ed69a-5668-465e-a2ed-398ec2acf3de">
+                    <propertyInstance
+                      Id="e214aa07-00dd-4403-ab33-adb8f7a75459"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e4fad0c5-3cdd-41fc-bba2-3dfea0a5c011"
+                  name="thatCell"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fa891553-cedf-47e2-8d86-49174d1f04ba"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DStemcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatCell"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d6c231f0-7781-426e-90a5-06827869cb33"
+                      LastKnownName="Stemcell"
+                      LastKnownLocation="Package5_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a150bb04-2832-4383-99b3-4d7683f56ac2"
+                  name="thatInput"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="eae68265-2098-4ffc-b879-411571f90382"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DStemcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatInput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fd14c0d4-9f8b-4ec6-9f81-fb7581e105ca"
+                      LastKnownName="InputDispatcher"
+                      LastKnownLocation="Package1_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5833bfb3-c213-4217-9fe5-d47370ef290e"
+                  name="thatMap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="be0f633f-321c-416a-8f08-fb78f834b569"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DStemcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatMap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f44a5218-2e57-40f2-a6f5-50ce7f05967e"
+                      LastKnownName="Map"
+                      LastKnownLocation="Package8_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2db4adfe-01f8-4ea1-8b0f-91be97e7867a"
+                  name="thatSelectionManager"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a199c119-eb79-45ec-8c68-b2c37e3159b3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DStemcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatSelectionManager"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4df6b00a-9693-4674-9355-8097902d5af5"
+                      LastKnownName="SelectionManager"
+                      LastKnownLocation="Package2_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b75ceec5-9508-4cdd-a27f-2bae62d02d29"
+                  name="thatObjectCaches"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cd980a73-9d9a-48c6-a30f-020e2c536bb7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DStemcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatObjectCaches"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="dd3f8333-42d1-4891-9d69-072c40d6f564"
+                      LastKnownName="ObjectCaches"
+                      LastKnownLocation="Package3_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="be05ff50-fdaa-472d-bd29-9cc2ec02f2d5"
+                  name="thatGrid"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ff5ea9a1-3438-4673-a8a9-41e87e4c57f8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DStemcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatGrid"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e1f3f6e5-f0e5-432a-9c78-8bccc536c86a"
+                      LastKnownName="UnitGrid"
+                      LastKnownLocation="Package4_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="99c29f25-205a-46c6-bd79-bbb12a1ba8d5"
+            name="DivisionBehavior"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bf7e1b03-049d-4132-a2b6-0a1e1ed87bc3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DTcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94b08475-dfe1-4851-a559-3950e62dcd33"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90e970b8-f4ec-432e-a360-66efff815800">
+                    <propertyInstance
+                      Id="221b4356-4f50-4b24-979e-f01f5839bbfc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98605060-2661-46c9-9763-1443aed11285">
+                    <propertyInstance
+                      Id="a6194664-7869-4980-958a-26e238d8e601"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc86b452-6694-4623-9c35-c40c6ccde600">
+                    <propertyInstance
+                      Id="7a44474f-e14e-4da8-bc53-47b24f58a48f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb47aa96-d30f-481e-a00a-c339648b0745">
+                    <propertyInstance
+                      Id="dc6cfaad-7eb0-4c67-8232-f9e0a29f6eef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13db7863-6e3c-42d2-a3d1-bd51802d8b8e">
+                    <propertyInstance
+                      Id="889574c9-01e3-4573-82e5-33de24744d68"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81c60228-536d-4456-a4e5-ef063933b940">
+                    <propertyInstance
+                      Id="bf3928cb-fbec-46bb-b452-e31771a3090d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a865a647-baf0-4da3-a8c8-19426dbec3f6"
+                  name="thatCell"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="33178054-9f34-4e9e-a86b-4f33484d09a1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DTcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatCell"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5304b304-1798-4819-9992-92d444123ee2"
+                      LastKnownName="Tcell"
+                      LastKnownLocation="Package5_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a7ab488e-7674-486e-89f1-7b16ba979c21"
+                  name="thatInput"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f21e5a54-efa9-4728-9786-2375a7be53e1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DTcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatInput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fd14c0d4-9f8b-4ec6-9f81-fb7581e105ca"
+                      LastKnownName="InputDispatcher"
+                      LastKnownLocation="Package1_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3b08db02-6e00-443d-93cc-b3322b3f1520"
+                  name="thatMap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d63a7f80-d848-4b22-b383-eb7f0ab0ee45"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DTcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatMap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f44a5218-2e57-40f2-a6f5-50ce7f05967e"
+                      LastKnownName="Map"
+                      LastKnownLocation="Package8_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="25172c35-83f3-4ca1-a2e9-c035a2aa1f85"
+                  name="thatSelectionManager"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5bbd7391-c310-4de1-9993-8197d1bc08e6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DTcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatSelectionManager"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4df6b00a-9693-4674-9355-8097902d5af5"
+                      LastKnownName="SelectionManager"
+                      LastKnownLocation="Package2_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bbb92c85-85ca-4121-92e0-c2d253ea7088"
+                  name="thatObjectCaches"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6c5532a4-ab8b-4561-80c9-4e055aa7e911"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DTcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatObjectCaches"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="dd3f8333-42d1-4891-9d69-072c40d6f564"
+                      LastKnownName="ObjectCaches"
+                      LastKnownLocation="Package3_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f962e9b6-b393-485e-a8e2-ba09eae208bf"
+                  name="thatGrid"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="08eb7dc7-5731-4e90-8564-216c8ecb58fc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Player Type%3DTcell)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Input Type%3DInputDispatcher)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic Type%3DSelectionManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatGrid"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e1f3f6e5-f0e5-432a-9c78-8bccc536c86a"
+                      LastKnownName="UnitGrid"
+                      LastKnownLocation="Package4_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="651dc13c-47ab-4fb3-a9e1-fa322ec6f156"
+            name="DivisionBehavior"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="52653ad6-bac1-4fdb-a3fb-5ad4296c7490"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DVirus)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dd005934-ec9c-4ded-8289-6ea669eaefa0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="962d80ff-b648-427b-beca-9958e3029ec1">
+                    <propertyInstance
+                      Id="fd8f0aee-f389-4ea4-a540-f0d3dc43411c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e7964f2-7473-40c5-ba25-a9b760be2695">
+                    <propertyInstance
+                      Id="4dcafaf3-c73f-4f03-9cdf-31bc304b76b8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ddab763-6b8b-48d0-8b85-480b4e184211">
+                    <propertyInstance
+                      Id="f5d8f7fe-dc96-4d67-b9df-67fdb50fd38c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bd3cf42-8759-4266-b25d-087776845ec6">
+                    <propertyInstance
+                      Id="d134666a-f791-429e-83fb-2fd04df275ca"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3edda94-d07c-4d61-922d-76e09dee6190">
+                    <propertyInstance
+                      Id="9892a436-1f08-4963-9bb7-e0e6630be450"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f963e53-1f99-4940-bee1-319de4ee64fa">
+                    <propertyInstance
+                      Id="41db25f0-110e-435a-822d-d09ca2067916"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="54b5aafe-bb3a-4d44-bad9-8f45aba7f201"
+                  name="thatCell"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f9646582-bdcc-4cc6-aff4-394931500a66"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DVirus)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatCell"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9da68f76-3a38-4db3-a372-858cb43e39e1"
+                      LastKnownName="Virus"
+                      LastKnownLocation="Package23_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fd067045-bef5-4630-956e-fa5e536b3e9c"
+                  name="thatMap"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6c034447-d856-4ab7-8e2f-9f5d15929e22"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DVirus)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatMap"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f44a5218-2e57-40f2-a6f5-50ce7f05967e"
+                      LastKnownName="Map"
+                      LastKnownLocation="Package8_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5de005fb-e979-4375-9b42-8ba2d0e506c5"
+                  name="thatObjectCaches"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cd301128-4f8d-4d45-b88c-54a69ecd30d2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DVirus)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatObjectCaches"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="dd3f8333-42d1-4891-9d69-072c40d6f564"
+                      LastKnownName="ObjectCaches"
+                      LastKnownLocation="Package3_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d5453d0c-ffb2-4634-bcb9-aa8a871ff3f2"
+                  name="thatGrid"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="33f31426-3dcc-4537-9d22-eca0278a3ad6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Enemy Type%3DVirus)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMap)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DObjectCaches)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units Type%3DUnitGrid)]) ParameterIdentifier%3DthatGrid"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e1f3f6e5-f0e5-432a-9c78-8bccc536c86a"
+                      LastKnownName="UnitGrid"
+                      LastKnownLocation="Package4_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="db485853-2406-4274-9bed-ef35ad5e1bd5"
+            name="CalcInheritance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ab9d929b-533f-4d41-b7df-6994efa93da9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3DCalcInheritance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanCellDivision)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c994615c-7615-4740-82b0-99b2dc2580ea"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27d6a2c8-10bb-4390-8fbe-9b7062779ed1">
+                    <propertyInstance
+                      Id="bb6ffe88-e7fe-4ed9-8626-d769562ee9a3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a836c80-9cfa-410c-afb5-cf796e878b4f">
+                    <propertyInstance
+                      Id="c2f73777-88f8-41f5-835f-382aeeafba62"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da27be6b-a24a-4734-835e-00bd405b790e">
+                    <propertyInstance
+                      Id="44d421dd-93d7-436b-919b-ce356c90f6ad"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e4109af-0262-4634-a333-1221f86805e1">
+                    <propertyInstance
+                      Id="1fe9f7a3-9c74-4358-8c8a-2787529f07dd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eebf245d-e633-4adb-aac4-500180096a77">
+                    <propertyInstance
+                      Id="745901d0-af95-410a-b9e7-710b2e909b38"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="474d0129-5660-47cd-8738-60e5151f8080">
+                    <propertyInstance
+                      Id="0a832fd4-bb8a-43d2-b8fc-8ed3e75879e5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7b4bfcc1-e8b5-4730-b10a-478108243ef8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8902a38a-4e40-4553-b233-015e659fdc27"
+                      LastKnownName="InheritanceTable"
+                      LastKnownLocation="Package7_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94ce918c-6455-4936-a56b-84adcedc91dd"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4a4d73b6-11ec-47ca-80fd-f424195ecdfb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3DCalcInheritance OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanCellDivision)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="67bcd9f1-2fc6-4982-b26c-8e9eb6a51055"
+                      LastKnownName="ICanCellDivision"
+                      LastKnownLocation="Package6_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="98611c91-10db-4efe-9cfe-ac0bcf212735"
+            name="CalcStartPosition"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e366aa78-c217-48df-9517-5140ae6c4407"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3DCalcStartPosition OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DGameObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="203827df-c87c-45bf-a852-6d9f99868016"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6aa5f438-0add-44ea-bb8e-34f0fb2e3c0b">
+                    <propertyInstance
+                      Id="1164b6dd-99c2-46f5-8ec3-d917422d1db4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57ef13af-54dc-437a-9ee1-541a172ccce6">
+                    <propertyInstance
+                      Id="70906440-ef99-4279-9439-fcf5b29d9deb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c24b60a0-8407-42c9-a693-6e4a6231553f">
+                    <propertyInstance
+                      Id="66d5f151-1ed4-4ecc-a98e-2d58eea3dbb1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24853e51-2162-4ab1-a8ed-35c3c1100cac">
+                    <propertyInstance
+                      Id="d56263d8-4333-450f-80ab-61b9c5950ac2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69a2e630-ac96-4a35-b138-213491960e4e">
+                    <propertyInstance
+                      Id="62d00a89-cc9d-427d-bbcf-589d12ac345f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3ac30fc-2731-4fde-b4bf-f8a37a4ac8c3">
+                    <propertyInstance
+                      Id="66b91af7-ab88-4e78-b8dc-412ce7faa280"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="22ac1e6a-d60d-4471-aaf9-c1e6df64b15c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="37d651ff-fe30-4f9a-adc5-76a456d3f4d5"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a858db9f-8d9d-43ac-a9f1-f9f1d340ffea"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3DCalcStartPosition OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DGameObject)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="329c0eea-7f13-4d09-82d7-c139e4ab78b2"
+                      LastKnownName="GameObject"
+                      LastKnownLocation="Package3_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3cb310ac-d164-4c92-a11a-4fe51b4dc33f"
+            name="DivideCell"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ee4aaf47-0e1e-4219-b352-6f200ee1d03b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3DDivideCell OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanCellDivision)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fce63b5a-fff6-4238-85de-429c74d974a6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4af67b09-a140-44e5-b8f9-d6807511bb57">
+                    <propertyInstance
+                      Id="ceddc731-5d5c-410c-89ef-a3ddca22a4f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c1b2384-74c1-48da-8f7f-f74a4de4917f">
+                    <propertyInstance
+                      Id="0a8fb1d5-a9b4-4818-b6fe-65c310f141ae"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a13af4cc-2988-4f9b-bf3c-999d36d714a2">
+                    <propertyInstance
+                      Id="2d14af4f-34da-4dd5-a3c6-da210e33b021"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a547e92f-83f6-4471-86cc-18a85234cc98">
+                    <propertyInstance
+                      Id="a81361f7-6e12-48f1-a7ae-6587afb290ca"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e793027-46a1-4642-a42e-e4a2b1bcd726">
+                    <propertyInstance
+                      Id="10b712eb-864a-430f-a2cb-7f8bc61a5732"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13161fee-429d-47c6-b886-c408f8dec01b">
+                    <propertyInstance
+                      Id="3333ce5e-55d3-41ce-b6e0-07c11a06c1df"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="31e7bd5c-c7b4-407f-acff-61655f2c4d35"
+                  name="cell"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5f49efd5-8047-43f5-bf5b-3871aebca111"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3DDivideCell OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanCellDivision)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader)]) ParameterIdentifier%3Dcell"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="67bcd9f1-2fc6-4982-b26c-8e9eb6a51055"
+                      LastKnownName="ICanCellDivision"
+                      LastKnownLocation="Package6_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ce8c4f19-a6e9-4f1e-81dc-6e7cb8fb5b58"
+                  name="loader"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5d7999ab-d775-46e5-a216-5f51458fde73"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DDivisionBehavior Member%3D(Name%3DDivideCell OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanCellDivision)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader)]) ParameterIdentifier%3Dloader"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="49160952-aa14-4819-8004-08c011640516"
+                      LastKnownName="IDivisionContentLoader"
+                      LastKnownLocation="Package24_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="42a8f548-7b1a-4d9c-bcd0-74062fe804cb"
+        name="IDivisionBehavior"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="128688e3-4bcb-45e8-89aa-9d80258d4f3b"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionBehavior"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3473b170-dd17-40c0-931f-1892533240e6"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e91c58e5-d59e-43c2-9f39-f98fbf89d6c4">
+                <propertyInstance
+                  Id="6775f5f7-ce06-43f5-a372-db3216e1db99"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3eacc7ce-c80e-443e-b9fa-9c5f932dbe5d">
+                <propertyInstance
+                  Id="879717bf-b9ab-48df-8d72-6054948e0d45"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d2a32b9f-db4a-4e08-aa84-2c4010b90914">
+                <propertyInstance
+                  Id="8ee72523-5365-4fe9-851b-6d3d4f7daf3e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f9b6f46-633f-4c5b-af39-631dde4f5ad8">
+                <propertyInstance
+                  Id="b330f261-0da4-4da5-9a04-13976fd3b2d7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="125d92e1-727a-43b2-b055-6109f098cee2"
+            name="DivideCell"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a3517420-2132-45a5-b7ca-92fbacb18ed1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionBehavior Member%3D(Name%3DDivideCell OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanCellDivision)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e508437e-999b-447f-8240-ca9efee50c98"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4676744b-4fae-45a1-b538-0e69ab0b7e55">
+                    <propertyInstance
+                      Id="41d43090-25be-4f82-83b6-783091b3b7bc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aef07283-059a-4736-bb90-5eebd30bf7ce">
+                    <propertyInstance
+                      Id="4c625028-3413-4698-abc4-d6d0365ec888"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="797274f0-162f-46fa-bea9-1db20b2d4349">
+                    <propertyInstance
+                      Id="08169e6d-326c-41e8-94fc-67823dc6f3a8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5db708f8-73da-4cc1-95d5-b43eebd0e400">
+                    <propertyInstance
+                      Id="6dac34fc-e2d3-4ec6-9a99-27cc467f8103"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d2dcac9-9523-4830-a1df-96171d58249a">
+                    <propertyInstance
+                      Id="a789e491-9496-4d13-815e-1cc8da2b9eb5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6710a72-b5a3-419d-9891-e79c5e1b447d">
+                    <propertyInstance
+                      Id="84be9114-d03b-410e-b273-fc2abe51bc97"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c2d99c4-0038-4223-8ecf-87246f59ea6e"
+                  name="cell"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5e3911c7-acc2-4b55-a40f-3115d66c8093"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionBehavior Member%3D(Name%3DDivideCell OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanCellDivision)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader)]) ParameterIdentifier%3Dcell"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="67bcd9f1-2fc6-4982-b26c-8e9eb6a51055"
+                      LastKnownName="ICanCellDivision"
+                      LastKnownLocation="Package6_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f544555c-5dee-433c-8a4a-c9ef212efd5d"
+                  name="loader"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="999ece5d-66aa-42fe-9d32-5f72686040f8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionBehavior Member%3D(Name%3DDivideCell OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanCellDivision)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.CellDivision Type%3DIDivisionContentLoader)]) ParameterIdentifier%3Dloader"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="49160952-aa14-4819-8004-08c011640516"
+                      LastKnownName="IDivisionContentLoader"
+                      LastKnownLocation="Package24_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d6ee172d-0c92-444c-b2f7-9f8d82e24c04"
+  name="Behavior"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="27fb7490-0f7a-446c-8fa1-6f6a5abcb59e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Logic.Behavior"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="170fcfd5-21af-49c6-a75f-af3f21dc4ee3"
+        LastKnownName="Movement"
+        LastKnownLocation="Package12_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d2a5c596-6347-4f31-b8eb-bacb591d5611"
+        LastKnownName="Debuffing"
+        LastKnownLocation="Package15_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b59c047a-df38-4c2a-aed0-52f6df593ff5"
+        LastKnownName="AntigenExchange"
+        LastKnownLocation="Package16_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="94f7dccb-f8f9-4eae-97f6-904926639cc1"
+        LastKnownName="Attacking"
+        LastKnownLocation="Package22_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c00533be-842d-4a40-a5d7-ac40d6d6c274"
+        LastKnownName="CellDivision"
+        LastKnownLocation="Package24_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bc309b79-1026-4773-b166-56181a6e88d2"
+        LastKnownName="Deinfecting"
+        LastKnownLocation="Package32_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="231c8479-9066-49aa-ae11-da7b2e4b724d"
+        LastKnownName="Infecting"
+        LastKnownLocation="Package34_1107.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

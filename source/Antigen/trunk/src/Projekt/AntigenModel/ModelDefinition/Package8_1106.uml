@@ -1,0 +1,2197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8688822a-c2ff-4654-9e2c-0c59e1408559"
+  name="GameManagement"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="273c6751-007d-4e40-989e-228c82c6e352"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.GameManagement"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="29d0ffa9-87cd-4cf4-94f5-38d1a22b6ac5"
+        name="SaveGameManager"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b670caf1-c988-47e2-940c-77c20e7a4d77"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="16ec570b-bc04-4e25-a612-348c93d62789"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e078cac-767f-4364-9a8b-486f258c53a9">
+                <propertyInstance
+                  Id="11bf918f-8ee8-4cc4-a639-65a2bc6810d7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e164630-99af-431c-b8a6-b99175fc76a8">
+                <propertyInstance
+                  Id="10188536-31d0-46a5-96da-c8306b2fdc18"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb22225f-ad3d-4e92-9d02-1bca4dff823f">
+                <propertyInstance
+                  Id="a4682055-c2b3-4a5e-a735-9777e6d9087e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1cbf257-ed0e-4a58-94e8-4e2abe50125c">
+                <propertyInstance
+                  Id="ba53aa3e-007e-4c6e-a075-1414c960ec9c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="11567ec8-7b0a-49fc-8e3b-70dc24e6231f">
+                <propertyInstance
+                  Id="8aa4e9ec-8a76-4c91-9a58-77f590c94b12"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="e39594f0-c9b5-46e2-a2a4-d704f9c6a68d">
+            <classMoniker
+              Id="9122e429-81ef-434f-a0f4-4ef09081e1a0"
+              LastKnownName="GameState"
+              LastKnownLocation="Package8_1106.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1583a387-f4dc-40dc-b874-b246577a30ec"
+            name="mScreenManager"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7dae0fc4-7c31-44af-952a-18ddaa296c8e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3DmScreenManager"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6d56e2ca-5a24-48b2-b9de-3465199a607a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1369e7f0-8ba1-4b79-937f-be2b1a0c2b3c">
+                    <propertyInstance
+                      Id="c31e4a4b-cb05-4044-bf41-76af085d1c9c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a40e936-6775-422e-b96a-b5f413fb857f">
+                    <propertyInstance
+                      Id="abd4dcf6-4c1c-455c-823d-ba5c70443420"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85aba275-1d8b-4bd6-9044-510903507e59">
+                    <propertyInstance
+                      Id="0bac4567-2eb9-47e2-a070-dbe6dd6a7fea"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc927a4c-1b60-43ed-934d-be7407a01521">
+                    <propertyInstance
+                      Id="6f95292a-ce84-4e13-8440-ba131fd1262b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26a86c3c-bcb4-4c1f-95e9-ccc62cea8bd9">
+                    <propertyInstance
+                      Id="9d47c5e8-3e38-4d24-824f-4d69cc02d0be"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b1e398eb-c306-4073-9803-c59dc6f46c2a"
+                LastKnownName="ScreenManager"
+                LastKnownLocation="Package7_1106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c0a1c756-1214-4848-b6e3-169f2561241a"
+            name="SaveGameManager"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="07f9c8b6-d6ce-4ba2-82a2-7aa42c1b91af"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="10b2c6cc-e77d-4eb3-846c-d87c5387617a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="525feb97-0c40-430c-a47b-fb441b8b0f1f">
+                    <propertyInstance
+                      Id="5dbebf2c-a108-45db-82b5-7a6b59925ead"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85580a66-2835-4e7d-bb21-eff098de662e">
+                    <propertyInstance
+                      Id="968b93bc-3bb4-437f-b157-e0bd516856cf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a18ae304-cbd3-4dae-8da8-4ef760fa933c">
+                    <propertyInstance
+                      Id="c65bac22-02cf-4762-96c5-d845239aa21a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9cc8c78-0bee-45ca-beca-31bffa836e49">
+                    <propertyInstance
+                      Id="9337bc73-6b09-445e-b5da-efe483793504"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba5e42ac-f6e2-4c4a-b136-dfe0ef55bc45">
+                    <propertyInstance
+                      Id="55c0ed2f-12d3-47d3-baf0-70ce699caebc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01450f54-1830-476e-9c20-12b11cedb9c6">
+                    <propertyInstance
+                      Id="00bc9269-c407-4b38-af21-294b4bf0895f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a674e1fb-04e3-4e82-8f82-438151a79ce4"
+                  name="screenManager"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f3f46f1d-209a-4f4f-b1c7-ad978d1e676f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)]) ParameterIdentifier%3DscreenManager"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b1e398eb-c306-4073-9803-c59dc6f46c2a"
+                      LastKnownName="ScreenManager"
+                      LastKnownLocation="Package7_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0e70a8f1-e7cb-441e-87e3-fb18ba458f57"
+            name="Deserialize"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a67a846b-b35e-4a9c-85e5-8de8499f4aad"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DDeserialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0cae62dc-6f20-43a2-a76b-27d4469f3b1c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2def307-2ba6-424a-9be5-c2ef4b79a4ae">
+                    <propertyInstance
+                      Id="7f40bf4a-3e4d-4d3a-8dc3-3f4ce640e570"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15d354b2-c30f-43d9-94ba-5156837ebce0">
+                    <propertyInstance
+                      Id="8b4c45e2-169b-408a-95da-c69679979870"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64e8d813-0366-4366-9d11-e5823aa8d4c2">
+                    <propertyInstance
+                      Id="1690213e-1d73-40f8-9511-5613dcc56bbd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad4f9140-13af-4c1b-996c-7bbf679d3f84">
+                    <propertyInstance
+                      Id="4b02df84-8fe4-48f3-bec6-1956eb7e4f74"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33180f81-b519-4af4-921e-0055ab413e72">
+                    <propertyInstance
+                      Id="35973611-f3a9-40fb-8c55-6d58ed74c571"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8755c861-051f-4c3f-af22-b0bd5a64bcc2">
+                    <propertyInstance
+                      Id="5a49b313-4706-48be-8b99-752a87d9e18a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="66b3c641-0c1a-4a93-8345-fc66ddda607f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2fe21dfa-6e05-4676-8ed2-acd1101051de"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package11_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ccf9fc5c-eb69-4c37-804c-ac10da5ce52c"
+                  name="fileName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="985f8409-994f-4dad-bdda-417a0dc59372"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DDeserialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DfileName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d267e55c-d80e-4d77-b767-d9ab4d195ef5"
+            name="Serialize"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="77fe0c9f-0af3-4023-8b3b-55e06b6ddd8a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c8fdc023-00b0-4817-bdec-2a3e4e84fc4a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92909d5b-d9c4-4350-9206-265b319a94fd">
+                    <propertyInstance
+                      Id="eac73ed4-d4f3-47d5-949e-6e0ad7d5984a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8bd2681-2bcb-45c0-856c-938ea7999876">
+                    <propertyInstance
+                      Id="1180b0b8-4e4e-49c9-a3d7-604f4fd301b5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82722ec2-ca27-49b5-93cb-ef121c61cda2">
+                    <propertyInstance
+                      Id="162981ee-dff1-4bdf-af4b-1fa149fcd775"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac4f90db-3bf2-4780-8e30-d7ed6beb81b1">
+                    <propertyInstance
+                      Id="481e2cd4-945c-4f25-a3a2-1298f3fa5188"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="952ddd3a-9e0b-424a-99b0-b59b166ac29d">
+                    <propertyInstance
+                      Id="7223c818-c0c6-41e2-9b38-430b4b034900"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="661d1b73-0bc7-4cc2-a6a8-eee684b598b9">
+                    <propertyInstance
+                      Id="3245babb-32f0-491b-9fac-fef04ec6023d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67638745-6f59-4a7c-8525-34dd0ffbd3d9"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="41b42153-3316-42ff-91d9-ed3f51b551cc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2fe21dfa-6e05-4676-8ed2-acd1101051de"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package11_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6e8e4b5-244c-45a2-a56d-44339d43fea3"
+                  name="fileName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="57d2943e-562e-4687-b8ba-299b14fdc87e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DfileName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a4859684-f391-4bb3-a246-a35a4e5c4089"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b2c6edf2-4a04-4afe-bd9d-915a91e314b0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="201f8d19-2aab-4f5b-8dcb-5cf037f795aa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4e6fd8a-bedf-4e33-9c17-e48ce304be98">
+                    <propertyInstance
+                      Id="8c7d7cf1-723a-4fb4-9a23-d9547b89126c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="996bb572-fac3-48ab-a720-209cc5ca75f2">
+                    <propertyInstance
+                      Id="151e60c1-916b-4c58-bad0-97ba04fee34c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c61c5c88-0fda-4b64-b979-75d9f2dda5d5">
+                    <propertyInstance
+                      Id="daf12008-e8ca-411a-b065-df8c35fc4cfc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3dabd63-1c49-4417-89be-11851a4e95da">
+                    <propertyInstance
+                      Id="b3137805-911a-4d55-9e94-b3b0dba5aff0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4502582-42cd-4ade-918d-3d6c47300cb5">
+                    <propertyInstance
+                      Id="5d955716-8ee1-4d76-81e1-c24d2ff60511"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2c58992-d64e-48df-b047-2a4ffab8e60b">
+                    <propertyInstance
+                      Id="4fa19ae5-f2de-46fc-90b8-dbeae18ef7d0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6bb683c1-ddc5-4ba0-bfa6-6153ded2bc3e"
+                  name="slot"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a24e5909-b759-4298-89c3-7c6b29cb7cd4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dslot"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3f129e3b-23fa-45a3-b4da-c5a791f8fae0"
+            name="Load"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ed77e51f-1c57-4bc7-a447-beb8578e1535"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4a08d6ba-8527-48aa-b205-2e25602d4f9c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="632fcf37-f372-43ef-b088-f91a512a2d35">
+                    <propertyInstance
+                      Id="322c3b53-bbf8-4ce5-98ab-2f707837ac6a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5500f4d-6ff5-4c5e-a551-2b76466c11e6">
+                    <propertyInstance
+                      Id="ed333ecd-643a-4e9e-9df1-b83cd0ac6df8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d6242b1-2b3f-43e2-860b-b52ef7cc1ed8">
+                    <propertyInstance
+                      Id="c7fcfa5e-bd60-4033-9525-2729225ea5a1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bacc26c4-b1c2-457c-a75e-b3648ef5c535">
+                    <propertyInstance
+                      Id="bd09e155-a2f2-4330-8180-369379a99f83"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36a62813-1118-47d9-a043-483faba58134">
+                    <propertyInstance
+                      Id="f41a4ffa-2c57-4d24-b56d-a46b20c387e5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b239e398-aedb-439c-ae9a-da78a68ba374">
+                    <propertyInstance
+                      Id="d6fd54e0-5251-4420-8869-4eeca9198600"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="faf9f6c0-7841-4bb2-9834-4aa3c330570e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9122e429-81ef-434f-a0f4-4ef09081e1a0"
+                      LastKnownName="GameState"
+                      LastKnownLocation="Package8_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="85fe5b94-3312-44d6-9004-612ec1c5b7ed"
+                  name="slot"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dcd3db39-3b0c-4f42-b178-8a0893c8895f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DSaveGameManager Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dslot"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a5914ff5-73e5-4027-8c62-affd261bd413"
+        name="InitializeGame"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0185d7e2-e46a-41b4-b6e4-9cc940bbf914"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9862b6ff-d943-4573-899e-567404f4214a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8677288-c4df-48ac-aaf7-9b52ea6a1b4d">
+                <propertyInstance
+                  Id="0e325a15-b1b3-4e55-a6d7-57e2a0e4280b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a39e3dc5-f401-4c42-a431-e0a556df50e8">
+                <propertyInstance
+                  Id="989e56dd-fa66-4385-b4c8-7add247ee46b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce02b2aa-9af0-45ed-9eb3-5295e22ff5c6">
+                <propertyInstance
+                  Id="68788ba7-decb-4ae6-8411-de04ba6c7844"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb94d6bd-9a3c-4917-a4f7-a3e13221df03">
+                <propertyInstance
+                  Id="f7598331-aee7-47fa-a69c-075d88cfd1ec"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e65b64af-5003-4898-beb5-3020d54e2432">
+                <propertyInstance
+                  Id="f3e2bd88-9cef-4475-b1c2-58ce9f9b3442"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="df9dc460-7832-42fe-8ebe-6ebfa1bcb318">
+            <classMoniker
+              Id="0342c8b8-ab96-4e94-bc1f-7ce4407fdfe1"
+              LastKnownName="SettingsManager"
+              LastKnownLocation="Package_0929.uml" />
+          </dependency>
+          <dependency
+            Id="3235b3ad-3607-44d6-b846-b845c944332a">
+            <classMoniker
+              Id="3502fc95-bb5e-4661-aa34-cd0e18edfc77"
+              LastKnownName="ContentLoader"
+              LastKnownLocation="Package9_1106.uml" />
+          </dependency>
+          <dependency
+            Id="04eb33cf-ef66-4e2c-a66b-038729a86496">
+            <classMoniker
+              Id="b1e398eb-c306-4073-9803-c59dc6f46c2a"
+              LastKnownName="ScreenManager"
+              LastKnownLocation="Package7_1106.uml" />
+          </dependency>
+          <dependency
+            Id="a908f49e-abc8-49e3-8a33-395b36660144">
+            <classMoniker
+              Id="3a6056e7-980e-4688-8f7e-bc18d54a8742"
+              LastKnownName="InputManager"
+              LastKnownLocation="Package6_1106.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="cee6dc29-83b9-472a-846f-c83664282c6e"
+            name="mContentLoader"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6e0011bc-8d5b-4074-a306-9bbc711098a0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3DmContentLoader"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3ef8f7d9-d6ee-4b5a-9508-c3403022a75c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="835f3115-0443-4004-b6be-26b8bf585548">
+                    <propertyInstance
+                      Id="99da29e3-cf98-48e2-98f3-9110fa48c8af"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d66e1c3-b22b-449c-b3d7-783fabe6cafc">
+                    <propertyInstance
+                      Id="cf9a9d2b-0a42-4614-89a6-8577d4973aea"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39310e14-591c-430c-99fa-e021c392de9f">
+                    <propertyInstance
+                      Id="0f198f14-f192-4758-b8bf-bfa0e9708ddc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3d327c5-dd05-408e-96df-789b325b0b35">
+                    <propertyInstance
+                      Id="212d1335-7b7b-4460-80ae-71ead3f8318e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2881a2c4-f810-4caf-a5db-a61b8826e819">
+                    <propertyInstance
+                      Id="1e69b3b0-657f-4022-b026-bbf757797177"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3502fc95-bb5e-4661-aa34-cd0e18edfc77"
+                LastKnownName="ContentLoader"
+                LastKnownLocation="Package9_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d0424b3d-eb67-4aa2-88c0-c94989e3e7a4"
+            name="mInput"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="aa8f88e3-e0f7-4e41-a720-3165bbfdb088"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3DmInput"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7216cb0a-2519-4f2a-b7bf-439b07f1b887"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4b76163-c998-4c74-9fbb-e8a00f062f37">
+                    <propertyInstance
+                      Id="be5c28b3-3e8b-4d4d-b00b-1f9ba7446b06"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9dbe31a-48b9-4b35-81f2-125f0ddccc84">
+                    <propertyInstance
+                      Id="6754ddd3-b131-48a2-bdb0-82381efde267"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26a5892f-940c-4785-a2da-899d1c4965d9">
+                    <propertyInstance
+                      Id="728914fe-8fee-4de7-bd8d-9f274d7297cf"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99a9f339-044f-4bd0-b9ce-dd2cc381e5f2">
+                    <propertyInstance
+                      Id="0628afdb-974d-4409-9056-0c785923578f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bc17a0a-2574-4fd6-9a6f-69802a46aab5">
+                    <propertyInstance
+                      Id="06e23dba-c988-4605-855f-4b5eb7e745b0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3a6056e7-980e-4688-8f7e-bc18d54a8742"
+                LastKnownName="InputManager"
+                LastKnownLocation="Package6_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ec4907d1-8181-401e-94fe-0b72530489cb"
+            name="mScreens"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0397a872-389a-4fa8-a3b9-d74656b6edf5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3DmScreens"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7523a044-dc90-4fc6-bdac-997166554a86"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00dd554b-01d3-4a81-b70a-c35221315251">
+                    <propertyInstance
+                      Id="55f760b8-054c-46c4-9b3f-f5c572918298"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b11735c0-b603-4796-81b5-7ab5cbe9ef54">
+                    <propertyInstance
+                      Id="c2ef7b84-ce74-4b68-ba67-d91a453e10a5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eba746b8-4eca-48bc-9b37-80625c548531">
+                    <propertyInstance
+                      Id="30569c2d-5bf9-4d0e-bff1-5df954c5bd42"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17e1c23e-6d90-4bdf-841f-e8ec403a38e0">
+                    <propertyInstance
+                      Id="82918755-8ab2-4da8-a1ff-b018c38e9751"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66cbdb05-ef4a-4905-974f-a5cba316ec9b">
+                    <propertyInstance
+                      Id="74484d9b-02d6-4197-8f2c-5c84a6777421"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b1e398eb-c306-4073-9803-c59dc6f46c2a"
+                LastKnownName="ScreenManager"
+                LastKnownLocation="Package7_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="86ac90e3-1c45-477c-a470-9b19c8b6558d"
+            name="mWindow"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fbdbdba5-129e-4960-828b-fa931153a027"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3DmWindow"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c6d8973c-6fcf-4a1e-95cd-48dcac9d24bb"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da38d255-f38e-498b-918a-4bf416590d50">
+                    <propertyInstance
+                      Id="a6a664ee-01b6-446c-870e-1cc6979b4ecb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="490ac048-71b2-4004-b402-bbf675e0cb4e">
+                    <propertyInstance
+                      Id="62a28cce-07ce-4fb9-a2d3-957bf3d7bc13"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a603b615-4ed8-4ad5-9b19-3f64bfbf43e7">
+                    <propertyInstance
+                      Id="965f8c66-92f8-47cc-95b1-b2f346cb505c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a841a17e-571a-4e32-9894-edd20bfffe67">
+                    <propertyInstance
+                      Id="fe4e6033-e70e-4d1c-b1b6-42576a4e8a50"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d77a7dd-d3a7-4b73-bdfc-e4252f641cc3">
+                    <propertyInstance
+                      Id="e13cb014-07cc-418a-a314-a6e41b968cff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="99b086ae-056b-4643-8016-4ca98b082e73"
+                LastKnownName="GameWindow"
+                LastKnownLocation="Package3_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5eb1da5b-0900-4328-8359-3c1d2ad21f7f"
+            name="mSettings"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="effcd7ea-f4e8-48d4-a4da-fa56927c1a0b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3DmSettings"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e4d094f0-418c-406d-865a-7f305773cdf9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="574d2167-03fc-47af-9930-46e0fa1c520e">
+                    <propertyInstance
+                      Id="a22ddeb2-476d-42f3-bcc9-2621013efd71"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="074c32c8-728a-4b7f-8350-7c18a5442692">
+                    <propertyInstance
+                      Id="567f4bde-c0ae-4007-bd26-fae0c8c6ed2c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="550a20f6-c1e7-4efe-a11c-af1390a65561">
+                    <propertyInstance
+                      Id="21641302-6268-489a-aff0-6e7864d4869a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00f68e39-ecdb-421a-a2b5-caf54ee9ff8f">
+                    <propertyInstance
+                      Id="60a5380c-129b-4c18-81a9-c5ddaa8b3814"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2ebfed4-b749-49f4-aa4e-53e355750e5e">
+                    <propertyInstance
+                      Id="d6863991-2a51-4b42-9e14-31d65c9e5745"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0342c8b8-ab96-4e94-bc1f-7ce4407fdfe1"
+                LastKnownName="SettingsManager"
+                LastKnownLocation="Package_0929.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2b2c2738-7fd2-4efa-a922-33603b90d2e4"
+            name="mSpriteBatch"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="63c89b7d-37dc-4a8c-854e-4086edb796ba"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3DmSpriteBatch"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e56e9a70-0e56-4ee6-9b49-bac350e19784"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a5a7546-beff-4205-8773-d894060d7ac2">
+                    <propertyInstance
+                      Id="646fe83b-38d3-43c3-aa25-67b4d2c8694d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2751fa87-95f7-40b6-887a-fc502c2fb30e">
+                    <propertyInstance
+                      Id="da626af2-04a1-4317-93a3-be1f4bc2eb4a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66f7f970-d18a-4282-8478-004e22b98f7a">
+                    <propertyInstance
+                      Id="fdda2d19-bab6-47d7-94de-4c36767cd8b6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e217bf02-8abb-4fbc-a731-16a8fe8c8910">
+                    <propertyInstance
+                      Id="6fe42fd0-d5b6-4ae7-a58a-5ca781ff0e4d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c0ae73b-1e81-445a-bfa0-667735994cf6">
+                    <propertyInstance
+                      Id="bfc4fe38-7d11-48d4-aab2-3ab72517b1c0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fe7f1808-ef9d-49aa-a715-b5cc69d97248"
+                LastKnownName="SpriteBatch"
+                LastKnownLocation="Package4_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="86c4b4e0-12c4-4f84-ad90-69bb6bc61261"
+            name="RedBloodCellThreshold"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8b37d602-fd90-4e57-a84a-06d4ab010d1e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3DRedBloodCellThreshold"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ac1bc0eb-6fbd-4b2f-9436-d394a1185bc6"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f00cb0a-a57e-4f7c-a018-57fd02015398">
+                    <propertyInstance
+                      Id="91c05b7d-748c-4021-b643-5397fed1c9b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4e4aa30-6059-45fe-9503-4356da43b6dd">
+                    <propertyInstance
+                      Id="befe00ae-f589-44ab-acd2-a3e93b9b1584"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bed8a2f-0a92-45ae-ae24-5a1b37796942">
+                    <propertyInstance
+                      Id="f39e5d35-9c80-41ad-b733-fcbdfb171f03"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f401b0c-daa6-40d3-9f29-27905345d02d">
+                    <propertyInstance
+                      Id="f7e0c5df-0238-4c11-870e-6a7822488d5f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2165c4d6-9787-4cbf-ad0a-f140dc891e9c">
+                    <propertyInstance
+                      Id="63f59d49-e1ab-410f-b9c6-9afbd47264ca"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="335d6454-6487-4940-a14d-f1fbd0178d42"
+            name="InitializeGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="33c94797-e831-4ee5-aa9f-38e8cd6602c5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameWindow)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Graphics.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Graphics Type%3DSpriteBatch)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a0e810fa-9453-468b-bb51-0678936a5e1f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec043300-6cc1-4e38-90dc-fda8eba12503">
+                    <propertyInstance
+                      Id="26cd5ea4-c90d-4422-88c0-e820e77d1d5d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="727c72a5-f6b5-48ce-b88c-1c02333b0459">
+                    <propertyInstance
+                      Id="c187cb16-6a67-4e0c-8d13-4656d897399b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23769cd2-0412-493a-a9f4-41c056ba52d4">
+                    <propertyInstance
+                      Id="6e8908b4-f192-49f9-9ee9-3aaa410f2fab"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="377ca96b-7a21-48b6-a19a-71e2212514d1">
+                    <propertyInstance
+                      Id="c93e3d5e-1257-49d4-a30a-95915acb973f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b85f920-f027-4559-82b6-68b59503f903">
+                    <propertyInstance
+                      Id="2a7502d7-5511-4229-83fe-afe7f96a9ef2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="382acfed-1475-4ef2-869a-b5ceed41a41a">
+                    <propertyInstance
+                      Id="263048e1-cbc2-4f37-aa0e-2df01ae2d075"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="58f776c5-388c-4850-9a93-1bb16f199f3f"
+                  name="screens"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="250cbb7d-0d6a-4afd-aefa-dc8a304246b8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameWindow)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Graphics.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Graphics Type%3DSpriteBatch)]) ParameterIdentifier%3Dscreens"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b1e398eb-c306-4073-9803-c59dc6f46c2a"
+                      LastKnownName="ScreenManager"
+                      LastKnownLocation="Package7_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7a4a1c7-5d0a-4346-a5b9-2ead49dbcbdd"
+                  name="contentLoader"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="55a497f5-322c-4215-b3cf-6ff59d45edda"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameWindow)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Graphics.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Graphics Type%3DSpriteBatch)]) ParameterIdentifier%3DcontentLoader"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3502fc95-bb5e-4661-aa34-cd0e18edfc77"
+                      LastKnownName="ContentLoader"
+                      LastKnownLocation="Package9_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e0d677c2-b6f9-4702-85d4-7767c4b5dea2"
+                  name="window"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4faca07c-d8a4-4a8e-840c-9d96c4518d95"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameWindow)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Graphics.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Graphics Type%3DSpriteBatch)]) ParameterIdentifier%3Dwindow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="99b086ae-056b-4643-8016-4ca98b082e73"
+                      LastKnownName="GameWindow"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dab12daa-5834-4b98-94b2-300c16b1d3c6"
+                  name="input"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6b6402ba-f775-4bae-9cda-c53ee885da1f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameWindow)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Graphics.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Graphics Type%3DSpriteBatch)]) ParameterIdentifier%3Dinput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3a6056e7-980e-4688-8f7e-bc18d54a8742"
+                      LastKnownName="InputManager"
+                      LastKnownLocation="Package6_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5399072c-5962-4e07-9c52-e9b192398b36"
+                  name="settings"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c4abdb9a-30d4-43e9-a6fc-0b594846f5a9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameWindow)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Graphics.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Graphics Type%3DSpriteBatch)]) ParameterIdentifier%3Dsettings"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0342c8b8-ab96-4e94-bc1f-7ce4407fdfe1"
+                      LastKnownName="SettingsManager"
+                      LastKnownLocation="Package_0929.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5364026b-d22d-4562-a23a-d07c78991c64"
+                  name="spriteBatch"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8cc5a03a-b261-48d3-9756-a0b22b2bae77"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DScreenManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Content Type%3DContentLoader)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameWindow)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DSettingsManager)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Graphics.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Graphics Type%3DSpriteBatch)]) ParameterIdentifier%3DspriteBatch"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fe7f1808-ef9d-49aa-a715-b5cc69d97248"
+                      LastKnownName="SpriteBatch"
+                      LastKnownLocation="Package4_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d6e42b13-5182-4946-a9a6-c9eddd7562dc"
+            name="NewGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1875191e-b978-4881-a542-5a7b7aa7055a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3DNewGame OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DDifficulty)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c2cc5f7e-6435-4fee-a669-026d5e5bd8e8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aed74097-ff4a-40e4-93e7-57b57bcf41b1">
+                    <propertyInstance
+                      Id="3d173966-279e-4b73-9d40-4a5ac8ca2e5f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b62a8cc-8d62-4f8a-9784-a3163885fc75">
+                    <propertyInstance
+                      Id="c73daab6-1fb2-467a-bce0-260883368d2c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0cee0a5-9e67-400a-857e-dbaaf7db5cf4">
+                    <propertyInstance
+                      Id="35bfe4e6-6b7d-4334-8279-efd02a7cf088"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c50a3f99-5b3e-4c48-ada4-657d57cbecc0">
+                    <propertyInstance
+                      Id="718f5e87-b8d9-4a57-a792-ad928880095d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75685d15-250d-4992-9afb-400a172030fd">
+                    <propertyInstance
+                      Id="259bb238-84cd-4549-a44d-e69a82d87168"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e55ee48e-815b-4cfb-9214-1a47afed6a7c">
+                    <propertyInstance
+                      Id="9d02ebfe-3969-4fd3-b3e3-29f1d5dee502"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ecb92eff-b068-4298-8848-cd846e027e1b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a753bde6-2392-4be9-8c57-5fd6bb39b9cb"
+                      LastKnownName="GameScreen"
+                      LastKnownLocation="Package7_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80d05de2-f2e6-4eb8-94ca-91d99b1b53dc"
+                  name="difficulty"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5ab7e3d7-9403-4fdd-8ec0-95984a204f9b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DInitializeGame Member%3D(Name%3DNewGame OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Settings Type%3DDifficulty)]) ParameterIdentifier%3Ddifficulty"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="a724ff5c-9421-44b1-b960-656169414e16"
+                      LastKnownName="Difficulty"
+                      LastKnownLocation="Package_0929.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9122e429-81ef-434f-a0f4-4ef09081e1a0"
+        name="GameState"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="37837084-8a91-4010-88d7-a43afd1164ac"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DGameState"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="11d8bdb3-a88e-48a4-86a2-b46f2e6d3c8c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb240f11-23c0-4843-b172-afadec0d0009">
+                <propertyInstance
+                  Id="2a835e8f-fd1a-4b89-a52c-9e84168cd4fb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b338f86-a5a8-469d-af8d-818cb3b64c64">
+                <propertyInstance
+                  Id="4f3a923d-afe8-44e7-a4aa-f58777b50cce"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d5fa4c89-e0a7-4c12-83a4-e9b203cc353e">
+                <propertyInstance
+                  Id="f6934187-d1cf-4ee6-a303-5eab3f942a89"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="46c81adf-ce1d-4046-aacb-1364026f9edd">
+                <propertyInstance
+                  Id="fb53af10-6431-4531-be1e-f5e2bb76665b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c3fe4f1-c8b7-49ff-8bd1-da42d5a7457d">
+                <propertyInstance
+                  Id="be2973b0-9d4a-4372-8010-ad24ec482ad4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="5d4a2629-6175-410b-ad47-aa85e518be23"
+            isDerived="false"
+            sourceEndRoleName="GameState"
+            targetEndRoleName="GameScreen"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a753bde6-2392-4be9-8c57-5fd6bb39b9cb"
+              LastKnownName="GameScreen"
+              LastKnownLocation="Package7_1106.uml" />
+            <description>Property GameScreen references type GameScreen.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b36bf9ad-c497-41ea-94e6-53576df8fe29"
+                  name="GameState"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dd5795c1-3274-4a33-84b6-07be59b94171"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="95a4abd6-0fe1-42dd-95d1-afc04d81c24e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78027481-3eaf-43ec-b1a5-9c464863a077"
+                  name="GameScreen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f90117ff-ba4c-44ef-b316-d874d5833ee1"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6b64e904-602d-40b0-a98e-b55dbac82334"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a09e27da-1cd8-47c1-a14f-4b5968ef6df8"
+            isDerived="false"
+            sourceEndRoleName="GameState"
+            targetEndRoleName="Stats"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5287e22d-f7a4-4848-9a99-7397bf64d822"
+              LastKnownName="Dictionary&lt;StatName‎, Int32‎&gt;"
+              LastKnownLocation="Package21_1107.uml" />
+            <description>Property Stats references type Dictionary&lt;StatName‎, Int32‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d1351430-b39c-429e-8bc4-8e2125fe2084"
+                  name="GameState"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b298a491-4dc1-4215-9098-6c06a801d1dc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="116b3cb8-c231-47f5-883c-c858bd97119b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e72342f8-505a-4ed5-9ef3-431dbd6a46f2"
+                  name="Stats"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="33fadd49-ce62-4a8a-86fe-5d21524f932d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="42d15898-ea98-486d-8dac-627b0a69e07d"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e2e1dc9c-7225-485c-aecd-ae8bf7416f90"
+            isDerived="false"
+            sourceEndRoleName="GameState"
+            targetEndRoleName="Container"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="a8264a17-0a4b-44d4-bbd2-a47940df736d"
+              LastKnownName="IMapCollisionContainer"
+              LastKnownLocation="Package29_1107.uml" />
+            <description>Property Container references type IMapCollisionContainer.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="decb8969-0db1-4917-97b8-04431a3ece48"
+                  name="GameState"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ea564bf4-5683-48c3-9ef9-11e99f0549c1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e743bb31-71cf-4e0a-a0d8-d2c250749543"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52adc952-7df4-49fe-a587-a4fb34d159f4"
+                  name="Container"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c725ca0f-cb0c-4397-9a76-72c8d48b7caa"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d356a0c5-47b6-49bd-bf35-3165113727a3"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8d1201db-2495-4cf8-b7c0-fa61605ff621"
+            isDerived="false"
+            sourceEndRoleName="GameState"
+            targetEndRoleName="ObjectCollisionContainer"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="b1c27f73-382e-40a2-9f4e-c89468aad5c5"
+              LastKnownName="IObjectCollisionContainer"
+              LastKnownLocation="Package29_1107.uml" />
+            <description>Property ObjectCollisionContainer references type IObjectCollisionContainer.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8805c3e3-34ea-4f64-b41e-0879d1ac87f2"
+                  name="GameState"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1c1d3fbf-9e27-4670-8961-949826e2a2be"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cdfa776a-3d1a-4db4-ae04-5e7b6a92fb49"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5f46713-44b2-45b2-92bd-79365147fd31"
+                  name="ObjectCollisionContainer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f92750fd-9b64-4102-b060-d6c9f3e5cdd6"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f24aad73-d762-42d8-aa61-b1a68f1cb3a8"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="84a815c2-85ee-4541-ace9-4756229b853b"
+            name="GameScreen"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="97956369-bd42-4836-b9a1-d241b848afe3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DGameState Member%3DGameScreen"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1f260bd0-45dd-4df9-997f-4ef39d7d71f8"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c46a6d03-f3d4-4af0-ba82-032899502926">
+                    <propertyInstance
+                      Id="3410b794-10e6-44d1-9a5b-f9f811a7b22d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65b34926-459d-4f50-8da7-039507bcb59b">
+                    <propertyInstance
+                      Id="4832b7ae-bba6-4d04-8f6f-1b9baa88211d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68c096b9-dead-4a60-90a6-65353e0e10b5">
+                    <propertyInstance
+                      Id="796c0283-097f-452a-a70c-1cdc39453acd"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdb652f5-26be-4946-bbd6-30718153d15a">
+                    <propertyInstance
+                      Id="a669cbd3-97e0-474d-9124-0eb17581d32e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f0c82b8-3ef6-42ee-baaa-08234f7a051e">
+                    <propertyInstance
+                      Id="6424e752-7da6-4f15-99e1-e9fac66b57a7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c68adc5d-ecf2-4b22-9a11-63d5528b1ef7">
+                    <propertyInstance
+                      Id="c5881b2e-d2aa-4246-9174-7b9aab0dadb2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61891010-6fc4-47cd-89fd-fd953d05d886">
+                    <propertyInstance
+                      Id="a816033c-bc45-44a5-b297-b2ea3ef8961a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a753bde6-2392-4be9-8c57-5fd6bb39b9cb"
+                LastKnownName="GameScreen"
+                LastKnownLocation="Package7_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="44cc980b-127f-41f6-941d-3b5f98a9181e"
+            name="Stats"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2bfa64fe-e0c6-41b9-8e6c-9b07a70821d7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DGameState Member%3DStats"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="61664b50-b7d9-41ab-8d95-01847900552b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d705e319-59e3-470d-a322-876f4c8d0298">
+                    <propertyInstance
+                      Id="13d096ba-550c-4633-aec6-b60638b0ba24"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="124ea501-0286-4b54-a478-5084c8f74a85">
+                    <propertyInstance
+                      Id="f11d7714-d358-408b-ac0c-2907a827c315"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7febb857-0b3e-4948-8323-8abeee8cac28">
+                    <propertyInstance
+                      Id="81670fb5-e81f-4564-bbb7-6190fe43209c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13f73cc4-8526-4d13-8696-990e4871c2dc">
+                    <propertyInstance
+                      Id="c20c0168-8a2c-4aba-be8c-d0924f4d0c4b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5771feb-6901-4e79-8270-bfe2387b1ab2">
+                    <propertyInstance
+                      Id="ec963071-a165-447b-a651-e1ecf70ec649"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5a24f78-ff56-4b2f-958f-5373fed40bd0">
+                    <propertyInstance
+                      Id="a880e952-93e1-4277-809e-6a3151259595"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48218fed-88f1-481e-8dab-329e87894778">
+                    <propertyInstance
+                      Id="dc0fdf93-42ef-4d8c-8f95-06733112b095"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5287e22d-f7a4-4848-9a99-7397bf64d822"
+                LastKnownName="Dictionary&lt;StatName‎, Int32‎&gt;"
+                LastKnownLocation="Package21_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d65ca651-e721-4928-b976-3599edb40d67"
+            name="Container"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1e9c9bb3-2d71-489e-bdf6-f3f66ebe7fd9"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DGameState Member%3DContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="412c0b66-062b-4649-b269-daa102bc4d67"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="433a28fc-27f8-4feb-91bf-d1bc7f27db9d">
+                    <propertyInstance
+                      Id="383ac937-61b7-4aca-86e7-98aa8c1217ea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9333b8bd-b93b-45aa-9290-00f1e8cd0b19">
+                    <propertyInstance
+                      Id="e46700f7-b64f-4ece-8fe4-39e4bd22a9f6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d0fe49e-74b8-42e0-b469-a50b901f8bd4">
+                    <propertyInstance
+                      Id="821682e5-6d19-4d9b-9927-7cece9d945da"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e68f9705-ae8f-4924-be04-a84b5d7b4b46">
+                    <propertyInstance
+                      Id="a498cae0-cb15-4a3b-a270-2c84ef190878"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="369f0843-7a34-460b-96bc-4c90c0cff066">
+                    <propertyInstance
+                      Id="ca9e812a-16de-44a1-ace2-3ba8c5ffb0ec"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0653f28-0514-4098-8577-8f8ca0b91b1a">
+                    <propertyInstance
+                      Id="fb953f5a-579c-4e64-b1e2-b11a7e334c65"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00b46ff3-42aa-48c3-b228-9cbf5f76518b">
+                    <propertyInstance
+                      Id="89919ae7-76a4-4340-aec8-cbb3c2384157"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a8264a17-0a4b-44d4-bbd2-a47940df736d"
+                LastKnownName="IMapCollisionContainer"
+                LastKnownLocation="Package29_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ddf09414-8545-4c0c-af03-f38f4f80983e"
+            name="ObjectCollisionContainer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c12433d1-bbb3-4ac7-9b99-fe72a041b3a1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DGameState Member%3DObjectCollisionContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="019d05de-d34e-4ab0-ba47-aba11c6ce0d7"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc3db213-ea20-4c84-881e-596d0b322f08">
+                    <propertyInstance
+                      Id="6ff89d80-84a8-4c5b-91b0-3a6ab08f6d6a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8336fb45-3e3f-46e8-875e-88bdc99b27e9">
+                    <propertyInstance
+                      Id="ebb27fc1-9ad7-4ef2-a9b8-fd722a8f49d2"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b415348-76cb-4526-b437-bfc56144d207">
+                    <propertyInstance
+                      Id="ee3ed99d-b8cb-4d65-9ac0-d8e2569ffc1e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b329e2e-2900-42a9-b516-801f18078eff">
+                    <propertyInstance
+                      Id="ffb06843-af6f-4f5e-9f0e-da0d76cd39f9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1583d24c-cfd0-4831-977a-c05b435fc32c">
+                    <propertyInstance
+                      Id="3f60328b-954b-4dd5-ab96-f1d23f47a0da"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b086e99-fc4f-45cf-a061-de7c90e116f0">
+                    <propertyInstance
+                      Id="8ce0d6d5-3af7-4f57-9c1f-9e1220aa1e8b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7e6090a-2002-4c46-a1f5-a0c3a777eebc">
+                    <propertyInstance
+                      Id="59a6c82e-15c1-4d04-9289-700e5bc0abc4"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="b1c27f73-382e-40a2-9f4e-c89468aad5c5"
+                LastKnownName="IObjectCollisionContainer"
+                LastKnownLocation="Package29_1107.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8826597f-fe7e-4576-81ac-047e31ea7e39"
+            name="GameState"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a23f4408-22dd-46f2-ab08-72eab74e1b33"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DGameState Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DGameScreen)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="27777ca6-3855-47cf-8805-414ec5e670eb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dccaadad-b1d7-4b79-95d7-620144ebfd11">
+                    <propertyInstance
+                      Id="579e51f0-09a3-438c-8eab-023b5a00eea7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1724a98b-0ddc-4e4b-922e-0f495e517fc2">
+                    <propertyInstance
+                      Id="c659ac82-0072-452b-b1b8-ab98f06a1a4b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d903b1f-6eb8-4b62-9152-137e004019d9">
+                    <propertyInstance
+                      Id="d5dc0951-52d4-4a95-83d9-ecea964ad4dc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09d15810-658d-47c8-92ff-131932c93e7c">
+                    <propertyInstance
+                      Id="3b3eb2b6-e170-4f09-bb35-70b53afb78c7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82bd02ef-26f8-49de-8c2d-c1dc28c490ce">
+                    <propertyInstance
+                      Id="4dbfbf4f-07cf-466b-aa19-c07a459e6c6e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9eb24cf-ccb6-4e83-8ceb-786517e37af7">
+                    <propertyInstance
+                      Id="a3be06ca-b75c-4abf-a03d-9d7030b91a56"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7987e75e-7469-42f5-abcd-0c8dbc4e536d"
+                  name="currentGameScreen"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="723c61eb-cc62-4529-8075-c68aefff4d2d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.GameManagement Type%3DGameState Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Screens Type%3DGameScreen)]) ParameterIdentifier%3DcurrentGameScreen"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a753bde6-2392-4be9-8c57-5fd6bb39b9cb"
+                      LastKnownName="GameScreen"
+                      LastKnownLocation="Package7_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

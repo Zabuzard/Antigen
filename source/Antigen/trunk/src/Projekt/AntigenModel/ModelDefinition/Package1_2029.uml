@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8f51a27e-2712-4fda-9593-c13207c57a20"
+  name="Devices"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="dc8d8ef4-6cdb-4755-ba1f-d778e8fbe680"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DNuclex.Input.Devices"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="3932e64a-9272-4817-847e-7636457fa398"
+        name="IGamePad"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="8196d289-eb87-4382-a6bc-663abc4d3dee"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input.Devices Type%3DIGamePad"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="58c8ede4-f9be-4a0a-8e19-5505e96492ef"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15cb6238-2dfe-46a1-ad33-169cc1ed7ce6">
+                <propertyInstance
+                  Id="b0f78021-2cd8-4752-ab0f-9daf6a7e75af"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a6aa1637-34c0-4139-be5c-be95d40428ac">
+                <propertyInstance
+                  Id="c88fc090-015f-41d6-ae5b-858e95a5b628"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f47ab939-ce5e-415e-9cd0-8c1ef5aab7db">
+                <propertyInstance
+                  Id="0f1e05fb-9417-49c4-bcc3-f61d34f24a90"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2aec934f-4662-493f-8c31-3b4a61a5edd3">
+                <propertyInstance
+                  Id="c813c7f2-f62d-4825-93da-9e8496ab2247"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="55461537-59fb-4300-a826-b54af2b94b84"
+        name="IKeyboard"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6274fc2f-a9a2-40ea-963e-086ee847db53"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input.Devices Type%3DIKeyboard"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ee105d96-8ee3-4e98-b61b-7a79cba419af"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab9c0d5b-4687-40f2-9b18-7d958302a7b2">
+                <propertyInstance
+                  Id="2f86ca3f-7074-4e22-b6d7-c6a02f375e24"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b2e5386f-8d79-4d8a-b61c-19ab4d174f86">
+                <propertyInstance
+                  Id="f1372f36-12bb-45ae-8309-b8e8b18dc4ca"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="988404f2-5c08-4e31-9c5b-41c7f4b0ac3c">
+                <propertyInstance
+                  Id="e856ba18-a9f0-4763-8cc5-11f16d129e6c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9135ad85-8151-489c-8e45-c9b5f22b5fe2">
+                <propertyInstance
+                  Id="0a98ba9d-80b6-4e17-ad39-7dce223e013c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a203c2e2-2832-47a0-b408-1aaab37579d5"
+        name="IMouse"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="3cf1a149-e313-4f69-8987-f3410926d54e"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input.Devices Type%3DIMouse"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9ad1cb33-6a02-420e-bb06-f4c8b00568d4"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e65abaa4-5b54-49aa-b6e4-d9f87bf8592f">
+                <propertyInstance
+                  Id="56a49614-6cc0-4f31-b4fb-6bcb79bac00b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6841d41f-6c09-4628-a71b-f68f87ca8adf">
+                <propertyInstance
+                  Id="65110c77-cd54-419c-8b48-e4979fc49e6e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12534dc2-a059-4b7f-8389-3e84658de830">
+                <propertyInstance
+                  Id="673fd79e-851b-47cd-ab96-7167b4ef81e6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d5cb8f5f-35d7-4ca3-ab6a-1f0c1260ec53">
+                <propertyInstance
+                  Id="ac9b77b5-e512-4fbe-a621-37456ef8960c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="8bf050ec-49d8-48c6-acc3-511d37fced6c"
+        name="ITouchPanel"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="81778378-a363-4782-aa1d-53589eade420"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input.Devices Type%3DITouchPanel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="444a51c2-15a9-4f97-a533-7fd2b0b20df4"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="84163c48-bffd-485b-ac70-53908efdc687">
+                <propertyInstance
+                  Id="2f215077-5a81-439d-9f02-a0fa62a874fc"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88ce2512-5016-4aae-a58e-a54f657a0998">
+                <propertyInstance
+                  Id="4de51c6a-ab02-48b5-8e7e-e2b860c02471"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36147821-9af2-4fa4-9e65-ed6288a0aa19">
+                <propertyInstance
+                  Id="f871e3fb-41cb-41a4-b96d-76b33b4693a0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="236a2094-9b99-4082-8f19-b99ebbb40a8d">
+                <propertyInstance
+                  Id="925a939c-4f76-4abe-8590-e8de18615b69"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

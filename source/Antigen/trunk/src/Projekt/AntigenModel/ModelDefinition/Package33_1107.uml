@@ -1,0 +1,1781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="343a683a-ff31-4614-a36c-691418fe19e2"
+  name="Pathfinding"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="23a10b2d-e465-4931-823b-f921c85cdac4"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Logic.Pathfinding"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="5dabe898-299d-4577-895a-86167de9e343"
+        name="Pathfinder"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="369fa310-598f-4403-9750-69547bed79b7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a040d9d7-8bbe-4352-b5d8-0825ef934d6d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b443a0c0-d62a-4f7f-a779-263d9aa8a5a5">
+                <propertyInstance
+                  Id="60a20691-a9c0-4c0e-ab7d-3d1ffc7d0268"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="edc805b5-7db6-46e5-b3d2-63b83ec12293">
+                <propertyInstance
+                  Id="75380666-8e10-40bd-8bc5-667296e699c3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7f6ebb59-b8a0-4a16-80da-5fd2c4a67e76">
+                <propertyInstance
+                  Id="ddb1e8cb-7a93-4a88-be2e-80ce656764ab"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdd72263-2a65-48fb-8d03-d75dc6a89a59">
+                <propertyInstance
+                  Id="486b74ce-293a-4e02-bd74-8af6fc1a7bc9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d42e4d20-f648-4ce3-9e74-ae85a54de8ff">
+                <propertyInstance
+                  Id="00d30902-16bc-48be-bdfd-c7f208a3cb15"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="497cb347-704b-41ad-9afd-619bdb4290c2"
+            name="SquareSize"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2c056dc5-8703-4aac-96c4-ee71aff7f865"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DSquareSize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="72d54c94-438f-43f4-a7f6-acdad4e79be0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a69ebde-08f5-4300-b00f-88cf2d515c47">
+                    <propertyInstance
+                      Id="93fb7185-9c74-42a8-a31d-90cc44ad73b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="562e0641-ff65-40bc-acb5-077f17c585dc">
+                    <propertyInstance
+                      Id="9c26255e-99e4-469b-a75d-57d7ee9ddacc"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45bf5f82-569f-4255-b7b6-55d664615a8a">
+                    <propertyInstance
+                      Id="129dc568-f954-4503-96cc-061ad633dcee"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba916e35-3a1a-4d31-9974-76763c1c9989">
+                    <propertyInstance
+                      Id="96cdba80-1235-48b8-be79-1c42bc61716c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d40fbf6-37b5-4bf8-9984-f9da5a47e431">
+                    <propertyInstance
+                      Id="cc134934-548b-4ea1-9f12-d5ccf546e9ff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="3e84723e-8a6f-44ea-bef2-117fab40f603"
+            name="SearchTries"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="873a1753-d890-4f33-8576-1a4db4757b1c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DSearchTries"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="53438cdf-94bb-42ad-8d53-a63177b6592a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="615166b1-be98-4a39-96bd-2adc59d25e2b">
+                    <propertyInstance
+                      Id="bb4b62fd-1017-4869-8d66-7e7e783c4c9c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86ae10d5-1537-43cf-b5fe-811a85835c6f">
+                    <propertyInstance
+                      Id="9c869233-465f-49c3-9912-e05213ec0260"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f683fc1-3c5a-4687-bb9b-aec2e7ae62e9">
+                    <propertyInstance
+                      Id="8905afc7-27d7-44f4-b09e-2a764566d323"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a66ae13-6f87-4012-b688-4dd1949ccae3">
+                    <propertyInstance
+                      Id="0732ef09-7a2c-4860-86eb-bf609c4a7770"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="806a2f66-aa0e-45d9-ad75-8549810c7a67">
+                    <propertyInstance
+                      Id="b3cc8f6a-df77-4093-99c7-40057c8ed4ac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="60aac42b-508a-4f92-bb32-1be944f38374"
+            name="sGridSize"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="79ef56be-e25e-4ff7-bff4-d35a52c38a02"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DsGridSize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7b09efc5-438f-443e-8275-037a5f38000a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cffcdb01-47de-4a41-a943-64cc49cbbde9">
+                    <propertyInstance
+                      Id="ae2c66c5-1611-49b6-ad36-6f258ea6efdb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11ab4178-40f0-4e3e-80d9-29adb89e1c72">
+                    <propertyInstance
+                      Id="65b8a2b0-4f39-418a-a41c-503a8cc31775"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5e0830b-fcd8-4eea-9315-5639cc0e7c50">
+                    <propertyInstance
+                      Id="0765471d-50e2-48b3-92cb-674faf87660d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61559eea-df65-44f3-87a3-170e1dad0689">
+                    <propertyInstance
+                      Id="0f3d956e-e1ad-4851-ab11-b0dfe4f0c15c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc556ea3-de42-4ef1-8c85-c66a1db5b0eb">
+                    <propertyInstance
+                      Id="2f863954-46f5-4a2b-84a9-34b724c6bbe8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3c506099-3cda-49c6-8ef2-bf2ada7ea764"
+            name="sSquares"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1b05def4-25ab-448b-a9ba-77a8ba83dfcc"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DsSquares"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="74a7e6b6-603d-4e78-b148-2d985593ba53"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cc331f0-475c-45c9-8a5c-48776d803a2c">
+                    <propertyInstance
+                      Id="ad4197ee-8b99-4b8a-b681-131dfc3711e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d249f9aa-0328-48c4-8513-afbf32983f57">
+                    <propertyInstance
+                      Id="21f71f8c-4dba-462e-899f-e638deaa52c0"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76868fd4-8fc1-483c-8c98-109c11e7791a">
+                    <propertyInstance
+                      Id="a4387994-b86a-48a2-836e-f0538586bb4e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c74f9eb4-18bf-4272-b710-d9504213a9c7">
+                    <propertyInstance
+                      Id="9bc0cd17-df2b-4ab3-a9b5-f79444b94f2a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61ca4dd2-5bfe-43ff-ba76-fc81b5be4ba5">
+                    <propertyInstance
+                      Id="735c1b10-025f-420d-b92c-ab0a98831011"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="3485b335-8375-491a-8251-b4f907f868a5"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="ef217f02-05ca-4514-8e7e-d7c18d1fd821"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="12d640c5-752a-4b9d-8507-1909ed7bad7a"
+                LastKnownName="Rectangle"
+                LastKnownLocation="Package3_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f83ec269-e609-40b0-b149-62bc49ebf8d5"
+            name="sWalkable"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d7a8bb8e-d064-4009-bf35-b422baa3561b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DsWalkable"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f686e09f-87d3-45bc-ade1-ad25ca24867e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa9809ff-5b94-41bd-bc92-d63daca57798">
+                    <propertyInstance
+                      Id="9f7142bd-f219-4163-8c3b-28bfe9c23ab2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58625948-de73-401d-8d60-712e6ff768ef">
+                    <propertyInstance
+                      Id="f01f55b0-0d66-4acc-a22f-24d90a6f4466"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f044f82f-721d-4979-850f-ea25bb8075e6">
+                    <propertyInstance
+                      Id="6fcd9c16-1ac0-4228-9718-3f203651da01"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d733fb19-8880-47a9-9e3f-19fad0ffd1bb">
+                    <propertyInstance
+                      Id="bc2c80ad-41b7-43dc-beec-d2ea61ae3663"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbf576d6-bc12-4462-9d60-42df37b8d6af">
+                    <propertyInstance
+                      Id="85e8e9d2-d706-4c03-91dc-7afe4a9ba14e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="1e0fa0b0-4f22-4bbb-a9ad-e545a16527cc"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="a2d91a38-902d-43f3-a342-eac14f14a6a5"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a374127b-a75f-4d4b-aca3-4e7891484f1d"
+            name="sContainer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="122617b7-cccb-4c40-8cf1-a2fea066b530"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DsContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="38c20189-a940-4cc3-aad0-92323c87981e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80001914-8c23-4aa3-a6cd-0ac644469912">
+                    <propertyInstance
+                      Id="547dbd9a-a716-4c9b-bdbd-8493f9ee19a0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fc7e484-4dec-4d84-86ee-4d4187be38ae">
+                    <propertyInstance
+                      Id="917cafbb-bc9b-4e11-942d-302599579afe"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb1f88a8-8e8e-40d8-8c55-d215f92a6bab">
+                    <propertyInstance
+                      Id="d75adce5-7709-4b90-bd04-969508cd8a43"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eec48223-0cc8-4c74-820b-1235167b82ea">
+                    <propertyInstance
+                      Id="d47a7c19-1147-46a2-9673-40db472d0247"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9e7b44e-6a2a-4aca-bf2f-08d3efee8de3">
+                    <propertyInstance
+                      Id="48c21859-7856-4a94-ad72-cec884c78b5f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a8264a17-0a4b-44d4-bbd2-a47940df736d"
+                LastKnownName="IMapCollisionContainer"
+                LastKnownLocation="Package29_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e19be454-7d96-46a6-a12b-9caaaa6cb61c"
+            name="sObjectCollisionContainer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9bc82552-09c6-430d-a1b3-f733cf0049c1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DsObjectCollisionContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="814d4618-2bfb-4221-8bcd-9a4709b08ed9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a44a9ca8-ad7d-413b-8b02-bbd2bd75b043">
+                    <propertyInstance
+                      Id="51561b94-f837-4de8-a076-90c8bad86f28"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe5ec914-153e-4d0a-87d4-3f8e7f0dc118">
+                    <propertyInstance
+                      Id="28e1ec33-6864-4b84-8007-8fb1a9dc5f2c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f19fe73-f118-4505-b474-ddc906ede832">
+                    <propertyInstance
+                      Id="fdab408d-77ee-4bda-9792-704f2ade41fd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a737c01-0d22-487b-8a9d-3fb5974edfef">
+                    <propertyInstance
+                      Id="4d35cb0f-ebdd-48d0-9add-f4822109e699"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fde3146d-7a74-4a5b-a954-7f67cac05aa0">
+                    <propertyInstance
+                      Id="54892f01-8fdb-4ee2-a485-4c1a57087c72"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="b1c27f73-382e-40a2-9f4e-c89468aad5c5"
+                LastKnownName="IObjectCollisionContainer"
+                LastKnownLocation="Package29_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="77a693dd-6cb0-4caa-b755-3c01950cff75"
+            name="sLastTry"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6b82ca03-a8a7-45aa-98eb-8c052a6c5bd7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DsLastTry"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b790869-48f6-4233-8396-38b986329d4e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="811c7e23-8048-401f-8e61-27f0a9753fda">
+                    <propertyInstance
+                      Id="41141c69-1412-4b0f-8b61-fb908ec801f2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92472bd9-5800-465f-adba-65f995a0acd3">
+                    <propertyInstance
+                      Id="aaa61b02-7cf0-46c8-86a1-eb6801e15fbb"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9805b2c-a6ea-408e-873e-1588759d7757">
+                    <propertyInstance
+                      Id="8f7de882-1b01-4193-bfe8-eb1bcca1cde9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a2c464e-cbd3-424a-889a-fc8acdc10dfc">
+                    <propertyInstance
+                      Id="e8402d1f-cb11-42cf-a051-2396204d7515"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c8b04bb-4797-42a8-b029-f7a911bb9d6f">
+                    <propertyInstance
+                      Id="4e323eef-308d-4b9d-8a83-298ec3352c84"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                LastKnownName="Vector2"
+                LastKnownLocation="Package3_1106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="976bd6b0-6f77-48f3-9230-6606fe9ef3b8"
+            name="FindPath"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="db9fa2eb-27d7-4a01-8073-39400936f104"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DFindPath OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f0222739-ebcd-461a-8bd3-52e253ed30bb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26f3330c-aed2-4716-a7ff-5ba9080e96e4">
+                    <propertyInstance
+                      Id="8a5de907-ae02-439c-ade3-eba784797d64"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87994e60-d2d0-4787-aa0b-af072b1a7a68">
+                    <propertyInstance
+                      Id="5d041cca-d06f-4b7c-aa4f-a543e51fc6f1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a907862-d329-4dbc-a3b4-c88ad3e8e0c4">
+                    <propertyInstance
+                      Id="90ec5c85-a60f-4ba8-b4cc-1f11c6d25f2d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5067072-70c6-44b1-820c-7e70fea1730f">
+                    <propertyInstance
+                      Id="740a2610-4b12-4f2c-9621-f784bc43af13"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ff5b849-1777-4e9e-83d2-4068ec7e922d">
+                    <propertyInstance
+                      Id="ddb1b8b7-b954-4ca2-b233-da83cd9eea31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbe704fd-2ca1-4534-9808-55fb44e93578">
+                    <propertyInstance
+                      Id="5d9f1883-488c-4f21-b050-120b55bb4195"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="613ed0f1-810d-4931-96c2-875c3b0430de"
+                  name="pos"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1cd9c69c-310e-4011-a820-8ef45c99cc85"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DFindPath OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Dpos"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5b5aa020-a063-4649-8646-936a8164fdab"
+                  name="dest"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="253ce582-c800-4c35-9105-e32867738bd4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DFindPath OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Ddest"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3e1c45cc-bacf-4a65-aba7-46d2aaba2ffe"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="86bc7f79-aedf-484e-a3c2-5190d8de2de9"
+                      LastKnownName="Stack&lt;Vector2‎&gt;"
+                      LastKnownLocation="Package21_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b95da332-599b-47b8-a448-03a4a151486a"
+            name="GetNeighborNodes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="479e4e1c-c8eb-4062-834a-f22f5c75893e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DGetNeighborNodes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e128dcb9-fc52-4221-bd0a-809aeb89511c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b86cc5f-629d-4bf8-80da-005b14d68c30">
+                    <propertyInstance
+                      Id="ccac4117-8ab7-4cd4-8f58-c3e1bf099e9b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c874153-e346-4d79-b75f-7e4b584178d1">
+                    <propertyInstance
+                      Id="0d235d4a-b0a6-4b9d-951e-c1448d2cd34a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6eb5962-0e60-4853-b16a-1010d6deb3be">
+                    <propertyInstance
+                      Id="68c9f28d-6178-4756-8867-7468f2a92c92"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2df5b3a8-ea65-44a8-a0a2-545fb0f45984">
+                    <propertyInstance
+                      Id="d695d672-64ca-405f-b2a5-8937d0209fe8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66107b47-16f0-4b51-84f6-bd7670872e31">
+                    <propertyInstance
+                      Id="38368b1d-9c12-4d29-8843-3fe8ea9f66b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56445083-5c1e-415e-8b8e-6314157bb21f">
+                    <propertyInstance
+                      Id="447a4243-35a9-4529-86fb-7cfc65b65e2e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="749fbf5c-9479-4f31-82dd-6561b1c9f2af"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="cfda2f72-a34c-43cc-93ed-9e9ecf84ab1d"
+                      LastKnownName="IEnumerable&lt;Vector2‎&gt;"
+                      LastKnownLocation="Package21_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d79112a-6a72-4ed3-aaf6-1a6d33978f64"
+                  name="node"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e857862d-e31b-405e-a912-24e273de2807"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DGetNeighborNodes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Dnode"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="db2d8ae7-0c29-412c-866f-ee8b9ca77810"
+            name="Pathfinder"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9af00667-8986-4567-b0a5-4e44be81205c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="70143b61-3548-49b3-92a2-6d7be3898419"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ef6956a-6502-45ae-a8ac-eb3955b3d0fa">
+                    <propertyInstance
+                      Id="807fd297-cd55-468d-82b6-3f5136db6bea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bd4e7dd-1e2b-4190-bca3-61c70091a0e5">
+                    <propertyInstance
+                      Id="875fff80-b74a-4c76-bb27-07cd91535283"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56647579-e4ab-4d8e-a583-7f4b1d39cfe8">
+                    <propertyInstance
+                      Id="87dbd21d-44b9-4209-b81f-380c0614600a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72351b6d-d370-4beb-8078-c3949ceb718e">
+                    <propertyInstance
+                      Id="e8046aa9-744c-4089-a5b8-5525121aa1a4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6b23e9b-958c-4d64-a53d-2de419173ceb">
+                    <propertyInstance
+                      Id="a173e051-0c13-4102-8ea9-fd6aedf97b51"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1af5eee-f602-4e6b-8990-d1db0df7fb49">
+                    <propertyInstance
+                      Id="32e7a2c6-60b1-4497-b37f-9d6f247910e0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90c580cc-af19-4e2f-9d4f-9db596f21669"
+                  name="container"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9a7984f7-b7e4-482f-bf66-4cefe1d4abaa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)]) ParameterIdentifier%3Dcontainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a8264a17-0a4b-44d4-bbd2-a47940df736d"
+                      LastKnownName="IMapCollisionContainer"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d29d0885-9e56-40ec-9faf-b1565371739f"
+                  name="container2"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8eb3c010-192f-4a7a-9a74-87ba0d857d07"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)]) ParameterIdentifier%3Dcontainer2"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="b1c27f73-382e-40a2-9f4e-c89468aad5c5"
+                      LastKnownName="IObjectCollisionContainer"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="77ba8264-ca7c-46e1-a0cf-7ff079d43e54"
+            name="LoadContent"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="21a3a49c-a6e8-4b7e-a5d4-3c9b4deb2993"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DLoadContent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="845cf77a-b87a-4113-9039-c4eedba71ca9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f797ec0-ec11-4d07-9ab1-862a84274e7e">
+                    <propertyInstance
+                      Id="afd4ad01-73f0-4ed8-bc92-75775c5edd87"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0078b535-d2a5-4b1a-a61b-27f82171d49a">
+                    <propertyInstance
+                      Id="371ed0b4-b020-4d86-9e5b-d4a5518dbe74"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df24b69c-80ba-4d30-b42d-d4b316b760e9">
+                    <propertyInstance
+                      Id="6f6eb33a-76a7-4746-898d-7b9e0027a27d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99dd7076-cfe9-4719-b7a2-86c0db860ee5">
+                    <propertyInstance
+                      Id="4fbb644e-5545-4188-a1df-a989b97d435a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3888af6e-8881-4939-8254-d9cf4e1b4d3a">
+                    <propertyInstance
+                      Id="572fce8d-02cd-446c-a11b-ec442c2971c2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e185c1c-860a-44ac-9802-ff0bb7b259a1">
+                    <propertyInstance
+                      Id="82bed178-05d5-4f7b-8787-87a09de464c7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="1267c4ab-52aa-4b21-958d-23e0e1c5c7b7"
+            name="FindNearestWalkablePoint"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="86610561-dd26-458e-a414-ea1215cfe836"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DFindNearestWalkablePoint OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c0287a10-19fc-427b-ad6a-6e9bcce26330"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48f7e302-ba40-4112-83a6-919d1d16e8a6">
+                    <propertyInstance
+                      Id="9e93c114-4105-4f48-96c9-0295de3682f6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c925d4b-14b8-4feb-9b8f-96da3c95b633">
+                    <propertyInstance
+                      Id="377327ca-3483-45e1-b962-f89e8f415466"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b024f1ff-17c0-40e2-8469-a1ddce741fbb">
+                    <propertyInstance
+                      Id="277d846c-6637-4993-9be0-737f66586f4e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52f62d6f-0f53-4a3a-a386-c3d4d13f9296">
+                    <propertyInstance
+                      Id="49771796-2a49-4dc8-aa0a-5a963b448a04"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61827824-5c1d-48fb-86eb-35d1b2921942">
+                    <propertyInstance
+                      Id="8c5ded6d-0f31-4661-8155-fb416546938d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03478917-3151-429f-8e66-d40d5182edc8">
+                    <propertyInstance
+                      Id="8ea17ee0-33e2-4683-a281-5d631b19acd2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="31c3b8c0-3194-4578-84e0-162edcfcc538"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5fe3a2ab-a54b-4f72-9f7d-837b390ed2be"
+                  name="dest"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c8b185ba-0473-489e-806b-0bed095d3451"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DFindNearestWalkablePoint OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Ddest"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b7dd471a-19d7-4f7c-809f-19da119d0f2b"
+            name="FindNearestValidPoint"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4bc40ded-b0de-4bb4-a317-7a26a07cc67d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DFindNearestValidPoint OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="13a8cf36-958b-4bbd-b37c-57a7d83a5a81"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="737a4ea4-5589-46cc-9315-27391efb789a">
+                    <propertyInstance
+                      Id="8399a2e4-b6bd-4344-ac67-32286d4c791b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d68380fb-aeb2-4b56-877e-de3dd012e2a0">
+                    <propertyInstance
+                      Id="34a46dd2-a860-4321-8929-0fc0823b5b99"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d9b6ce9-8a81-40b1-a9a3-b857c08f378c">
+                    <propertyInstance
+                      Id="22f78a59-71da-4099-adb3-acfda68a879a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40948e56-10f0-4983-834c-55d1a2b4f97e">
+                    <propertyInstance
+                      Id="e2455433-560d-407e-be1b-be276a8d7008"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e7d13a0-bbee-4e09-ab66-55bfd47e0cef">
+                    <propertyInstance
+                      Id="3351785b-19dc-4b68-bcb7-de0a852d4efb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1831ec21-8f3f-42dd-8a13-cbef492a53f4">
+                    <propertyInstance
+                      Id="eedc399c-3a5e-4b65-aa51-bf89300a86d1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d53badee-7587-4e50-b409-971ac3ea9b8e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2e097db9-8699-4d20-8f9e-f8027364ee17"
+                  name="dest"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d0c475ab-aa4a-4112-9bed-c3d61d98a09e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DFindNearestValidPoint OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Ddest"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c4278ac7-4615-4f49-a83b-0182333f9199"
+            name="ValidatePosition"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8173cc86-e268-49ff-846c-86abe6c0d152"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DValidatePosition OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5dda6b0a-1a5e-4146-9cf4-0c43c7744990"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="597e42e6-3fb1-4a1f-b125-e93e07e78246">
+                    <propertyInstance
+                      Id="8bcaaaf9-02bb-4089-a8ce-0dfcc540a81f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdc502ee-4fa8-4388-8843-67897e833023">
+                    <propertyInstance
+                      Id="12e5d341-b2c0-4f23-b3a3-2fa4470079e4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="673fd60d-de89-401f-b021-2bbccb8165ca">
+                    <propertyInstance
+                      Id="ef0e0eae-2f25-4ba8-aa19-8b7e9a9bb3a5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="101e8c97-9cbd-4303-9a77-0cd14508373f">
+                    <propertyInstance
+                      Id="10cea37b-c364-4a77-9781-26fc75e07c04"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9f3a460-2efd-44fa-acbd-fe96dee0a97d">
+                    <propertyInstance
+                      Id="fa32076b-4a9b-453f-8b20-825bfa172b5c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9249b72-c450-4852-8204-eef8ccf83142">
+                    <propertyInstance
+                      Id="9fdc3e4e-7f05-4c7f-b718-3d42e8d618b6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0670a5db-29c7-4c61-9f40-83e048c57ed4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="af0fff2e-f2b6-4fb3-aa30-2662ee6cf875"
+                  name="position"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5febca11-288c-42c8-92eb-e7df025caa11"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DValidatePosition OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Dposition"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c968a364-0c93-410a-aa33-0914f557fcd0"
+            name="GetStaticMember"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="80ab7a91-d1dd-43cb-8b04-3e2dae42fade"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3DGetStaticMember"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c1b42f1d-f391-47fd-9774-e1e4e8ae00de"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe235045-af21-4a3b-a1ee-eccf059d9c07">
+                    <propertyInstance
+                      Id="f7aa67b8-4671-4bcb-a699-ef9c2a5bcaa9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90b2486d-b705-4c94-a99a-dfc6b85ce840">
+                    <propertyInstance
+                      Id="e9c3b038-a847-43cb-bd83-6784866638c6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a09bfb2-8aee-4c2f-a010-117cbf54ba65">
+                    <propertyInstance
+                      Id="89e02b95-9301-4caa-848b-1f865c4ef7db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="373c7827-9546-4dec-b7fd-065f06f25d11">
+                    <propertyInstance
+                      Id="063115f9-9ee9-479f-bb60-2b97d5e6dfc5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebdd39da-c781-4d3b-bf11-336b3afda54f">
+                    <propertyInstance
+                      Id="e3327aac-a5c8-42d8-a775-a9624f3a9ac2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c682a096-7ae1-4eea-8d7e-d4233b5eba62">
+                    <propertyInstance
+                      Id="37c26138-7818-4eff-a531-98c9c70df51f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3ec98ff-76f4-487d-a9bf-948592efa64c"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a608d9fc-f2aa-46de-8670-61a3dbb094c6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="51263cbc-a4df-48f2-ad26-0aa84a89a176"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2fe21dfa-6e05-4676-8ed2-acd1101051de"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package11_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="29132a88-83b8-4b39-bc55-a920c3dcbdbb"
+            name="SetContainer"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="597917a6-ca60-4fbf-b4bf-125be594df0b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DSetContainer OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5a7e03c0-43eb-41ab-ab9d-778effea755a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04d46d41-9b78-4f58-8085-30d970b3dfe1">
+                    <propertyInstance
+                      Id="68d6933d-5a3a-480c-b9f2-2b4891b5acfd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8948a12-0cd8-4245-9837-99591e991e7e">
+                    <propertyInstance
+                      Id="224b2f72-7c00-47c0-b0f8-bfe53425e1e8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b99ad44-42e4-4135-a24a-af07098ee918">
+                    <propertyInstance
+                      Id="e65e3e50-765c-42cf-a433-29845bca30ff"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="192650e0-13ab-4deb-8d19-7d2b39dbe774">
+                    <propertyInstance
+                      Id="59ec6770-a7de-497d-8834-4e9fafa8d887"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1989e43-764b-40d1-b882-a442b9e33630">
+                    <propertyInstance
+                      Id="59abbda6-0ef3-4a9f-be9a-b713be4ac471"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c18ea3b7-0c78-4ff8-adf4-1a759c9374b2">
+                    <propertyInstance
+                      Id="bec29a9c-02d8-42e9-bb5e-3fdacd46f413"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="489f6bbc-9561-4451-ba83-495b113411a0"
+                  name="container"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="46d1dac7-f45e-434d-aada-b06a76dfbf2c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DSetContainer OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)]) ParameterIdentifier%3Dcontainer"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a8264a17-0a4b-44d4-bbd2-a47940df736d"
+                      LastKnownName="IMapCollisionContainer"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="43af667c-5dd8-4747-984f-3214b6eaa64e"
+                  name="container2"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="26379333-a3d4-47f5-9454-76bf1cdb9203"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DSetContainer OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIMapCollisionContainer)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Collision Type%3DIObjectCollisionContainer)]) ParameterIdentifier%3Dcontainer2"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="b1c27f73-382e-40a2-9f4e-c89468aad5c5"
+                      LastKnownName="IObjectCollisionContainer"
+                      LastKnownLocation="Package29_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a46ed3ef-d95b-472c-8d3e-72c7b760f280"
+            name="ReconstructPath"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0681ba04-84bb-4a2c-9142-7054f1bdf9ca"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DReconstructPath OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ba553d87-ed3a-4084-ba15-880938944072"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa9971c9-d2e4-481b-bc04-37c2f14bffea">
+                    <propertyInstance
+                      Id="83b3aaf9-3728-4148-a107-0d0e3a487d30"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7aa0fa25-7a38-42c8-9162-d1d6265b636a">
+                    <propertyInstance
+                      Id="baf2be27-24a9-4d3e-b519-7e9c08ffb165"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6969424c-f011-4fed-a8e3-92ca6c36e794">
+                    <propertyInstance
+                      Id="9664f431-8517-49bf-8d6d-6fe1b4c89a49"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f329939-b658-45ff-8621-8d3f0a005a75">
+                    <propertyInstance
+                      Id="f5718b22-abe3-47c6-be0e-2d59b2bcfafa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9d53825-af02-4747-be42-535d7b99a24b">
+                    <propertyInstance
+                      Id="bb3bb2f9-be7e-4dff-97b8-d81c25a8eea2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04101592-4feb-49a1-9b76-09364d78e00b">
+                    <propertyInstance
+                      Id="08c55f1c-8726-49f0-a643-5ec6f883d9bd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44524482-d7d8-4419-b5e5-fce2f81feb14"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bfd5d358-0588-4517-b068-95537cd956b3"
+                      LastKnownName="List&lt;Vector2‎&gt;"
+                      LastKnownLocation="Package21_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2aab1e5e-e3bc-4d9c-9f57-18e2f41e7b1c"
+                  name="cameFrom"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c10b3f2d-b618-4ade-8f63-add8db420fdb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DReconstructPath OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3DcameFrom"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1842e0b7-103f-4374-b141-8187d5eb8a04"
+                      LastKnownName="Dictionary&lt;Vector2‎, Vector2‎&gt;"
+                      LastKnownLocation="Package21_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bad0f742-0743-4c20-b22c-b9dc960e251c"
+                  name="current"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2745e754-edb6-41c0-9d20-f4465e0747ea"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinder Member%3D(Name%3DReconstructPath OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DVector2)]) ParameterIdentifier%3Dcurrent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f8b87cfe-a736-4eae-80b0-e8b76001c0fb"
+                      LastKnownName="Vector2"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dfa404ce-5fe8-48c9-bb81-8fae0e705061"
+        name="PathfinderException"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="811e2d73-dfae-48d8-81b0-4c9154bfcbfb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinderException"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4be4890e-e0ce-4259-ba9d-ba1afb34b3e3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5df1f057-7621-468a-9dab-48b560a52681">
+                <propertyInstance
+                  Id="83a5b938-15c3-4f4e-b1e4-1abb3f088f0d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ab6668f-51bb-48c2-89a4-aea66b0201fe">
+                <propertyInstance
+                  Id="bace2102-ce6e-44db-aad3-d042b8151985"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aa7673b7-8766-42c2-8314-22f4824dc68e">
+                <propertyInstance
+                  Id="6871cbb0-7416-40a3-81c5-40412b616505"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="51deb021-79e0-4b63-aa0e-7d01424d0e66">
+                <propertyInstance
+                  Id="5cb75398-a07c-41d2-82f9-4e5f20b4012b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="798d0827-7200-4be5-ae2c-bfe73ca1ea48">
+                <propertyInstance
+                  Id="b36b91b6-6cf9-42f5-8b33-6dbabda5bc7a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="38ca0207-eba9-49f8-980f-3ce1fd40ed7b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="928bc83a-659c-4064-bdd4-bd8e487b7238"
+              LastKnownName="Exception"
+              LastKnownLocation="Package11_1106.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="734a55ef-78d6-4b51-8888-65df95547498"
+            name="PathfinderException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dcaa3903-7c8a-481a-b526-5415046ec7a4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinderException Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2bfb7618-ee1d-461e-be96-4de591f0f26a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d9373f4-b7f9-4ff2-a271-ee0a0417652d">
+                    <propertyInstance
+                      Id="1fd96edf-d3a4-46ba-a43a-741d40b09928"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6c2e997-6655-422b-955d-0ddc559685c7">
+                    <propertyInstance
+                      Id="ecc65e70-55c8-4795-9405-203567d8448b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83cef8d1-20f0-40bd-bd42-3e365b51a519">
+                    <propertyInstance
+                      Id="ed51a391-e347-4d2d-ad5a-efb06a303e9c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d2f2791-b74f-4555-aa72-eb807be710aa">
+                    <propertyInstance
+                      Id="a6dfa702-10d5-4fb3-8da2-c17d64bed131"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33fcd456-08bb-4cf4-a42d-3ce5a209cc0d">
+                    <propertyInstance
+                      Id="42dd01f9-c20e-4f16-be1c-90801bb38428"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03b3ccc0-a329-4a0b-9388-edfbe0bc420a">
+                    <propertyInstance
+                      Id="a878163e-6a7a-4f7c-8a0a-ce63e6516841"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e56b2135-e845-40d4-9883-6db7a63da1d7"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e240ceee-d2b0-498f-8194-aea9cc80b129"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FRelease%2FAntigen.exe Namespace%3DAntigen.Logic.Pathfinding Type%3DPathfinderException Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="AntigenModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

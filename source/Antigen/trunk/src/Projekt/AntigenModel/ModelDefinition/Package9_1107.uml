@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4013f75e-a182-43eb-81ba-099bd2336909"
+  name="Control"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a78ed2e6-95cf-4258-a27d-d9147738e308"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Logic.Control"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b729ebe3-5467-4b84-8185-a16e8329e104"
+        LastKnownName="Movement"
+        LastKnownLocation="Package10_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ded94642-41b6-4090-820f-eef246c6e660"
+        LastKnownName="Selection"
+        LastKnownLocation="Package13_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cd6e5d0e-1af0-4164-b1e2-9318630dcb36"
+        LastKnownName="Offensive"
+        LastKnownLocation="Package14_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="935a69dc-5f82-4aed-b5db-ae1a1fcdd4e5"
+        LastKnownName="AntigenExchange"
+        LastKnownLocation="Package17_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f4d02337-a84b-408c-b24c-8da5643660e4"
+        name="ClickInfo"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9cf53e81-870d-4bcb-96c7-932e9900d903"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="702b1c3c-eaae-4aa0-a5fd-5d2d1f85e2d3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="924c8cc1-4e93-445e-b7fd-c71f6118c40a">
+                <propertyInstance
+                  Id="d0ab728d-9096-415c-8075-6e9a61422857"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ad258737-78fa-4835-aab6-1f8f1e1fd1f1">
+                <propertyInstance
+                  Id="5894ae21-899d-4bac-b027-ed71af74f544"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec03e612-3ed5-4e7a-bced-86c03883ba9b">
+                <propertyInstance
+                  Id="1cf4c4ae-38c5-472d-991d-683a449c706f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bf8cfc0e-e6d8-4123-aed4-e79e835d047a">
+                <propertyInstance
+                  Id="4bed7eeb-ef4d-4705-9cff-da059cc75d03"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ecc4a113-e49a-42ee-a9a7-0fba115aff5f">
+                <propertyInstance
+                  Id="948af788-d000-479c-b7d1-13b4acce0f53"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="87e0aff7-a4b8-4118-a6a2-ce4c474fffc4"
+            isDerived="false"
+            sourceEndRoleName="ClickInfo"
+            targetEndRoleName="Button"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="06dfc23c-ea1e-43bf-bc4e-855d65ead16e"
+              LastKnownName="MouseButtons"
+              LastKnownLocation="Package6_1106.uml" />
+            <description>Property Button references type MouseButtons.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85d3412f-ec26-4ae2-a554-93f1453eaa78"
+                  name="ClickInfo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="af8b4882-f578-4dd6-87e2-10f3e91dfd66"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="39484de8-eebc-450a-bc5a-96f867319fc6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e7efd6b-63b8-4689-9541-f760e80ead6f"
+                  name="Button"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7c8030d9-2dba-46e4-a261-893e8290ce48"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fd43540a-39fe-48d8-8b54-b29d461a7ffd"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3ca52ab5-d091-42f2-8125-3ae7202c2c90"
+            isDerived="false"
+            sourceEndRoleName="ClickInfo"
+            targetEndRoleName="Location"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="198ec8b9-3716-4640-8452-a5323c5ddc55"
+              LastKnownName="Coord&lt;Point‎&gt;"
+              LastKnownLocation="Package25_1107.uml" />
+            <description>Property Location references type Coord&lt;Point‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d38fe424-2679-4122-ae6b-71fcf2ab665c"
+                  name="ClickInfo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cfeb03dd-fa61-422e-87df-24db0ccf91dd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5e0de12c-b3fb-45b3-950f-24a9fb0717b2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6a3c53e1-5df9-4055-9b45-b31cbf667739"
+                  name="Location"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="50c74738-a99e-41a7-875d-790a700519a9"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a15c3c10-dddf-4caf-b97e-c7b1f98a09e4"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="24f5063e-9413-4727-a7bb-0e0387453542"
+            isDerived="false"
+            sourceEndRoleName="ClickInfo"
+            targetEndRoleName="MutationArea"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9e3e26b1-1a00-42bd-ac3f-f60d5b031ac0"
+              LastKnownName="MutationArea"
+              LastKnownLocation="Package8_1107.uml" />
+            <description>Property MutationArea references type MutationArea.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f11c83cc-d6d1-47ed-94ca-fd251b2a038b"
+                  name="ClickInfo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c191a236-509d-49a6-8866-9c3bb0772fdc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8c011fc8-37af-45e5-bb8f-8b80b690ccfe"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb69ec33-fc83-46a4-b9b3-18093d42906d"
+                  name="MutationArea"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4a7f7cba-1ac0-485c-9b30-bac067355d8c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="86ac9a51-1e8e-4cfd-9765-09ade9a56cd4"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="33c456d7-befd-4e69-b32f-50df8ecff7d9"
+            isDerived="false"
+            sourceEndRoleName="ClickInfo"
+            targetEndRoleName="ObjectsUnderCursor"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="880b23ef-0b8c-438a-80c3-2d72a1d5d8e6"
+              LastKnownName="IList&lt;GameObject‎&gt;"
+              LastKnownLocation="Package21_1107.uml" />
+            <description>Property ObjectsUnderCursor references type IList&lt;GameObject‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d41ee71-328a-4bfa-a21c-cc05b902e470"
+                  name="ClickInfo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8f9b0e6c-3c38-495c-830f-3b541c5d87bf"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b11f6a03-9427-4e62-837d-1d42c235b0c4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b8674760-d050-4bc5-b60f-654abaa61597"
+                  name="ObjectsUnderCursor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4c133a91-01d0-48f4-99fb-ca9b8c54f61b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2479c1f9-664f-425f-96db-8f5588419461"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9a6c2f51-6e6f-4f21-8517-35fd13392631"
+            name="Button"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5a99628e-84ba-4a89-99e1-a09a1b100f73"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3DButton"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a204ce54-7ab7-4f16-95ef-5fa2d158219e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5453156-8661-4615-b706-910a9f6476ae">
+                    <propertyInstance
+                      Id="3d9e1bad-3980-4998-9292-178d34f3881a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ff01a38-5c58-4a0c-90ba-fe42358dfaec">
+                    <propertyInstance
+                      Id="96202d97-4e1c-43af-804f-0c35fa6d04de"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="025dfb37-339d-4e62-8535-58e758d0f857">
+                    <propertyInstance
+                      Id="9962b7ad-3077-4d3a-946a-526db80ab8ac"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a79be72c-3a5e-4967-8a08-f210e8ebd5a2">
+                    <propertyInstance
+                      Id="9b470a6e-9440-4da0-ae69-1c545bcfa0b8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ad2a3ba-1c89-4492-8356-a622d07cf7d0">
+                    <propertyInstance
+                      Id="258f0d2a-da47-4e5d-bd4f-3001d87f8681"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a9882d3-dac5-45d5-b3df-56640f0908f7">
+                    <propertyInstance
+                      Id="e17a2176-c78e-4d24-8c35-a5a287757575"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f30b3366-0a6a-44f6-93a0-06035812c854">
+                    <propertyInstance
+                      Id="baba0b6e-fde9-4db6-bdcc-5807908e3b29"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="06dfc23c-ea1e-43bf-bc4e-855d65ead16e"
+                LastKnownName="MouseButtons"
+                LastKnownLocation="Package6_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="46e325b5-adee-488e-820f-0ba0c1f320b5"
+            name="Location"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="73653315-58f7-4cd2-ac8e-5231ef57633c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3DLocation"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ff13a0e2-757d-43d6-9cc6-6d54e79ccf23"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c742b0f-d411-4ac4-8de4-d8d04b676631">
+                    <propertyInstance
+                      Id="73d5f305-b444-42ae-b6ff-70b06a7be038"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ef575f7-ea35-49d8-ad98-f83fb4a173c3">
+                    <propertyInstance
+                      Id="68de2e61-eb4e-4332-b956-0e9dfe4529e6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b899718-d7c8-4c92-a9cd-dfbe3fa12ec7">
+                    <propertyInstance
+                      Id="b7c4c08f-e813-404a-874b-a24b6ad22dc2"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7a5b4a5-1bba-4e76-af56-d4e340684101">
+                    <propertyInstance
+                      Id="1a4f971a-3586-4eab-8679-1fe34ee45909"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b28a542e-b065-40e1-80d2-3b76e507b9a7">
+                    <propertyInstance
+                      Id="43dd8358-fad2-43bc-af1a-3976b1e054e6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5ba95ec-a13e-4416-b065-d762771a376c">
+                    <propertyInstance
+                      Id="9dfb29a5-1527-4548-8582-9d9faf8d4b6d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63b9a898-aab6-4071-ac77-b8b2d11729de">
+                    <propertyInstance
+                      Id="2e93efe9-5340-49a2-8bfa-de2ac8bd4a0a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="198ec8b9-3716-4640-8452-a5323c5ddc55"
+                LastKnownName="Coord&lt;Point‎&gt;"
+                LastKnownLocation="Package25_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="25a5af85-4328-4c61-b4b8-1cf68f14bbc6"
+            name="MutationArea"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2893ec84-eef5-48a6-b41f-b69a6778bb69"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3DMutationArea"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a4c9a1ff-e516-4421-9865-b1a34e52ed45"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37c58e0c-73f9-4b72-895e-560534ba8dfb">
+                    <propertyInstance
+                      Id="eeea6d1a-87e8-40a7-b764-736e6fc47f9a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c1913c1-a31f-44cd-bdbb-116f56c29059">
+                    <propertyInstance
+                      Id="a28d0703-39d4-442f-9319-b54083297d81"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9646ebb8-49a8-4d69-b32a-fa62211c328a">
+                    <propertyInstance
+                      Id="1abbb0ed-2af6-4eab-85be-b495f3794a66"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82065d9b-eee2-4ade-963d-0555576c3d86">
+                    <propertyInstance
+                      Id="34a66edd-3dfe-4e82-9a9c-f4c27801f69c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45b4231e-6d8c-4568-860f-bedb968a962d">
+                    <propertyInstance
+                      Id="5fe43719-e95c-4d9e-ac7e-3829c7eabcc0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bca68b9-c333-480c-968d-836a966288a6">
+                    <propertyInstance
+                      Id="98cfff22-f5a9-44e4-91b9-bb4eda30284c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aba8de1e-0214-4a41-8349-2bf82d0fd29d">
+                    <propertyInstance
+                      Id="ea6b924c-4781-460a-b4b2-6e5188e072c8"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9e3e26b1-1a00-42bd-ac3f-f60d5b031ac0"
+                LastKnownName="MutationArea"
+                LastKnownLocation="Package8_1107.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a13047d5-ab1f-4d67-bfcc-1067acd03f49"
+            name="ObjectsUnderCursor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="64d47158-c06e-49ba-9090-1c220e23b4b2"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3DObjectsUnderCursor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d9cdc935-12b6-4091-ae79-bab67e1a49b9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f6ecbcf-8fd2-49e8-939c-a205050e5fe7">
+                    <propertyInstance
+                      Id="31e5971c-b074-49bd-aaab-e9099015bc7e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3df4d6f1-f698-4df0-8f3f-a0e1a45c09b3">
+                    <propertyInstance
+                      Id="536f6371-168f-470c-9518-40aaa8d83727"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b5e3503-c291-4375-b978-97c43ff33049">
+                    <propertyInstance
+                      Id="163fac58-2c93-49e6-993d-7ab9496045b4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bbbd493-4819-47ff-9478-cd4fdd3e52a0">
+                    <propertyInstance
+                      Id="69a445f8-0056-474b-8f14-28d668b7ae67"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7692a253-92ee-4edc-b1d4-517cadfad63d">
+                    <propertyInstance
+                      Id="3e7fde58-9a6f-4c12-b723-34b8f2cf4c89"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09d606d3-efd9-42ba-a6fc-9d50b89c9e88">
+                    <propertyInstance
+                      Id="8ff7342d-9133-4508-b337-d8b47af42542"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a684f4ed-778f-49c7-94cb-96f92f0fc47e">
+                    <propertyInstance
+                      Id="39b9a814-76ef-454c-bd20-0e9900fb7812"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="880b23ef-0b8c-438a-80c3-2d72a1d5d8e6"
+                LastKnownName="IList&lt;GameObject‎&gt;"
+                LastKnownLocation="Package21_1107.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f25ab2a5-a150-4572-a9c7-f729f3c9ed5a"
+            name="ClickInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d11a6012-741a-419b-bbb3-9d407d8f8aa1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DMouseButtons)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Graphics Type%3D(Name%3DCoord GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DGameObject)]))%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMutationArea)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="749855b4-3b6b-4f9b-af44-ce31ce645cc2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9abc88f7-42e6-402c-a79f-f48f32d9f9a7">
+                    <propertyInstance
+                      Id="b41eb9c0-d6a0-4f46-8dfc-e66daedb9c25"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37b4a64a-b68e-45cb-9c3c-cd395148751a">
+                    <propertyInstance
+                      Id="04ad43b2-194e-48a3-928e-f40e3595de7b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="244b1e70-a92b-4a59-b443-95580da4201e">
+                    <propertyInstance
+                      Id="cf002eaf-14a4-4226-8197-866e91c11bf1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cb86544-76b0-4b94-9bf7-7cd075ed77d9">
+                    <propertyInstance
+                      Id="086fa7ad-fdd9-4319-a806-383a5c51387f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f0af037-f5d8-4203-8a61-3abc3b813b71">
+                    <propertyInstance
+                      Id="a17e47f4-de03-4111-a21e-7a870e4a5e94"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c371bab2-06fb-45c3-ae2a-7fb090d0851a">
+                    <propertyInstance
+                      Id="4ac95767-bc5b-488c-9629-4dc923fc2e39"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1afa8fc-3716-48d0-961c-1a4cbd214a1c"
+                  name="button"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3a0375af-fa54-47f3-b832-5aeb1d83760f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DMouseButtons)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Graphics Type%3D(Name%3DCoord GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DGameObject)]))%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMutationArea)]) ParameterIdentifier%3Dbutton"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="06dfc23c-ea1e-43bf-bc4e-855d65ead16e"
+                      LastKnownName="MouseButtons"
+                      LastKnownLocation="Package6_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="06ccb9f4-0e19-4073-b575-0adb1a740e49"
+                  name="location"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fec13f37-52bc-472e-98a6-95b251356048"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DMouseButtons)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Graphics Type%3D(Name%3DCoord GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DGameObject)]))%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMutationArea)]) ParameterIdentifier%3Dlocation"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="198ec8b9-3716-4640-8452-a5323c5ddc55"
+                      LastKnownName="Coord&lt;Point‎&gt;"
+                      LastKnownLocation="Package25_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec88d8c9-9cd7-439f-9c70-f50640c6c8e5"
+                  name="objectsUnderCursor"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6d4d7c65-0e9e-48d6-8f82-6aa36615f75e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DMouseButtons)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Graphics Type%3D(Name%3DCoord GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DGameObject)]))%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMutationArea)]) ParameterIdentifier%3DobjectsUnderCursor"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="880b23ef-0b8c-438a-80c3-2d72a1d5d8e6"
+                      LastKnownName="IList&lt;GameObject‎&gt;"
+                      LastKnownLocation="Package21_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6588df04-cde8-4816-91ee-36da7db0a8c0"
+                  name="mutationArea"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bd7a5a87-b635-491a-9239-b9a3bb4a79e4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Control Type%3DClickInfo Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DMouseButtons)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Graphics Type%3D(Name%3DCoord GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects Type%3DGameObject)]))%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Map Type%3DMutationArea)]) ParameterIdentifier%3DmutationArea"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9e3e26b1-1a00-42bd-ac3f-f60d5b031ac0"
+                      LastKnownName="MutationArea"
+                      LastKnownLocation="Package8_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="9520722c-c49d-4ca5-ab47-e20ef1a3f000"
+        LastKnownName="AI"
+        LastKnownLocation="Package19_1107.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="68458caf-47a5-4677-b466-2611482591f6"
+        LastKnownName="CellDivision"
+        LastKnownLocation="Package26_1107.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

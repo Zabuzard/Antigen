@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cbd1f2b6-6db8-406f-8bc9-49fe4717817b"
+  name="Audio"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a57e91aa-47ce-4c38-ae51-f16c94ef695e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Xna.Framework.Audio"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c3bc92ac-fb69-4398-8c47-1c2eca67c4db"
+        name="SoundEffect"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="252fe44c-f24f-49e0-9289-812b47f46783"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Audio Type%3DSoundEffect"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1ffafb81-005e-4fa0-bb3e-a54a7eaebcb5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7ebe139c-27e9-44b0-8a76-1954a11ac5c2">
+                <propertyInstance
+                  Id="94a6088a-08b0-4857-96d7-0ecc2fdecb86"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe02941a-128f-4e9a-8fce-d30d9223d91b">
+                <propertyInstance
+                  Id="c967d361-2f82-4566-a605-29c8d7679bce"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62236d3f-9b22-4a4a-ac2b-fd1014e99597">
+                <propertyInstance
+                  Id="c9185d2c-009e-43bf-8144-f141ab48c191"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f07de442-51d7-4157-bb0d-31d6823d0de3">
+                <propertyInstance
+                  Id="2d0b1f49-6c87-40a6-a34d-71c592646630"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="efce7978-1938-42dd-8e1b-d11f457cba93">
+                <propertyInstance
+                  Id="ee5fb204-6a51-4811-8a22-5752c8d943e8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d121d0f4-b9fd-4199-b02f-555e3e4650b9">
+            <interfaceMoniker
+              Id="9dc75fcd-9677-44dc-a9a9-8598b29205ff"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package11_1106.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="72be0318-d5e2-479e-9ec4-b3e1f1718dd2"
+        name="SoundEffectInstance"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="70ef052e-3ffa-4362-b825-5f2756d01d3a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework.Audio Type%3DSoundEffectInstance"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0275caaf-34f4-4f27-8141-6d14706f158c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dd9995a8-a08e-405f-886c-fc4350ec543f">
+                <propertyInstance
+                  Id="0005952e-ed33-4adc-8cea-4bff34260877"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="045dc281-76a3-40a7-889d-81e7088383da">
+                <propertyInstance
+                  Id="ab24acdb-66f4-4cb5-980c-58281b2fa4d6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38bea992-04c2-4135-98fc-69bcc9f6b827">
+                <propertyInstance
+                  Id="d755192d-566b-4adc-8c16-caabc59988e2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef2e545c-4fab-455c-a8f8-c82bf98bb54f">
+                <propertyInstance
+                  Id="a6a0439e-9dd3-49cd-8b2b-e848bbacf572"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77971c78-4b48-454c-91bb-9487ee3c0a27">
+                <propertyInstance
+                  Id="fb7816da-906c-4284-b539-fbaa5b4c38d2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="9a141378-dec1-4b2c-beb5-41fa9bc12739">
+            <interfaceMoniker
+              Id="9dc75fcd-9677-44dc-a9a9-8598b29205ff"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package11_1106.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

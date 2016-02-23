@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d2a5c596-6347-4f31-b8eb-bacb591d5611"
+  name="Debuffing"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="de981b0c-b9bf-4291-8626-65f112d1da7b"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAntigen.Logic.Behavior.Debuffing"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="4e48286d-a7f0-4696-b9f1-f7d40f158ecd"
+        name="DebuffBehavior"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="dc5bd267-1f2c-4e3a-96ff-1e0bf33aeb09"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DDebuffBehavior"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a7575f31-4253-482d-a98e-5459b8084d11"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d7256433-4591-428e-9387-196db7b1c58c">
+                <propertyInstance
+                  Id="27704334-ab66-4c42-a875-110783a56bbe"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eaa4368b-cba7-4343-8f67-624ff698acef">
+                <propertyInstance
+                  Id="d26e6627-a29c-4cd6-8b20-8d8a6dbacd32"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1a8bf94b-d668-40f1-8a8c-958f7751ad35">
+                <propertyInstance
+                  Id="88677c00-d8a7-42e4-b360-b9e7bf35bc4f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9cce2aa-c5d4-4900-a88c-07f8dc9e3668">
+                <propertyInstance
+                  Id="f2a03a52-5ca5-4ccb-8e68-ebfcf8a754d3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a010f667-34f6-46f2-aba4-ab54f15413ea">
+                <propertyInstance
+                  Id="75594e4a-ef57-47f2-91b1-165c48d9de3c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="59ffe5e8-8ebc-4667-9b01-5fef8b7c980d">
+            <interfaceMoniker
+              Id="788d32ac-4644-439d-9818-2dbf7380dd5f"
+              LastKnownName="IDebuffBehavior"
+              LastKnownLocation="Package15_1107.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4cb421d9-d1f1-4f62-8a86-039bc3d0cefd"
+            name="IsDebuffing"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c4814136-9252-46a6-bf8e-2a4ecbe506e1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DDebuffBehavior Member%3DIsDebuffing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="08be2b55-3c26-4977-8710-aeb5c30e59c4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4e5c052-0fa1-44b1-914e-d12520baf203">
+                    <propertyInstance
+                      Id="b211dcaa-718a-43ed-8730-de1109305ccc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4bdb1dc-c624-41de-a047-ed5433015f68">
+                    <propertyInstance
+                      Id="47508069-bd99-4454-94e8-727a69dafac8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="386c6b1f-e148-4af8-9803-a594970680dd">
+                    <propertyInstance
+                      Id="0d1da500-b9fb-415b-acd8-5795f0a9f523"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0cb6e1b-26e5-4123-a4f9-bfd89a37de4c">
+                    <propertyInstance
+                      Id="921ceea5-2e4b-44ee-b095-325235106f61"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65016731-2680-45a8-bc12-0e418833fb9e">
+                    <propertyInstance
+                      Id="dc5fc735-3363-4b80-8226-2f8b412c62b1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac89543a-de89-4d9a-97ea-6c2094ea1c81">
+                    <propertyInstance
+                      Id="4be0650b-6c2d-4c7d-a7a6-bff044e9c38d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecba5acd-b8a0-4bcc-ac19-ae2f2f5c5c02">
+                    <propertyInstance
+                      Id="db5c056d-634a-4674-8203-f85bf5b42bb4"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8a1f2c6a-bf01-4e6c-9a32-1c4f64c6cf61"
+            name="mObj"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fbcdb622-d084-475a-8f37-5be11c44b3a7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DDebuffBehavior Member%3DmObj"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5113e23b-09e5-4b71-8df2-5eed4eec9e3f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33d034f4-1588-4600-8b5b-6119818526c8">
+                    <propertyInstance
+                      Id="1decc44b-8563-484b-bd8d-29a5c263a605"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a398186-0ccb-49f7-bb68-7151e0d646e7">
+                    <propertyInstance
+                      Id="9fca6e06-06ee-4fc8-a5f2-b758c8400dd6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d41a906f-f64c-4fda-b34a-958ffb861f9f">
+                    <propertyInstance
+                      Id="2726ff73-2af6-4910-b77f-ba4cfcd1e7ce"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fe9d858-f527-4611-8587-d77c50980696">
+                    <propertyInstance
+                      Id="2557bfcf-6e5b-4436-b003-772baeb1b96c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84991dbe-ab11-4fcb-8209-1b32b1312950">
+                    <propertyInstance
+                      Id="2d0c61b5-5b52-46af-8736-714a6f605e72"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0b6d2738-6d69-4e7b-b5a8-f88be822817c"
+                LastKnownName="ICanDebuff"
+                LastKnownLocation="Package6_1107.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="046caaf2-3c0c-4bb5-b1f0-d3ef09b2b748"
+            name="DebuffBehavior"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b1c6749e-70e5-4af6-af72-707b6fa15f5a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DDebuffBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanDebuff)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="af2568ce-72bb-4bdf-a758-5b26d4ddbf07"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b0f67ff-24ba-43a2-9c1c-a0cf3b7901a0">
+                    <propertyInstance
+                      Id="63491d49-723c-46ad-aec3-c3bc3fb0238a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9884f491-a198-4179-8d9f-b22c6ee17b16">
+                    <propertyInstance
+                      Id="85a63a58-7a16-45cf-9e09-fb527f05f846"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="835d5ec0-19ac-41e9-b74d-7af9df522d5b">
+                    <propertyInstance
+                      Id="1cc35d52-bdd2-497c-9b02-56fe6dd8cb62"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abdd1ea9-bf20-4b42-b54e-0da5eeb01fff">
+                    <propertyInstance
+                      Id="a2d847a3-6781-4ed6-9f87-00930b934e64"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c2373ae-09a2-45a6-9b81-a49f66f1afaf">
+                    <propertyInstance
+                      Id="a86bd783-bf73-45c1-b2e2-5924cb16cb91"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e82e97d0-a04d-428d-b888-5bbc8c897bc6">
+                    <propertyInstance
+                      Id="228e6362-3a96-4e16-b648-00a11fae34e9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d74bb404-1add-4b35-ad39-927fd2b9adb3"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f292abcb-1dd1-492a-ac6c-ac57349166cf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DDebuffBehavior Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DICanDebuff)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="0b6d2738-6d69-4e7b-b5a8-f88be822817c"
+                      LastKnownName="ICanDebuff"
+                      LastKnownLocation="Package6_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a4a5aa9d-6970-4629-be90-259cec85c33f"
+            name="Debuff"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="93e9c5e4-2415-46b9-8f2d-d0d172bfb899"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DDebuffBehavior Member%3D(Name%3DDebuff OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DIDebuffable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="73781b5c-e384-49a2-97b4-4b7208649544"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f58e9d83-3782-4c3d-a9f8-021a9e4256ff">
+                    <propertyInstance
+                      Id="2b90334d-70a9-4068-a9c5-c3f517ffb887"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7579a80-ea26-4e02-bea3-ae3bf7fa7720">
+                    <propertyInstance
+                      Id="e8c609c6-134c-4113-8c2b-758ee0002f8f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="045b86cf-283c-4fa7-ad74-23d04892cc67">
+                    <propertyInstance
+                      Id="413bcf37-98d5-4e0e-8eca-57bb206efba0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8b79b03-9b8a-48c8-9382-2ab659a409b1">
+                    <propertyInstance
+                      Id="33288228-c588-45b0-afc0-2b43a4f8c0a0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d61155f1-1090-4d4b-992a-65b68de189da">
+                    <propertyInstance
+                      Id="98eb3fe3-263a-4b4d-b2dd-d74bd31b0988"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4a337ac-7a95-4381-98ec-aabc8fb0edff">
+                    <propertyInstance
+                      Id="5f2656f1-a9f2-4c3d-9ac8-1cb455266e58"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="806e6ce8-819d-4405-9f05-f62300cb5dbe"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4ba4b709-355c-4b68-8b53-cb85f22c4e51"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DDebuffBehavior Member%3D(Name%3DDebuff OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DIDebuffable)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="23d75f60-6370-4a58-9751-76cf3303a2a3"
+                      LastKnownName="IDebuffable"
+                      LastKnownLocation="Package6_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="788d32ac-4644-439d-9818-2dbf7380dd5f"
+        name="IDebuffBehavior"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="3d2cb595-d10f-448d-858a-69ca6cde9720"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DIDebuffBehavior"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="56ae4ca8-528a-4feb-9b7f-d1576a38d4b0"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="524c3e23-6ed9-4a2a-9e14-c346d788c567">
+                <propertyInstance
+                  Id="131b3179-6038-4ccf-a135-8df7e46697ee"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7d580613-8278-4948-9635-f1a947625dbf">
+                <propertyInstance
+                  Id="f2f87a81-346c-445d-b19e-ebe694bf4aa8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab9343b9-60cf-4cec-95df-deefec167efe">
+                <propertyInstance
+                  Id="cf1546dc-2b98-4eca-961f-cadbad6bd620"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d5badd0b-9c40-439a-ac64-72eea4161669">
+                <propertyInstance
+                  Id="f7a8d337-de1e-4c55-b15f-6ddc65760cd0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="abf8caa0-8045-4bed-ae51-6d773cf218fc"
+            name="Debuff"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="51d4b99c-1aad-4d01-8d9f-8cb6cc3141ec"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DIDebuffBehavior Member%3D(Name%3DDebuff OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DIDebuffable)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2659938f-a56d-4416-a682-95fd34b0c514"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8e0f558-3c20-4b03-b78e-dcfc7351971a">
+                    <propertyInstance
+                      Id="edcd29f3-da7a-4a46-ba2f-d226175ec96c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04c766e7-41d5-4023-8bd8-a4311fb34e16">
+                    <propertyInstance
+                      Id="299980b4-6aee-4960-a672-a8f0a041713b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3cac5e9-5a96-4357-8b86-88334c989f83">
+                    <propertyInstance
+                      Id="094f9715-ec1f-424a-9008-b26191a8da4c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bea435ab-458e-401b-9538-c1b7240cfb1e">
+                    <propertyInstance
+                      Id="6d193e36-1e0b-4c4b-b25b-e3440c66b256"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8a2949a-455f-4a3e-99e6-86b64a03f74a">
+                    <propertyInstance
+                      Id="683ba044-4bea-4ef4-85b6-4076f566cf09"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="108befa2-5cb1-4150-bf92-8545808ec01e">
+                    <propertyInstance
+                      Id="017560f0-725a-45be-99c1-a641847685c0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8f6c4bc7-3273-4acf-91d4-07a456586b7e"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="97eaf979-e8f4-4376-94a9-659585f0d79b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Logic.Behavior.Debuffing Type%3DIDebuffBehavior Member%3D(Name%3DDebuff OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2FAntigen%2Fbin%2Fx86%2FDebug%2FAntigen.exe Namespace%3DAntigen.Objects.Units.Properties Type%3DIDebuffable)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="23d75f60-6370-4a58-9751-76cf3303a2a3"
+                      LastKnownName="IDebuffable"
+                      LastKnownLocation="Package6_1107.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

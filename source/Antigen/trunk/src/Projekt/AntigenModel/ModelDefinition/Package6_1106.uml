@@ -1,0 +1,3600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0f36e72e-9b75-4afa-9d31-f874a4338aca"
+  name="Input"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="106242ea-70db-43d3-8496-1c01d67b8bde"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DNuclex.Input"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="d5f7d34f-f2b4-45dc-9484-bc2a4630f50f">
+      <profileInstance
+        Id="f1db0016-9994-462e-a0b9-0042209daf14"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3a6056e7-980e-4688-8f7e-bc18d54a8742"
+        name="InputManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cdd3ca84-2abc-4d6e-b0eb-0582a8d12b03"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="441bdf21-bc07-4801-b8fb-bbcd9b043291"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="449e73b5-7bd2-4a2a-95e4-ed0c74e9669f">
+                <propertyInstance
+                  Id="646f2bd2-f519-4135-a795-47fc4bdef91f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f6e0067b-e40c-4c19-b45e-23ee3635a23a">
+                <propertyInstance
+                  Id="4edd3259-bfa2-47b6-925d-2a87df31d45b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cd8c648-fcb1-429a-a189-887aff6fa322">
+                <propertyInstance
+                  Id="0f72dee1-07a9-4432-961c-61128ab29492"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="14e5a77f-1825-4355-bb8d-4769fa190a03">
+                <propertyInstance
+                  Id="dce7b1a7-bd55-464f-9098-03e3c8ac698c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="901e4e5c-bb8c-4f53-9f95-94e8ea5bb659">
+                <propertyInstance
+                  Id="c18d8195-d001-46f4-a07a-c844e59c529d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e0580126-979f-4b88-a83d-933996866c28">
+            <interfaceMoniker
+              Id="604eaea6-d314-42ef-bfc9-4b9b36ce8ad6"
+              LastKnownName="IInputService"
+              LastKnownLocation="Package6_1106.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="2dfc2b3f-93f7-4dcf-b2fa-f716a76e2395">
+            <interfaceMoniker
+              Id="0b1f5cc9-5537-477a-902d-ff6f07f0ae1f"
+              LastKnownName="IGameComponent"
+              LastKnownLocation="Package3_1106.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="934bf781-b24e-4d00-ab48-af4259b7c502">
+            <interfaceMoniker
+              Id="caabee2f-3ca1-4be0-9f5d-9898c9a7e312"
+              LastKnownName="IUpdateable"
+              LastKnownLocation="Package3_1106.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="fda1a60e-6b43-4a85-aa47-27df603a8222">
+            <interfaceMoniker
+              Id="9dc75fcd-9677-44dc-a9a9-8598b29205ff"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package11_1106.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="c2358fdb-28ca-4ee1-9992-12c030205bb0"
+            isDerived="false"
+            sourceEndRoleName="InputManager"
+            targetEndRoleName="GamePads"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6fb326c5-8b41-489f-8c11-c71502c5b852"
+              LastKnownName="ReadOnlyCollection&lt;IGamePad‎&gt;"
+              LastKnownLocation="Package_2029.uml" />
+            <description>Property GamePads references type ReadOnlyCollection&lt;IGamePad‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2222d26-b67c-49a9-bf6d-492ec5bab49d"
+                  name="InputManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4073b6e5-30c6-45ce-a73d-9495078c864c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5224d436-39aa-4184-a500-24ec1c8db483"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="97bb955f-7a10-4fa1-a382-3e22ba34064b"
+                  name="GamePads"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7b4d85e1-38b0-4df3-87fd-b93941086125"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3b02d435-7d2a-4a16-b4f2-ed548d6226a6"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ed58a45c-4349-4ae3-81b2-33d4245ccd03"
+            isDerived="false"
+            sourceEndRoleName="InputManager"
+            targetEndRoleName="Keyboards"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fd93fb68-4ce9-46fa-8858-9b3063797f94"
+              LastKnownName="ReadOnlyCollection&lt;IKeyboard‎&gt;"
+              LastKnownLocation="Package_2029.uml" />
+            <description>Property Keyboards references type ReadOnlyCollection&lt;IKeyboard‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dfeeedc5-b81d-44b3-883e-b8c1ae470a47"
+                  name="InputManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c85c8eab-7ed8-4bb6-b28a-8df9a76a875f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fe0341c0-280c-4a9c-a27d-b837ffe64db2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5c215bf-56da-48d1-8d9a-8d6c13c39066"
+                  name="Keyboards"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0e7cf1f4-41b3-4099-a7c6-6c29a0f2e0df"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1a46cd06-37a8-4410-9062-6c3cab5cc5cc"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="316c877b-118a-494d-be21-36c720fa4a61"
+            isDerived="false"
+            sourceEndRoleName="InputManager"
+            targetEndRoleName="Mice"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="de1ffd38-9257-4b19-bf1f-243e3cbfb416"
+              LastKnownName="ReadOnlyCollection&lt;IMouse‎&gt;"
+              LastKnownLocation="Package_2029.uml" />
+            <description>Property Mice references type ReadOnlyCollection&lt;IMouse‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1654f7e5-d593-4f85-bb21-d4973b8bf4db"
+                  name="InputManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="94c0d6f5-4dfb-4ec3-91ab-5a9276c91d29"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8b5c6732-18d3-496d-bc0e-d509b9630490"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8aa81a6f-ec6c-4ca7-9888-8d89f132349a"
+                  name="Mice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cbeb88aa-927f-4002-9c80-b6a02f20a4e5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="97abd830-666e-44d7-8b19-6c317a44a374"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="84a70228-03fa-4088-8936-f475b2d96d57"
+            isDerived="false"
+            sourceEndRoleName="InputManager"
+            targetEndRoleName="TouchPanels"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="55f860c0-5db2-4b99-8461-5fe0bb2cbc35"
+              LastKnownName="ReadOnlyCollection&lt;ITouchPanel‎&gt;"
+              LastKnownLocation="Package_2029.uml" />
+            <description>Property TouchPanels references type ReadOnlyCollection&lt;ITouchPanel‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72a47165-466e-4787-919f-c5b95c90a671"
+                  name="InputManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f2f17bb3-ae8a-4089-b6a5-9c8335490782"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ce2606ab-aafb-4184-a804-ed2ff021f403"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b3609b7a-6e1b-4656-8611-0cee02e52338"
+                  name="TouchPanels"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a68b9fd3-086d-4a21-8740-7a27b3f3be08"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="59aba186-2107-4a16-9c85-e5c2bf65f345"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0c9c56bc-0a63-4ea6-b166-f8a3ea6e2516"
+            name="GamePads"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="48eba24b-b128-4420-b2a4-e816fea92232"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DGamePads"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bf7ef8b5-56da-4761-af2f-35b92ab0cad1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffca9460-46d2-47b5-9002-4cf27e0321f9">
+                    <propertyInstance
+                      Id="56835faf-3427-4046-9aa2-2562d9394a9a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4f55e92-b9c9-4d71-b156-8647bfdf01a9">
+                    <propertyInstance
+                      Id="5d36657d-2253-4364-b90c-0b5c405baa50"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91d2419a-8070-4d4d-a86a-a9c0d47675f2">
+                    <propertyInstance
+                      Id="d01e69c3-e1e1-4e0f-8f26-81fa7cd4ecc5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92876257-bda3-41ec-a9e8-0566c024fb64">
+                    <propertyInstance
+                      Id="de028df5-552e-453d-b7e6-b46c040cf488"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="382dae0d-cc12-4a32-bdca-d4e8f8a190de">
+                    <propertyInstance
+                      Id="07746112-135c-4d8d-bb2b-a3396c22f38c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfda21a8-5863-4d71-824d-6cec707b0584">
+                    <propertyInstance
+                      Id="d935f3f5-f29c-431f-9a73-23ac0bb3eddc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ac7bc00-6638-4d07-a53d-0b3bb437821d">
+                    <propertyInstance
+                      Id="fd48e09a-bb06-40bf-80a1-9a9dc0f39a4f"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6fb326c5-8b41-489f-8c11-c71502c5b852"
+                LastKnownName="ReadOnlyCollection&lt;IGamePad‎&gt;"
+                LastKnownLocation="Package_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1e431ce1-3e3b-4be3-a744-ba8dac440388"
+            name="Keyboards"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1dde6723-d7fd-4c3d-a30a-74aff668d012"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DKeyboards"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0b688187-06a6-4492-8ce6-d81fd2624e0c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84d0f7b0-cfab-428e-9e4d-52d7a560f182">
+                    <propertyInstance
+                      Id="5605fb0e-2174-4208-9013-16fac6aa77b8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6402335-00ff-4939-a7f1-a0cd5f2bdde9">
+                    <propertyInstance
+                      Id="5ad97aa2-07e7-4104-9aac-63e057aa5996"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cab7dfa-799d-4397-a681-c3f92cc49f33">
+                    <propertyInstance
+                      Id="3c26256f-38ec-432b-b62e-119c81192a2e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfda625d-fb3c-474c-9d40-fb9e8e9d83d3">
+                    <propertyInstance
+                      Id="a57ee37c-8e51-4091-9afa-c4961a4db67b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3aeaab0-e0e7-4aa7-8e80-a52986de9d0f">
+                    <propertyInstance
+                      Id="f6ecbd77-2baa-4961-a849-0fbac8f42090"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09999f7e-dc92-4191-a79a-54b4f405e95c">
+                    <propertyInstance
+                      Id="7ec07667-061c-4a30-9a73-dde3fb164ce4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="916c1448-fa9c-49e4-b40c-7caaf2b87342">
+                    <propertyInstance
+                      Id="60fa4df6-7cf7-4d76-8fe5-ad2c72a21ea2"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fd93fb68-4ce9-46fa-8858-9b3063797f94"
+                LastKnownName="ReadOnlyCollection&lt;IKeyboard‎&gt;"
+                LastKnownLocation="Package_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="83e94f09-d1f8-475e-90af-70484afa0ff9"
+            name="Mice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="de704b19-005b-4592-af29-3f42b9b60223"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DMice"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="696a3db5-0feb-46f5-b95c-90d4c1a33e3d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="634e1adf-a267-4b60-82e3-cbe7506990e2">
+                    <propertyInstance
+                      Id="cdb4e739-927a-4643-bd38-666b72f3ba97"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e423987c-94ca-45bf-90c5-aa1b56dee75e">
+                    <propertyInstance
+                      Id="cf95bf04-4918-4598-aa1a-37f2a27c4706"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="234588a6-a082-4656-8081-f2025e180bcd">
+                    <propertyInstance
+                      Id="189b822f-a78b-4061-88d6-dd7751079797"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00778f37-3f97-4f3c-b3af-841518eea7b7">
+                    <propertyInstance
+                      Id="74c1fa0e-8165-46dd-88b1-9d02af3ae5e5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12a21b54-1b5c-42ce-9bb3-2238c9a8aaa9">
+                    <propertyInstance
+                      Id="a4c86571-298a-4cce-a00f-fcd44b8944e6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70966410-c65b-45d6-8c1f-d231448b9ed4">
+                    <propertyInstance
+                      Id="27a45547-a14f-4846-99f7-1141909c7316"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d8f12de-c9e7-46bd-b0a2-6374216783f7">
+                    <propertyInstance
+                      Id="801e5bf9-c6b0-4161-8668-f300015cda58"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="de1ffd38-9257-4b19-bf1f-243e3cbfb416"
+                LastKnownName="ReadOnlyCollection&lt;IMouse‎&gt;"
+                LastKnownLocation="Package_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="af4fadf5-c29e-45a5-8f2f-7d1a0c5ed45d"
+            name="SnapshotCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d1ed236c-491f-46ca-bef9-7394ed5749dc"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DSnapshotCount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2da5c515-1287-4e8b-b499-674641d1b929"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8486424d-6566-496b-9512-34530653aebe">
+                    <propertyInstance
+                      Id="b2e53379-a0ad-4980-a67f-ae9852925a3c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e50924a0-1811-4563-b85b-54efeab0f865">
+                    <propertyInstance
+                      Id="c4e68b8c-0c8f-4adf-960d-8fe2f3b3e40d"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29bfd695-b283-4f6d-8eee-75c3e2d1e8c8">
+                    <propertyInstance
+                      Id="0d7884a9-156d-4bf5-93b4-e9ce6fb46cc5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b5e1553-ee7a-48ff-8858-9ded83310dcb">
+                    <propertyInstance
+                      Id="75a47feb-78be-4370-8bda-883472677bf6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01b33691-b153-4f19-b859-14d27abb5cb2">
+                    <propertyInstance
+                      Id="0ed0e5e9-7787-43ea-84dd-e7636384321c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea1fe7e1-90ad-4f26-a2d8-c04e1fcd9179">
+                    <propertyInstance
+                      Id="c319e714-c54c-4a12-b665-c930e19c4675"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb4f885b-f723-4631-9711-6a3055956e79">
+                    <propertyInstance
+                      Id="20c62435-6b22-4c43-b46e-7bd0d07f88ae"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d09a5f83-d7dd-45b1-9737-f794b0b6ca47"
+            name="TouchPanels"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="14f77657-ced7-4e2e-b5bb-99a8f758b408"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DTouchPanels"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="60f24bd1-a6bc-4f0d-a227-48243d089d5e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09b82598-8ab5-4f72-a8be-77a493e5dee2">
+                    <propertyInstance
+                      Id="fbfa0d54-ad07-4aed-98e8-0afa38938cbf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="360774f3-ed89-40c8-b7ad-5b0c52a34a43">
+                    <propertyInstance
+                      Id="e4508e00-7e70-40f0-99f9-dfa355f9b34e"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea7ea1df-d5b8-4bb9-8b70-23f93e251ff3">
+                    <propertyInstance
+                      Id="98729a55-dc06-41b0-a8d8-be041d3ce5db"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f2a27ba-5355-4086-9c3d-f591ccd88a13">
+                    <propertyInstance
+                      Id="83287291-25ec-4cec-bcc1-900311e65bea"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="546067c5-d670-495a-96e9-d71a19510c1b">
+                    <propertyInstance
+                      Id="0c3f7cd3-68ef-469b-a142-9cef67584e07"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65de2726-f067-40b3-9366-ab2d4ec83dde">
+                    <propertyInstance
+                      Id="89713877-72b7-461b-96b2-08f4351361be"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eba53d85-659a-4764-88e9-bbf257d561a1">
+                    <propertyInstance
+                      Id="f47198de-f996-4866-94a5-60cd3dcc9b50"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="55f860c0-5db2-4b99-8461-5fe0bb2cbc35"
+                LastKnownName="ReadOnlyCollection&lt;ITouchPanel‎&gt;"
+                LastKnownLocation="Package_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ea6456b4-e968-4ec2-ab17-d7db9295b7fa"
+            name="UpdateOrder"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6782486a-b082-4370-96eb-d0c71f06a894"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DUpdateOrder"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="35436eca-cc1c-49a3-9a7d-efd4966a4a57"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81eebff3-4724-4c2b-9381-e4f4b80a3622">
+                    <propertyInstance
+                      Id="953edd57-0037-415c-85ec-84873d41d274"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c011c13e-57dd-41a8-9546-043e9dc4b8fa">
+                    <propertyInstance
+                      Id="b0135b59-ddb4-49e0-b6e9-b2cfe706c98b"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a9346f7-900d-45d7-a31b-b3a16d80a641">
+                    <propertyInstance
+                      Id="ac0b8bc8-eddb-4ea5-853e-4ddc1e8c9a06"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7d3c4e7-b0e5-41f2-9fb5-82e852af48e0">
+                    <propertyInstance
+                      Id="1fde0f84-29b0-48b2-8269-e3e5163ac2b8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97ff7371-33ac-466e-a95d-dfd55733821b">
+                    <propertyInstance
+                      Id="ae326d5b-e360-448e-9bb9-1efbd9b60ca3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80a48459-9a78-4b57-84d5-8fe48b662cd8">
+                    <propertyInstance
+                      Id="09cbd2f2-9486-4b8c-a052-5a20d504c918"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="801a3aee-aaec-4286-a3d1-cf84b5eba840">
+                    <propertyInstance
+                      Id="4c6f7e8f-c5dc-4d15-99c5-8b42ef597369"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d41dd135-60dc-4ea0-97de-654ebff00d1d"
+            name="EnabledChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="94de7b3b-e134-47d5-85d3-0382927080eb"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DEnabledChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4a7c14db-4bf8-4ab3-aeef-18c7f225d739"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d6334f5-b90d-494c-924e-da1e5de60600">
+                    <propertyInstance
+                      Id="2ba40781-37f4-4ac0-b5dc-9c40d6296b99"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="324aa422-ada9-47c2-a22c-bb61be0e7511">
+                    <propertyInstance
+                      Id="39a98e48-268a-4c63-8ed5-29084029c17f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8bd3293-8fdd-4de7-8e32-0a80ece54315">
+                    <propertyInstance
+                      Id="60945a31-4404-40de-9021-32d9ae6eadda"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20b842d5-eed3-4b7a-b2b8-a5fd110a916d">
+                    <propertyInstance
+                      Id="1150d9e9-67b2-4d5b-acaf-387bfacc8fba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37bdd1bd-6fda-40ae-a93d-1b062af0c2d5">
+                    <propertyInstance
+                      Id="7a0e8b45-8ac3-4277-a2b6-9f8550ced89b"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8ede1841-9680-4d0b-80d7-c4781cbc9e5d"
+                LastKnownName="EventHandler&lt;EventArgs‎&gt;"
+                LastKnownLocation="Package11_1106.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5a78824a-4096-403d-b9d4-c5d400d2f583"
+            name="UpdateOrderChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d4ff6df8-51b5-4409-ad7e-632d363156f9"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DUpdateOrderChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="44ba7577-31ee-40d7-b895-a60c63d9da77"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9478d55a-564c-401c-9bd6-726dba8cf2ad">
+                    <propertyInstance
+                      Id="367fbe92-30c3-4241-b839-267bcaf4fa09"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9aefafd-6f8f-4322-9d78-b87d19b6309a">
+                    <propertyInstance
+                      Id="42eadcc0-a8d5-4f70-a5cd-dc68fa0ef083"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c55de58-a274-4c27-b823-4c23698bb351">
+                    <propertyInstance
+                      Id="52bd27f8-f8b5-4c8a-91df-3771fe6a3d8c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96d7168a-b922-4faa-9b8e-75dc2a907273">
+                    <propertyInstance
+                      Id="a2d73aa8-9c26-4379-81a1-d76931a88216"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3477e38d-1fed-4903-9e78-12a9de3fcdea">
+                    <propertyInstance
+                      Id="9c6b5e73-3f26-473e-84af-c5bc3d2a6b45"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8ede1841-9680-4d0b-80d7-c4781cbc9e5d"
+                LastKnownName="EventHandler&lt;EventArgs‎&gt;"
+                LastKnownLocation="Package11_1106.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2475e26b-83c3-4f85-a927-acbd1b17dd37"
+            name="Dispose"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c377f2ee-3b32-4f36-b00e-f55509d55379"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DDispose"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ee754612-fc45-4aaa-ba50-ba34e46a4763"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3286b4f-3a64-4b3d-bcf7-490840004cec">
+                    <propertyInstance
+                      Id="3b21a0dd-7db0-4cfc-b6d5-8b01ea09545f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a48474d4-b814-40a7-b554-5cb16c6e0552">
+                    <propertyInstance
+                      Id="3e555bfe-ccf7-4103-9b08-47485dae0d6f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f46fbfc-cfb7-4567-bcd3-21c1b2a39f48">
+                    <propertyInstance
+                      Id="739d6a38-2fc0-488f-b158-b692314ece06"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee7de6b7-219e-4f55-8ad2-a7fc69a5fcf8">
+                    <propertyInstance
+                      Id="5a254621-01ad-43f7-830d-ef849e538fef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36ba1691-a905-440a-a05a-4620268f4c76">
+                    <propertyInstance
+                      Id="1effd140-d856-406b-9b10-6aac317eec14"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b08fb82-9251-4c97-9084-e8e65725f559">
+                    <propertyInstance
+                      Id="3224f6ed-a694-4cc2-a71d-e5160aa17937"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="0bf4d0c6-4ed4-4c3c-b3e9-f2011bae76a8"
+            name="GetGamePad"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4346b0ff-e308-498b-a7b3-f2742b68ecab"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3DGetGamePad OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DExtendedPlayerIndex)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="992dc0b1-1045-4852-b8b9-2d64005e2e9f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ead304e2-ad1d-4ff6-80f0-5bd518cd991b">
+                    <propertyInstance
+                      Id="8bd13943-6255-40a5-93c7-6e5c8112adc7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a604d37-63a0-4f10-94a0-a3d7310a9bd6">
+                    <propertyInstance
+                      Id="59437187-4fb8-48c5-a4f1-9b0965981c65"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffb5fd3a-682c-45b6-9d3b-a49b197d1833">
+                    <propertyInstance
+                      Id="6ca3f546-b98a-4c81-bda4-ebdd177184a7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="522ee02a-011e-4ed8-928c-f210101a6e06">
+                    <propertyInstance
+                      Id="039d0c55-47cf-40c4-854d-9d4920c2be53"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3fa5765-8037-4b16-9fdd-ed9a50f9a40e">
+                    <propertyInstance
+                      Id="9ff67894-c04f-4542-b2b6-98779626c2c4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54ca74b3-9249-42f8-8866-3b8aa37b4657">
+                    <propertyInstance
+                      Id="d8730fa4-b439-4718-a342-60afeb43ee01"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b5ff8788-0f39-42bb-8d76-ee6d6cefec09"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="3932e64a-9272-4817-847e-7636457fa398"
+                      LastKnownName="IGamePad"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="93899880-ccbe-4178-940c-7c1acebae002"
+                  name="playerIndex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="59e8d7c9-57df-4bc1-a157-eab88fa34ef8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3DGetGamePad OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DExtendedPlayerIndex)]) ParameterIdentifier%3DplayerIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="d77167f1-733c-408a-94b7-6f22efe62611"
+                      LastKnownName="ExtendedPlayerIndex"
+                      LastKnownLocation="Package6_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d1c85b13-37a1-4081-91f5-4799b97a524e"
+            name="GetGamePad"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1fe9e442-33da-446a-923d-c9b64d1813dd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3DGetGamePad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPlayerIndex)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8033a3aa-366a-4c06-97d1-aa6d2e84d9f9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb522405-160f-4e4b-a772-716a381662ea">
+                    <propertyInstance
+                      Id="dfd20964-4fa4-4163-8ad0-151bfb2f58ad"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2be3b948-308e-4e1d-8caa-8b825b45470f">
+                    <propertyInstance
+                      Id="a7b26ad6-53f5-4fab-a616-f57999d06bbd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f7eb464-81df-4be7-8070-7df3875e87c6">
+                    <propertyInstance
+                      Id="a3f6b518-23da-4550-a90a-e6a9700788bc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68fd33ff-d2b9-4666-bfcf-353800986d2f">
+                    <propertyInstance
+                      Id="48b367f5-040f-451f-babd-450c75ae9fb2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b07938cb-2029-4798-9086-f588b442df4b">
+                    <propertyInstance
+                      Id="70be4ab7-9087-4821-a115-41eee0ab4076"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f9d422f-e3c2-4971-9dbc-64d164d5bbfc">
+                    <propertyInstance
+                      Id="aa571ecf-b402-4e4f-944d-cbc74097e068"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1382fb1b-211d-4295-b528-5c13dc4dbae6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="3932e64a-9272-4817-847e-7636457fa398"
+                      LastKnownName="IGamePad"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73987308-1118-4e71-8ff0-efac437752df"
+                  name="playerIndex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="85c95f8d-cecf-4e44-80e8-74b5c61e26e3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3DGetGamePad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPlayerIndex)]) ParameterIdentifier%3DplayerIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="34a86d8a-02f4-447d-a93c-322c2f8942c1"
+                      LastKnownName="PlayerIndex"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="024f67b4-fa78-4ec5-9f35-1cfa3f2e9049"
+            name="GetKeyboard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29c884a7-1c88-443a-beb3-214a011408e6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3DGetKeyboard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPlayerIndex)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f44bb84d-d9f6-4911-a9ff-487359036da6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="692e3a5f-da57-45fb-9ba9-a93fd5a74458">
+                    <propertyInstance
+                      Id="c2651a7e-ed06-4008-b903-368609827d62"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b5ef87f-4d28-4bd1-9eb1-0d61e9f6232b">
+                    <propertyInstance
+                      Id="bc61478c-e67e-4fec-83fc-d4d5345c9919"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c8cd608-b2f3-4385-96fc-14e9811de510">
+                    <propertyInstance
+                      Id="c1752c21-7f34-4dd4-bc07-f5cce849b132"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6443e3f-aeee-471e-a9bf-1e79c3d0ff3c">
+                    <propertyInstance
+                      Id="2a8a6daf-d3d0-4238-b3fd-d8ee8ec2ed75"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ab2f674-057a-4564-95ea-8467444bd712">
+                    <propertyInstance
+                      Id="3b6589b9-b515-4c12-832e-921f1554c249"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cc792b8-539d-449c-93c8-3bb08c5c76f8">
+                    <propertyInstance
+                      Id="ca7973b7-4cb9-4510-94e7-428a1dc41de2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39702908-3202-46a3-a7f4-ffa8864cef0e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="55461537-59fb-4300-a826-b54af2b94b84"
+                      LastKnownName="IKeyboard"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e77cd28d-1a56-43b9-a56c-824af1a6e8cc"
+                  name="playerIndex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="85632052-4c7f-49d6-ae7b-64299ef55086"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3DGetKeyboard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPlayerIndex)]) ParameterIdentifier%3DplayerIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="34a86d8a-02f4-447d-a93c-322c2f8942c1"
+                      LastKnownName="PlayerIndex"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="54838a9a-8199-4992-8cc2-687c78afb13f"
+            name="GetKeyboard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7648573a-65b5-4a7a-823d-cbdbed7a4ed2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DGetKeyboard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="674465e8-7c76-4fd1-886b-bde4a965749c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4024542-d964-4d70-bf79-8912f567da55">
+                    <propertyInstance
+                      Id="80aec6a5-dc72-43ad-adea-f8f6b782b2d0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d6fca48-fd56-4a62-9289-35c3949a0a99">
+                    <propertyInstance
+                      Id="de3fbba7-9ef3-4b39-b2ce-998adb36ba69"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d855fe72-99ea-4d06-927e-38b61fb0ed0d">
+                    <propertyInstance
+                      Id="58b93387-962b-4ff3-a471-f5e1d244c9d6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5c1949c-5c14-4e4f-b614-11ad7ffd173a">
+                    <propertyInstance
+                      Id="2b10d72b-7c20-466f-bf0f-0c0d2e1f5014"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0d74ab7-277a-43f0-b12b-1598684016cf">
+                    <propertyInstance
+                      Id="9b63403a-70d4-4b33-a454-518fb34df980"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="529382ef-0ad4-4fe4-9c6c-4682061060e3">
+                    <propertyInstance
+                      Id="20a6bef9-7d70-49e1-9131-2e0335fa1b31"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b0884c4a-f57d-4825-8697-6efbfa0bd25a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="55461537-59fb-4300-a826-b54af2b94b84"
+                      LastKnownName="IKeyboard"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="495380b2-5459-4301-a8c5-dbc4f1e5d91c"
+            name="GetMouse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1e57cfcc-7b23-461d-9188-9fee13a4c732"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DGetMouse"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e71d79ff-2c44-4a57-ab25-fd2fa48eacd6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80ada3d6-ae23-489a-8224-26f32175c141">
+                    <propertyInstance
+                      Id="63864d51-b6d0-4654-9d9f-12304d7c19b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf1ddfe2-c06c-43f5-b4b6-3ba4682636b3">
+                    <propertyInstance
+                      Id="33026c50-3f8f-4687-be37-be4bbfa49fca"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10ead1bc-0961-4176-ae02-00855bae04c4">
+                    <propertyInstance
+                      Id="ada63146-3014-4922-8f23-0d10dee0a300"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f8b66d4-c4f9-42ff-8874-51299e488a06">
+                    <propertyInstance
+                      Id="d037b5c7-09cb-4daf-8184-1ebd9704ae36"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8d3da95-9d22-4544-ab25-994a6a029072">
+                    <propertyInstance
+                      Id="48501d5f-178f-409a-aa30-1cb2624e8a21"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="698b5827-2b50-4ab0-bf84-5048977bd9e9">
+                    <propertyInstance
+                      Id="e73cc5c8-25e7-470a-8602-fc4c8b570638"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="13899c7f-7020-4e0e-a1ee-059fe4deeb2d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a203c2e2-2832-47a0-b408-1aaab37579d5"
+                      LastKnownName="IMouse"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9690ae58-81b1-41a6-9d32-a8458d12790b"
+            name="GetTouchPanel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d826c1bf-fd64-4a5f-ba91-f64e77dbe8ac"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DGetTouchPanel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fc8c210f-f874-4751-b3ca-be485de06d21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea1b006d-7cf3-4bc1-9161-090b74f0de81">
+                    <propertyInstance
+                      Id="73e20929-d437-45b5-aa41-ec63adb2278a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0ba2c41-c0ad-4eff-819a-480326eca118">
+                    <propertyInstance
+                      Id="e8e65797-bde4-41f4-95f3-57608a5ee972"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ee18d94-bd08-4726-a759-77346ef74722">
+                    <propertyInstance
+                      Id="5b5756fb-581d-4841-b1de-6f8ecf785d4c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a2a9ace-abbb-45f4-a110-0d0a756c63c3">
+                    <propertyInstance
+                      Id="cca265d2-5790-486c-b590-526f0f2093bf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba4097f5-f18d-4ffc-a8f9-f365fd714a49">
+                    <propertyInstance
+                      Id="3f672170-f2a4-49e8-b1a6-128ac27c8460"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23c904c4-9a82-4a3e-ab59-041b8960928e">
+                    <propertyInstance
+                      Id="08369330-50c6-4531-ad8b-3bfdbc26d16d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="16fa8a5e-8ee5-47ad-93ff-428691db972d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="8bf050ec-49d8-48c6-acc3-511d37fced6c"
+                      LastKnownName="ITouchPanel"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b6c9b4bb-1d94-43d6-8908-da97e0ae4883"
+            name="InputManager"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1b5575e9-3367-413b-b49f-c8e36e1ce227"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameServiceContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DIntPtr)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="af88ff35-b386-48d0-8560-03d39c344fda"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a76f7cf6-b77f-4e69-a9a7-2c8a50532e5f">
+                    <propertyInstance
+                      Id="db2f530f-29d4-41dc-83ff-85a6581923f2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1227259-3476-4d36-b079-87145951d35e">
+                    <propertyInstance
+                      Id="ced7fef8-54cc-4dfc-bcee-31c450953028"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c7f7879-b086-418e-b423-09bf39d80867">
+                    <propertyInstance
+                      Id="db26bf42-6aec-4800-9b0b-e4aa8e93471a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7cb913a-857a-4ed5-a29a-d2f11f5b4d98">
+                    <propertyInstance
+                      Id="9b40c504-9ec4-4136-819c-3b19eab47f4c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="691dc5cb-cf62-454c-a557-d443686add17">
+                    <propertyInstance
+                      Id="8fcf62f6-3fa5-4b92-b83f-2d25736ebb3b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="288a65ea-a18c-4284-8b1d-2b144ce14d63">
+                    <propertyInstance
+                      Id="e0d1898f-aa75-4a00-8073-ebda05e812cb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="decbc9e4-167f-4955-b697-6ea55e680f6a"
+                  name="services"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="eefa8593-51d4-4af8-b426-68500ca2a5c8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameServiceContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DIntPtr)]) ParameterIdentifier%3Dservices"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d1e3eca7-fdd3-4904-9e40-6695e2b7973c"
+                      LastKnownName="GameServiceContainer"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afa8cc05-39e6-433d-bd5c-0ff8154ac0c0"
+                  name="windowHandle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="af817074-3af4-49d5-b252-c6919dd3d16e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameServiceContainer)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DIntPtr)]) ParameterIdentifier%3DwindowHandle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6267c9ff-b5d7-4e63-ad1b-61e4651d8e01"
+                      LastKnownName="IntPtr"
+                      LastKnownLocation="Package11_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="abebdf69-929f-4f69-a5b8-ffcf90990cea"
+            name="InputManager"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a55aafaa-e9e8-48f0-9222-efbab0a4d990"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameServiceContainer)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d4994268-4adf-418b-ae74-e856f5f4a76a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40b217f7-5507-4e0d-b6a4-23fdb953a411">
+                    <propertyInstance
+                      Id="1bda864a-d5ca-4cdc-9d51-c1b725073aee"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75c0b617-dfbf-40fd-997d-83cb53bd6f77">
+                    <propertyInstance
+                      Id="46e8dc20-fab4-4bf5-9633-e47e38c1c2ad"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c08edfb-f968-4b94-88a7-70658a88fac1">
+                    <propertyInstance
+                      Id="b4f3aa41-46a3-4aaf-a181-55e4999c81e3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbc8d934-67ae-431b-8053-9373ebd57e60">
+                    <propertyInstance
+                      Id="1a3cfd38-82cc-44ca-98d6-6a7f531ee5d3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66318d13-5ac8-4c1c-a777-c1360e8dbf28">
+                    <propertyInstance
+                      Id="3b5c728f-f195-4aac-8f96-673bd3fc751a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="845cc415-122e-4ca7-a24b-9bf11daf9cc7">
+                    <propertyInstance
+                      Id="a63051b8-c102-4a33-a72f-4e6d619c8c4c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="68455466-52b0-43bb-a2b2-184fa2ecfc63"
+                  name="services"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="00d4c856-1acf-4b66-a4b9-bc09d5ee7d67"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.Game.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DGameServiceContainer)]) ParameterIdentifier%3Dservices"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d1e3eca7-fdd3-4904-9e40-6695e2b7973c"
+                      LastKnownName="GameServiceContainer"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1545a0b3-54b7-4c13-9f38-a2f1dd1aeb28"
+            name="InputManager"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3b7494b2-d47b-49cc-a9f5-35edd7d9e379"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DIntPtr)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="77a73702-7bba-4f13-86ed-d39652ff6071"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3013e7ea-7850-4a01-8472-3640b87e8f10">
+                    <propertyInstance
+                      Id="a047a11b-8ff5-40bd-9866-2c7753a96edb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02fa5ec2-e8c8-44e2-8056-d13b3ea115e2">
+                    <propertyInstance
+                      Id="74cf6143-55da-47df-beba-dfb25980abed"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a72665f-0b39-4a11-8576-06c626b4eed0">
+                    <propertyInstance
+                      Id="e11e5b52-7f65-4d0e-8f3f-20dbb688b7d6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0cb9727-a5f6-4384-ba03-f7795bdf0949">
+                    <propertyInstance
+                      Id="fccbad6c-0c9f-47c6-8337-a74c4a64f708"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5874fa7d-88d6-4fa7-ae17-b6970e20a510">
+                    <propertyInstance
+                      Id="96f3b38c-4fe1-4354-a3ed-992eda21048d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ef9ddd4-aaad-49fa-b5f6-5dc2b10ffc10">
+                    <propertyInstance
+                      Id="ae86cb6f-84ea-4c01-a2e9-a34b4b0b07eb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eefe22ad-258f-4a3f-8a81-122a6aaae143"
+                  name="windowHandle"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2a640878-ab21-42cf-bd2c-d710dcad6064"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FProfile%2FClient%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DIntPtr)]) ParameterIdentifier%3DwindowHandle"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6267c9ff-b5d7-4e63-ad1b-61e4651d8e01"
+                      LastKnownName="IntPtr"
+                      LastKnownLocation="Package11_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e731582c-d9a3-441d-a937-4dc6fc76dece"
+            name="InputManager"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8239a62b-4a59-4a78-b72a-279de1603fd9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b37539b2-3fb2-461f-8eb2-e7a42e9e3faf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0933004-2bbd-49ea-b28c-02c03b815bca">
+                    <propertyInstance
+                      Id="371a415e-8e99-4475-ac88-935f473fe985"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e377debe-e488-4b79-89a0-3f86bf4c2153">
+                    <propertyInstance
+                      Id="17c5091b-5b45-475a-bb3a-a8135c8d627c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="509ea1a1-7d38-473a-824b-1c6ed3d2f394">
+                    <propertyInstance
+                      Id="11192023-cd61-4684-b811-a9881a8f9037"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9f4dcab-1b00-4add-a717-5db0598d1e06">
+                    <propertyInstance
+                      Id="4ea464bb-0650-4085-b54b-eedd1070de41"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3040c072-46f9-4a69-b8e7-28f65a5494b5">
+                    <propertyInstance
+                      Id="43db65c3-24b6-4192-a1c6-36a9061b38eb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a046e05d-f293-4f67-9a0e-103f1bdf4622">
+                    <propertyInstance
+                      Id="26fff019-9e61-4271-aecc-b88017be0a49"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="44507a6b-5b16-4b3f-bc1e-1e440167fec4"
+            name="OnUpdateOrderChanged"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2c18abe1-1f7b-4fd4-a506-e9d9f0f9a5eb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DOnUpdateOrderChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bbcb01d5-98ab-4fbe-a411-abba09c32592"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1c949f4-1fbd-4578-97f0-d1c95ce80f40">
+                    <propertyInstance
+                      Id="eac09bdc-372a-4cfd-b3ef-4c92358e82d8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2b91524-196f-41d8-bb57-73bc4aea6079">
+                    <propertyInstance
+                      Id="5f983bcc-3c03-40a9-b536-befb496b25e8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d860551d-4821-495a-a269-b443d5f544cd">
+                    <propertyInstance
+                      Id="cd32100a-3e6e-4e16-9f16-99286c1318af"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0abe1384-cd75-46b2-b836-674fbbadefb8">
+                    <propertyInstance
+                      Id="0954229e-9f64-4dec-af9e-65d0443b8939"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8519a5af-8cc5-4952-a08e-8b78b55c33ab">
+                    <propertyInstance
+                      Id="4f62a068-aef4-4adb-a772-9ac97e1b448f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a6718a9-0892-400d-9667-8ed100f6899f">
+                    <propertyInstance
+                      Id="3bd8dc5b-5bc1-4d15-87b2-44ef9eb4b31a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="231daaf1-8318-44be-8a7d-bacbda5a1ff2"
+            name="TakeSnapshot"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9fabb985-83c0-47db-9088-023a189e896a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DTakeSnapshot"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="618154cb-c257-45ce-b0cf-76a6cf6a0684"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5433131-9324-4369-8e9c-db9140020514">
+                    <propertyInstance
+                      Id="bb7f7625-a686-4c1c-b724-dc1cd6538add"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe71f71d-09d4-4cef-bed2-bccc0b291aea">
+                    <propertyInstance
+                      Id="ec57a6d0-d269-4fee-b701-d7d209ec4153"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e8023a5-acb6-4d96-845e-8ea0ca305f47">
+                    <propertyInstance
+                      Id="d7e3cd2e-20d3-4621-92d2-8ed7fac80208"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="625b284b-dd76-47cd-9ff9-5fa866f5a2e5">
+                    <propertyInstance
+                      Id="dffdaf09-5865-419a-a4f9-341d7bbe1c5b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6e0dc5c-03c7-4892-914b-5ed2b749433c">
+                    <propertyInstance
+                      Id="25eeaec9-4997-4e5f-9601-5757b7ebc0ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bedb802d-f9e2-4b72-8814-adc95d1d4932">
+                    <propertyInstance
+                      Id="c122f304-165a-49a6-9210-7db1eba43849"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="b9060c1a-a4e5-4ca8-8352-3f12be272843"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="429a23f8-7405-4a77-8fcb-8dcb1602b0b3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DInputManager Member%3DUpdate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aec65cc3-4764-4da4-a0f2-6ab20286f102"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85e96003-00f5-4097-8b9a-88151060aa13">
+                    <propertyInstance
+                      Id="6aae27df-c75e-42ba-bf99-ed56993327fb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c66645c-eb89-41e5-800d-09040fc9a5a5">
+                    <propertyInstance
+                      Id="5f947575-7979-4353-8bc3-3dac2c7a68d8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1473824-95c9-4a37-9e0d-e00dd6935a75">
+                    <propertyInstance
+                      Id="65495bf8-d1dc-4cbc-8aa3-b3404ea70375"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfe589cb-ef8e-44b6-a504-271a17c9b36b">
+                    <propertyInstance
+                      Id="2fbce633-ba56-4e4b-a2a1-29beb6fae3f4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cd39360-d4c7-4025-ae8c-70eb0ec970e3">
+                    <propertyInstance
+                      Id="d525d00e-e6df-467e-ba73-42c60881b6d7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00ea261f-6ff4-4d61-92e0-8e1c55e22539">
+                    <propertyInstance
+                      Id="d01ec877-c94a-43e6-b510-ea8889d80dd7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="06dfc23c-ea1e-43bf-bc4e-855d65ead16e"
+        name="MouseButtons"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="1209146e-9879-4092-b118-7aa85b6f4a53"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DMouseButtons"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="608c02c6-8689-4eb5-8503-4da52bedb911"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e82ba6f-2028-41d9-8370-b068fb84d3c1">
+                <propertyInstance
+                  Id="4260bc0c-8269-4548-b344-10940079f235"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="366d0ef9-7249-408a-9056-a0bd87ed0785">
+                <propertyInstance
+                  Id="4d779f73-27c2-47a8-a60a-e4707320b0be"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="20cf5bc1-5286-48df-b40a-914773fac56b">
+                <propertyInstance
+                  Id="00ccce57-3ad3-47b9-9af7-d3784d182a3d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="604eaea6-d314-42ef-bfc9-4b9b36ce8ad6"
+        name="IInputService"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f281c799-8d27-4563-91b7-700f2fc9dd8d"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2a702cb6-f2b7-4534-befc-3b15c127776e"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10b3db99-f9c5-47af-b1e1-728cc96203ee">
+                <propertyInstance
+                  Id="63f7c398-d015-4ba5-999b-0e181dfa01ca"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f34a93cb-8b6a-40b6-abda-c424452ab2ea">
+                <propertyInstance
+                  Id="0d5956a6-b634-4fdc-990f-516697cfca91"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d0564bd0-a51c-4d08-bee1-3bbb994043ad">
+                <propertyInstance
+                  Id="733d65ba-fb44-464e-8a78-e31c382df99f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6a37d340-0c21-42bc-8213-f9017775ed94">
+                <propertyInstance
+                  Id="e2a878f2-9106-483f-bcec-c2b2a763de5a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="9044aff9-0867-4412-af6d-41fbcdb350e0"
+            isDerived="false"
+            sourceEndRoleName="IInputService"
+            targetEndRoleName="GamePads"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6fb326c5-8b41-489f-8c11-c71502c5b852"
+              LastKnownName="ReadOnlyCollection&lt;IGamePad‎&gt;"
+              LastKnownLocation="Package_2029.uml" />
+            <description>Property GamePads references type ReadOnlyCollection&lt;IGamePad‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1cbaa490-8935-43c3-a6de-e2cc81d5a9ba"
+                  name="IInputService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5154b297-c4a1-495a-91ec-59a29421a385"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4bed80b7-39f5-497a-8883-f15345d374d7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2167272f-5036-4658-9c5f-569808306d71"
+                  name="GamePads"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d0c82e66-cf00-477c-8560-d62c7d0c4105"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6fc4dbe5-33e3-4af0-9ae5-62aa6456d0b6"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="78e43a53-9134-4040-b157-bc9f9cf8bfc9"
+            isDerived="false"
+            sourceEndRoleName="IInputService"
+            targetEndRoleName="Keyboards"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fd93fb68-4ce9-46fa-8858-9b3063797f94"
+              LastKnownName="ReadOnlyCollection&lt;IKeyboard‎&gt;"
+              LastKnownLocation="Package_2029.uml" />
+            <description>Property Keyboards references type ReadOnlyCollection&lt;IKeyboard‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="408ac206-d398-4402-9260-34011a6e4cac"
+                  name="IInputService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="043cd600-ba44-4edd-a7eb-3fe59afdbac1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3ddcc1f1-5f42-4abd-8a09-1fd52090d1d5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ea51475-0d72-4bdd-930f-14e78e3bd2c8"
+                  name="Keyboards"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="30374baa-6331-4227-8026-0ea6ac3c4974"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="decb5557-2c5e-4101-b27e-6569a6d3e076"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f54d7eaa-d996-41f4-ac89-fa4ed1f5a191"
+            isDerived="false"
+            sourceEndRoleName="IInputService"
+            targetEndRoleName="Mice"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="de1ffd38-9257-4b19-bf1f-243e3cbfb416"
+              LastKnownName="ReadOnlyCollection&lt;IMouse‎&gt;"
+              LastKnownLocation="Package_2029.uml" />
+            <description>Property Mice references type ReadOnlyCollection&lt;IMouse‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac77afbd-416b-4fa9-8377-a15ec7111e54"
+                  name="IInputService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b2b15aa6-bc81-4625-86bc-ba38b591ed1a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8aeddafb-6a6a-4c3f-b03f-90f6af3fe67d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="89fab199-47a7-4161-8090-9e8c3a884624"
+                  name="Mice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="418ddeeb-9588-4bf1-9e77-f7e9621f433c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="023d145c-4ad0-404f-96f6-288f3855c0ef"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="af334707-7a2a-463b-8213-9ef4b91b89d5"
+            isDerived="false"
+            sourceEndRoleName="IInputService"
+            targetEndRoleName="TouchPanels"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="55f860c0-5db2-4b99-8461-5fe0bb2cbc35"
+              LastKnownName="ReadOnlyCollection&lt;ITouchPanel‎&gt;"
+              LastKnownLocation="Package_2029.uml" />
+            <description>Property TouchPanels references type ReadOnlyCollection&lt;ITouchPanel‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0fcbe1c5-70e5-4f1b-9eac-9c60b915b1ef"
+                  name="IInputService"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="65c3bc17-7c89-4269-a46f-bfdc5a30f2c3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1e383b21-b54f-4f9a-a6fd-dc2b6e40ebc1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="befc4f48-518f-4056-8a88-4e83c19a25bc"
+                  name="TouchPanels"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="632b9e62-8f6c-4d99-8bbb-6e4b519a996c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="43e9f217-a6c1-4d58-a537-16624b8e60b1"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="ee9d4992-39be-4bf4-8c0d-ffb23cff64f3"
+            name="GamePads"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b10b69d4-76a3-44e9-89cd-9f270a196490"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DGamePads"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b1a7569f-f2bd-4fd4-bbb9-823fda7e35cc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f97f7e84-dfef-47ea-bec6-64de06828d61">
+                    <propertyInstance
+                      Id="b7645525-0edc-420e-b911-b21332c3512d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbb7839d-1ecb-4ee4-82dc-c228d07915eb">
+                    <propertyInstance
+                      Id="b4532a11-a614-483d-95c7-c8df6048be05"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8663cba2-9b65-4ea2-9259-1202a1b55eff">
+                    <propertyInstance
+                      Id="7815f7ec-9b8c-4e77-bd5d-2e77aef8eeff"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94902b45-5113-4a3b-8525-68db4fd08813">
+                    <propertyInstance
+                      Id="390445f7-3d67-4f4e-8fe4-3eae8f3d40c5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9383cce-2d4f-4d10-8287-78a5b4f69811">
+                    <propertyInstance
+                      Id="03416220-956f-438e-8f2c-9319344d93a6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1dbf307-719c-4fd8-b297-27853bafcfe9">
+                    <propertyInstance
+                      Id="444d951a-1d2f-424b-ad98-4428bba41c7e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="491610a1-fb8e-4896-be88-f10cc05d58f7">
+                    <propertyInstance
+                      Id="86b25398-0200-40d8-abdb-4d26d9221694"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6fb326c5-8b41-489f-8c11-c71502c5b852"
+                LastKnownName="ReadOnlyCollection&lt;IGamePad‎&gt;"
+                LastKnownLocation="Package_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="296313a1-3028-4184-ae2c-91643752e347"
+            name="Keyboards"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e65e7def-e7a7-475e-bf3b-714f7beefff2"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DKeyboards"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9ed8b08d-29ec-424f-a320-2115ece37afe"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="791761f8-3b3f-4655-b55d-b883f2057a85">
+                    <propertyInstance
+                      Id="b451b088-156f-43b0-a067-031f52b19aef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2e391a7-cb2d-4e95-be3d-38097cce0098">
+                    <propertyInstance
+                      Id="a243ec71-1ea7-45ed-95d2-25a98efe3018"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="846d0b0f-8385-4fe6-aa59-8ebc5dba5308">
+                    <propertyInstance
+                      Id="2b093a96-4a84-4e93-8546-944179e35ce7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03ad847c-285d-482b-858c-bae83906a37d">
+                    <propertyInstance
+                      Id="1db6860f-26c6-45b7-aeb5-e2b4f2b77534"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e00db4e2-25e1-4f0a-9d49-7e7831c2eb27">
+                    <propertyInstance
+                      Id="7e689fb8-f0f1-452d-8022-bff9129e1f36"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c1296bd-52c4-40ec-8986-3aa43daae179">
+                    <propertyInstance
+                      Id="23562243-b867-4fba-828c-5fff72ef998b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55685a0b-7942-4bb3-8bb8-c29f7fae44ae">
+                    <propertyInstance
+                      Id="02ad2f31-f667-4d7e-bf84-600dc3318fc3"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fd93fb68-4ce9-46fa-8858-9b3063797f94"
+                LastKnownName="ReadOnlyCollection&lt;IKeyboard‎&gt;"
+                LastKnownLocation="Package_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f8e68057-8cc1-4989-b10d-84a52e5e7188"
+            name="Mice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0da70b64-a7a0-4eae-86a9-57de616cd828"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DMice"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9f53a696-ceb4-474e-b078-2ca3c688611d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a105374c-d65d-459b-b326-56c5f9ace116">
+                    <propertyInstance
+                      Id="882974df-23f4-4da2-ae02-53f4c52582c1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e81a9390-1788-4603-9a58-bb4226d9855b">
+                    <propertyInstance
+                      Id="5dbcf8dd-b5ca-4efb-86ae-8e7854392256"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="431830d1-8f52-4990-9b3f-572eb52afec2">
+                    <propertyInstance
+                      Id="068e76ef-dfe0-44cd-9686-396a3c69c07b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4992ce2e-94fa-4278-af49-1c31a78a3aa9">
+                    <propertyInstance
+                      Id="366c1570-83b0-42d2-9079-3bc125bad348"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd7cfd7e-4568-4be5-b10c-2912fdc6928e">
+                    <propertyInstance
+                      Id="57533474-414c-4332-bd02-16314031a37f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec81c1db-5e28-4bff-87dc-9fba2bb6f015">
+                    <propertyInstance
+                      Id="e0408cd9-025b-4115-a017-9549479384c7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0459d011-2d55-47e3-9dba-f8ad9685dc21">
+                    <propertyInstance
+                      Id="1d188ba4-1165-431e-8ad9-d148a1f947af"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="de1ffd38-9257-4b19-bf1f-243e3cbfb416"
+                LastKnownName="ReadOnlyCollection&lt;IMouse‎&gt;"
+                LastKnownLocation="Package_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="36190501-dd84-44fe-80eb-5c3480044f54"
+            name="SnapshotCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="89388f74-34bd-4f58-a395-3e0869dbe6d5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DSnapshotCount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3fb5cd8a-8c09-4805-bf90-c55d2700d2bc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49b5b704-23d1-4dc1-8bf5-b78de0f04b72">
+                    <propertyInstance
+                      Id="b986f015-843f-4a2c-ba9d-352570a5ce94"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="215fb316-520e-48ee-8199-206aafcde4a1">
+                    <propertyInstance
+                      Id="c46ea1c0-32db-4861-b0f2-0110839e997e"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a3a00a8-d8ac-4028-b5fc-8769575856f4">
+                    <propertyInstance
+                      Id="bba5c554-fe2f-4627-9df1-c34b8e217fdf"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6da30b7-d2dd-4caf-8d8f-33b3f30ec5c2">
+                    <propertyInstance
+                      Id="9ea4edbe-1b2e-436e-9a38-bcd19cee7fae"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57706be9-caa4-4d3e-bcc9-262bea3e7cc0">
+                    <propertyInstance
+                      Id="8c7f33ef-6863-42ba-a0c9-3457ce7d24c2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39c731fb-6e5e-4d67-8b05-733989dde9ab">
+                    <propertyInstance
+                      Id="498918d7-4689-4585-8458-4c2c1a3a35d0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="757ce48c-6fb6-4111-8fe5-e3881392e636">
+                    <propertyInstance
+                      Id="b2406526-c970-4d35-9faf-a555360ee4e9"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="AntigenModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="53ddb9df-b9b2-40d6-819e-882b0864a478"
+            name="TouchPanels"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="73df4510-b441-4874-b756-a036d07f85f3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DTouchPanels"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b051da6-f7f1-40c7-adcb-015ade4c4820"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bfec464-b683-4778-bc5f-0e300c26054b">
+                    <propertyInstance
+                      Id="83eba3c5-9fd0-4ee0-8003-210bfb7ff845"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31e3c4db-d853-4853-9371-3eaa1e62df45">
+                    <propertyInstance
+                      Id="6055395e-1296-4804-a683-e1d7340c7e9e"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76a8a36c-80ea-41eb-83e1-f11f66709d38">
+                    <propertyInstance
+                      Id="8f7bdadc-40e8-4e4e-ae3a-f637491f2244"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="191c54c3-6d22-4f2e-a8e8-6cdab8e6cf88">
+                    <propertyInstance
+                      Id="ac5c28a1-3067-46e0-8782-4986e1ad0a36"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0132a51-f7d9-4c91-a16e-44534b22a291">
+                    <propertyInstance
+                      Id="52db7fe7-7bb6-4b35-912c-f02dd1de7439"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8627021-e114-4894-b4ef-1cb214b12512">
+                    <propertyInstance
+                      Id="ace1caa7-dc66-4f69-8854-897df0c0e837"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1dec6ff9-c881-49f2-9d2d-fae1dafbaef2">
+                    <propertyInstance
+                      Id="be11f923-56e6-40b9-be3e-51a66626dc13"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="55f860c0-5db2-4b99-8461-5fe0bb2cbc35"
+                LastKnownName="ReadOnlyCollection&lt;ITouchPanel‎&gt;"
+                LastKnownLocation="Package_2029.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="b22afe70-a636-498b-ae88-64f59e564eaf"
+            name="GetGamePad"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c1ab446a-4e65-456e-bf0c-6b5caf897ed8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3D(Name%3DGetGamePad OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DExtendedPlayerIndex)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7e6b5eaf-924a-4584-8d42-9fc85a0dc3ce"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8449e47-ac2f-4ca4-8f4f-ceb4bced93df">
+                    <propertyInstance
+                      Id="9523e3b1-0e79-4af8-a6c7-5ed440dacb65"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30daae57-5046-4d2b-b7bd-3e45c2278e20">
+                    <propertyInstance
+                      Id="c77b2f76-bed5-4237-a082-eedb639b204c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c8ed694-217c-48ea-916d-3f1689d3dc40">
+                    <propertyInstance
+                      Id="54e20dce-6142-454f-9023-97192263605c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3da3d57-607f-4291-b517-4736fc0b889d">
+                    <propertyInstance
+                      Id="e02ccb9d-5abe-4069-bc0a-4ce727b93a28"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf20d484-f41f-4e70-945a-ae9e77720811">
+                    <propertyInstance
+                      Id="fe06717b-6568-42f7-b415-bb42220e09e1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53bb7097-ae0d-4434-9594-df8181e60ce2">
+                    <propertyInstance
+                      Id="30732b2e-7e84-4ed2-a4b0-7e0f5390a547"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="203a875f-3f86-48b4-bbc9-eeac2b3e6962"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="3932e64a-9272-4817-847e-7636457fa398"
+                      LastKnownName="IGamePad"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="00e2306e-f9af-4083-b762-672ac7c67000"
+                  name="playerIndex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="af984ed8-e329-478c-92bc-c413b84802e0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3D(Name%3DGetGamePad OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DExtendedPlayerIndex)]) ParameterIdentifier%3DplayerIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="d77167f1-733c-408a-94b7-6f22efe62611"
+                      LastKnownName="ExtendedPlayerIndex"
+                      LastKnownLocation="Package6_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="82045f1d-161a-42f9-bbd4-0173f24b44ca"
+            name="GetGamePad"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="24c5ae71-5d7e-424f-b4a4-247ad2d95e44"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3D(Name%3DGetGamePad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPlayerIndex)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5feddeea-4a42-40d7-b571-8938d2307af5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d589ab1-34b2-4dba-961a-0796ab255ac5">
+                    <propertyInstance
+                      Id="c67b0217-7b4d-4202-a548-e922aa8968b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55c94b34-33ee-4353-807d-dc7848e50cd6">
+                    <propertyInstance
+                      Id="63606ea2-219a-4eb6-9b09-eb9e0a52d2c0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f6bfe26-e926-45a7-922a-ef79e5ec9c88">
+                    <propertyInstance
+                      Id="9869dfdc-6bba-4d1e-943f-4ebf9f72ac86"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18bb8f6c-9159-49f2-83b9-8ca43e765028">
+                    <propertyInstance
+                      Id="3c5f0051-280f-49b7-8491-308c2e61023d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0cbaa72-24a0-4942-8ecf-9e7f6672d9a6">
+                    <propertyInstance
+                      Id="1466275f-793d-4d28-af30-55df154b93cb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93733811-e8ce-491b-bb96-d93342a1e27d">
+                    <propertyInstance
+                      Id="117fd81a-8f79-4d3f-bd8f-a71298d42f1c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="492b8c67-3b42-47e5-907a-848d5d7b9623"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="3932e64a-9272-4817-847e-7636457fa398"
+                      LastKnownName="IGamePad"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0cdf22b3-5ff1-44e7-b6f9-45ceddf48e6f"
+                  name="playerIndex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d1965d37-2505-4d55-b59b-2802f4d4c69c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3D(Name%3DGetGamePad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPlayerIndex)]) ParameterIdentifier%3DplayerIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="34a86d8a-02f4-447d-a93c-322c2f8942c1"
+                      LastKnownName="PlayerIndex"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a3aa1b1e-0785-45f7-8036-4ec437d3f2a0"
+            name="GetKeyboard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="32ee5f34-3ff5-4492-8f57-22f051b16dda"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3D(Name%3DGetKeyboard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPlayerIndex)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="db0cb846-7eaa-4df8-af86-05e9c2d4de75"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d28e11ca-c49f-4015-a66d-cd4187e406cb">
+                    <propertyInstance
+                      Id="15d18b9b-bd64-4580-8135-24977a0de7de"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="837742aa-c300-4754-a865-29c8e9c59e8f">
+                    <propertyInstance
+                      Id="f41e0ec8-397a-4763-97c4-22d6b46a611c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a44b0072-85b7-486b-ae5d-febdefdf92da">
+                    <propertyInstance
+                      Id="1ef5532e-9c45-493f-934f-0316d918307b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d5869f7-214a-4d9a-9fa4-25a9aa0e096d">
+                    <propertyInstance
+                      Id="4708cd1f-7ba8-4486-9811-66bc3e627380"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13198a99-9266-43fb-8a7e-6a1564aebf56">
+                    <propertyInstance
+                      Id="017f8a6d-87ec-4a94-8777-bfe2b6edc660"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7cf09b0-7310-4f98-87c3-7140dd13c0de">
+                    <propertyInstance
+                      Id="8dfa00a0-f344-4cf4-97bc-07aec3ba70ce"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bb28c768-c56a-496f-957c-0bd3ba0319ba"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="55461537-59fb-4300-a826-b54af2b94b84"
+                      LastKnownName="IKeyboard"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc423f35-1839-4611-896b-714965f29eb0"
+                  name="playerIndex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dcfceef9-3e5d-4796-b12a-3fb5e592e44c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3D(Name%3DGetKeyboard OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft XNA%2FXNA Game Studio%2Fv4.0%2FReferences%2FWindows%2Fx86%2FMicrosoft.Xna.Framework.dll&quot; Namespace%3DMicrosoft.Xna.Framework Type%3DPlayerIndex)]) ParameterIdentifier%3DplayerIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="34a86d8a-02f4-447d-a93c-322c2f8942c1"
+                      LastKnownName="PlayerIndex"
+                      LastKnownLocation="Package3_1106.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f427347e-eeb7-472c-96b4-dc4166f2f7ab"
+            name="GetKeyboard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c836f349-f814-408a-b8e6-bbd9308b5b83"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DGetKeyboard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bdaff7f4-90ec-4c6a-af13-392b98eb0a64"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4de95490-4ed8-47da-8a2f-b3c6c358f7c6">
+                    <propertyInstance
+                      Id="8601c197-1110-4ee5-95f9-770613e5e7da"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf58e034-9a71-4075-b8d9-d151ba631389">
+                    <propertyInstance
+                      Id="38caf0dd-b7c6-4eb2-b5c6-acf1fb10f5fe"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97107348-750e-48ab-917a-cba82cfb305b">
+                    <propertyInstance
+                      Id="798c5d77-a285-4e19-ba72-bc7533ca8562"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b7972fb-7fb0-40dc-9ce6-e25d7473cc35">
+                    <propertyInstance
+                      Id="5eee1459-8377-4f81-b0c0-a4fac690307e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a98f0f0-dfce-4bd1-b4a8-07dcc7080742">
+                    <propertyInstance
+                      Id="865f5b54-fa23-4138-a0bb-0ebe57c55e37"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6888f211-ed9d-48ed-9678-7f1f4f851ec4">
+                    <propertyInstance
+                      Id="33e79002-a681-4870-8a80-c2f7c7bad0b6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c8dd7b2-290e-4c16-bbf1-2ab45aa66f82"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="55461537-59fb-4300-a826-b54af2b94b84"
+                      LastKnownName="IKeyboard"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d253baf5-d285-459e-a984-fb51caace0d8"
+            name="GetMouse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d15ba6e5-8541-42d5-82f3-a50fd4c2d150"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DGetMouse"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0d89a9c5-dde7-4cc0-87cb-f73ec141584a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b463f7a9-58bd-4711-ab6e-c95aa6c0a5c6">
+                    <propertyInstance
+                      Id="a2b85c12-7b58-4e13-a09f-4a1b973403c6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb820c0c-8af4-4225-a69c-b5e5642ea25b">
+                    <propertyInstance
+                      Id="1c406d95-634e-4607-9586-912d9ae8509c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c3c17b7-66e6-4876-bb2f-bdd5d9d99c36">
+                    <propertyInstance
+                      Id="8d585df4-5bc0-4e02-8fd2-b1e5c9b78ff6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccefa1d0-9794-44ca-8989-2128a17d9b12">
+                    <propertyInstance
+                      Id="639981a5-06af-4886-8629-e3c356b8a2cd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f19ef4d6-e6ee-416d-a03b-3cc58448ea48">
+                    <propertyInstance
+                      Id="06738dbd-fdd2-47fb-8500-573cfae82144"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e971596-8dc7-4fda-a53c-3809ffc5050c">
+                    <propertyInstance
+                      Id="66b9028a-9f71-4539-9bf0-a3497e3bc901"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7e8ce877-a82e-44b5-aaf9-2e099a0e14e5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="a203c2e2-2832-47a0-b408-1aaab37579d5"
+                      LastKnownName="IMouse"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3d495b24-ee3f-456a-9a78-af0a01833d9c"
+            name="GetTouchPanel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="677d1a71-65fe-4129-b55c-dd4db7157249"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DGetTouchPanel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="75cb9d7c-53e8-40b5-8bd2-1c43665dcfec"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41e4bf39-98b8-4004-ae46-66e876a32a18">
+                    <propertyInstance
+                      Id="1f0c1a66-5bfc-4a3a-a95c-565d2cffe59e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="713aeb61-4010-4abd-8a44-ae94d7fbf7cf">
+                    <propertyInstance
+                      Id="b24e344c-0d39-4b2d-91e3-d1cff96c57ae"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b05553c-2b89-4b55-ab8e-ccea51564a48">
+                    <propertyInstance
+                      Id="febacabb-454d-4f55-ab56-32983a28ab9f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df93fd33-25e5-4660-8739-7a89a58381af">
+                    <propertyInstance
+                      Id="3f90e916-551b-4eb3-b79e-e9ee22afdaff"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eaddcc7c-b77b-454e-8bef-d5a12ad0ca9e">
+                    <propertyInstance
+                      Id="4a19235a-a016-4a39-8248-9ec7a73322da"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc23506a-c6f8-4b76-86af-71dd5d40876d">
+                    <propertyInstance
+                      Id="adb1261a-f637-4392-8158-0f74536dc766"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e3828913-0587-4743-87ee-678d9184c92e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="8bf050ec-49d8-48c6-acc3-511d37fced6c"
+                      LastKnownName="ITouchPanel"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8be34524-e12c-4dfa-9544-1d85efeceff5"
+            name="TakeSnapshot"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="60a5e1ce-bec2-4451-8b87-fcc2d91760f9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DTakeSnapshot"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="09004eae-7da5-43cd-921f-e28525fd90dd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bacba63-9706-406b-bd17-2cee719dcc81">
+                    <propertyInstance
+                      Id="1e5e4270-f750-46c0-a49a-03517030cd25"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78d79d18-e6c8-4d03-9847-d72309d31af6">
+                    <propertyInstance
+                      Id="93421bef-75bd-45b3-bcfb-1188f1479b26"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16dc013b-c3fa-4cf7-b888-a2003392f30a">
+                    <propertyInstance
+                      Id="91c39e1f-bc65-4314-8e53-b9615bf9afa2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d05f1884-71a3-403e-a5a4-fe509ab5d1bc">
+                    <propertyInstance
+                      Id="70dbabb1-b4e0-4eea-a43c-808e7bda779c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09e50586-284e-4dde-8167-b36441579264">
+                    <propertyInstance
+                      Id="49e23151-b772-40c3-ac14-09b321fcc0d3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6b49694-4608-4f49-9170-8e710c3579ca">
+                    <propertyInstance
+                      Id="2c4ba02d-abcb-4e51-b745-ae42c83ae6db"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="5eb7e9b2-cba4-43cb-9119-592298539c7f"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d2eef8c8-dbb0-43dd-b263-0cbe5196217f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DIInputService Member%3DUpdate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45f8974c-7355-4d6f-b193-94d30c9a25b7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a21d7558-7a85-4d48-81ba-2aa4be4d7d99">
+                    <propertyInstance
+                      Id="1b1a0f07-64b3-4da4-8fae-c725786da8e0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="937ee2aa-aded-4281-b5a5-9c7d5a4734a1">
+                    <propertyInstance
+                      Id="298ef2fc-2712-4fd7-b353-657272277c35"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07577701-7fc8-4554-bc39-34127dbfc69a">
+                    <propertyInstance
+                      Id="ab4e84a5-3fc1-4a8f-bb10-86f1ead1cbbd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bc433b4-7798-46f3-9737-eb865ee95e14">
+                    <propertyInstance
+                      Id="d1108f27-f4e7-49f3-a74e-687f2f901e38"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28231e09-37c7-4a47-b87f-830220707005">
+                    <propertyInstance
+                      Id="62c402a5-87eb-4faa-b3d1-eb782ea245c9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a128cf4-9c0a-43f9-b915-0a13bc4f81ab">
+                    <propertyInstance
+                      Id="6bee2d09-1a45-4751-8317-146bcd7b274f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8f51a27e-2712-4fda-9593-c13207c57a20"
+        LastKnownName="Devices"
+        LastKnownLocation="Package1_2029.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="d77167f1-733c-408a-94b7-6f22efe62611"
+        name="ExtendedPlayerIndex"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6abe0221-7f5c-4da5-b63f-3e318b53d707"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fswp%2Ftrunk%2Fsrc%2FProjekt%2Flib%2Fnuclex%2FNuclex.Input.dll Namespace%3DNuclex.Input Type%3DExtendedPlayerIndex"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c5c1692b-d0a2-491a-9908-9ca510fa99f2"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="448831aa-69f2-435f-a7d4-f86c3d9e93fb">
+                <propertyInstance
+                  Id="88ede937-e8ad-47e5-a7b3-6f18b44ff694"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b6a68019-b1d8-42ab-84c5-4628b671a178">
+                <propertyInstance
+                  Id="a7d4a2a4-4490-47e8-aa77-7b5c73d966fd"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1210058b-442a-40e1-85c2-721fe48886e4">
+                <propertyInstance
+                  Id="b66c49f2-ea23-49c2-8cca-595594a0fd21"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
