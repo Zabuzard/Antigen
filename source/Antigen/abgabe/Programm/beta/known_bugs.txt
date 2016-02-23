@@ -1,0 +1,7 @@
+Submission reflects rev. 238.
+
+- As a result of cell division, new cells sometimes spawn outside the walkable map areas.
+- All settings are non-functional.
+- B cells cannot produce Antibodies. Pressing the corresponding HUD button does nothing.
+- Cells are not deselected upon death.
+- When starting a new game while a game is running, the background music duplicates.
