@@ -1,0 +1,116 @@
+\subsubsection{Startkonfiguration}
+
+Zu Beginn eines jeden Spiels kontrolliert der Spieler eine geringe Anzahl
+Stammzellen, die KI eine geringe Anzahl Bakterien und Viren. Diese befinden
+sich räumlich voneinander getrennt im Blutkreislauf.
+
+\subsubsection{Spielablauf}
+
+Die KI beginnt direkt nach Spielbeginn, mithilfe ihrer Viren Rote
+Blutkörperchen zu übernehmen und ihre Bakterien mithilfe von Zellteilung zu
+vermehren. Gleichzeitig beginnt der Spieler, Stammzellen und Riesenfresszellen
+zu produzieren.
+
+Der Spieler sollte sich möglichst früh einen Überblick über die Zusammensetzung
+der gegnerischen Einheiten (Bakterien oder Viren, Anzahl verschiedener Stämme)
+verschaffen. Mithilfe dieser Informationen kann er entscheiden, wie er seine
+Abwehr zusammensetzen möchte.
+
+Während er Rote Blutkörperchen produziert und seine Zellen vor den Angriffen
+der gegnerischen Einheiten schützt, versucht der Spieler, Antigene aus
+Viren und Bakterien zu extrahieren. Ist ihm dies gelungen, kann er mit der
+Produktion spezifischer Abwehr beginnen, die erstmals eine nachhaltige
+Verteidigung ermöglicht.
+
+Mithilfe der spezifischen Abwehr kann der Spieler nun beginnen, die
+gegnerischen Einheiten zurückzudrängen. Gleichzeitig muss er konstant darauf
+achten, genügend unspezifische Abwehr für neu mutierte Viren- und
+Bakterienstämme zur Verfügung zu haben und gegen diese Stämme möglichst zügig
+spezifische Abwehr zu produzieren.
+
+Gelingt dies dem Spieler, so kann er allmählich die Oberhand gewinnen und
+schließlich alle Viren und Bakterien besiegen.
+
+\subsubsection{Gewinn- und Verlustbedingungen}
+
+Der Spieler gewinnt, sobald alle Viren und Bakterien aus dem Blutkreislauf
+entfernt sind. Er verliert, wenn entweder alle eigenen Zellen zerstört werden
+oder die Anzahl Roter Blutkörperchen im Blutkreislauf unter einen bestimmten
+Schwellwert sinkt.
+
+\subsubsection{Strategie}
+
+\minisec{Ressourcen}
+
+Zellen erfüllen in \name{} gleichzeitig die Funktionen von Einheiten und
+Produktionsmitteln in vergleichbaren Echtzeitstrategiespielen, da sie sich
+in den meisten Fällen teilen und somit neue Zellen produzieren können. Dabei
+stehen Zellen, die sich gerade teilen, nicht für andere Aufgaben zur Verfügung;
+die zwei Funktionen einer Zelle schließen sich also gegenseitig aus.
+
+\minisec{Spezifische vs. unspezifische Abwehr}
+
+Zu Beginn des Spiels stehen dem Spieler nur die Einheiten der unspezifischen
+Abwehr, Riesenfresszellen, zur Verfügung. Um die ungleich stärkeren Einheiten
+der spezifischen Abwehr -- T-Zellen und Antikörper -- herzustellen, müssen
+zunächst aufwändig die Antigene der Viren und Bakterien extrahiert werden, was
+über einen relativ langen Zeitraum viele Ressourcen bindet. Außerdem kommen
+durch Mutation neue Antigene hinzu, gegen die die bis dato produzierte
+spezifische Abwehr wirkungslos ist. Der Spieler muss somit permanent
+zwischen der unmittelbar wirksamen aber langfristig nicht aufrechtzuerhaltenden
+unspezifischen und der zeitintensiven, mehr Produktionsmittel bindenden, aber
+langfristig mächtigeren spezifischen Abwehr abwägen und seine Produktionsmittel
+korrekt zuweisen.
+
+Hiermit verbindet sich auch die Notwendigkeit, über die Konfiguration der
+gegnerischen Viren und Bakterien möglichst genau im Bilde zu sein, um die
+optimale Verteidigungsstrategie entwickeln zu können. Die entsprechende
+Aufklärungsarbeit bindet weitere Zellen, die nicht für Angriff oder
+Verteidigung zur Verfügung stehen oder Gefahr laufen, in gegnerischem
+Territorium getötet zu werden.
+
+\minisec{Abwehr vs. Rote Blutkörperchen}
+
+Da Stammzellen sowohl Abwehrzellen als auch Rote Blutkörperchen, deren Mangel
+zur Niederlage führt, produzieren, muss der Spieler stets so wenige
+Rote Blutkörperchen wie möglich, aber so viele wie nötig herstellen. Da
+er über die Bewegungen des Gegners normalerweise nicht vollständig informiert
+ist und die Produktion Roter Blutkörperchen Zeit benötigt, muss er einen
+gewissen Puffer an Roten Blutkörperchen vorhalten. Die Wahl der Größe dieses
+Puffers gelingt besser, je mehr Informationen über den Zustand der Spielwelt
+vorliegen.
+
+\minisec{Verteidigung eigener Einheiten vs. Vernichtung des Gegners}
+
+Die Produktionseinheiten des Spielers (Stamm- und B-Zellen) sind relativ
+langsam, können sich nur schlecht verteidigen und benötigen zur Reproduktion
+viel Zeit. Sie müssen deswegen vor Angriffen der Viren und Bakterien geschützt
+werden. Gleichzeitig ist es von Vorteil, die gegnerischen Einheiten so früh wie
+möglich zu stören und ihre Reproduktion durch Zellteilung bzw. Übernahme
+freundlicher Zellen zu verhindern. Hieraus ergibt sich die Notwendigkeit, den
+Gegner zu attackieren und dadurch die eigenen Produktionseinheiten für Angriffe
+verwundbar zu machen. Die gezielte Mutation von Kampfeinheiten zur Verbesserung
+der Eigenschaft Geschwindigkeit (im Allgemeinen auf Kosten anderer
+Eigenschaften) und die Einholung von Informationen über die Bewegungen des
+Gegners können diesen Nachteil mitigieren.
+
+\minisec{Ressourcenproduktion vs. Kampfeinheiten}
+
+Stammzellen und Kampfeinheiten werden beide durch Stammzellen produziert.
+Insbesondere zu Beginn des Spiels muss der Spieler somit abwägen, ob er
+lieber frühzeitig den Gegner attackieren oder seine Ressourcenproduktion
+steigern möchte.
+
+\minisec{Spezialisierung vs. Generalisten}
+
+Mutationsfelder erlauben es sowohl dem Spieler als auch der KI, eigene
+Einheiten zu spezialisieren. Dieser Prozess ist allerdings zeitaufwändig und
+birgt die Gefahr, dass sich durch die Mutation die Eigenschaften der mutierten
+Einheiten verschlechtern statt verbessern, weswegen es manchmal nötig sein
+kann, zugunsten kurzfristiger Vorteile auf die Spezialisierung zu verzichten.
+
+Weiterhin können überspezialisierte Einheiten große Schwächen gegen bestimmte
+Einheiten aufweisen, indem beispielsweise eine Riesenfresszelle mit hoher
+Angriffsstärke, aber niedriger Virenresistenz Angriffen durch Viren
+schutzlos ausgeliefert ist. Deswegen kann es von Vorteil sein, Generalisten zu
+bevorzugen, die gegen jede gegnerische Einheit mäßig effektiv sind.

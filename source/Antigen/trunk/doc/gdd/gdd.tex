@@ -1,0 +1,89 @@
+\documentclass{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lastpage}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{longtable}
+\usepackage{tabu}
+
+% Makros
+\newcommand*{\name}{Antigen}
+\newcommand*{\tabref}[1]{Tab.~\ref{#1}}
+\newcommand*{\figref}[1]{Abb.~\ref{#1}}
+\newcommand*{\secref}[1]{Kap.~\ref{#1}}
+
+% Layout
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.5em}
+\setlength{\headheight}{30pt}
+
+% Definition der Kopfzeile
+\lhead{Game Design Document}
+\chead{\name}
+\rhead{Gruppe 2}
+\lfoot{}
+\cfoot{Seite \thepage{} von \pageref{LastPage}}
+\rfoot{}
+
+\begin{document}
+
+% Title page
+\title{\name\\Game Design Document\thanks{Gruppe 2, Sabine Rogg}}
+\author{Layla Franke \and Thomas Lang \and Jannis Limperg \and Daniel Tischner
+        \and Silas Zimmermann}
+\date{\today}
+\maketitle
+\newpage
+
+\section{Spielkonzept}
+\label{sec:spielkonzept}
+\input{spielkonzept}
+
+\section{Benutzeroberfläche}
+\label{sec:benutzeroberflaeche}
+\input{benutzeroberflaeche}
+
+\section{Spiellogik}
+\label{sec:spiellogik}
+
+\subsection{Grundlegende Spielmechaniken}
+\label{sec:spielmechaniken}
+\input{spielmechaniken}
+
+\subsection{Spielobjekte}
+\label{sec:spielobjekte}
+\input{spielobjekte}
+
+\subsection{Optionen und Aktionen}
+\label{sec:optionen_aktionen}
+\input{optionen_aktionen}
+
+\subsection{Spielstruktur}
+\label{sec:spielstruktur}
+\input{spielstruktur}
+
+\subsection{Statistiken}
+\label{sec:statistiken}
+\input{statistiken}
+
+\subsection{Achievements}
+\label{sec:achievements}
+\input{achievements}
+
+\section{Technische Merkmale}
+\label{sec:technische_merkmale}
+\input{technische_merkmale}
+
+\section{Screenplay}
+\label{sec:screenplay}
+\input{screenplay}
+
+\end{document}

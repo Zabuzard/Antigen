@@ -1,0 +1,370 @@
+\subsubsection{Zellmodi}
+\label{sec:modi}
+
+Zellen befinden sich zu jedem Zeitpunkt in einem von vier Modi und verhalten
+sich ohne weitere Interaktion des Nutzers ihrem aktuellen Modus entsprechend.
+
+\begin{description}
+  \item[Angriff] Die Zelle greift die erste gegnerische Zelle, die ihren
+    Sichtradius betritt, an und verfolgt sie, bis die gegnerische Zelle tot
+    oder außer Sichtweite ist. Kommen mehrere Zellen für die Auswahl des
+    Ziels infrage, so wird die räumlich nächste gewählt.
+  \item[Stellung halten] Die Zelle bewegt sich nicht und reagiert nicht
+    auf gegnerische Zellen in ihrer Sichtweite, außer wenn diese in
+    Angriffsreichweite sind. In diesem Fall attackiert die Zelle die
+    gegnerische Zelle, bis jene tot oder nicht mehr in Angriffsreichweite
+    ist.
+  \item[Treiben lassen] Die Zelle bewegt sich mit dem Blutfluss und
+    verhält sich dabei passiv, reagiert also nicht auf Zellen in ihrer
+    Umgebung.
+  \item[Zellteilung] Die Zelle teilt sich und produziert kontinuierlich,
+    in einem von ihrer Zellteilungsgeschwindigkeit bestimmten Intervall,
+    neue Zellen. Dabei verhält sie sich passiv, reagiert also nicht auf
+    Zellen in ihrer Umgebung, und bewegt sich nicht.
+\end{description}
+
+\subsubsection{Aktionen}
+\label{sec:aktionen}
+
+Im Folgenden werden alle Aktionen, mit denen der Spieler oder die KI den
+Zustand des Spiels beeinflussen können, dargestellt.
+
+\newcounter{usecasect}
+
+\newcommand*{\oder}{\textbf{oder} }
+\newcommand*{\actionentry}[5]{%
+  \stepcounter{usecasect}
+  \minisec{\theusecasect . #1}%
+%
+  \begin{tabular}{|l|p{9cm}|}%
+    \hline%
+    Akteur & #2\\%
+    Startbedingung & #3\\%
+    Schlussbedingung & #4\\%
+    \hline%
+  \end{tabular}%
+%
+  #5%
+}
+
+\actionentry
+{Eine Zelle auswählen}
+{Spieler}
+{--}
+{Die Einheit ist ausgewählt. Alle anderen Einheiten sind abgewählt.}
+{
+  \begin{compactenum}
+    \item Der Spieler linksklickt auf eine auswählbare Einheit.
+    \item Die Einheit wird ausgewählt.
+  \end{compactenum}
+}
+
+\actionentry
+{Mehrere Zellen auswählen}
+{Spieler}
+{--}
+{
+  Alle auswählbaren Einheiten im Rechteck sind ausgewählt. Alle anderen
+  Einheiten sind abgewählt.
+}
+{
+  \begin{compactenum}
+    \item Der Spieler zieht ein Auswahlrechteck auf, in dem sich mindestens
+      eine auswählbare Einheit befindet.
+    \item Die auswählbaren Einheiten im Auswahlrechteck werden ausgewählt.
+  \end{compactenum}
+}
+
+\actionentry
+{Einheiten zu erreichbarem Punkt bewegen}
+{Spieler oder KI}
+{Es sind kontrollierbare Einheiten ausgewählt.}
+{Die ausgewählten Einheiten befinden sich am Zielpunkt.}
+{
+  \begin{compactenum}
+    \item Der Akteur klickt mit der rechten Maustaste auf einen begehbaren
+      Punkt in der Welt.
+    \item Ausgewählte Einheiten, die sich vorher im Treiben- oder
+      Zellteilungsmodus befanden, wechseln in den Angriffsmodus.
+    \item Die ausgewählten Einheiten bewegen sich ausgehend von ihrer
+      Position auf dem kürzesten Weg auf den Punkt zu.
+    \item Die ausgewählten Einheiten erreichen den Zielpunkt.
+  \end{compactenum}
+}
+
+\actionentry
+{Versuch, Einheiten zu nicht erreichbarem Punkt zu bewegen}
+{Spieler oder KI}
+{Es sind kontrollierbare Einheiten ausgewählt.}
+{
+  Die ausgewählten Einheiten befinden sich am dem Zielpunkt am nächsten
+  liegenden erreichbaren Punkt.
+}
+{
+  \begin{compactenum}
+    \item Der Akteur klickt mit der rechten Maustaste auf einen nicht begehbaren
+      Punkt in der Welt.
+    \item Ausgewählte Einheiten, die sich vorher im Treiben- oder
+      Zellteilungsmodus befanden, wechseln in den Angriffsmodus.
+    \item Die ausgewählten Einheiten bewegen sich ausgehend von ihrer
+      Position auf den dem gewählten Punkt am nächsten liegenden erreichbaren
+      Punkt zu.
+    \item Die ausgewählten Einheiten erreichen den dem gewählten Punkt am
+      nächsten liegenden erreichbaren Punkt.
+  \end{compactenum}
+}
+
+\actionentry
+{Modus einer Zelle umschalten}
+{Spieler}
+{
+  Es sind kontrollierbare Zellen ausgewählt, die den gewählten Modus
+  unterstützen.
+}
+{Die Zellen verhalten sich fortan dem gewählten Modus entsprechend.}
+{
+  \begin{compactenum}
+    \item Der Spieler betätigt den Knopf für einen der Zellmodi.
+    \item Die Zellen wechseln in den entsprechenden Modus.
+  \end{compactenum}
+}
+
+\actionentry
+{Gegner angreifen}
+{Spieler oder KI}
+{Es sind Zellen ausgewählt, die die gegnerische Einheit angreifen können.}
+{
+  Die gegnerische Einheit ist tot \oder die gegnerische Einheit befindet
+  sich in einem Bereich der Spielwelt außerhalb der Sichtradien aller
+  vom Spieler kontrollierten Einheiten.
+}
+{
+  \begin{compactenum}
+    \item Der Akteur rechtsklickt auf eine gegnerische Einheit.
+    \item Ausgewählte Einheiten, die sich vorher im Treiben- oder
+      Zellteilungsmodus befanden, wechseln in den Angriffsmodus.
+    \item Die ausgewählten Einheiten bewegen sich zur gegnerischen Einheit.
+    \item Die ausgewählten Einheiten ziehen der gegnerischen Einheit
+      Lebenspunkte entsprechend ihrer Angriffsstärke ab.
+    \item Bewegt sich die gegnerische Einheit, so folgen ihr die ausgewählten
+      Einheiten.
+    \item Die Lebenspunkte der gegnerische Einheit erreichen den Nullpunkt
+      und sie stirbt \oder die gegnerische Einheit bewegt sich aus der
+      Sichtweite des Spielers hinaus.
+  \end{compactenum}
+}
+
+\actionentry
+{Infektion}
+{KI}
+{
+  Ein Virus ist ausgewählt. Die Infektionsstärke des Virus übersteigt die
+  Virenresistenz der gegnerischen Zelle.
+}
+{
+  Die gegnerische Zelle ist nun eine infizierte Zelle. Das Virus ist
+  tot.
+}
+{
+  \begin{compactenum}
+    \item Die KI weist dem ausgewählten Virus eine anzugreifende gegnerische
+      Zelle zu.
+    \item Das Virus bewegt sich zur Zelle.
+    \item Das Virus infiziert die Zelle: die Zelle wird zu einer infizierten
+      Zelle. Das Virus stirbt.
+  \end{compactenum}
+}
+
+\actionentry
+{Zellproduktion}
+{Spieler}
+{Es ist mindestens eine Zelle, die sich teilen kann, ausgewählt.}
+{
+  Die ausgewählten Zellen produzieren kontinuierlich Zellen der ausgewählten
+  Art.
+}
+{
+  \begin{compactenum}
+    \item Der Spieler wählt im Produktionsmenü aus, welche Zellart bei
+      der Zellteilung produziert werden soll.
+    \item Der Spieler aktiviert den Zellteilungsmodus der ausgewählten
+      Zellen.
+    \item Die ausgewählten Zellen beginnen, Zellen der gewählten Art zu
+      produzieren.
+  \end{compactenum}
+}
+
+\actionentry
+{Antigen extrahieren}
+{Spieler}
+{Es ist eine Riesenfresszelle, die kein Antigen besitzt, ausgewählt.}
+{
+  Die gegnerische Zelle ist tot und die Riesenfresszelle besitzt das Antigen
+  der gegnerischen Zelle.
+}
+{
+  \begin{compactenum}
+    \item Der Spieler lässt die Riesenfresszelle eine gegnerische Zelle
+      (Bakterium oder Virus) angreifen.
+    \item Die Riesenfresszelle tötet die gegnerische Zelle.
+    \item Die Riesenfresszelle übernimmt automatisch das Antigen der
+      gegnerischen Zelle.
+  \end{compactenum}
+}
+
+\actionentry
+{Antigen übernehmen}
+{Spieler}
+{Es ist eine antigenverarbeitende Zelle ausgewählt.}
+{
+  Die ausgewählte Zelle hat das Antigen übernommen und die Riesenfresszelle
+  besitzt kein Antigen mehr.
+}
+{
+  \begin{compactenum}
+    \item Der Spieler rechtsklickt auf eine Riesenfresszelle, die ein Antigen
+      besitzt.
+    \item Die ausgewählte Zelle bewegt sich zur Riesenfresszelle.
+    \item Die ausgewählte Zelle erreicht die Riesenfresszelle.
+    \item Die ausgewählte Zelle übernimmt das Antigen von der Riesenfresszelle.
+  \end{compactenum}
+}
+
+\actionentry
+{Antigen übergeben}
+{Spieler}
+{Es ist eine Riesenfresszelle mit extrahiertem Antigen ausgewählt.}
+{
+  Die antigenverarbeitende Zelle hat das Antigen übernommen und die
+  Riesenfresszelle besitzt kein Antigen mehr.
+}
+{
+  \begin{compactenum}
+    \item Der Spieler rechtsklickt auf eine antigenverarbeitende Zelle.
+    \item Die ausgewählte Riesenfresszelle bewegt sich zur
+      antigenverarbeitenden Zelle.
+    \item Die ausgewählte Riesenfresszelle erreicht die antigenverarbeitende
+      Zelle.
+    \item Die antigenverarbeitende Zelle übernimmt das Antigen der
+      Riesenfresszelle.
+  \end{compactenum}
+}
+
+\actionentry
+{Kamerakontrolle}
+{Spieler}
+{Die Kamera kann sich weiter in Richtung des Cursors verschieben.}
+{Die Kamera hat sich in Richtung des Cursors verschoben.}
+{
+  \begin{compactenum}
+    \item Der Spieler bewegt den Cursor an einen der Ränder des Spielfensters.
+  \end{compactenum}
+}
+
+\actionentry
+{Zoom}
+{Spieler}
+{Die Kamera ist nicht vollständig herein- bzw. herausgezoomt.}
+{Die Kamera ist weiter herein- bzw. herausgezoomt.}
+{
+  \begin{compactenum}
+    \item Der Spieler bewegt das Mausrad nach vorn bzw. hinten.
+  \end{compactenum}
+}
+
+\actionentry
+{Pausieren}
+{Spieler}
+{Das Spiel ist nicht pausiert.}
+{Das Spiel ist pausiert.}
+{
+  \begin{compactenum}
+    \item Der Spieler betätigt den Pauseknopf.
+    \item Das Pausemenü öffnet sich.
+  \end{compactenum}
+}
+
+\actionentry
+{Pause beenden}
+{Spieler}
+{Das Spiel ist pausiert.}
+{Das Spiel läuft weiter.}
+{
+  \begin{compactenum}
+    \item Der Spieler betätigt im Pausemenü den \enquote{Weiter}-Knopf.
+    \item Das Pausemenü schließt sich.
+  \end{compactenum}
+}
+
+\subsubsection{Abbruch von Aktionen}
+
+Alle oben aufgeführten Aktionen können wie folgt abgebrochen werden:
+
+\begin{enumerate}
+  \item Abbruch durch den Spieler oder die KI: Gibt der Akteur einer
+    Zelle, während diese eine Aktion ausführt, einen neuen Befehl, so
+    bricht die Zelle die Aktion ab und beginnt mit der Ausführung des
+    Befehls.
+  \item Abbruch durch Tod: Stirbt die Zelle, die eine Aktion ausführt,
+    oder die Zelle, die Ziel einer Aktion (beispielsweise eines Angriffs) ist,
+    so wird die Aktion abgebrochen.
+\end{enumerate}
+
+\subsubsection{Effekte der Zellteilung}
+\label{sec:zellteilung}
+
+Bei der Zellteilung werden je nach produzierender und produzierter Zellart die
+Eigenschaften der produzierten Zelle unterschiedlich gesetzt. Dieser Abschnitt
+gibt einen Überblick über die involvierten Spielmechaniken.
+
+\minisec{Reproduktion}
+
+Bei der Reproduktion einer Zelle (d.h. produzierende und produzierte Zelle
+sind von der gleichen Art) werden die Eigenschaften der produzierenden an
+die produzierte Zelle vererbt. Dabei besteht eine geringe Wahrscheinlichkeit,
+dass die produzierte Zelle mutiert und dadurch ihre Eigenschaftswerte gegenüber
+denen der produzierenden Zelle verändert.
+
+\minisec{Produktion durch ungleichartige Zelle}
+
+Bei der Produktion einer Zelle durch eine Zelle anderer Art (z.B. einer
+Riesenfresszelle durch eine Stammzelle) wird die Mutation einer Eigenschaft
+der produzierenden Zelle anteilsmäßig weitergegeben.
+
+Beispiel: Hat eine Stammzelle durch Mutation 5\% Lebenspunkte gegenüber ihrem
+Startwert 70 hinzugewonnen, so erhalten auch alle von ihr produzierten Zellen
+5\% mehr Lebenspunkte gegenüber ihren Startwerten (siehe
+\secref{sec:zellen}).
+
+Zellen, die andersartige Zellen produzieren können, besitzen Werte für
+alle Eigenschaften der produzierten Zellen, auch wenn sie diese selbst
+nicht verwenden (z.B. Angriffsstärke bei Stammzellen). Diese Werte werden
+wie andere Eigenschaftswerte auch durch Zellteilung und Mutation modifiziert.
+
+\minisec{B-Zellen und Antikörper}
+
+Sowohl B-Zellen als auch Antikörper besitzen eine sogenannte Debuff-Tabelle,
+die jeder Eigenschaft einen Wert zuordnet. Attackiert ein Antikörper eine
+gegnerische Zelle, so wird jede Eigenschaft der attackierten Zelle um den
+in der Debuff-Tabelle angegebenen Wert verringert.
+
+Bei der Produktion eines Antikörpers durch eine B-Zelle wird die Debuff-Tabelle
+der B-Zelle an den produzierten Antikörper weitergegeben. Mit geringer
+Wahrscheinlichkeit kann sie sich durch Mutation positiv oder negativ ändern.
+
+Bei der Produktion einer B-Zelle durch eine andere B-Zelle wird die
+Debuff-Tabelle der produzierenden auf die produzierte B-Zelle übertragen
+und kann sich durch Mutation ändern.
+
+Bei der Produktion einer B-Zelle durch eine Stammzelle wird die Debuff-Tabelle
+der B-Zelle mit dem Standardwert von 20 für jede Eigenschaft initialisiert.
+
+\subsubsection{Sichtradius und Fog of War}
+\label{sec:fow}
+
+Als Nebeneffekt jeder Aktion, die die Position einer Einheit verändert,
+verändert sich der Bereich der Spielwelt, auf dem der Spieler gegnerische
+Einheiten und rote Blutkörperchen sehen kann. Dieser Bereich ist die
+Vereinigung der Sichtradien aller vom Spieler kontrollierten Einheiten.
+Außerhalb der Sichtradien kann der Spieler zwar den Verlauf der Blutbahnen,
+nicht aber gegnerische Einheiten und rote Blutkörperchen sehen.
